@@ -93,7 +93,7 @@ a:focus {
 .app-container {
   background: #F8F8F8;
   margin: 0 auto;
-  font-style: normal;
+  padding: 1em;
   max-width: 1000px;
 }
 
@@ -106,6 +106,16 @@ a:focus {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.title {
+  color: black;
+  background: white;
+}
+
+.footer-container {
+  font-size: 0.8rem;
+  margin-top: 1em;
 }
 
 /*# sourceMappingURL=styles.css.map */

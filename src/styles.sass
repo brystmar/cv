@@ -46,7 +46,7 @@ $favicon-font-size: 100
 /*** Page Layout ***/
 $header-height: 3em
 $footer-height: $header-height - 1em
-$app-max-width: 1200px
+$app-max-width: 1000px
 
 
 /*** Basic Tags ***/
@@ -137,8 +137,8 @@ a:focus
 .app-container
   background: $color-background
   margin: 0 auto
-  font-style: normal
-  max-width: 1000px
+  padding: 1em
+  max-width: $app-max-width
 
 .sr-only
   position: absolute
@@ -149,3 +149,10 @@ a:focus
   overflow: hidden
   clip: rect(0,0,0,0)
   border: 0
+.title
+  color: black
+  background: white
+
+.footer-container
+  font-size: 0.8rem
+  margin-top: 1em
