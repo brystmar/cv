@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import './styles.sass';
 
 function App() {
     return (

@@ -1,6 +1,7 @@
 /*** Fonts ***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
-/*** Colors ***/
+/*** Color Palette ***/
+/*** Favicon, from https://favicon.io/favicon-generator/ ***/
 /*** Page Layout ***/
 /*** Basic Tags ***/
 * {
@@ -66,8 +67,8 @@ a:focus {
   margin: 0;
   border-radius: 0.2em;
   cursor: pointer;
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none;
+  box-shadow: none;
   transition: all 0.2s;
 }
 
@@ -86,6 +87,25 @@ a:focus {
 
 .btn-default:active {
   border: 2px solid #696c72;
+}
+
+/*** Page-Level ***/
+.app-container {
+  background: #F8F8F8;
+  margin: 0 auto;
+  font-style: normal;
+  max-width: 1000px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap')
 $font-stack: 'Roboto', sans-serif
 
-/*** Colors ***/
+/*** Color Palette ***/
 $color-brown1: #D79922
 $color-brown2: #BC986A
 $color-brown3: #907163
@@ -36,6 +36,12 @@ $color-primary-analogous-1: #00d1d5
 $color-primary-analogous-2: #0400d5
 $color-primary-triadic-1: #6e00d5
 $color-primary-triadic-2: #d50067
+
+/*** Favicon, from https://favicon.io/favicon-generator/ ***/
+$favicon-color-background: #393FA3
+$favicon-color-foreground: #FFFFFF
+$favicon-font: 'Caveat Brush'
+$favicon-font-size: 100
 
 /*** Page Layout ***/
 $header-height: 3em
@@ -109,8 +115,8 @@ a:focus
   margin: 0
   border-radius: 0.2em
   cursor: pointer
-  outline: none !important  // To override settings from packages w/bootstrap
-  box-shadow: none !important  // To override settings from packages w/bootstrap
+  outline: none
+  box-shadow: none
   transition: all 0.2s
 
 .btn-default
@@ -124,3 +130,22 @@ a:focus
   border: 1px solid $color-border-darker
 .btn-default:active
   border: 2px solid $color-border-darker
+
+
+/*** Page-Level ***/
+
+.app-container
+  background: $color-background
+  margin: 0 auto
+  font-style: normal
+  max-width: 1000px
+
+.sr-only
+  position: absolute
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  border: 0
