@@ -49,5 +49,6 @@ Tech Stack:
 B.B.A.: Management Information Systems ([TCU](http://www.tcu.edu/), May 2007)
 
 ## Attribution for this CV
-Using icons from:
+Content sourced from:
 * [FavIcon.io](https://favicon.io/)
+* [Real FavIcon Generator](https://realfavicongenerator.net/)
