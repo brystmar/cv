@@ -38,7 +38,7 @@ Tech Stack:
 * UI: React & CSS
 
 ### [Cellar Sync](http://www.cellarsync.com)
-A cellar management app for lambic-obsessed tech geeks.
+A cellar management app for [lambic](http://lambic.info)-obsessed tech geeks.
 
 Tech Stack:
 * Backend: Python & Flask, running on GCP App Engine
