@@ -1,6 +1,6 @@
 {
 	"name":             "CV for Thomas Berg",
-	"short_name":       "CV for tberg",
+	"short_name":       "CV for TBerg",
 	"icons":            [
 		{
 			"src":   "favicon.ico",
@@ -20,6 +20,6 @@
 	],
 	"start_url":        "http://www.thomasberg.me",
 	"display":          "standalone",
-	"theme_color":      "#393FA3",
-	"background_color": "#F8F8F8"
+	"theme_color":      "#0067d5",
+	"background_color": "#f8f8f8"
 }

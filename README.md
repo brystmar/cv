@@ -52,3 +52,4 @@ B.B.A.: Management Information Systems ([TCU](http://www.tcu.edu/), May 2007)
 Content sourced from:
 * [FavIcon.io](https://favicon.io/)
 * [Real FavIcon Generator](https://realfavicongenerator.net/)
+* Hamburger animation by [Jesse Couch](https://codepen.io/designcouch/pen/Atyop?editors=1000)

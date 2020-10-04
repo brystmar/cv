@@ -1,10 +1,16 @@
-import React from 'react';
-import './styles.sass';
+import React from "react";
+import Hamburger from "./components/Hamburger";
+import "./styles/styles.sass";
+import "./styles/nav-animations.sass";
 
 function App() {
     return (
         <div className="app-container">
-            <header className="header-container">
+            <header className="header-container" id="top">
+                <Hamburger type="1" />
+                <br/>
+                <Hamburger type="2" />
+                <br/>
                 <h1>CV for Thomas Berg</h1>
             </header>
             <main className="content-container">
