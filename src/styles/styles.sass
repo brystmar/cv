@@ -1,92 +1,16 @@
-/*** CSS variables ***/
-// Preferred for font size since these can be adjusted in media queries
-@use "sass:meta"
-\:root
-  --font-size-h1: 3rem
-  --font-size-h2: 2.25rem
-  --font-size-h3: 1.25rem
-  --font-size-body: 1rem
-
-@media (min-width: 800px)
-  \:root
-    --font-size-h1: 4.5rem
-    --font-size-h2: 3.75rem
-    --font-size-h3: 1.5rem
-    --font-size-body: 1.125rem
-
-/*** Fonts ***/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap')
-$font-stack-primary: 'Roboto Slab', serif
-$font-stack-secondary: 'Roboto', sans-serif
-$font-stack-mono: 'Roboto Mono', 'Source Code Pro', 'Courier New', monospace
-
-/*** Color Palette ***/
-// https://material.io/design/color/the-color-system.html#tools-for-picking-colors
-$color-primary: #0067d5
-$color-primary-darker: #0647b6
-$color-primary-lighter-1: #0079e7
-$color-primary-lighter-2: #008bfb
-$color-primary-lighter-3: #009aff
-$color-primary-lighter-4: #2fa9ff
-$color-primary-lighter-5: #5bb9ff
-$color-primary-lighter-6: #8dcdff
-$color-primary-lighter-7: #bae0ff
-$color-primary-lighter-8: #e3f3ff
-$color-primary-complementary: #d56e00
-$color-primary-complementary-darker: #cb5700
-$color-primary-complementary-lighter-1: #db7d03
-$color-primary-complementary-lighter-2: #e18b09
-$color-primary-complementary-lighter-3: #e5960e
-$color-primary-complementary-lighter-4: #e8a52b
-$color-primary-complementary-lighter-5: #ebb44f
-$color-primary-complementary-lighter-6: #f0ca81
-$color-primary-complementary-lighter-7: #f6deb2
-$color-primary-complementary-lighter-8: #fbf2e0
-$color-primary-alt-1: #00d1d5
-$color-primary-alt-2: #0400d5
-$color-primary-triadic-1: #6e00d5
-$color-primary-triadic-2: #d50067
-
-$color-secondary: #bdbdbd // #ecebe7
-$color-secondary-lighter: #e0e0e0 // #ecebe7
-$color-secondary-darker: #828282 // #ecebe7
-
-
-$color-light: #f8f8f8
-$color-light-alt: #d1d7e0
-$color-lightest: #f2f2f2
-$color-background: #f8f8f8
-$color-dark: #171717
-$color-nav-background: #160000
-$color-border: rgba(151,154,160,1)  // #979aa0
-$color-border-lighter: rgba(151,154,160,0.6)
-$color-border-darker: #696c72
-$color-link: $color-primary-complementary-darker
-$color-link-visited: $color-primary-complementary-lighter-1
-
-/*** Favicon, from https://realfavicongenerator.net/ ***/
-$color-favicon-background: #393fa3
-$color-favicon-foreground: #ffffff
-$favicon-font: 'Caveat Brush'
-$favicon-font-size: 100
-
-/*** Page Layout ***/
-$app-max-width: 1000px
-
+@import "variables"
 
 /*** Basic Tags ***/
+
 *,
 *::before,
 *::after
   box-sizing: border-box
 
 body
+  font-size: 16px
   font-family: $font-stack-primary
   font-variant: slashed-zero
-  font-size: 16px
   color: $color-dark
   line-height: 1.6
   text-align: left
@@ -125,6 +49,20 @@ a:focus
 
 /*** Buttons ***/
 
+button
+  background: $color-background
+  color: $color-dark
+  border: 1px solid $color-border
+button:focus,
+button:hover
+  background: $color-border
+  color: $color-lightest
+  border: 1px solid $color-border-darker
+button:active
+  border: 2px solid $color-border-darker
+  outline: none
+  box-shadow: none
+
 .btn
   height: 2.5em
   width: 7em
@@ -135,18 +73,6 @@ a:focus
   outline: none
   box-shadow: none
   transition: all 0.2s
-
-.btn-default
-  background: $color-background
-  color: $color-dark
-  border: 1px solid $color-border
-.btn-default:focus,
-.btn-default:hover
-  background: $color-border
-  color: $color-lightest
-  border: 1px solid $color-border-darker
-.btn-default:active
-  border: 2px solid $color-border-darker
 
 
 /*** Page-Level ***/

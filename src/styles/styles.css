@@ -1,8 +1,8 @@
-/*** CSS variables ***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+/*** CSS variables ***/
 :root {
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
@@ -22,6 +22,7 @@
 /*** Color Palette ***/
 /*** Favicon, from https://realfavicongenerator.net/ ***/
 /*** Page Layout ***/
+/*** Nav ***/
 /*** Basic Tags ***/
 *,
 *::before,
@@ -30,9 +31,9 @@
 }
 
 body {
+  font-size: 16px;
   font-family: "Roboto Slab", serif;
   font-variant: slashed-zero;
-  font-size: 16px;
   color: #171717;
   line-height: 1.6;
   text-align: left;
@@ -77,6 +78,25 @@ a:focus {
 }
 
 /*** Buttons ***/
+button {
+  background: #f8f8f8;
+  color: #171717;
+  border: 1px solid #979aa0;
+}
+
+button:focus,
+button:hover {
+  background: #979aa0;
+  color: #f2f2f2;
+  border: 1px solid #696c72;
+}
+
+button:active {
+  border: 2px solid #696c72;
+  outline: none;
+  box-shadow: none;
+}
+
 .btn {
   height: 2.5em;
   width: 7em;
@@ -87,23 +107,6 @@ a:focus {
   outline: none;
   box-shadow: none;
   transition: all 0.2s;
-}
-
-.btn-default {
-  background: #f8f8f8;
-  color: #171717;
-  border: 1px solid #979aa0;
-}
-
-.btn-default:focus,
-.btn-default:hover {
-  background: #979aa0;
-  color: #f2f2f2;
-  border: 1px solid #696c72;
-}
-
-.btn-default:active {
-  border: 2px solid #696c72;
 }
 
 /*** Page-Level ***/
