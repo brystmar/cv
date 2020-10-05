@@ -49,11 +49,32 @@ code {
 h1, h2, h3, h4 {
   margin: 0;
   text-align: left;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 1em 0.2em;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin: 1em 0;
 }
 
 p {
-  line-height: 1em;
+  line-height: 1.5em;
   margin: 0;
+}
+
+strong {
+  font-weight: inherit;
+  color: #cb5700;
 }
 
 img {
@@ -129,11 +150,6 @@ button:active {
   border: 0;
 }
 
-.title {
-  color: black;
-  background: white;
-}
-
 .footer-container {
   font-size: 0.8rem;
   margin-top: 1em;
@@ -141,6 +157,16 @@ button:active {
 
 .hidden {
   display: none;
+}
+
+section {
+  margin: 0;
+  display: block;
+}
+
+.home-container {
+  text-align: center;
+  border: 1px solid blue;
 }
 
 /*# sourceMappingURL=styles.css.map */

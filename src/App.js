@@ -1,5 +1,11 @@
 import React, {useState} from "react";
 import NavBar from "./components/NavBar";
+import Home from "./components/Home";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Certifications from "./components/Certs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./styles/styles.sass";
 
 function App() {
@@ -11,30 +17,16 @@ function App() {
                 <NavBar isNavExpanded={isNavExpanded}
                         toggleIsNavExpanded={toggleIsNavExpanded}/>
             </header>
+
             <main className={isNavExpanded ? "content-container hidden" : "content-container"}>
-                <h1>CV for Thomas Berg</h1>
-                <p>Coming soon!</p>
-
-                <section id="Experience" aria-label="Work experience">
-                </section>
-
-                <section id="Projects" aria-label="Personal projects">
-                </section>
-
-                <section id="Certifications" aria-label="Certifications attained">
-                </section>
-
-                <section id="Contact" aria-label="How to contact me">
-                </section>
+                <Home />
+                <Experience />
+                <Projects />
+                <Certifications />
+                <Contact />
             </main>
-            <footer className={isNavExpanded ? "footer-container hidden" : "footer-container"}>
-                <p>
-                    Do I even need a footer?
-                </p>
-                <p>
-                    <a href="https://github.com/brystmar/">GitHub</a>
-                </p>
-            </footer>
+
+            {isNavExpanded ? "" : <Footer />}
         </div>
     );
 }
