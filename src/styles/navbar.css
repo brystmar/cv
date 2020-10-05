@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+/*** CSS variables ***/
+:root {
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --font-size-h1: 4.5rem;
+    --font-size-h2: 3.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1.125rem;
+  }
+}
+/*** Fonts ***/
+/*** Color Palette ***/
+/*** Favicon, from https://realfavicongenerator.net/ ***/
+/*** Page Layout ***/
+/*** Nav ***/
+/*** Navigation ***/
+.navbar .links-container {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.navbar .links-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  font-size: 3rem;
+}
+.navbar .links-container ul li {
+  margin: 0.5em;
+}
+.navbar .links-container ul li a {
+  padding: 0.1em;
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,15 +1,35 @@
 import React from "react";
+import Hamburger from "./Hamburger";
+import "../styles/navbar.sass";
 
 function NavBar(props) {
-    return <nav role="navigation" aria-label="Links to various sections">
-        <ul>
-            <li><a href="/#Top">Home</a></li>
-            <li><a href="/#Experience">Experience</a></li>
-            <li><a href="/#Projects">Projects</a></li>
-            <li><a href="/#Certifications">Certifications</a></li>
-            <li><a href="/#Contact">Contact</a></li>
-        </ul>
-    </nav>
+    const toggle = () => props.toggleIsNavExpanded(!props.isNavExpanded)
+
+    return (
+        <nav role="navigation"
+             aria-label="Links to various sections"
+             className="navbar">
+
+            <Hamburger isNavExpanded={props.isNavExpanded}
+                       toggleIsNavExpanded={props.toggleIsNavExpanded}/>
+
+            {props.isNavExpanded ?
+                <span className="links-container">
+                    <ul>
+                        <li><a href="/#Top" onClick={toggle}>Home</a></li>
+                        <li><a href="/#Experience" onClick={toggle}>Experience</a></li>
+                        <li><a href="/#Projects" onClick={toggle}>Projects</a></li>
+                        <li><a href="/#Certifications" onClick={toggle}>Certifications</a></li>
+                        <li><a href="/#Contact" onClick={toggle}>Contact</a></li>
+                    </ul>
+                </span> : ""
+            }
+        </nav>
+    )
+}
+
+NavBar.defaultProps = {
+    isNavExpanded: false
 }
 
 export default NavBar;

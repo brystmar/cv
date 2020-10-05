@@ -49,7 +49,7 @@
   position: absolute;
   height: 20%;
   width: 50%;
-  background: #d3531a;
+  background: #d56e00;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -81,6 +81,9 @@
   top: 80%;
 }
 
+.nav-hamburger.open span {
+  background: #171717;
+}
 .nav-hamburger.open span:nth-child(1),
 .nav-hamburger.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);

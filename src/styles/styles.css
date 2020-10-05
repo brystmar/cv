@@ -49,12 +49,10 @@ code {
 h1, h2, h3, h4 {
   margin: 0;
   text-align: left;
-  cursor: default;
 }
 
 p {
   line-height: 1em;
-  cursor: default;
   margin: 0;
 }
 
@@ -72,9 +70,12 @@ a:visited {
   color: #db7d03;
 }
 
-a:hover,
-a:focus {
+a:hover {
   text-decoration: underline;
+}
+
+a:focus {
+  outline: 1px dotted #979aa0;
 }
 
 /*** Buttons ***/
@@ -136,6 +137,10 @@ button:active {
 .footer-container {
   font-size: 0.8rem;
   margin-top: 1em;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

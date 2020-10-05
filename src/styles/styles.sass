@@ -24,13 +24,11 @@ code
 h1, h2, h3, h4
   margin: 0
   text-align: left
-  cursor: default
 
 p
   //font-size: 1rem
   //font-weight: 400
   line-height: 1em
-  cursor: default
   margin: 0
 
 img
@@ -42,10 +40,11 @@ a
   text-decoration: none
 a:visited
   color: $color-link-visited
-a:hover,
-a:focus
+a:hover
   text-decoration: underline
 
+a:focus
+  outline: 1px dotted $color-border
 
 /*** Buttons ***/
 
@@ -99,3 +98,6 @@ button:active
 .footer-container
   font-size: 0.8rem
   margin-top: 1em
+
+.hidden
+  display: none
