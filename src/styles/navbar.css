@@ -25,7 +25,7 @@
 /*** Nav ***/
 /*** Navigation ***/
 .navbar .links-container {
-  height: 92vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

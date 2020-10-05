@@ -6,10 +6,24 @@ function Home() {
             id="Home"
             aria-label="Home"
             className="home-container">
-            <p><h2>Hey there! My name is</h2></p>
-            <p><h1>Thomas</h1></p>
-            <p><h2>I manage <strong>products</strong></h2></p>
-            <p><h2>I'm interested in <strong>things</strong></h2></p>
+
+            <div className="greeting">
+                <p className="intro">Hello! I'm</p>
+                <p className="my-name">Thomas</p>
+                <p className="followup">I manage <strong>products</strong></p>
+                <p className="followup">I'm interested in <strong>things</strong></p>
+            </div>
+
+            <img src="https://storage.googleapis.com/tb-public-misc/faces.jpg"
+                 alt="Thomas sitting at a table in a restaurant, making a goofy face"
+                 className="headshot"/>
+
+            <div className="highlights">
+                <p>Customer-obsessed Product Manager with a passion for <strong>user experience</strong></p>
+                <p>Naturally <strong>curious</strong>, data-driven, and technical</p>
+                <p>Moonlights as a mad kitchen <strong>scientist</strong></p>
+            </div>
+
         </section>
     )
 }

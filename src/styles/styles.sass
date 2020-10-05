@@ -12,7 +12,7 @@ body
   font-family: $font-stack-primary
   font-variant: slashed-zero
   color: $color-dark
-  line-height: 1.6
+  line-height: 1.3
   text-align: left
   max-width: $app-max-width
   -webkit-font-smoothing: antialiased
@@ -21,35 +21,37 @@ body
 code
   font-family: $font-stack-mono
 
-h1, h2, h3, h4
+h1,
+h2,
+h3,
+h4
   margin: 0
   text-align: left
-  display: inline-block
 
 h1
   font-size: 3.5rem
-  margin: 1em 0.2em
+  margin: 0.2em
 
 h2
   font-size: 2rem
-  margin: 0.5em 0
+  margin: 0.2em 0
   
 h3
   font-size: 1.4rem
   margin: 1em 0
 
 p
-  //font-size: 1rem
-  //font-weight: 400
-  line-height: 1.5em
-  margin: 0
+  margin: 0.75em 0.2em
+  font-size: 1rem
+  font-weight: 400
 
 strong
   font-weight: inherit
   color: $color-primary-complementary-darker
 
 img
-  display: block
+  display: inline-block
+  margin: 0.5em
   max-width: 100%
 
 a
@@ -96,7 +98,7 @@ button:active
 .app-container
   background: $color-background
   margin: 0 auto
-  padding: 1em
+  padding: 0.3em
   max-width: $app-max-width
 
 .sr-only
@@ -122,7 +124,35 @@ section
   display: block
   
 .home-container
-  //display: block
   text-align: center
-  border: 1px solid blue
-  
+  .greeting
+    display: inline-block
+    .intro
+      font-size: 2rem
+      font-weight: 400
+    .my-name
+      font-size: 4rem
+      font-weight: 600
+      margin: 0.4em
+    .followup
+      font-size: 2rem
+      font-weight: 400
+      margin: 0.2em
+  .headshot
+    height: 200px
+    display: inline-block
+  .highlights
+    p
+      font-size: 1.4rem
+      display: block
+      margin: 1.25em 0
+    p::after
+      content: ""
+      display: block
+      background: $color-primary-complementary-darker
+      width: 15%
+      height: 3px
+      margin: 1.25em auto
+    p:last-of-type::after
+      background: none
+    

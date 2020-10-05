@@ -35,7 +35,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-variant: slashed-zero;
   color: #171717;
-  line-height: 1.6;
+  line-height: 1.3;
   text-align: left;
   max-width: 1000px;
   -webkit-font-smoothing: antialiased;
@@ -46,20 +46,22 @@ code {
   font-family: "Roboto Mono", "Source Code Pro", "Courier New", monospace;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   text-align: left;
-  display: inline-block;
 }
 
 h1 {
   font-size: 3.5rem;
-  margin: 1em 0.2em;
+  margin: 0.2em;
 }
 
 h2 {
   font-size: 2rem;
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
 
 h3 {
@@ -68,8 +70,9 @@ h3 {
 }
 
 p {
-  line-height: 1.5em;
-  margin: 0;
+  margin: 0.75em 0.2em;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 strong {
@@ -78,7 +81,8 @@ strong {
 }
 
 img {
-  display: block;
+  display: inline-block;
+  margin: 0.5em;
   max-width: 100%;
 }
 
@@ -135,7 +139,7 @@ button:active {
 .app-container {
   background: #f8f8f8;
   margin: 0 auto;
-  padding: 1em;
+  padding: 0.3em;
   max-width: 1000px;
 }
 
@@ -166,7 +170,43 @@ section {
 
 .home-container {
   text-align: center;
-  border: 1px solid blue;
+}
+.home-container .greeting {
+  display: inline-block;
+}
+.home-container .greeting .intro {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.home-container .greeting .my-name {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0.4em;
+}
+.home-container .greeting .followup {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0.2em;
+}
+.home-container .headshot {
+  height: 200px;
+  display: inline-block;
+}
+.home-container .highlights p {
+  font-size: 1.4rem;
+  display: block;
+  margin: 1.25em 0;
+}
+.home-container .highlights p::after {
+  content: "";
+  display: block;
+  background: #cb5700;
+  width: 15%;
+  height: 3px;
+  margin: 1.25em auto;
+}
+.home-container .highlights p:last-of-type::after {
+  background: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
