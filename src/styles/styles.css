@@ -155,8 +155,10 @@ button:active {
 }
 
 .footer-container {
+  margin-top: 1.25em;
+}
+.footer-container p {
   font-size: 0.8rem;
-  margin-top: 1em;
 }
 
 .hidden {
@@ -218,6 +220,18 @@ section {
 }
 .home-container .highlights p:last-of-type::after {
   background: none;
+}
+
+.contact-container .contact-list-items {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-list-items .contact-group {
+  margin: 0.15em;
+}
+.contact-container .contact-list-items .contact-group img {
+  width: 30px;
+  display: inline;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,9 @@ function Footer() {
     return (
         <footer className="footer-container">
             <p>
-                Do I even need a footer?
+                Another mediocre webapp by <a href="https://github.com/brystmar/"
+                                              target="_blank"
+                                              rel="noopener noreferrer">brystmar</a>
             </p>
         </footer>
     )

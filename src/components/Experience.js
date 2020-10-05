@@ -6,12 +6,13 @@ function Experience() {
             id="Experience"
             aria-label="Work experience"
             className="experience-container">
+
+            <h1>Experience</h1>
+
             <p>
-                <h1>Experience</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-
         </section>
     )
 }

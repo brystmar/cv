@@ -53,3 +53,6 @@ Content sourced from:
 * [FavIcon.io](https://favicon.io/)
 * [Real FavIcon Generator](https://realfavicongenerator.net/)
 * Adapted a hamburger animation originally created by [Jesse Couch](https://codepen.io/designcouch/pen/Atyop?editors=1000)
+* LinkedIn icon by [Freepik](https://www.flaticon.com/authors/freepik)
+* Location icon by [Font Awesome](https://fontawesome.com/icons/map-marked-alt?style=solid)
+* Email icon by [Numero Uno](https://thenounproject.com/numerouno) from [The Noun Project](https://thenounproject.com/)

@@ -6,12 +6,13 @@ function Certifications() {
             id="Certifications"
             aria-label="Certifications attained"
             className="certs-container">
+
+            <h1>Certifications</h1>
+
             <p>
-                <h1>Certifications</h1>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-
         </section>
     )
 }
