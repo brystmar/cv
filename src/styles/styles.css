@@ -46,7 +46,6 @@ code {
   font-family: "Roboto Mono", "Source Code Pro", "Courier New", monospace;
 }
 
-h1,
 h2,
 h3,
 h4 {
@@ -55,8 +54,9 @@ h4 {
 }
 
 h1 {
-  font-size: 3.5rem;
-  margin: 0.2em;
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0.6em 0;
 }
 
 h2 {
@@ -82,8 +82,8 @@ strong {
 
 img {
   display: inline-block;
-  margin: 0.5em;
   max-width: 100%;
+  margin: 0.5em;
 }
 
 a {
@@ -178,32 +178,43 @@ section {
   font-size: 2rem;
   font-weight: 400;
 }
-.home-container .greeting .my-name {
+.home-container .greeting .name {
   font-size: 4rem;
   font-weight: 600;
   margin: 0.4em;
 }
+.home-container .greeting .name::after {
+  content: "";
+  display: block;
+  background: #5bb9ff;
+  height: 1.2em;
+  width: 100%;
+  margin-top: -1.2em;
+}
 .home-container .greeting .followup {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 400;
   margin: 0.2em;
 }
 .home-container .headshot {
   height: 200px;
-  display: inline-block;
+  margin: 1em 0;
 }
 .home-container .highlights p {
   font-size: 1.4rem;
   display: block;
-  margin: 1.25em 0;
+  margin: 1.1em 0;
 }
 .home-container .highlights p::after {
   content: "";
   display: block;
-  background: #cb5700;
+  background: #008bfb;
   width: 15%;
   height: 3px;
-  margin: 1.25em auto;
+  margin: 1.1em auto;
+}
+.home-container .highlights p:first-of-type {
+  margin-top: 0;
 }
 .home-container .highlights p:last-of-type::after {
   background: none;
