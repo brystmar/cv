@@ -10,8 +10,8 @@ function Home() {
             <div className="greeting">
                 <p className="intro">Hello! I'm</p>
                 <p className="name">Thomas</p>
-                <p className="followup">I manage <strong>products</strong></p>
-                <p className="followup">I'm interested in <strong>things</strong></p>
+                <p className="followup">I manage <strong>products</strong>.</p>
+                <p className="followup">I'm interested in <strong>things</strong>.</p>
             </div>
 
             <img src="https://storage.googleapis.com/tb-public-misc/faces.jpg"
