@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
-function Certification(props) {
+function Cert(props) {
     const certAuthority = props.url === "" ?
         props.authority :
         <a className="cert-link" href={props.url}>{props.authority}</a>
@@ -18,7 +19,7 @@ function Certification(props) {
     )
 }
 
-Certification.defaultProps = {
+Cert.defaultProps = {
     name: "",
     authority: "",
     url: "",
@@ -26,4 +27,12 @@ Certification.defaultProps = {
     number: ""
 }
 
-export default Certification;
+Cert.propTypes = {
+    name: PropTypes.string.isRequired,
+    authority: PropTypes.string.isRequired,
+    url: PropTypes.string,
+    date: PropTypes.string.isRequired,
+    number: PropTypes.string
+}
+
+export default Cert;
