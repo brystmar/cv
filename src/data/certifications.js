@@ -1,3 +1,11 @@
+const react_bootcamp = {
+    name: "The React Bootcamp",
+    authority: "Scrimba",
+    url: "https://scrimba.com/certificate/uGeLxkCg/greact",
+    date: "Oct 2020",
+    number: ""
+};
+
 const UI_design = {
     name: "The UI Design Bootcamp",
     authority: "Scrimba",
@@ -53,3 +61,8 @@ const PY4E = {
     date: "Mar 2018",
     number: ""
 };
+
+export {
+    react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
+    GCP_fundamentals_infrastructure, GCP_app_dev, PY4E
+}
