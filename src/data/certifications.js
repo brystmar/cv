@@ -62,7 +62,15 @@ const PY4E = {
     number: ""
 };
 
+const TCU = {
+    name: "Bachelor's of Business Administration (B.B.A.)",
+    authority: "TCU",
+    url: "https://www.tcu.edu",
+    date: "May 2007",
+    number: ""
+}
+
 export {
     react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
-    GCP_fundamentals_infrastructure, GCP_app_dev, PY4E
+    GCP_fundamentals_infrastructure, GCP_app_dev, PY4E, TCU
 }

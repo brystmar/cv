@@ -7,7 +7,7 @@ function Certifications() {
             aria-label="Certifications attained"
             className="certs-container">
 
-            <h1>Certifications</h1>
+            <h1>Certifications & Degrees</h1>
 
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
