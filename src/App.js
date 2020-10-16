@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
+import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/styles.sass";
@@ -23,6 +24,7 @@ function App() {
                 <Experience />
                 <Projects />
                 <Certifications />
+                <Education />
                 <Contact />
             </main>
 

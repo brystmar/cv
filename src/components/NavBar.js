@@ -20,6 +20,7 @@ function NavBar(props) {
                         <li><a href="/#Experience" onClick={toggle}>Experience</a></li>
                         <li><a href="/#Projects" onClick={toggle}>Projects</a></li>
                         <li><a href="/#Certifications" onClick={toggle}>Certifications</a></li>
+                        <li><a href="/#Education" onClick={toggle}>Education</a></li>
                         <li><a href="/#Contact" onClick={toggle}>Contact</a></li>
                     </ul>
                 </span> : ""
