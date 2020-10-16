@@ -86,4 +86,6 @@ const poker = {
     ]
 };
 
-export {expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, poker};
+const myJobs = [expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, poker];
+
+export default myJobs;

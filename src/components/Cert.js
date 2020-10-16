@@ -7,13 +7,13 @@ function Cert(props) {
         <a className="cert-link" href={props.url}>{props.authority}</a>
 
     const certNumber = props.number === "" ?
-        "" : <span className="cert-number">{props.number}</span>
+        "" : <div className="cert-number">{props.number}</div>
 
     return (
         <article className="cert">
-            <span className="cert-name">{props.name}</span>
-            <span className="cert-authority">{certAuthority}</span>
-            <span className="cert-date">{props.date}</span>
+            <div className="cert-name">{props.name}</div>
+            <div className="cert-authority">{certAuthority}</div>
+            <div className="cert-date">{props.date}</div>
             {certNumber}
         </article>
     )

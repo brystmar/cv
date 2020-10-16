@@ -62,7 +62,7 @@ const PY4E = {
     number: ""
 };
 
-export {
-    react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
-    GCP_fundamentals_infrastructure, GCP_app_dev, PY4E
-}
+const myCerts = [react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
+    GCP_fundamentals_infrastructure, GCP_app_dev, PY4E]
+
+export default myCerts;

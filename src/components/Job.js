@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function Job(props) {
     const accomplishmentsList = props.accomplishments.map(item =>
@@ -12,21 +12,20 @@ function Job(props) {
             </div>
 
             <div className="job-col job-content">
-                <h2 className="job-title">{props.title}</h2>
+                <div className="job-title">{props.title}</div>
 
-                <p className="job-details">
+                <div className="job-details">
                     <ul>
                         <li>{props.companyName}</li>
                         <li>{props.location}</li>
                         <li>{props.startDate} to {props.endDate}</li>
                     </ul>
-                </p>
+                </div>
 
-                <p className="job-accomplishments">
+                <div className="job-accomplishments">
                     <ul>{accomplishmentsList}</ul>
-                </p>
+                </div>
             </div>
-
         </article>
     )
 }
@@ -43,7 +42,7 @@ Job.defaultProps = {
 
 Job.propTypes = {
     companyName: PropTypes.string.isRequired,
-    companyLogo: PropTypes.elementType.isRequired,
+    companyLogo: PropTypes.element.isRequired,
     location: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     startDate: PropTypes.string.isRequired,
