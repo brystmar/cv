@@ -4,7 +4,7 @@ function Projects() {
     return (
         <section
             id="Projects"
-            aria-label="Personal projects"
+            aria-label="Thomas' personal projects"
             className="projects-container">
 
             <h1>Projects</h1>

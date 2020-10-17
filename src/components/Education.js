@@ -1,14 +1,17 @@
 import React from "react";
-import Cert from "./Cert";
-import myDegrees from "../data/education";
+import Degree from "./Degree";
+import myDegrees from "../data/degrees";
 
 function Education() {
-    const degrees = myDegrees.map((degree, index) =>
-        <Cert key={index}
-              name={degree.name}
-              authority={degree.school}
-              url={degree.url}
-              date={degree.date}/>)
+    const degreesList = myDegrees.map((degree, index) =>
+        <Degree key={index}
+                degreeType={degree.degreeType}
+                degreeTypeAbbrev={degree.degreeTypeAbbrev}
+                degreeName={degree.degreeName}
+                issuer={degree.issuer}
+                logo={degree.logo}
+                url={degree.url}
+                date={degree.date}/>)
 
     return (
         <section
@@ -17,7 +20,7 @@ function Education() {
             className="education-container">
 
             <h1>Education</h1>
-            {degrees}
+            {degreesList}
 
         </section>
     )

@@ -1,27 +1,32 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function Cert(props) {
-    const certAuthority = props.url === "" ?
-        props.authority :
-        <a className="cert-link" href={props.url}>{props.authority}</a>
-
-    const certNumber = props.number === "" ?
-        "" : <div className="cert-number">{props.number}</div>
+    const certNumber = !props.number || props.number === "" ?
+        "" : <span className="cert-number">{props.number}</span>
 
     return (
         <article className="cert">
-            <div className="cert-name">{props.name}</div>
-            <div className="cert-authority">{certAuthority}</div>
-            <div className="cert-date">{props.date}</div>
-            {certNumber}
+            <div className="col-logo-content cert-logo-container">
+                {props.logo}
+            </div>
+
+            <div className="col-logo-content cert-content">
+                <span className="cert-name">
+                    <a className="cert-link" href={props.url}>{props.name}</a>
+                </span>
+                <span className="cert-issuer">{props.issuer}</span>
+                <span className="cert-date">{props.date}</span>
+                {certNumber}
+            </div>
         </article>
     )
 }
 
 Cert.defaultProps = {
     name: "",
-    authority: "",
+    issuer: "",
+    logo: <img src="" alt=""/>,
     url: "",
     date: "",
     number: ""
@@ -29,8 +34,9 @@ Cert.defaultProps = {
 
 Cert.propTypes = {
     name: PropTypes.string.isRequired,
-    authority: PropTypes.string.isRequired,
-    url: PropTypes.string,
+    issuer: PropTypes.string.isRequired,
+    logo: PropTypes.element.isRequired,
+    url: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     number: PropTypes.string
 }

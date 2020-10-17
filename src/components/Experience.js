@@ -6,7 +6,7 @@ function Experience() {
     const jobs = myJobs.map((job, index) =>
         <Job key={index}
              companyName={job.companyName}
-             companyLogo={job.companyLogo}
+             logo={job.logo}
              location={job.location}
              title={job.title}
              startDate={job.startDate}
@@ -16,7 +16,7 @@ function Experience() {
     return (
         <section
             id="Experience"
-            aria-label="Work experience"
+            aria-label="Thomas' professional experience"
             className="experience-container">
 
             <h1>Experience</h1>

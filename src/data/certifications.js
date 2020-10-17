@@ -1,6 +1,6 @@
 const react_bootcamp = {
     name: "The React Bootcamp",
-    authority: "Scrimba",
+    issuer: "Scrimba",
     url: "https://scrimba.com/certificate/uGeLxkCg/greact",
     date: "Oct 2020",
     number: ""
@@ -8,7 +8,7 @@ const react_bootcamp = {
 
 const UI_design = {
     name: "The UI Design Bootcamp",
-    authority: "Scrimba",
+    issuer: "Scrimba",
     url: "https://scrimba.com/certificate/uGeLxkCg/gdesignbootcamp",
     date: "Sep 2020",
     number: ""
@@ -16,7 +16,7 @@ const UI_design = {
 
 const responsive_web_design = {
     name: "The Responsive Web Design Bootcamp",
-    authority: "Scrimba",
+    issuer: "Scrimba",
     url: "https://scrimba.com/certificate/uGeLxkCg/gresponsive",
     date: "Sep 2020",
     number: ""
@@ -24,7 +24,7 @@ const responsive_web_design = {
 
 const PSPO = {
     name: "Professional Scrum Product Owner",
-    authority: "Scrum.org",
+    issuer: "Scrum.org",
     url: "https://www.scrum.org",
     date: "Feb 2019",
     number: ""
@@ -32,7 +32,7 @@ const PSPO = {
 
 const CSPO = {
     name: "Certified Scrum Product Owner",
-    authority: "Scrum Alliance",
+    issuer: "Scrum Alliance",
     url: "https://www.scrumalliance.org/",
     date: "Oct 2015",
     number: ""
@@ -40,7 +40,7 @@ const CSPO = {
 
 const GCP_fundamentals_infrastructure = {
     name: "Google Cloud Platform Fundamentals: Core Infrastructure",
-    authority: "Coursera",
+    issuer: "Coursera",
     url: "https://www.coursera.com",
     date: "Mar 2019",
     number: ""
@@ -48,15 +48,15 @@ const GCP_fundamentals_infrastructure = {
 
 const GCP_app_dev = {
     name: "Getting Started with Application Development in GCP",
-    authority: "Coursera",
+    issuer: "Coursera",
     url: "https://www.coursera.com",
     date: "Mar 2019",
     number: ""
 };
 
 const PY4E = {
-    name: "Python For Everyone",
-    authority: "Coursera",
+    name: "Python for Everyone",
+    issuer: "Coursera",
     url: "https://www.coursera.com",
     date: "Mar 2018",
     number: ""

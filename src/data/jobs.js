@@ -2,8 +2,8 @@ import React from "react";
 
 const expediaPM = {
     companyName: "Expedia Group",
-    companyLogo: <img
-        src="../../public/logos/expedia-group.svg"
+    logo: <img
+        src="./logos/expedia-group.svg"
         alt="Expedia Group corporate logo"
         className="job-logo-image"/>,
     location: "Seattle, WA",
@@ -18,8 +18,8 @@ const expediaPM = {
 
 const dynataSeniorPdM = {
     companyName: "Dynata",
-    companyLogo: <img
-        src="../../public/logos/dynata.png"
+    logo: <img
+        src="./logos/dynata.png"
         alt="Dynata corporate logo"
         className="job-logo-image"/>,
     location: "Seattle, WA",
@@ -35,8 +35,8 @@ const dynataSeniorPdM = {
 
 const dynataPdM = {
     companyName: "Dynata",
-    companyLogo: <img
-        src="../../public/logos/dynata.png"
+    logo: <img
+        src="./logos/dynata.png"
         alt="Dynata corporate logo"
         className="job-logo-image"/>,
     location: "Plano, TX and Seattle, WA",
@@ -52,8 +52,8 @@ const dynataPdM = {
 
 const dynataPjM = {
     companyName: "Dynata",
-    companyLogo: <img
-        src="../../public/logos/dynata.png"
+    logo: <img
+        src="./logos/dynata.png"
         alt="Dynata corporate logo"
         className="job-logo-image"/>,
     location: "Plano, TX",
@@ -70,8 +70,8 @@ const dynataPjM = {
 
 const poker = {
     companyName: "Self Employed",
-    companyLogo: <img
-        src="../../public/icons/poker-card.svg"
+    logo: <img
+        src="./icons/poker-card.svg"
         alt="Poker card"
         className="job-logo-image"/>,
     location: "Chicago, Las Vegas, and NYC",

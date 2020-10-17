@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="GitHub-Mark.svg"
+   id="svg36"
+   version="1.1"
+   width="43.438999"
+   height="42.365822">
+  <metadata
+     id="metadata42">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs40" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg36"
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:cy="-1.9862624"
+     inkscape:cx="-191.29999"
+     inkscape:zoom="1.4445296"
+     showgrid="false"
+     id="namedview38"
+     inkscape:window-height="917"
+     inkscape:window-width="1425"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <path
+     id="path12"
+     d="M 21.717,0 C 9.725,0 0,9.724 0,21.72 c 0,9.594 6.223,17.736 14.853,20.609 1.087,0.199 1.483,-0.472 1.483,-1.048 0,-0.516 -0.019,-1.881 -0.03,-3.693 -6.04,1.312 -7.315,-2.912 -7.315,-2.912 -0.988,-2.51 -2.412,-3.178 -2.412,-3.178 -1.972,-1.346 0.149,-1.32 0.149,-1.32 2.18,0.154 3.327,2.239 3.327,2.239 1.937,3.319 5.084,2.36 6.321,1.804 0.197,-1.403 0.759,-2.36 1.379,-2.903 -4.823,-0.549 -9.894,-2.412 -9.894,-10.734 0,-2.372 0.847,-4.31 2.236,-5.828 -0.224,-0.55 -0.969,-2.758 0.214,-5.748 0,0 1.822,-0.584 5.972,2.225 1.732,-0.481 3.59,-0.721 5.437,-0.73 1.845,0.009 3.703,0.249 5.437,0.73 4.147,-2.81 5.967,-2.225 5.967,-2.225 1.185,2.99 0.44,5.198 0.217,5.748 1.392,1.518 2.232,3.456 2.232,5.828 0,8.344 -5.078,10.18 -9.916,10.717 0.779,0.67 1.474,1.996 1.474,4.023 0,2.902 -0.027,5.245 -0.027,5.957 0,0.581 0.392,1.257 1.493,1.045 C 37.221,39.448 43.439,31.313 43.439,21.72 43.439,9.724 33.713,0 21.717,0" />
+</svg>
