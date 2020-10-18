@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+/*** Styling variables ***/
+:root {
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.25rem;
+  --font-size-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --font-size-h1: 4.5rem;
+    --font-size-h2: 3.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1.125rem;
+  }
+}
+/*** Fonts ***/
+/*** Color Palette ***/
+/*** Favicon, from https://realfavicongenerator.net/ ***/
+/*** Page Layout ***/
+/*** Nav ***/
+/*** Sections ***/
+.content-container section:nth-of-type(even) {
+  background: #d1d7e0;
+}
+
+/*** Home ***/
+.home-container {
+  text-align: center;
+}
+.home-container .greeting {
+  display: inline-block;
+}
+.home-container .greeting .intro {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.home-container .greeting .name {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0.4em;
+}
+.home-container .greeting .name::after {
+  content: "";
+  display: block;
+  background: #5bb9ff;
+  height: 1.2em;
+  width: 100%;
+  margin-top: -1.2em;
+}
+.home-container .greeting .followup {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 0.2em;
+}
+.home-container .headshot {
+  height: 200px;
+  margin: 1em 0;
+}
+.home-container .highlights p {
+  font-size: 1.4rem;
+  display: block;
+  margin: 1.1em 0;
+}
+.home-container .highlights p::after {
+  content: "";
+  display: block;
+  background: #008bfb;
+  width: 15%;
+  height: 3px;
+  margin: 1.1em auto;
+}
+.home-container .highlights p:first-of-type {
+  margin-top: 0;
+}
+.home-container .highlights p:last-of-type::after {
+  background: none;
+}
+
+/*** Contact ***/
+.contact-container .contact-list-items {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact-list-items .contact-group {
+  margin: 0.15em;
+}
+.contact-container .contact-list-items .contact-group img {
+  width: 30px;
+  display: inline;
+}
+
+/*# sourceMappingURL=content-sections.css.map */

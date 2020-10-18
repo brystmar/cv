@@ -6,7 +6,7 @@ function Cert(props) {
         "" : <span className="cert-number">{props.number}</span>
 
     return (
-        <article className="cert">
+        <article className="cert-container">
             <div className="col-logo-content cert-logo-container">
                 {props.logo}
             </div>

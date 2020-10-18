@@ -1,6 +1,15 @@
 import React from "react";
+import myProjects from "../data/projects";
+import Proj from "./Proj";
 
 function Projects() {
+    const projectList = myProjects.map((proj, index) =>
+        <Proj key={index}
+              name={proj.name}
+              description={proj.description}
+              url={proj.url}
+              screenshot={proj.screenshot}
+              tech={proj.tech}/>)
     return (
         <section
             id="Projects"
@@ -8,11 +17,8 @@ function Projects() {
             className="projects-container">
 
             <h1>Projects</h1>
+            {projectList}
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
         </section>
     )
 }

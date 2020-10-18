@@ -2,6 +2,7 @@ import React from "react";
 
 const expediaPM = {
     companyName: "Expedia Group",
+    url: "https://www.expediagroup.com/",
     logo: <img
         src="./logos/expedia-group.svg"
         alt="Expedia Group corporate logo"
@@ -18,6 +19,7 @@ const expediaPM = {
 
 const dynataSeniorPdM = {
     companyName: "Dynata",
+    url: "https://www.dynata.com/",
     logo: <img
         src="./logos/dynata.png"
         alt="Dynata corporate logo"
@@ -35,6 +37,7 @@ const dynataSeniorPdM = {
 
 const dynataPdM = {
     companyName: "Dynata",
+    url: "https://www.dynata.com/",
     logo: <img
         src="./logos/dynata.png"
         alt="Dynata corporate logo"
@@ -52,6 +55,7 @@ const dynataPdM = {
 
 const dynataPjM = {
     companyName: "Dynata",
+    url: "https://www.dynata.com/",
     logo: <img
         src="./logos/dynata.png"
         alt="Dynata corporate logo"
@@ -70,10 +74,10 @@ const dynataPjM = {
 
 const poker = {
     companyName: "Self Employed",
-    logo: <img
-        src="./icons/poker-card.svg"
-        alt="Poker card"
-        className="job-logo-image"/>,
+    url: "https://en.wikipedia.org/wiki/PokerStars",
+    logo: <img src="./icons/poker-card.svg"
+               alt="Poker card"
+               className="job-logo-image"/>,
     location: "Chicago, Las Vegas, and NYC",
     title: "Professional Poker Player and Coach",
     startDate: "May 2007",

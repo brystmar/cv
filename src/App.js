@@ -8,6 +8,7 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/styles.sass";
+import "./styles/content-sections.sass";
 
 function App() {
     const [isNavExpanded, toggleIsNavExpanded] = useState(false)

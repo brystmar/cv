@@ -3,7 +3,7 @@ import Cert from "./Cert";
 import myCerts from "../data/certifications";
 
 function Certifications() {
-    const certs = myCerts.map((cert, index) =>
+    const certsList = myCerts.map((cert, index) =>
         <Cert key={index}
               name={cert.name}
               authority={cert.issuer}
@@ -18,7 +18,7 @@ function Certifications() {
             className="certs-container">
 
             <h1>Certifications</h1>
-            {certs}
+            {certsList}
 
         </section>
     )

@@ -1,0 +1,73 @@
+@import "variables"
+
+
+/*** Sections ***/
+.content-container
+  section:nth-of-type(even)
+    background: $color-background-alt
+
+
+/*** Home ***/
+
+.home-container
+  text-align: center
+  .greeting
+    display: inline-block
+    .intro
+      font-size: 2rem
+      font-weight: 400
+    .name
+      font-size: 4rem
+      font-weight: 600
+      margin: 0.4em
+    .name::after
+      content: ""
+      display: block
+      background: $color-primary-lighter-5
+      height: 1.2em
+      width: 100%
+      margin-top: -1.2em
+    .followup
+      font-size: 1.9rem
+      font-weight: 400
+      margin: 0.2em
+  .headshot
+    height: 200px
+    margin: 1em 0
+  .highlights
+    p
+      font-size: 1.4rem
+      display: block
+      margin: 1.1em 0
+    p::after
+      content: ""
+      display: block
+      background: $color-primary-lighter-2
+      width: 15%
+      height: 3px
+      margin: 1.1em auto
+    p:first-of-type
+      margin-top: 0
+    p:last-of-type::after
+      background: none
+
+
+/*** Contact ***/
+
+.contact-container
+  .contact-list-items
+    display: flex
+    flex-direction: column
+    .contact-group
+      margin: 0.15em
+      img
+        width: 30px
+        display: inline
+
+//.content-container
+//  border: 1px solid blue
+//  display: inline-block
+//
+//.header-container
+//  border: 1px solid yellowgreen
+//  display: inline-block

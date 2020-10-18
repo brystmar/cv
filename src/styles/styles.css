@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
-/*** CSS variables ***/
+/*** Styling variables ***/
 :root {
   --font-size-h1: 3rem;
   --font-size-h2: 2.25rem;
@@ -23,7 +23,7 @@
 /*** Favicon, from https://realfavicongenerator.net/ ***/
 /*** Page Layout ***/
 /*** Nav ***/
-/*** Basic Tags ***/
+/*** HTML Tags ***/
 *,
 *::before,
 *::after {
@@ -73,6 +73,11 @@ p {
   margin: 0.75em 0.2em;
   font-size: 1rem;
   font-weight: 400;
+}
+
+section {
+  margin: 0;
+  display: block;
 }
 
 strong {
@@ -135,12 +140,16 @@ button:active {
   transition: all 0.2s;
 }
 
-/*** Page-Level ***/
+/*** Page Layout ***/
 .app-container {
   background: #f8f8f8;
   margin: 0 auto;
-  padding: 0.15em;
   max-width: 1000px;
+}
+.app-container header,
+.app-container footer,
+.app-container section {
+  padding: 0.25em;
 }
 
 .sr-only {
@@ -155,83 +164,12 @@ button:active {
 }
 
 .footer-container {
-  margin-top: 1.25em;
-}
-.footer-container p {
   font-size: 0.8rem;
+  margin-top: 3em;
 }
 
 .hidden {
   display: none;
-}
-
-section {
-  margin: 0;
-  display: block;
-}
-
-.home-container {
-  text-align: center;
-}
-.home-container .greeting {
-  display: inline-block;
-}
-.home-container .greeting .intro {
-  font-size: 2rem;
-  font-weight: 400;
-}
-.home-container .greeting .name {
-  font-size: 4rem;
-  font-weight: 600;
-  margin: 0.4em;
-}
-.home-container .greeting .name::after {
-  content: "";
-  display: block;
-  background: #5bb9ff;
-  height: 1.2em;
-  width: 100%;
-  margin-top: -1.2em;
-}
-.home-container .greeting .followup {
-  font-size: 1.9rem;
-  font-weight: 400;
-  margin: 0.2em;
-}
-.home-container .headshot {
-  height: 200px;
-  margin: 1em 0;
-}
-.home-container .highlights p {
-  font-size: 1.4rem;
-  display: block;
-  margin: 1.1em 0;
-}
-.home-container .highlights p::after {
-  content: "";
-  display: block;
-  background: #008bfb;
-  width: 15%;
-  height: 3px;
-  margin: 1.1em auto;
-}
-.home-container .highlights p:first-of-type {
-  margin-top: 0;
-}
-.home-container .highlights p:last-of-type::after {
-  background: none;
-}
-
-.contact-container .contact-list-items {
-  display: flex;
-  flex-direction: column;
-}
-.contact-container .contact-list-items .contact-group {
-  margin: 0.15em;
-}
-.contact-container .contact-list-items .contact-group img {
-  width: 30px;
-  display: inline;
 }
 
 /*# sourceMappingURL=styles.css.map */
