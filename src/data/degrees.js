@@ -1,7 +1,7 @@
 import React from "react";
 
 const TCU = {
-    degreeType: "Bachelor's of Business Administration",
+    degreeType: "Bachelor of Business Administration",
     degreeTypeAbbrev: "B.B.A.",
     degreeName: "Management Information Systems",
     issuer: "TCU",

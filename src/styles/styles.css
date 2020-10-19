@@ -90,13 +90,10 @@ img {
   max-width: 100%;
 }
 
-a {
+a,
+a:visited {
   color: #cb5700;
   text-decoration: none;
-}
-
-a:visited {
-  color: #db7d03;
 }
 
 a:hover {
@@ -168,7 +165,7 @@ button:active {
 
 .footer-container {
   font-size: 0.8rem;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .hidden {

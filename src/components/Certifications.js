@@ -7,6 +7,7 @@ function Certifications() {
         <Cert key={index}
               name={cert.name}
               issuer={cert.issuer}
+              logo={cert.logo}
               url={cert.url}
               date={cert.date}
               number={cert.number}/>)
@@ -15,7 +16,7 @@ function Certifications() {
         <section
             id="Certifications"
             aria-label="Certifications attained"
-            className="certs-container">
+            className="cert-container">
 
             <h1>Certifications</h1>
             {certsList}

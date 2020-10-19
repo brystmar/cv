@@ -2,6 +2,7 @@
 
 
 /*** Sections ***/
+
 .content-container
   section:nth-of-type(even)
     background: rgba(209,215,224,0.35) //$color-background-alt @35%
@@ -70,7 +71,7 @@
   article:last-of-type::after
     display: none
   
-  .job-container
+  .job
     .job-title
       font-size: 1.6rem
       font-weight: 500
@@ -117,22 +118,70 @@
           margin: 1em 0
 
 
+/*** Certifications ***/
+
+.cert-container
+  .cert
+    .cert-title
+      font-size: 1.25rem
+      margin: 0.5em 0
+    .cert-content
+      display: grid
+      grid-template: 1fr / 20% 79%
+      grid-gap: 0.35em
+      margin-bottom: 1em
+      //border: 1px solid black
+      .cert-logo-container
+        border: 1px dashed green
+        display: flex
+        align-items: center
+        justify-content: center
+        .cert-logo
+          width: 100%
+      .cert-details
+        border: 1px dashed green
+        display: flex
+        flex-direction: column
+        justify-content: center
+  .cert:last-child
+    margin-bottom: 3em
+  
+
+/*** Education ***/
+
+.education-container
+  .degree
+    margin-bottom: 3em
+    .degree-title
+      font-size: 1.25rem
+      font-weight: 500
+      line-height: 1.3
+      color: $color-primary-darker
+    .degree-content
+      display: grid
+      grid-template: 1fr / 20% 79%
+      grid-gap: 0.35em
+      .degree-logo-container
+        display: flex
+        align-items: center
+        justify-content: center
+        .degree-logo
+          width: 100%
+      .degree-details
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+
 /*** Contact ***/
 
 .contact-container
   .contact-list-items
     display: flex
     flex-direction: column
+    margin-bottom: 2em
     .contact-group
       margin: 0.15em
       img
         width: 30px
         display: inline
-
-//.content-container
-//  border: 1px solid blue
-//  display: inline-block
-//
-//.header-container
-//  border: 1px solid yellowgreen
-//  display: inline-block

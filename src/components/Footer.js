@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
         <footer className="footer-container">
-            Another mediocre webapp by <a href="https://github.com/brystmar/"
+            Another mediocre webapp by <a href="https://github.com/brystmar/cv/"
                                           target="_blank"
                                           rel="noopener noreferrer">Thomas Berg</a>
         </footer>

@@ -3,10 +3,9 @@ import React from "react";
 const expediaPM = {
     companyName: "Expedia Group",
     url: "https://www.expediagroup.com/",
-    logo: <img
-        src="./logos/expedia-group.svg"
-        alt="Expedia Group corporate logo"
-        className="job-logo-image"/>,
+    logo: <img src="./logos/expedia-group.svg"
+               alt="Expedia Group corporate logo"
+               className="logo job-logo"/>,
     location: "Seattle, WA",
     title: "Technical Product Manager",
     startDate: "Feb 2020",
@@ -20,10 +19,9 @@ const expediaPM = {
 const dynataSeniorPdM = {
     companyName: "Dynata",
     url: "https://www.dynata.com/",
-    logo: <img
-        src="./logos/dynata.png"
-        alt="Dynata corporate logo"
-        className="job-logo-image"/>,
+    logo: <img src="./logos/dynata.png"
+               alt="Dynata corporate logo"
+               className="logo job-logo"/>,
     location: "Seattle, WA",
     title: "Senior Product Manager",
     subtitle: "Platform Systems",
@@ -39,10 +37,9 @@ const dynataSeniorPdM = {
 const dynataPdM = {
     companyName: "Dynata",
     url: "https://www.dynata.com/",
-    logo: <img
-        src="./logos/dynata.png"
-        alt="Dynata corporate logo"
-        className="job-logo-image"/>,
+    logo: <img src="./logos/dynata.png"
+               alt="Dynata corporate logo"
+               className="logo job-logo"/>,
     location: "Plano, TX and Seattle, WA",
     title: "Product Manager",
     subtitle: "Platform Systems",
@@ -59,10 +56,9 @@ const dynataPdM = {
 const dynataPjM = {
     companyName: "Dynata",
     url: "https://www.dynata.com/",
-    logo: <img
-        src="./logos/dynata.png"
-        alt="Dynata corporate logo"
-        className="job-logo-image"/>,
+    logo: <img src="./logos/dynata.png"
+               alt="Dynata corporate logo"
+               className="logo job-logo"/>,
     location: "Plano, TX",
     title: "Project Manager",
     startDate: "May 2013",
@@ -80,7 +76,7 @@ const poker = {
     url: "https://en.wikipedia.org/wiki/PokerStars",
     logo: <img src="./icons/poker-card.svg"
                alt="Poker card"
-               className="job-logo-image"/>,
+               className="logo job-logo"/>,
     location: "Chicago, Las Vegas, and NYC",
     title: "Professional Poker Player \nand Instructor",
     startDate: "May 2007",

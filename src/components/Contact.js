@@ -25,7 +25,6 @@ function Contact() {
                               url="https://github.com/brystmar/"
                               text="GitHub"/>
             </article>
-
         </section>
     )
 }

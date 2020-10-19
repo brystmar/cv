@@ -23,7 +23,7 @@ const breadsheet = {
         {
             type: "Front End",
             items: [
-                "React", "CSS (SASS)", "JavaScript", "Figma"
+                "React", "CSS (SASS)", "JavaScript"
             ]
         }
     ]

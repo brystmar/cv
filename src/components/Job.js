@@ -8,7 +8,7 @@ function Job(props) {
     const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
 
     return (
-        <article className="job-container">
+        <article className="job">
             <div className="job-title">
                 {titleString}
             </div>

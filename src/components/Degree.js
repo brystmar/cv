@@ -3,30 +3,35 @@ import PropTypes from "prop-types";
 
 function Degree(props) {
     return (
-        <article className="degree-container">
-            <div className="col-logo-content degree-logo-container">
-                <a className="logo-link"
-                   href={props.url}
-                   target="_blank"
-                   rel="noopener noreferrer">{props.logo}</a>
-            </div>
-
-            <div className="col-logo-content job-content">
-                <span title={props.degreeType} className="degree-type">
+        <article className="degree">
+            <div className="degree-title">
+                <span title={props.degreeType} className="degree-abbrev">
                     {props.degreeTypeAbbrev + ": "}
                 </span>
+                <span className="degree-name">
+                    {props.degreeName}
+                </span>
+            </div>
 
-                <span className="degree-name">{props.degreeName}</span>
+            <div className="degree-content">
+                <div className="col-logo-content degree-logo-container">
+                    <a className="logo-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.logo}</a>
+                </div>
 
-                <span className="degree-issuer">
+                <div className="col-logo-content degree-details">
+                    <span className="degree-issuer">
                     <a className="degree-link"
                        href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.issuer}</a>
-                </span>
+                    </span>
 
-                <span className="degree-date">{props.date}</span>
-                <span className="degree-location">{props.location}</span>
+                    <span className="degree-date">{props.date}</span>
+                    <span className="degree-location">{props.location}</span>
+                </div>
             </div>
         </article>
     )

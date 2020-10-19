@@ -6,21 +6,24 @@ function Cert(props) {
         "" : <span className="cert-number">{props.number}</span>
 
     return (
-        <article className="cert-container">
-            <div className="col-logo-content cert-logo-container">
-                <a className="logo-link"
-                   href={props.url}
-                   target="_blank"
-                   rel="noopener noreferrer">{props.logo}</a>
+        <article className="cert">
+            <div className="cert-title">
+                <a className="cert-link" href={props.url}>{props.name}</a>
             </div>
 
-            <div className="col-logo-content cert-content">
-                <span className="cert-name">
-                    <a className="cert-link" href={props.url}>{props.name}</a>
+            <div className="cert-content">
+                <span className="col-logo-content cert-logo-container">
+                    <a className="logo-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.logo}</a>
                 </span>
-                <span className="cert-issuer">{props.issuer}</span>
-                <span className="cert-date">{props.date}</span>
-                {certNumber}
+
+                <span className="col-logo-content cert-details">
+                    <span className="cert-date">{props.date}</span>
+                    <span className="cert-issuer">{props.issuer}</span>
+                    {certNumber}
+                </span>
             </div>
         </article>
     )
