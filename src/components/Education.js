@@ -11,6 +11,7 @@ function Education() {
                 issuer={degree.issuer}
                 logo={degree.logo}
                 url={degree.url}
+                location={degree.location}
                 date={degree.date}/>)
 
     return (

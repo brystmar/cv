@@ -9,7 +9,7 @@ function Contact() {
 
             <h1>Contact</h1>
 
-            <p className="contact-list-items">
+            <article className="contact-list-items">
                 <ContactGroup imgSource="./icons/email-trimmed.svg"
                               imgDescription="Send Thomas an email"
                               url="mailto:tp.berg+cv@gmail.com"
@@ -21,16 +21,10 @@ function Contact() {
                               text="LinkedIn"/>
 
                 <ContactGroup imgSource="./logos/github.svg"
-                              imgDescription="View brystmar's repository on GitHub"
+                              imgDescription="View brystmar's repositories on GitHub"
                               url="https://github.com/brystmar/"
                               text="GitHub"/>
-
-                <span className="contact-group">
-                    <img src="./icons/map-location.svg"
-                         alt="Where Thomas lives"/>
-                    Seattle, WA
-                </span>
-            </p>
+            </article>
 
         </section>
     )

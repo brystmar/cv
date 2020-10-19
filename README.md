@@ -55,4 +55,5 @@ Content sourced from:
 * Adapted a hamburger animation originally created by [Jesse Couch](https://codepen.io/designcouch/pen/Atyop?editors=1000)
 * LinkedIn icon by [Freepik](https://www.flaticon.com/authors/freepik)
 * Location icon by [Font Awesome](https://fontawesome.com/icons/map-marked-alt?style=solid)
+* Calendar icon by [Font Awesome](https://fontawesome.com/icons/calendar-alt?style=regular)
 * Email icon by [Numero Uno](https://thenounproject.com/numerouno) from [The Noun Project](https://thenounproject.com/)

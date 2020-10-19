@@ -9,6 +9,7 @@ const TCU = {
                alt="Logo of Texas Christian University (TCU)"
                className="logo degree-logo"/>,
     url: "https://www.tcu.edu",
+    location: "Fort Worth, TX",
     date: "May 2007"
 };
 

@@ -26,7 +26,7 @@
       background: $color-primary-lighter-5
       height: 1.2em
       width: 100%
-      margin-top: -1.2em
+      margin-top: -1.23em
     .followup
       font-size: 1.9rem
       font-weight: 400
@@ -42,14 +42,79 @@
     p::after
       content: ""
       display: block
-      background: $color-primary-lighter-2
-      width: 15%
+      background: $color-primary-darker
+      width: 25%
       height: 3px
       margin: 1.1em auto
     p:first-of-type
       margin-top: 0
+    p:last-of-type
+      margin-bottom: 2em
     p:last-of-type::after
-      background: none
+      display: none
+
+
+/*** Experience ***/
+
+.experience-container
+  article::after
+    display: block
+    content: ""
+    background-color: $color-primary-complementary
+    width: 25%
+    height: 3px
+    text-align: center
+    margin: 2em auto
+  article:last-of-type
+    margin-bottom: 3em
+  article:last-of-type::after
+    display: none
+  
+  .job-container
+    .job-title
+      font-size: 1.6rem
+      font-weight: 500
+      color: $color-primary-darker
+      margin: 1.25em 0 0.5em
+      display: block
+      text-align: center
+    .col-logo-content
+      display: grid
+      grid-template: 1fr / 60% 40%
+      grid-gap: 0.35em
+      .job-logo-container
+        order: 2
+        display: flex
+        align-items: center
+        img
+          max-width: 95%
+          max-height: 4.5em
+          margin: 0
+          //border: 1px dotted black
+      
+      .job-details
+        order: 1
+        display: flex
+        flex-direction: column
+        span
+          margin: 0.15em 0
+        .icon-plus-text
+          display: flex
+          align-items: center
+        .job-company-name
+          font-size: 1.25rem
+          margin: 0.15em 0
+        .job-location,
+        .job-dates
+          font-size: 0.85rem
+          margin: 0.15em 0
+    
+    .job-content
+      .job-accomplishments
+        line-height: 1.4
+        li
+          list-style: square
+          margin: 0.5em 0
 
 
 /*** Contact ***/

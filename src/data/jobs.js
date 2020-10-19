@@ -85,8 +85,9 @@ const poker = {
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
         "Typically played 6 to 8 tables concurrently; played >1.5MM total hands lifetime.",
-        "Authored, produced, & released 62 videos, each w/45-60min of commentary and insights.",
-        "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
+        "Authored, produced, & released 62 instructional videos for CardRunners.com, each w/45-60min of commentary and insights.",
+        "Private coach to more than a dozen students worldwide, from Modesto to Moscow.",
+        "Specialized in short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha."
     ]
 };
 

@@ -19,7 +19,10 @@ function Proj(props) {
 
             <div className="col-proj proj-content">
                 <span className="proj-name">
-                    <a className="proj-link" href={props.url}>{props.name}</a>
+                    <a className="proj-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.name}</a>
                 </span>
                 <span className="proj-desc">{props.description}</span>
                 <span className="proj-tech">{techList}</span>

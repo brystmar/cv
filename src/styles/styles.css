@@ -88,7 +88,6 @@ strong {
 img {
   display: inline-block;
   max-width: 100%;
-  margin: 0.5em;
 }
 
 a {
@@ -170,6 +169,12 @@ button:active {
 
 .hidden {
   display: none;
+}
+
+.icon {
+  max-width: 1.1em;
+  max-height: 1.1em;
+  margin-right: 0.35em;
 }
 
 /*# sourceMappingURL=styles.css.map */

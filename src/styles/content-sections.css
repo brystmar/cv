@@ -50,7 +50,7 @@
   background: #5bb9ff;
   height: 1.2em;
   width: 100%;
-  margin-top: -1.2em;
+  margin-top: -1.23em;
 }
 .home-container .greeting .followup {
   font-size: 1.9rem;
@@ -69,16 +69,87 @@
 .home-container .highlights p::after {
   content: "";
   display: block;
-  background: #008bfb;
-  width: 15%;
+  background: #0647b6;
+  width: 25%;
   height: 3px;
   margin: 1.1em auto;
 }
 .home-container .highlights p:first-of-type {
   margin-top: 0;
 }
+.home-container .highlights p:last-of-type {
+  margin-bottom: 2em;
+}
 .home-container .highlights p:last-of-type::after {
-  background: none;
+  display: none;
+}
+
+/*** Experience ***/
+.experience-container article::after {
+  display: block;
+  content: "";
+  background-color: #d56e00;
+  width: 25%;
+  height: 3px;
+  text-align: center;
+  margin: 2em auto;
+}
+.experience-container article:last-of-type {
+  margin-bottom: 3em;
+}
+.experience-container article:last-of-type::after {
+  display: none;
+}
+.experience-container .job-container .job-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0647b6;
+  margin: 1.25em 0 0.5em;
+  display: block;
+  text-align: center;
+}
+.experience-container .job-container .col-logo-content {
+  display: grid;
+  grid-template: 1fr/60% 40%;
+  grid-gap: 0.35em;
+}
+.experience-container .job-container .col-logo-content .job-logo-container {
+  order: 2;
+  display: flex;
+  align-items: center;
+}
+.experience-container .job-container .col-logo-content .job-logo-container img {
+  max-width: 95%;
+  max-height: 4.5em;
+  margin: 0;
+}
+.experience-container .job-container .col-logo-content .job-details {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+.experience-container .job-container .col-logo-content .job-details span {
+  margin: 0.15em 0;
+}
+.experience-container .job-container .col-logo-content .job-details .icon-plus-text {
+  display: flex;
+  align-items: center;
+}
+.experience-container .job-container .col-logo-content .job-details .job-company-name {
+  font-size: 1.25rem;
+  margin: 0.15em 0;
+}
+.experience-container .job-container .col-logo-content .job-details .job-location,
+.experience-container .job-container .col-logo-content .job-details .job-dates {
+  font-size: 0.85rem;
+  margin: 0.15em 0;
+}
+.experience-container .job-container .job-content .job-accomplishments {
+  line-height: 1.4;
+}
+.experience-container .job-container .job-content .job-accomplishments li {
+  list-style: square;
+  margin: 0.5em 0;
 }
 
 /*** Contact ***/

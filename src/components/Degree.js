@@ -5,7 +5,10 @@ function Degree(props) {
     return (
         <article className="degree-container">
             <div className="col-logo-content degree-logo-container">
-                {props.logo}
+                <a className="logo-link"
+                   href={props.url}
+                   target="_blank"
+                   rel="noopener noreferrer">{props.logo}</a>
             </div>
 
             <div className="col-logo-content job-content">
@@ -16,10 +19,14 @@ function Degree(props) {
                 <span className="degree-name">{props.degreeName}</span>
 
                 <span className="degree-issuer">
-                    <a className="degree-link" href={props.url}>{props.issuer}</a>
+                    <a className="degree-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.issuer}</a>
                 </span>
 
                 <span className="degree-date">{props.date}</span>
+                <span className="degree-location">{props.location}</span>
             </div>
         </article>
     )
@@ -32,6 +39,7 @@ Degree.defaultProps = {
     issuer: "",
     logo: <img src="" alt=""/>,
     url: "",
+    location: "",
     date: ""
 }
 
@@ -42,6 +50,7 @@ Degree.propTypes = {
     issuer: PropTypes.string.isRequired,
     logo: PropTypes.element.isRequired,
     url: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired
 }
 

@@ -7,26 +7,47 @@ function Job(props) {
 
     return (
         <article className="job-container">
-            <div className="col-logo-content job-logo-container">
-                {props.logo}
+            <div className="job-title">
+                {props.title}
             </div>
 
-            <div className="col-logo-content job-content">
-                <span className="job-title">{props.title}</span>
+            <div className="col-logo-content">
+                <span className="job-logo-container">
+                    <a className="logo-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.logo}</a>
+                </span>
 
                 <span className="job-details">
-                    <ul>
-                        <li>{props.companyName}</li>
-                        <li>{props.location}</li>
-                        <li>{props.startDate} to {props.endDate}</li>
-                    </ul>
-                </span>
+                    <span className="job-company-name">
+                        <a href={props.url}
+                           target="_blank"
+                           rel="noopener noreferrer">{props.companyName}</a>
+                    </span>
 
-                <span className="job-accomplishments">
-                    <ul>
-                        {accomplishmentsList}
-                    </ul>
+                    <span className="job-location icon-plus-text">
+                        <img src="./icons/map-location.svg"
+                             alt="Job location"
+                             title="Job location"
+                             className="icon"/>
+                        <span>{props.location}</span>
+                    </span>
+
+                    <span className="job-dates icon-plus-text">
+                        <img src="./icons/calendar-alt-regular.svg"
+                             alt="Dates employed"
+                             title="Dates employed"
+                             className="icon"/>
+                        <span>{`${props.startDate} to ${props.endDate}`}</span>
+                    </span>
                 </span>
+            </div>
+
+            <div className="job-content">
+                <ul className="job-accomplishments">
+                    {accomplishmentsList}
+                </ul>
             </div>
         </article>
     )
@@ -34,6 +55,7 @@ function Job(props) {
 
 Job.defaultProps = {
     companyName: "",
+    url: "",
     logo: <img src="" alt=""/>,
     location: "",
     title: "",
@@ -44,6 +66,7 @@ Job.defaultProps = {
 
 Job.propTypes = {
     companyName: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
     logo: PropTypes.element.isRequired,
     location: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

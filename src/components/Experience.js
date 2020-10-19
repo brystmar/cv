@@ -6,6 +6,7 @@ function Experience() {
     const jobs = myJobs.map((job, index) =>
         <Job key={index}
              companyName={job.companyName}
+             url={job.url}
              logo={job.logo}
              location={job.location}
              title={job.title}
