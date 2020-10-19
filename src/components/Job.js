@@ -5,10 +5,12 @@ function Job(props) {
     const accomplishmentsList = props.accomplishments.map((item, index) =>
         <li key={index} className="job-accomplishments-list-item">{item}</li>);
 
+    const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
+
     return (
         <article className="job-container">
             <div className="job-title">
-                {props.title}
+                {titleString}
             </div>
 
             <div className="col-logo-content">
@@ -59,6 +61,7 @@ Job.defaultProps = {
     logo: <img src="" alt=""/>,
     location: "",
     title: "",
+    subtitle: "",
     startDate: "",
     endDate: "",
     accomplishments: [""]
@@ -70,6 +73,7 @@ Job.propTypes = {
     logo: PropTypes.element.isRequired,
     location: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
     startDate: PropTypes.string.isRequired,
     endDate: PropTypes.string,
     accomplishments: PropTypes.arrayOf(PropTypes.string)

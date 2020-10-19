@@ -10,6 +10,7 @@ function Experience() {
              logo={job.logo}
              location={job.location}
              title={job.title}
+             subtitle={job.subtitle}
              startDate={job.startDate}
              endDate={job.endDate}
              accomplishments={job.accomplishments}/>)

@@ -6,7 +6,7 @@ function Certifications() {
     const certsList = myCerts.map((cert, index) =>
         <Cert key={index}
               name={cert.name}
-              authority={cert.issuer}
+              issuer={cert.issuer}
               url={cert.url}
               date={cert.date}
               number={cert.number}/>)
