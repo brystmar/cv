@@ -56,4 +56,5 @@ Content sourced from:
 * LinkedIn icon by [Freepik](https://www.flaticon.com/authors/freepik)
 * Location icon by [Font Awesome](https://fontawesome.com/icons/map-marked-alt?style=solid)
 * Calendar icon by [Font Awesome](https://fontawesome.com/icons/calendar-alt?style=regular)
+* Graduate icon by [Font Awesome](https://fontawesome.com/icons/user-graduate?style=solid)
 * Email icon by [Numero Uno](https://thenounproject.com/numerouno) from [The Noun Project](https://thenounproject.com/)

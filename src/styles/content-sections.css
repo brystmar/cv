@@ -134,17 +134,8 @@
 .experience-container .job .col-logo-content .job-details span {
   margin: 0.15em 0;
 }
-.experience-container .job .col-logo-content .job-details .icon-plus-text {
-  display: flex;
-  align-items: center;
-}
 .experience-container .job .col-logo-content .job-details .job-company-name {
   font-size: 1.25rem;
-  margin: 0.15em 0;
-}
-.experience-container .job .col-logo-content .job-details .job-location,
-.experience-container .job .col-logo-content .job-details .job-dates {
-  font-size: 0.85rem;
   margin: 0.15em 0;
 }
 .experience-container .job .job-content .job-accomplishments li {
@@ -152,7 +143,17 @@
   margin: 1em 0;
 }
 
+.icon-plus-text {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin: 0.15em 0;
+}
+
 /*** Certifications ***/
+.cert-container .cert {
+  margin-left: 0.1em;
+}
 .cert-container .cert .cert-title {
   font-size: 1.25rem;
   margin: 0.5em 0;
@@ -160,20 +161,20 @@
 .cert-container .cert .cert-content {
   display: grid;
   grid-template: 1fr/20% 79%;
-  grid-gap: 0.35em;
-  margin-bottom: 1em;
+  grid-gap: 0.5em;
+  margin-bottom: 1.5em;
 }
 .cert-container .cert .cert-content .cert-logo-container {
-  border: 1px dashed green;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 }
 .cert-container .cert .cert-content .cert-logo-container .cert-logo {
-  width: 100%;
+  display: block;
+  max-height: 3em;
 }
 .cert-container .cert .cert-content .cert-details {
-  border: 1px dashed green;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +196,7 @@
 .education-container .degree .degree-content {
   display: grid;
   grid-template: 1fr/20% 79%;
-  grid-gap: 0.35em;
+  grid-gap: 0.75em;
 }
 .education-container .degree .degree-content .degree-logo-container {
   display: flex;
@@ -209,6 +210,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.icon {
+  max-width: 15px;
+  max-height: 15px;
 }
 
 /*** Contact ***/

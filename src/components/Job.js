@@ -28,7 +28,7 @@ function Job(props) {
                            rel="noopener noreferrer">{props.companyName}</a>
                     </span>
 
-                    <span className="job-location icon-plus-text">
+                    <span className="icon-plus-text">
                         <img src="./icons/map-location.svg"
                              alt="Job location"
                              title="Job location"
@@ -36,7 +36,7 @@ function Job(props) {
                         <span>{props.location}</span>
                     </span>
 
-                    <span className="job-dates icon-plus-text">
+                    <span className="icon-plus-text">
                         <img src="./icons/calendar-alt-regular.svg"
                              alt="Dates employed"
                              title="Dates employed"

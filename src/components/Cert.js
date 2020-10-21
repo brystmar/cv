@@ -17,11 +17,26 @@ function Cert(props) {
                        href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>
+                    {/*{props.logo}*/}
                 </span>
 
                 <span className="col-logo-content cert-details">
-                    <span className="cert-date">{props.date}</span>
-                    <span className="cert-issuer">{props.issuer}</span>
+                    <span className="icon-plus-text">
+                        <img src="./icons/user-graduate-solid.svg"
+                             alt={`Certification issued by ${props.issuer}`}
+                             title={`Certification issued by ${props.issuer}`}
+                             className="icon"/>
+                        <span>{props.issuer}</span>
+                    </span>
+
+                    <span className="icon-plus-text">
+                        <img src="./icons/calendar-alt-regular.svg"
+                             alt="Dates employed"
+                             title="Dates employed"
+                             className="icon"/>
+                        <span>{props.date}</span>
+                    </span>
+
                     {certNumber}
                 </span>
             </div>

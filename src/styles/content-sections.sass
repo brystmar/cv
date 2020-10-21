@@ -100,15 +100,8 @@
         margin: 0 0.1em
         span
           margin: 0.15em 0
-        .icon-plus-text
-          display: flex
-          align-items: center
         .job-company-name
           font-size: 1.25rem
-          margin: 0.15em 0
-        .job-location,
-        .job-dates
-          font-size: 0.85rem
           margin: 0.15em 0
     
     .job-content
@@ -117,29 +110,39 @@
           list-style: square
           margin: 1em 0
 
+.icon-plus-text
+  display: flex
+  align-items: center
+  font-size: 0.85rem
+  margin: 0.15em 0
+
 
 /*** Certifications ***/
 
 .cert-container
   .cert
+    //border: 1px solid red
+    margin-left: 0.1em
     .cert-title
       font-size: 1.25rem
       margin: 0.5em 0
     .cert-content
       display: grid
       grid-template: 1fr / 20% 79%
-      grid-gap: 0.35em
-      margin-bottom: 1em
+      grid-gap: 0.5em
+      margin-bottom: 1.5em
       //border: 1px solid black
       .cert-logo-container
-        border: 1px dashed green
+        //border: 1px dashed green
         display: flex
         align-items: center
         justify-content: center
+        margin: 0
         .cert-logo
-          width: 100%
+          display: block
+          max-height: 3em
       .cert-details
-        border: 1px dashed green
+        //border: 1px dashed green
         display: flex
         flex-direction: column
         justify-content: center
@@ -160,7 +163,7 @@
     .degree-content
       display: grid
       grid-template: 1fr / 20% 79%
-      grid-gap: 0.35em
+      grid-gap: 0.75em
       .degree-logo-container
         display: flex
         align-items: center
@@ -171,6 +174,10 @@
         display: flex
         flex-direction: column
         justify-content: center
+
+.icon
+  max-width: 15px
+  max-height: 15px
 
 
 /*** Contact ***/
