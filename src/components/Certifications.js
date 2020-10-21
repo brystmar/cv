@@ -9,8 +9,7 @@ function Certifications() {
               issuer={cert.issuer}
               logo={cert.logo}
               url={cert.url}
-              date={cert.date}
-              number={cert.number}/>)
+              date={cert.date}/>)
 
     return (
         <section

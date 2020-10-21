@@ -7,8 +7,7 @@ const react_bootcamp = {
                alt="React logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/greact",
-    date: "Oct 2020",
-    number: ""
+    date: "Oct 2020"
 };
 
 const UI_design = {
@@ -18,8 +17,7 @@ const UI_design = {
                alt="Scrimba logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/gdesignbootcamp",
-    date: "Sep 2020",
-    number: ""
+    date: "Sep 2020"
 };
 
 const responsive_web_design = {
@@ -29,8 +27,7 @@ const responsive_web_design = {
                alt="Scrimba logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/gresponsive",
-    date: "Sep 2020",
-    number: ""
+    date: "Sep 2020"
 };
 
 const PSPO = {
@@ -40,8 +37,7 @@ const PSPO = {
                alt="Scrum.org logo"
                className="logo cert-logo"/>,
     url: "https://www.scrum.org/professional-scrum-product-owner-i-certification",
-    date: "Feb 2019",
-    number: ""
+    date: "Feb 2019"
 };
 
 const CSPO = {
@@ -51,8 +47,7 @@ const CSPO = {
                alt="Scrum Alliance logo"
                className="logo cert-logo"/>,
     url: "https://www.scrumalliance.org/certifications/practitioners/cspo-certification",
-    date: "Oct 2015",
-    number: "463201"
+    date: "Oct 2015"
 };
 
 const GCP_fundamentals_infrastructure = {
@@ -62,8 +57,7 @@ const GCP_fundamentals_infrastructure = {
                alt="Google Cloud Platform logo"
                className="logo cert-logo"/>,
     url: "https://www.coursera.org/account/accomplishments/verify/CZMR3HVMCE39",
-    date: "Mar 2019",
-    number: "CZMR3HVMCE39"
+    date: "Mar 2019"
 };
 
 const GCP_app_dev = {
@@ -73,8 +67,7 @@ const GCP_app_dev = {
                alt="Google Cloud Platform logo"
                className="logo cert-logo"/>,
     url: "https://www.coursera.org/account/accomplishments/verify/L7BGAT576A2H",
-    date: "Mar 2019",
-    number: "L7BGAT576A2H"
+    date: "Mar 2019"
 };
 
 const PY4E = {
@@ -84,8 +77,7 @@ const PY4E = {
                alt="Python logo"
                className="logo cert-logo"/>,
     url: "https://www.coursera.org/account/accomplishments/specialization/T68Z59NVH5FM",
-    date: "Mar 2018",
-    number: "T68Z59NVH5FM"
+    date: "Mar 2018"
 };
 
 const myCerts = [react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
