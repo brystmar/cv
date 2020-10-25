@@ -19,7 +19,6 @@ function Certifications() {
 
             <h1>Certifications</h1>
             {certsList}
-
         </section>
     )
 }

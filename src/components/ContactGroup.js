@@ -8,8 +8,7 @@ function ContactGroup(props) {
                  src={props.imgSource}
                  alt={props.imgDescription}/>
 
-            <a className="contact-group-text"
-               href={props.url}
+            <a href={props.url}
                target="_blank"
                rel="noopener noreferrer">{props.text}</a>
         </span>

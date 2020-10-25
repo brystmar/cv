@@ -15,16 +15,14 @@ function Degree(props) {
 
             <div className="degree-content">
                 <div className="col-logo-content degree-logo-container">
-                    <a className="logo-link"
-                       href={props.url}
+                    <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>
                 </div>
 
                 <div className="col-logo-content degree-details">
                     <span className="degree-issuer">
-                    <a className="degree-link"
-                       href={props.url}
+                    <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.issuer}</a>
                     </span>

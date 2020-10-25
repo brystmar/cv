@@ -73,7 +73,7 @@ const dynataPjM = {
 
 const poker = {
     companyName: "Self Employed",
-    url: "https://en.wikipedia.org/wiki/PokerStars",
+    url: "https://www.wikihow.com/Become-a-Professional-Poker-Player",
     logo: <img src="./icons/poker-card.svg"
                alt="Poker card"
                className="logo job-logo"/>,

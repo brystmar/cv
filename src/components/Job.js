@@ -15,8 +15,7 @@ function Job(props) {
 
             <div className="col-logo-content">
                 <span className="job-logo-container">
-                    <a className="logo-link"
-                       href={props.url}
+                    <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>
                 </span>
@@ -75,7 +74,7 @@ Job.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     startDate: PropTypes.string.isRequired,
-    endDate: PropTypes.string,
+    endDate: PropTypes.string.isRequired,
     accomplishments: PropTypes.arrayOf(PropTypes.string)
 }
 
