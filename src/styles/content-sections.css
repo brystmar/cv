@@ -69,7 +69,7 @@
 .home-container .highlights p::after {
   content: "";
   display: block;
-  background: #171717;
+  background: #cb5700;
   width: 25%;
   height: 3px;
   margin: 1.1em auto;

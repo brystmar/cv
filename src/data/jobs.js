@@ -71,25 +71,43 @@ const dynataPjM = {
     ]
 };
 
-const poker = {
+const pokerPlayer = {
     companyName: "Self Employed",
     url: "https://www.wikihow.com/Become-a-Professional-Poker-Player",
     logo: <img src="./icons/poker-card.svg"
                alt="Poker card"
                className="logo job-logo"/>,
-    location: "Chicago, Las Vegas, and NYC",
-    title: "Professional Poker Player \nand Instructor",
+    location: "Chicago, Las Vegas, Austin, NYC",
+    title: "Professional Poker Player \nand Coach",
     startDate: "May 2007",
     endDate: "Dec 2012",
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
-        "Typically played 6 to 8 tables concurrently; played >1.5MM total hands lifetime.",
-        "Authored, produced, & released 62 instructional videos for CardRunners.com, each w/45-60min of commentary and insights.",
-        "Private coach to more than a dozen students worldwide, from Modesto to Moscow.",
-        "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha."
+        "Typically played 6 to 8 tables concurrently; played 2+ million total hands lifetime.",
+        "Specialized in online short-handed cash games of No-Limit Hold'em (NLHE) and Pot-Limit Omaha (PLO).",
+        "Won the Full Tilt Sunday $200 Tournament in Nov 2018 for $132k, besting >3600 other players.",
+        "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };
 
-const myJobs = [expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, poker];
+const pokerInstructor = {
+    companyName: "CardRunners.com",
+    url: "https://en.wikipedia.org/wiki/CardRunners",
+    logo: <img src="./logos/cardrunners.png"
+               alt="CardRunners logo"
+               className="logo job-logo cr-logo"/>,
+    location: "Chicago, Las Vegas, Austin, NYC",
+    title: "Small-Stakes Poker Instructor",
+    startDate: "Jan 2007",
+    endDate: "Dec 2011",
+    accomplishments: [
+        "Scripted, produced, and recorded 62 instructional videos, each with 45 to 60 minutes of commentary and insights.",
+        "Pioneered the classroom-style video series with a focus on fundamentals and applied theory.",
+        "Developed a five-part Small Stakes No Limit (SSNL) series aimed at converting casual players into consistent winners.  This popular series was highly regarded within the poker community.",
+        "Most videos focused on NLHE and PLO cash games, plus a handful of NLHE tournament videos."
+    ]
+}
+
+const myJobs = [expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor];
 
 export default myJobs;

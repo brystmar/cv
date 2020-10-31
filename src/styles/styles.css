@@ -85,6 +85,12 @@ strong {
   color: #0647b6;
 }
 
+.cr-logo {
+  background-color: #13223a;
+  padding: 0.5em;
+  border-radius: 11px;
+}
+
 img {
   display: inline-block;
   max-width: 100%;
@@ -94,6 +100,7 @@ a,
 a:visited {
   color: #cb5700;
   text-decoration: none;
+  text-decoration-width: 1px;
 }
 
 a:hover {

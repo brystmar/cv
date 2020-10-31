@@ -2,8 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Job(props) {
-    const accomplishmentsList = props.accomplishments.map((item, index) =>
-        <li key={index} className="job-accomplishments-list-item">{item}</li>);
+    const accomplishmentsList = props.accomplishments.map((item, index) => {
+        const linkIndex = item.indexOf("CardRunners.com");
+
+        // Hacky way to insert a link for CR
+        if (linkIndex !== -1) {
+            let newItem = item.substr(0, linkIndex);
+            newItem += <a href="https://en.wikipedia.org/wiki/CardRunners"
+                          target="_blank"
+                          rel="noopener noreferrer">CardRunners.com</a>;
+
+            console.log(item.substr(linkIndex + "CardRunners.com".length));
+        }
+        return <li key={index} className="job-accomplishments-list-item">{item}</li>
+    });
 
     const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
 
