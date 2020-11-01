@@ -1,24 +1,8 @@
+/*** Fonts ***/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
-/*** Styling variables ***/
-:root {
-  --font-size-h1: 3rem;
-  --font-size-h2: 2.25rem;
-  --font-size-h3: 1.25rem;
-  --font-size-body: 1rem;
-}
-
-@media (min-width: 800px) {
-  :root {
-    --font-size-h1: 4.5rem;
-    --font-size-h2: 3.75rem;
-    --font-size-h3: 1.5rem;
-    --font-size-body: 1.125rem;
-  }
-}
-/*** Fonts ***/
 /*** Color Palette ***/
 /*** Favicon, from https://realfavicongenerator.net/ ***/
 /*** Page Layout ***/
@@ -117,12 +101,20 @@
   order: 2;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0 0.1em;
+  border: 1px solid red;
 }
-.experience-container .job .col-logo-content .job-logo-container img {
+.experience-container .job .col-logo-content .job-logo-container .job-logo {
   max-width: 95%;
   max-height: 4.5em;
   margin: 0;
+  display: block;
+}
+.experience-container .job .col-logo-content .job-logo-container .poker-logos {
+  animation: 20s poker-logo-slideshow 0s linear infinite forwards;
+  opacity: 1;
+  content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
 }
 .experience-container .job .col-logo-content .job-details {
   order: 1;
@@ -147,6 +139,54 @@
   align-items: center;
   font-size: 0.85rem;
   margin: 0.15em 0;
+}
+
+@keyframes poker-logo-slideshow {
+  0% {
+    opacity: 0;
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+  }
+  5% {
+    opacity: 1;
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+  }
+  45% {
+    opacity: 1;
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+  }
+  50% {
+    opacity: 0;
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+  }
+  51% {
+    opacity: 0;
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+  }
+  56% {
+    opacity: 1;
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+  }
+  95% {
+    opacity: 1;
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+  }
+  100% {
+    opacity: 0;
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+  }
+}
+/*** Projects ***/
+.projects-container .project .proj-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0647b6;
+  margin: 0.25em 0;
+  display: block;
+  white-space: pre-wrap;
+}
+.projects-container .project .proj-desc {
+  font-size: 1.2rem;
+  margin: 1em 0;
 }
 
 /*** Certifications ***/
@@ -217,6 +257,12 @@
 .icon {
   max-width: 15px;
   max-height: 15px;
+}
+
+.cr-logo {
+  background-color: #13223a;
+  padding: 0.5em;
+  border-radius: 10px;
 }
 
 /*** Contact ***/

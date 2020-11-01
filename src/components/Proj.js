@@ -12,20 +12,18 @@ function Proj(props) {
         </span>)
 
     return (
-        <article className="proj-container">
-            <span className="proj-name">
+        <article className="project">
+            <span className="proj-name">{props.name}</span>
+            <span className="proj-desc">{props.description}</span>
+
+            <div className="col-proj proj-screenshot-container">
                 <a className="proj-link"
                    href={props.url}
                    target="_blank"
-                   rel="noopener noreferrer">{props.name}</a>
-            </span>
-
-            <div className="col-proj proj-screenshot-container">
-                {props.screenshot}
+                   rel="noopener noreferrer">{props.screenshot}</a>
             </div>
 
             <div className="col-proj proj-content">
-                <span className="proj-desc">{props.description}</span>
                 <span className="proj-tech">{techList}</span>
             </div>
         </article>

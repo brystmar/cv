@@ -70,7 +70,6 @@
     margin-bottom: 3em
   article:last-of-type::after
     display: none
-  
   .job
     .job-title
       font-size: 1.6rem
@@ -78,7 +77,6 @@
       color: $color-primary-darker
       margin: 1.25em 0 0.5em
       display: block
-      //text-align: center
       white-space: pre-wrap
     .col-logo-content
       display: grid
@@ -88,11 +86,18 @@
         order: 2
         display: flex
         align-items: center
+        justify-content: center
         margin: 0 0.1em
-        img
+        border: 1px solid red
+        .job-logo
           max-width: 95%
           max-height: 4.5em
           margin: 0
+          display: block
+        .poker-logos
+          animation: 20s poker-logo-slideshow 0s linear infinite forwards
+          opacity: 1
+          content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg")
       .job-details
         order: 1
         display: flex
@@ -115,6 +120,47 @@
   align-items: center
   font-size: 0.85rem
   margin: 0.15em 0
+
+@keyframes poker-logo-slideshow
+  0%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg")
+  5%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg")
+  45%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg")
+  50%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg")
+  51%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png")
+  56%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png")
+  95%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png")
+  100%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png")
+
+
+/*** Projects ***/
+.projects-container
+  .project
+    .proj-name
+      font-size: 1.6rem
+      font-weight: 500
+      color: $color-primary-darker
+      margin: 0.25em 0
+      display: block
+      white-space: pre-wrap
+    .proj-desc
+      font-size: 1.2rem
+      margin: 1em 0
 
 
 /*** Certifications ***/
@@ -181,6 +227,11 @@
 .icon
   max-width: 15px
   max-height: 15px
+
+.cr-logo
+  background-color: rgb(19,34,58)
+  padding: 0.5em
+  border-radius: 10px
 
 
 /*** Contact ***/
