@@ -13,7 +13,7 @@ function Contact() {
                 <ContactGroup imgSource="./icons/email-trimmed.svg"
                               imgDescription="Send Thomas an email"
                               url="mailto:tp.berg+cv@gmail.com"
-                              text="Email Thomas"/>
+                              text="Email"/>
 
                 <ContactGroup imgSource="./logos/linkedin.svg"
                               imgDescription="View Thomas Berg's profile on LinkedIn"

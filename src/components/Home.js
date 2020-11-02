@@ -21,7 +21,7 @@ function Home() {
             <div className="highlights">
                 <p>Customer-obsessed Product Manager with a passion for <strong>user experience</strong></p>
                 <p>Naturally <strong>curious</strong>, data-driven, and technical</p>
-                <p>Moonlights as a mad kitchen <strong>scientist</strong></p>
+                <p>Avid <strong>home cook</strong>, exploring the intersection of food & tech</p>
             </div>
 
         </section>

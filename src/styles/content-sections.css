@@ -53,7 +53,7 @@
 .home-container .highlights p::after {
   content: "";
   display: block;
-  background: #cb5700;
+  background: #171717;
   width: 25%;
   height: 3px;
   margin: 1.1em auto;
@@ -103,7 +103,6 @@
   align-items: center;
   justify-content: center;
   margin: 0 0.1em;
-  border: 1px solid red;
 }
 .experience-container .job .col-logo-content .job-logo-container .job-logo {
   max-width: 95%;
@@ -114,7 +113,7 @@
 .experience-container .job .col-logo-content .job-logo-container .poker-logos {
   animation: 20s poker-logo-slideshow 0s linear infinite forwards;
   opacity: 1;
-  content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+  content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
 }
 .experience-container .job .col-logo-content .job-details {
   order: 1;
@@ -144,35 +143,35 @@
 @keyframes poker-logo-slideshow {
   0% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
   }
   5% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
   }
   45% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
   }
   50% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
   }
   51% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/fulltilt.png");
   }
   56% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/fulltilt.png");
   }
   95% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/fulltilt.png");
   }
   100% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/fulltilt.png");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/fulltilt.png");
   }
 }
 /*** Projects ***/
@@ -180,13 +179,23 @@
   font-size: 1.6rem;
   font-weight: 500;
   color: #0647b6;
-  margin: 0.25em 0;
+  margin: 1.35em 0 0.25em;
   display: block;
   white-space: pre-wrap;
 }
 .projects-container .project .proj-desc {
   font-size: 1.2rem;
   margin: 1em 0;
+}
+.projects-container .project .proj-screenshot-container {
+  display: block;
+  margin: 1em 0;
+}
+.projects-container .project .proj-notes {
+  line-height: 1.4;
+}
+.projects-container .project .proj-tech-list-container li {
+  list-style: square;
 }
 
 /*** Certifications ***/

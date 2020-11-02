@@ -30,6 +30,17 @@ const responsive_web_design = {
     date: "Sep 2020"
 };
 
+const SF_admin = {
+    name: "Salesforce Certified Administrator",
+    issuer: "Salesforce",
+    logo: <img src="./logos/salesforce.png"
+               alt="Salesforce logo"
+               className="logo cert-logo"/>,
+    url: "https://trailblazer.me/id/tpberg",
+    date: "Sep 2020",
+    number: "21303901"
+}
+
 const PSPO = {
     name: "Professional Scrum Product Owner",
     issuer: "Scrum.org",
@@ -84,7 +95,7 @@ const PY4E = {
     number: "T68Z59NVH5FM"
 };
 
-const myCerts = [react_bootcamp, UI_design, responsive_web_design, PSPO, CSPO,
-    GCP_core_infrastructure, GCP_app_dev, PY4E];
+const myCerts = [react_bootcamp, UI_design, responsive_web_design, SF_admin,
+    PSPO, CSPO, GCP_core_infrastructure, GCP_app_dev, PY4E];
 
 export default myCerts;

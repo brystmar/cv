@@ -7,6 +7,7 @@ function Projects() {
         <Proj key={index}
               name={proj.name}
               description={proj.description}
+              notes={proj.notes}
               url={proj.url}
               screenshot={proj.screenshot}
               tech={proj.tech}/>)

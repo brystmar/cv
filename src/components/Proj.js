@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Proj(props) {
+    const notesList = props.notes.map((note, index) =>
+        <p className="proj-note" key={index}>{note}</p>)
+
     const techList = props.tech.map((thing, index) =>
         <span className="proj-tech-list-container" key={index}>
             <h3 className="proj-tech-list-type">{thing.type}</h3>
@@ -23,6 +26,8 @@ function Proj(props) {
                    rel="noopener noreferrer">{props.screenshot}</a>
             </div>
 
+            <div className="proj-notes">{notesList}</div>
+
             <div className="col-proj proj-content">
                 <span className="proj-tech">{techList}</span>
             </div>
@@ -33,7 +38,9 @@ function Proj(props) {
 Proj.defaultProps = {
     name: "",
     description: "",
+    notes: [""],
     url: "",
+    repo: "",
     screenshot: <img src="" alt=""/>,
     tech: [{
         type: "",
@@ -41,10 +48,12 @@ Proj.defaultProps = {
     }]
 }
 
-Proj.defaultProps = {
+Proj.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    notes: PropTypes.arrayOf(PropTypes.string).isRequired,
     url: PropTypes.string.isRequired,
+    repo: PropTypes.string.isRequired,
     screenshot: PropTypes.element.isRequired,
     tech: PropTypes.arrayOf(PropTypes.object).isRequired
 }
