@@ -20,6 +20,7 @@ body {
   font-variant: slashed-zero;
   color: #171717;
   line-height: 1.3;
+  letter-spacing: 0.5px;
   text-align: left;
   max-width: 1000px;
   -webkit-font-smoothing: antialiased;
@@ -66,7 +67,7 @@ section {
 
 strong {
   font-weight: inherit;
-  color: #0647b6;
+  color: #cb5700;
 }
 
 img {
@@ -74,18 +75,22 @@ img {
   max-width: 100%;
 }
 
-a,
-a:visited {
+a {
   color: #cb5700;
-  text-decoration: none;
+  text-decoration: underline;
   text-decoration-width: 1px;
 }
 
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: #cb5700;
 }
 
-a:focus {
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
   outline: 1px dotted #979aa0;
 }
 
@@ -95,7 +100,7 @@ li {
 
 /*** Buttons ***/
 button {
-  background: #f8f8f8;
+  background: #f6f8fb;
   color: #171717;
   border: 1px solid #979aa0;
 }
@@ -127,7 +132,7 @@ button:active {
 
 /*** Page Layout ***/
 .app-container {
-  background: #f8f8f8;
+  background: #f6f8fb;
   margin: 0 auto;
   max-width: 1000px;
 }

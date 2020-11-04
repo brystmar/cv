@@ -70,16 +70,15 @@ const cellarSync = {
 }
 
 const cv = {
-    name: "CV",
-    description: "The website you're reading right now.  So meta.",
+    name: "CV for Thomas Berg",
+    description: "The website you're reading right now!  So meta.",
     url: "http://thomasberg.me",
     repo: "https://github.com/brystmar/cv",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cv.png"
                      alt="Screenshot of the website you're reading right now"
                      className="screenshot"/>,
     notes: [
-        "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
-        "Content stored in local .js files."
+        "A simple React app without a backend, hosted in a Google Cloud Storage bucket.  Content from static .js files."
     ],
     tech: [
         {

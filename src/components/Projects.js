@@ -9,6 +9,7 @@ function Projects() {
               description={proj.description}
               notes={proj.notes}
               url={proj.url}
+              repo={proj.repo}
               screenshot={proj.screenshot}
               tech={proj.tech}/>)
     return (

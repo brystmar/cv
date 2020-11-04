@@ -117,6 +117,10 @@
   outline: none;
   opacity: 0.85;
 }
+.nav-hamburger:active span,
+.nav-hamburger:hover span {
+  background: #2f3e52;
+}
 
 .nav-hamburger:focus {
   border: none;

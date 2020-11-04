@@ -14,6 +14,7 @@ body
   font-variant: slashed-zero
   color: $color-dark
   line-height: 1.3
+  letter-spacing: .5px
   text-align: left
   max-width: $app-max-width
   -webkit-font-smoothing: antialiased
@@ -52,20 +53,22 @@ section
 
 strong
   font-weight: inherit
-  color: $color-primary-darker
+  color: $color-primary-complementary-darker
 
 img
   display: inline-block
   max-width: 100%
 
-a,
-a:visited
+a
   color: $color-link
-  text-decoration: none
-  text-decoration-width: 1px
-a:hover
   text-decoration: underline
-a:focus
+  text-decoration-width: 1px
+a:visited
+  color: $color-link-visited
+a:hover
+  text-decoration: none
+a:focus,
+a:active
   outline: 1px dotted $color-border
 
 li

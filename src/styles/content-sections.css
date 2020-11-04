@@ -27,14 +27,15 @@
   font-size: 4rem;
   font-weight: 600;
   margin: 0.4em;
+  color: #f8f8f8;
 }
 .home-container .greeting .name::after {
   content: "";
   display: block;
-  background: #5bb9ff;
+  background: #0647b6;
   height: 1.2em;
   width: 100%;
-  margin-top: -1.23em;
+  margin-top: -1.25em;
 }
 .home-container .greeting .followup {
   font-size: 1.9rem;
@@ -69,15 +70,6 @@
 }
 
 /*** Experience ***/
-.experience-container article::after {
-  display: block;
-  content: "";
-  background-color: #171717;
-  width: 25%;
-  height: 3px;
-  text-align: center;
-  margin: 2em auto;
-}
 .experience-container article:last-of-type {
   margin-bottom: 3em;
 }
@@ -113,7 +105,7 @@
 .experience-container .job .col-logo-content .job-logo-container .poker-logos {
   animation: 20s poker-logo-slideshow 0s linear infinite forwards;
   opacity: 1;
-  content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
+  content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
 }
 .experience-container .job .col-logo-content .job-details {
   order: 1;
@@ -143,19 +135,19 @@
 @keyframes poker-logo-slideshow {
   0% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
   }
   5% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
   }
   45% {
     opacity: 1;
-    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
   }
   50% {
     opacity: 0;
-    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars3.jpg");
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
   }
   51% {
     opacity: 0;
@@ -175,13 +167,30 @@
   }
 }
 /*** Projects ***/
-.projects-container .project .proj-name {
+.projects-container .project {
+  margin: 1.5em 0;
+}
+.projects-container .project .proj-title-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.projects-container .project .proj-title-section .proj-name {
   font-size: 1.6rem;
   font-weight: 500;
   color: #0647b6;
-  margin: 1.35em 0 0.25em;
   display: block;
   white-space: pre-wrap;
+}
+.projects-container .project .proj-title-section .proj-links {
+  margin: 0 0.75em;
+}
+.projects-container .project .proj-title-section .proj-links .icon {
+  height: 1.25em;
+  width: 1.25em;
+  max-height: unset;
+  max-width: unset;
+  margin-right: 0.5em;
 }
 .projects-container .project .proj-desc {
   font-size: 1.2rem;
@@ -191,11 +200,32 @@
   display: block;
   margin: 1em 0;
 }
-.projects-container .project .proj-notes {
+.projects-container .project .proj-screenshot-container .screenshot {
+  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.15);
+}
+.projects-container .project .proj-note {
   line-height: 1.4;
+}
+.projects-container .project .proj-read-more {
+  display: inline;
+  color: #0079e7;
+  border: 1px dotted transparent;
+}
+.projects-container .project .proj-read-more:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.projects-container .project .proj-read-more:active,
+.projects-container .project .proj-read-more:focus {
+  border: 1px dotted #979aa0;
 }
 .projects-container .project .proj-tech-list-container li {
   list-style: square;
+}
+
+.icon-link:hover {
+  filter: invert(71%) sepia(78%) saturate(7495%) hue-rotate(17deg) brightness(93%) contrast(103%);
+  transition: filter 300ms linear;
 }
 
 /*** Certifications ***/
@@ -264,8 +294,8 @@
 }
 
 .icon {
-  max-width: 15px;
-  max-height: 15px;
+  max-width: 1.15em;
+  max-height: 1.15em;
 }
 
 .cr-logo {
