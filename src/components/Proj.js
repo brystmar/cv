@@ -26,23 +26,27 @@ function Proj(props) {
             <span className="proj-title-section">
                 <span className="proj-name">{props.name}</span>
                 <span className="proj-links">
-                    <a className="proj-link"
-                       href={props.url}
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="./icons/website.svg"
-                             alt="Website icon"
-                             className="icon icon-link"/>
-                    </a>
+                    <span className="proj-link-icon-container">
+                        <a className="proj-link"
+                           href={props.url}
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="./icons/website.svg"
+                                 alt="Website icon"
+                                 className="icon icon-link"/>
+                        </a>
+                    </span>
 
-                    <a className="proj-link"
-                       href={props.repo}
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <img src="./logos/github.svg"
-                             alt="GitHub icon"
-                             className="icon icon-link"/>
-                    </a>
+                    <span className="proj-link-icon-container">
+                        <a className="proj-link"
+                           href={props.repo}
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="./logos/github.svg"
+                                 alt="GitHub icon"
+                                 className="icon icon-link"/>
+                        </a>
+                    </span>
                 </span>
             </span>
 
@@ -58,7 +62,7 @@ function Proj(props) {
             <div className="proj-notes">{notesList}</div>
             <p className={notesList.length > 1 ? "proj-read-more" : "hidden"}
                  onClick={() => updateIsExpanded(!isExpanded)}>
-                {isExpanded ? "Less..." : "Read more..."}
+                {isExpanded ? "- Collapse" : "+ Expand"}
             </p>
 
             <div className="col-proj proj-content">

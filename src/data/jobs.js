@@ -11,7 +11,7 @@ const expediaPM = {
     startDate: "Feb 2020",
     endDate: "Present",
     accomplishments: [
-        "Did stuff",
+        "Replaced a patchwork of legacy systems with Salesforce Service Cloud case management for >3000 travel agents.",
         "Especially live chat things."
     ]
 };
@@ -101,8 +101,8 @@ const pokerInstructor = {
     accomplishments: [
         "Scripted, produced, and recorded 62 instructional videos, each with 45 to 60 minutes of commentary and insights.",
         "Pioneered the classroom-style video format with a focus on fundamentals and applied theory.",
-        "Developed a five-part Small Stakes No Limit (SSNL) series aimed at converting casual players into consistent winners.  Series was highly regarded within the poker community.",
-        "Focused on NLHE and PLO cash games with sub-$200 buyins."
+        "Developed a five-part Small Stakes No-Limit (SSNL) series to help casual players become consistent winners.  Series was highly regarded within the poker community.",
+        "Focused on NLHE and PLO cash games with <$200 buyins."
     ]
 }
 

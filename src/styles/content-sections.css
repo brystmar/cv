@@ -89,20 +89,17 @@
   grid-template: 1fr/59% 40%;
   grid-gap: 0.35em;
 }
-.experience-container .job .col-logo-content .job-logo-container {
+.experience-container .job .col-logo-content .logo-container {
   order: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 0.1em;
 }
-.experience-container .job .col-logo-content .job-logo-container .job-logo {
+.experience-container .job .col-logo-content .logo-container .job-logo {
   max-width: 95%;
   max-height: 4.5em;
   margin: 0;
   display: block;
 }
-.experience-container .job .col-logo-content .job-logo-container .poker-logos {
+.experience-container .job .col-logo-content .logo-container .poker-logos {
   animation: 20s poker-logo-slideshow 0s linear infinite forwards;
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
@@ -123,6 +120,18 @@
 .experience-container .job .job-content .job-accomplishments li {
   list-style: square;
   margin: 1em 0;
+}
+
+.logo-container {
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color;
+}
+
+.logo-container:hover {
+  background: lightgray;
 }
 
 .icon-plus-text {
@@ -172,18 +181,19 @@
 }
 .projects-container .project .proj-title-section {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 .projects-container .project .proj-title-section .proj-name {
   font-size: 1.6rem;
   font-weight: 500;
   color: #0647b6;
-  display: block;
   white-space: pre-wrap;
+  margin: 0.5em 0;
 }
 .projects-container .project .proj-title-section .proj-links {
-  margin: 0 0.75em;
+  margin: 0 0.2em;
+  display: flex;
 }
 .projects-container .project .proj-title-section .proj-links .icon {
   height: 1.25em;
@@ -203,12 +213,16 @@
 .projects-container .project .proj-screenshot-container .screenshot {
   box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.15);
 }
+.projects-container .project .proj-screenshot-container .screenshot:hover {
+  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
+  transition: box-shadow 200ms linear;
+}
 .projects-container .project .proj-note {
   line-height: 1.4;
 }
 .projects-container .project .proj-read-more {
   display: inline;
-  color: #0079e7;
+  color: #0647b6;
   border: 1px dotted transparent;
 }
 .projects-container .project .proj-read-more:hover {
@@ -221,11 +235,6 @@
 }
 .projects-container .project .proj-tech-list-container li {
   list-style: square;
-}
-
-.icon-link:hover {
-  filter: invert(71%) sepia(78%) saturate(7495%) hue-rotate(17deg) brightness(93%) contrast(103%);
-  transition: filter 300ms linear;
 }
 
 /*** Certifications ***/
@@ -242,16 +251,14 @@
 .cert-container .cert .cert-content {
   display: grid;
   grid-template: 1fr/20% 79%;
-  grid-gap: 0.5em;
+  grid-gap: 1em;
   margin-bottom: 1.5em;
 }
-.cert-container .cert .cert-content .cert-logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.cert-container .cert .cert-content .logo-container {
+  padding: 0.2em;
   margin: 0;
 }
-.cert-container .cert .cert-content .cert-logo-container .cert-logo {
+.cert-container .cert .cert-content .logo-container .cert-logo {
   display: block;
   max-height: 3em;
 }
@@ -273,18 +280,14 @@
   font-weight: 500;
   line-height: 1.3;
   color: #0647b6;
+  margin: 0.5em 0;
 }
 .education-container .degree .degree-content {
   display: grid;
   grid-template: 1fr/20% 79%;
-  grid-gap: 0.75em;
+  grid-gap: 1em;
 }
-.education-container .degree .degree-content .degree-logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.education-container .degree .degree-content .degree-logo-container .degree-logo {
+.education-container .degree .degree-content .degree-logo {
   width: 100%;
 }
 .education-container .degree .degree-content .degree-details {

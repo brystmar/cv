@@ -9,7 +9,7 @@ function Cert(props) {
             </div>
 
             <div className="cert-content">
-                <span className="col-logo-content cert-logo-container">
+                <span className="col-logo-content logo-container">
                     <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>

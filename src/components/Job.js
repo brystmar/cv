@@ -14,7 +14,7 @@ function Job(props) {
             </div>
 
             <div className="col-logo-content">
-                <span className="job-logo-container">
+                <span className="logo-container">
                     <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>

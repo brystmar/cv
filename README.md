@@ -59,3 +59,4 @@ Content sourced from:
 * Graduate icon by [Font Awesome](https://fontawesome.com/icons/user-graduate?style=solid)
 * Email icon by [Numero Uno](https://thenounproject.com/numerouno) from [The Noun Project](https://thenounproject.com/)
 * Website icon by Rahmat Hidayat from [The Noun Project](https://thenounproject.com/search/?q=website&i=3237546)
+* [Flask logo](http://flask.pocoo.org/static/logo/flask.svg) by Armin Ronacher, from [wikimedia](https://commons.wikimedia.org/w/index.php?curid=19501815)

@@ -14,7 +14,7 @@ function Degree(props) {
             </div>
 
             <div className="degree-content">
-                <div className="col-logo-content degree-logo-container">
+                <div className="col-logo-content logo-container">
                     <a href={props.url}
                        target="_blank"
                        rel="noopener noreferrer">{props.logo}</a>
