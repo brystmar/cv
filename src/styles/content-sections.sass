@@ -185,13 +185,13 @@
           max-height: unset
           max-width: unset
           margin-right: 0.5em
-          
     .proj-desc
       font-size: 1.2rem
       margin: 1em 0
     .proj-screenshot-container
       display: block
-      margin: 1em 0
+      max-width: 90%
+      margin: 1em auto
       .screenshot
         box-shadow: 3px 3px 10px $color-border-lightest
       .screenshot:hover
@@ -210,8 +210,26 @@
     .proj-read-more:focus
       border: 1px dotted $color-border
     .proj-tech-list-container
-      li
-        list-style: square
+      .proj-tech-list
+        margin: 0 0.2em
+        display: grid
+        grid-template: repeat(auto-fit, minmax(20%, 1fr)) / repeat(auto-fit, minmax(20%, 1fr))
+        grid-gap: 1em 0.35em
+        .proj-tech-list-item
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: center
+          text-align: center
+          .logo-container
+            //border: 1px solid green
+            max-width: 3.5em
+            max-height: 3em
+          .logo-container:hover
+            background: none
+          .list-item-label
+            margin: 0.25em 0
+
 //.icon-link:hover
   //filter: invert(71%) sepia(78%) saturate(7495%) hue-rotate(17deg) brightness(93%) contrast(103%)
   //background: lightgray

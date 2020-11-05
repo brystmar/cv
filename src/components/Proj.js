@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
+import map_tech_to_icon from "../scripts/map_tech_to_icon";
 
 function Proj(props) {
     const [isExpanded, updateIsExpanded] = useState(false);
@@ -8,17 +9,21 @@ function Proj(props) {
         if (index === 0) {
             return <p className={"proj-note"} key={index}>{note}</p>
         } else {
-            return <p className={isExpanded ? "proj-note" : "proj-note hidden"} key={index}>{note}</p>
+            return <p className={isExpanded ? "proj-note" : "proj-note hidden"}
+                      key={index}>{note}</p>
         }
     });
 
     const techList = props.tech.map((thing, index) =>
         <span className="proj-tech-list-container" key={index}>
             <h3 className="proj-tech-list-type">{thing.type}</h3>
-            <ul>
+            <span className="proj-tech-list">
                 {thing.items.map((value, index) =>
-                    <li className="proj-tech-list-item" key={index}>{value}</li>)}
-            </ul>
+                    <span className="proj-tech-list-item" key={index}>
+                        <span className="logo-container">{map_tech_to_icon(value)}</span>
+                        <span className="list-item-label">{value}</span>
+                    </span>)}
+            </span>
         </span>);
 
     return (
@@ -61,7 +66,7 @@ function Proj(props) {
 
             <div className="proj-notes">{notesList}</div>
             <p className={notesList.length > 1 ? "proj-read-more" : "hidden"}
-                 onClick={() => updateIsExpanded(!isExpanded)}>
+               onClick={() => updateIsExpanded(!isExpanded)}>
                 {isExpanded ? "- Collapse" : "+ Expand"}
             </p>
 

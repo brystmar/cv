@@ -30,7 +30,7 @@ const breadsheet = {
         {
             type: "Front End",
             items: [
-                "React", "CSS (SASS)", "JavaScript"
+                "React", "SASS", "JavaScript"
             ]
         }
     ]
@@ -63,7 +63,7 @@ const cellarSync = {
         {
             type: "Front End",
             items: [
-                "React", "CSS (SASS)"
+                "React", "SASS"
             ]
         }
     ]
@@ -90,7 +90,7 @@ const cv = {
         {
             type: "Front End",
             items: [
-                "React", "CSS (SASS)"
+                "React", "SASS"
             ]
         }
     ]

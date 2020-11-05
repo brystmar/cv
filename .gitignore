@@ -139,6 +139,7 @@ sketch
 /build
 
 # misc
+/ignore
 **/.env
 .env
 .env.local
