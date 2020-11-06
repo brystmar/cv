@@ -9,8 +9,8 @@
 /*** Nav ***/
 /*** Hamburger styles & transitions ***/
 .nav-hamburger {
-  height: 45px;
-  width: 60px;
+  height: 36px;
+  width: 48px;
   margin: 0.5em;
   border: none;
   padding: 0;
@@ -84,15 +84,6 @@
 }
 .nav-hamburger:focus span {
   background-color: #292929;
-}
-
-.nav-hamburger:active span:nth-child(1) {
-  transition: 150ms ease-in 100ms;
-  transform: translateY(3px);
-}
-.nav-hamburger:active span:nth-child(4) {
-  transition: 150ms ease-in 100ms;
-  transform: translateY(-3px);
 }
 
 .nav-hamburger:hover span {
