@@ -9,7 +9,7 @@
 /*** Nav ***/
 /*** Navigation ***/
 .navbar .links-container {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,10 +22,10 @@
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 .navbar .links-container ul li {
-  margin: 0.5em;
+  margin: 0.4em;
 }
 .navbar .links-container ul li a {
   padding: 0.1em;

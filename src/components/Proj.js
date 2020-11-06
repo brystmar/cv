@@ -65,9 +65,9 @@ function Proj(props) {
             </div>
 
             <div className="proj-notes">{notesList}</div>
-            <p className={notesList.length > 1 ? "proj-read-more" : "hidden"}
+            <p className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
                onClick={() => updateIsExpanded(!isExpanded)}>
-                {isExpanded ? "- Collapse" : "+ Expand"}
+                {isExpanded ? "- Collapse" : "+ Learn More"}
             </p>
 
             <div className="col-proj proj-content">

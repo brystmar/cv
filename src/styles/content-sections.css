@@ -221,17 +221,17 @@
 .projects-container .project .proj-note {
   line-height: 1.4;
 }
-.projects-container .project .proj-read-more {
+.projects-container .project .proj-learn-more {
   display: inline;
   color: #0647b6;
   border: 1px dotted transparent;
 }
-.projects-container .project .proj-read-more:hover {
+.projects-container .project .proj-learn-more:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.projects-container .project .proj-read-more:active,
-.projects-container .project .proj-read-more:focus {
+.projects-container .project .proj-learn-more:active,
+.projects-container .project .proj-learn-more:focus {
   border: 1px dotted #979aa0;
 }
 .projects-container .project .proj-tech-list-container .proj-tech-list {

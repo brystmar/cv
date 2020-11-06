@@ -7,33 +7,30 @@
 /*** Favicon, from https://realfavicongenerator.net/ ***/
 /*** Page Layout ***/
 /*** Nav ***/
-/*** Nav icons for mobile layouts ***/
+/*** Hamburger styles & transitions ***/
 .nav-hamburger {
-  height: 34px;
-  width: 45.3333333333px;
-  display: inline-block;
-  margin: 0.5em 0.5em;
-  padding: 0;
+  height: 45px;
+  width: 60px;
+  margin: 0.5em;
   border: none;
-  outline: none;
+  padding: 0;
+  position: relative;
+  display: inline-block;
   background: transparent;
+  outline: 1px dotted transparent;
   opacity: 1;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 500ms ease-in-out;
-  -moz-transition: 500ms ease-in-out;
-  -o-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
   cursor: pointer;
 }
 .nav-hamburger span {
+  display: block;
   position: absolute;
   height: 20%;
-  width: 50%;
+  width: 100%;
   background: #171717;
+  border: none;
+  border-radius: 0.5em;
   opacity: 1;
+  left: 0;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -43,89 +40,75 @@
   -o-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
 }
-.nav-hamburger span:nth-child(even) {
-  left: 50%;
-  border-radius: 0 0.5em 0.5em 0;
-}
-.nav-hamburger span:nth-child(odd) {
-  left: 0;
-  border-radius: 0.5em 0 0 0.5em;
-}
-.nav-hamburger span:nth-child(1),
-.nav-hamburger span:nth-child(2) {
+.nav-hamburger span:nth-child(1) {
   top: 0;
 }
-.nav-hamburger span:nth-child(3),
-.nav-hamburger span:nth-child(4) {
+.nav-hamburger span:nth-child(2),
+.nav-hamburger span:nth-child(3) {
   top: 40%;
 }
-.nav-hamburger span:nth-child(5),
-.nav-hamburger span:nth-child(6) {
+.nav-hamburger span:nth-child(4) {
   top: 80%;
 }
 
-.nav-hamburger.open span {
-  background: #171717;
-}
 .nav-hamburger.open span:nth-child(1),
-.nav-hamburger.open span:nth-child(6) {
+.nav-hamburger.open span:nth-child(4) {
+  top: 1.125em;
+  left: 50%;
+  width: 0;
+}
+.nav-hamburger.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.nav-hamburger.open span:nth-child(2),
-.nav-hamburger.open span:nth-child(5) {
+.nav-hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.nav-hamburger.open span:nth-child(3),
-.nav-hamburger.open span:nth-child(4) {
-  opacity: 0;
-  height: 0;
-  transition: left 250ms ease-in-out, opacity 250ms ease-in-out, height 1ms linear 250ms;
-}
-.nav-hamburger.open span:nth-child(1) {
-  top: 15.56%;
-  left: 8.33%;
-}
-.nav-hamburger.open span:nth-child(2) {
-  top: 15.56%;
-  left: calc(50% - 0.333em);
-}
-.nav-hamburger.open span:nth-child(3) {
-  left: -50%;
-}
-.nav-hamburger.open span:nth-child(4) {
-  left: 100%;
-}
-.nav-hamburger.open span:nth-child(5) {
-  top: 64.44%;
-  left: 8.33%;
-}
-.nav-hamburger.open span:nth-child(6) {
-  top: 64.44%;
-  left: calc(50% - 0.333em);
-}
 
+.nav-hamburger:focus,
 .nav-hamburger:active,
 .nav-hamburger:hover {
-  border: none;
-  background: none;
-  outline: none;
-  opacity: 0.85;
-}
-.nav-hamburger:active span,
-.nav-hamburger:hover span {
-  background: #2f3e52;
+  border: inherit;
+  background: inherit;
+  color: inherit;
+  outline: inherit;
 }
 
 .nav-hamburger:focus {
-  border: none;
-  background: none;
   outline: 1px dotted #979aa0;
+}
+.nav-hamburger:focus span {
+  background-color: #292929;
+}
+
+.nav-hamburger:active span:nth-child(1) {
+  transition: 150ms ease-in 100ms;
+  transform: translateY(3px);
+}
+.nav-hamburger:active span:nth-child(4) {
+  transition: 150ms ease-in 100ms;
+  transform: translateY(-3px);
+}
+
+.nav-hamburger:hover span {
+  animation: 300ms hamburger-color-change 0ms ease-in-out forwards;
+}
+
+@keyframes hamburger-color-change {
+  0% {
+    background-color: #171717;
+  }
+  50% {
+    background-color: #222222;
+  }
+  100% {
+    background-color: #292929;
+  }
 }
 
 /*# sourceMappingURL=hamburger.css.map */

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../styles/hamburger.sass";
 
 function Hamburger(props) {
@@ -13,14 +14,16 @@ function Hamburger(props) {
             <span aria-hidden="true"> </span>
             <span aria-hidden="true"> </span>
             <span aria-hidden="true"> </span>
-            <span aria-hidden="true"> </span>
-            <span aria-hidden="true"> </span>
         </button>
     )
 }
 
 Hamburger.defaultProps = {
     isNavExpanded: false
+}
+
+Hamburger.propTypes = {
+    isNavExpanded: PropTypes.bool.isRequired
 }
 
 export default Hamburger;
