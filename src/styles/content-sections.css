@@ -50,7 +50,7 @@
   display: block;
   background: #171717;
   width: 25%;
-  height: 3px;
+  height: 2px;
   margin: 1.1em auto;
 }
 .home-container .highlights p:first-of-type {
@@ -181,7 +181,7 @@
   justify-content: space-between;
 }
 .projects-container .project .proj-title-section .proj-name {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #0647b6;
   white-space: pre-wrap;
@@ -190,13 +190,23 @@
 .projects-container .project .proj-title-section .proj-links {
   margin: 0 0.2em;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.projects-container .project .proj-title-section .proj-links .proj-link-icon-container {
+  padding: 0.15em;
+}
+.projects-container .project .proj-title-section .proj-links .proj-link-icon-container:hover {
+  background: lightgray;
+  transition: background 150ms linear;
 }
 .projects-container .project .proj-title-section .proj-links .icon {
+  display: block;
   height: 1.25em;
   width: 1.25em;
   max-height: unset;
   max-width: unset;
-  margin-right: 0.5em;
+  margin: 0 0.25em;
 }
 .projects-container .project .proj-desc {
   font-size: 1.2rem;
@@ -235,6 +245,7 @@
   display: grid;
   grid-template: repeat(auto-fit, minmax(20%, 1fr))/repeat(auto-fit, minmax(20%, 1fr));
   grid-gap: 1em 0.35em;
+  cursor: default;
 }
 .projects-container .project .proj-tech-list-container .proj-tech-list .proj-tech-list-item {
   display: flex;
