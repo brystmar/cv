@@ -1,13 +1,6 @@
 @import "variables"
 
 
-/*** Sections ***/
-
-.content-container
-  section:nth-of-type(even)
-    background: rgba(209,215,224,0.35) //$color-background-alt @35%
-
-
 /*** Home ***/
 
 .home-container
@@ -88,12 +81,13 @@
       grid-gap: 0.35em
       .logo-container
         order: 2
-        margin: 0 0.1em
-        //border: 1px solid red
+        display: flex
+        align-items: center
+        justify-content: center
         .job-logo
           max-width: 95%
-          max-height: 4.5em
-          margin: 0
+          max-height: 5em
+          margin: 0 auto
           display: block
         .poker-logos
           animation: 20s poker-logo-slideshow 0s linear infinite forwards

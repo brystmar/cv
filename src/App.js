@@ -8,7 +8,9 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/styles.sass";
+import "./styles/separators.sass";
 import "./styles/content-sections.sass";
+import PageSeparator from "./components/PageSeparator";
 
 function App() {
     const [isNavExpanded, toggleIsNavExpanded] = useState(false)
@@ -22,10 +24,20 @@ function App() {
 
             <main className={isNavExpanded ? "content-container hidden" : "content-container"}>
                 <Home />
+                <PageSeparator />
+
                 <Experience />
+                <PageSeparator />
+
                 <Projects />
+                <PageSeparator />
+
                 <Certifications />
+                <PageSeparator />
+
                 <Education />
+                <PageSeparator />
+
                 <Contact />
             </main>
 

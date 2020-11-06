@@ -7,11 +7,6 @@
 /*** Favicon, from https://realfavicongenerator.net/ ***/
 /*** Page Layout ***/
 /*** Nav ***/
-/*** Sections ***/
-.content-container section:nth-of-type(even) {
-  background: rgba(209, 215, 224, 0.35);
-}
-
 /*** Home ***/
 .home-container {
   text-align: center;
@@ -90,12 +85,14 @@
 }
 .experience-container .job .col-logo-content .logo-container {
   order: 2;
-  margin: 0 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .experience-container .job .col-logo-content .logo-container .job-logo {
   max-width: 95%;
-  max-height: 4.5em;
-  margin: 0;
+  max-height: 5em;
+  margin: 0 auto;
   display: block;
 }
 .experience-container .job .col-logo-content .logo-container .poker-logos {

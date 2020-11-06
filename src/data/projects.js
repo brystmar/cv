@@ -78,7 +78,8 @@ const cv = {
                      alt="Screenshot of the website you're reading right now"
                      className="screenshot"/>,
     notes: [
-        "A simple React app without a backend, hosted in a Google Cloud Storage bucket.  Content from static .js files."
+        "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
+        "Content from static .js files."
     ],
     tech: [
         {
