@@ -70,8 +70,8 @@ const cellarSync = {
 }
 
 const cv = {
-    name: "CV for Thomas Berg",
-    description: "The website you're reading right now!  So meta.",
+    name: "Thomas Berg's CV",
+    description: "The website you're reading right now.  So meta.",
     url: "http://thomasberg.me",
     repo: "https://github.com/brystmar/cv",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cv.png"

@@ -15,8 +15,8 @@ function Proj(props) {
     });
 
     const techList = props.tech.map((thing, index) =>
-        <span className="proj-tech-list-container" key={index}>
-            <h3 className="proj-tech-list-type">{thing.type}</h3>
+        <div className="proj-tech-type-container" key={index}>
+            <span className="proj-tech-type-label">{thing.type}</span>
             <span className="proj-tech-list">
                 {thing.items.map((value, index) =>
                     <span className="proj-tech-list-item" key={index}>
@@ -24,11 +24,11 @@ function Proj(props) {
                         <span className="list-item-label">{value}</span>
                     </span>)}
             </span>
-        </span>);
+        </div>);
 
     return (
         <article className="project">
-            <span className="proj-title-section">
+            <div className="proj-title-section">
                 <span className="proj-name">{props.name}</span>
                 <span className="proj-links">
                     <span className="proj-link-icon-container">
@@ -53,9 +53,9 @@ function Proj(props) {
                         </a>
                     </span>
                 </span>
-            </span>
+            </div>
 
-            <span className="proj-desc">{props.description}</span>
+            <div className="proj-desc">{props.description}</div>
 
             <div className="col-proj proj-screenshot-container">
                 <a className="proj-link"
@@ -65,13 +65,14 @@ function Proj(props) {
             </div>
 
             <div className="proj-notes">{notesList}</div>
-            <p className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
-               onClick={() => updateIsExpanded(!isExpanded)}>
-                {isExpanded ? "- Collapse" : "+ Learn More"}
-            </p>
 
-            <div className="col-proj proj-content">
-                <span className="proj-tech">{techList}</span>
+            <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+               onClick={() => updateIsExpanded(!isExpanded)}>
+                {isExpanded ? "Collapse" : "Learn More"}
+            </div>
+
+            <div className="col-proj proj-tech">
+                {techList}
             </div>
         </article>
     )
