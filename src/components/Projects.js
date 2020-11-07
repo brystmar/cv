@@ -12,6 +12,7 @@ function Projects() {
               repo={proj.repo}
               screenshot={proj.screenshot}
               tech={proj.tech}/>)
+
     return (
         <section
             id="Projects"
@@ -20,7 +21,6 @@ function Projects() {
 
             <h1>Projects</h1>
             {projectList}
-
         </section>
     )
 }

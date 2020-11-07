@@ -50,7 +50,7 @@ p
 strong
   display: inline
   font-weight: inherit
-  color: $color-primary-complementary-darker
+  color: $color-primary-darker
 
 img
   display: inline-block
@@ -72,17 +72,6 @@ a:active
 li
   line-height: 1.5
 
-//.btn
-//  height: 2.5em
-//  width: 7em
-//  text-align: center
-//  margin: 0
-//  border-radius: 0.2em
-//  cursor: pointer
-//  outline: none
-//  box-shadow: none
-//  transition: all 0.2s
-
 
 /*** Page Layout ***/
 
@@ -90,8 +79,7 @@ li
   background: $color-background-alt
   margin: 0 auto
   max-width: $app-max-width
-  header,
-  footer
+  header
     padding: 0.25em
   section
     padding: 3em 0.25em
@@ -106,7 +94,7 @@ li
   section:first-of-type
     padding-top: 0
   section:last-of-type
-    padding-bottom: 0
+    //padding-bottom: 0
     background: $color-background-alt
 
 .sr-only  //screen readers
@@ -121,7 +109,9 @@ li
 
 .footer-container
   font-size: 0.8rem
-  margin-top: 2em
+  padding: 1.25em 0
+  margin: 0 0.25em
+  background: $color-background-alt
 
 .hidden
   display: none
@@ -131,4 +121,3 @@ li
   max-width: 1.1em
   max-height: 1.1em
   margin-right: 0.35em
-  

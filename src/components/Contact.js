@@ -1,7 +1,14 @@
 import React from "react";
-import ContactGroup from "./ContactGroup";
+import ContactItem from "./ContactItem";
+import myContactMethods from "../data/contact";
 
 function Contact() {
+    const contactList = myContactMethods.map((item, index) =>
+        <ContactItem key={index}
+                     text={item.text}
+                     url={item.url}
+                     image={item.image}/>)
+
     return (
         <section id="Contact"
                  aria-label="Ways to contact Thomas"
@@ -10,20 +17,7 @@ function Contact() {
             <h1>Contact</h1>
 
             <article className="contact-list-items">
-                <ContactGroup imgSource="./icons/email-trimmed.svg"
-                              imgDescription="Send Thomas an email"
-                              url="mailto:tp.berg+cv@gmail.com"
-                              text="Email"/>
-
-                <ContactGroup imgSource="./logos/linkedin.svg"
-                              imgDescription="View Thomas Berg's profile on LinkedIn"
-                              url="https://www.linkedin.com/in/t-berg/"
-                              text="LinkedIn"/>
-
-                <ContactGroup imgSource="./logos/github.svg"
-                              imgDescription="View brystmar's repositories on GitHub"
-                              url="https://github.com/brystmar/"
-                              text="GitHub"/>
+                {contactList}
             </article>
         </section>
     )

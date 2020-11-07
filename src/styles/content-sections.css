@@ -337,14 +337,14 @@
   width: 80px;
   max-width: 50%;
   max-height: 50%;
-  margin: 0.35em 0;
-}
-.contact-container .contact-list-items .contact-group .contact-link .label {
-  margin: 0 0 0.2em;
+  margin: 0.5em 0;
 }
 .contact-container .contact-list-items .contact-group .contact-link:hover {
   background: #f0f0f0;
   border: 1px solid #0647b6;
+}
+.contact-container .contact-list-items .contact-group .contact-link:hover .icon {
+  background: white;
 }
 .contact-container .contact-list-items .contact-group .contact-link:focus,
 .contact-container .contact-list-items .contact-group .contact-link:active {
