@@ -32,7 +32,7 @@ h4
 h1
   font-size: 3.2rem
   text-align: center
-  margin: 0.6em 0
+  margin: 0 0 0.6em
 
 h2
   font-size: 2rem
@@ -47,17 +47,15 @@ p
   font-size: 1rem
   font-weight: 400
 
-section
-  margin: 0
-  display: block
-
 strong
+  display: inline
   font-weight: inherit
   color: $color-primary-complementary-darker
 
 img
   display: inline-block
   max-width: 100%
+  max-height: 100%
 
 a
   color: $color-link
@@ -74,16 +72,16 @@ a:active
 li
   line-height: 1.5
 
-.btn
-  height: 2.5em
-  width: 7em
-  text-align: center
-  margin: 0
-  border-radius: 0.2em
-  cursor: pointer
-  outline: none
-  box-shadow: none
-  transition: all 0.2s
+//.btn
+//  height: 2.5em
+//  width: 7em
+//  text-align: center
+//  margin: 0
+//  border-radius: 0.2em
+//  cursor: pointer
+//  outline: none
+//  box-shadow: none
+//  transition: all 0.2s
 
 
 /*** Page Layout ***/
@@ -93,9 +91,23 @@ li
   margin: 0 auto
   max-width: $app-max-width
   header,
-  footer,
-  section
+  footer
     padding: 0.25em
+  section
+    padding: 3em 0.25em
+    article
+      margin: 2em 0
+    article:last-of-type
+      margin-bottom: 0
+  section:nth-of-type(odd)
+    background: $color-background
+  section:nth-of-type(even)
+    background: $color-background-alt
+  section:first-of-type
+    padding-top: 0
+  section:last-of-type
+    padding-bottom: 0
+    background: $color-background-alt
 
 .sr-only  //screen readers
   position: absolute

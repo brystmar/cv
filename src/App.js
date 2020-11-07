@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import "./styles/styles.sass";
 import "./styles/separators.sass";
 import "./styles/content-sections.sass";
-import PageSeparator from "./components/PageSeparator";
+import Separator from "./components/Separator";
 
 function App() {
     const [isNavExpanded, toggleIsNavExpanded] = useState(false)
@@ -24,19 +24,19 @@ function App() {
 
             <main className={isNavExpanded ? "content-container hidden" : "content-container"}>
                 <Home />
-                <PageSeparator />
+                {/*<Separator />*/}
 
                 <Experience />
-                <PageSeparator />
+                {/*<Separator />*/}
 
                 <Projects />
-                <PageSeparator />
+                {/*<Separator />*/}
 
                 <Certifications />
-                <PageSeparator />
+                {/*<Separator />*/}
 
                 <Education />
-                <PageSeparator />
+                {/*<Separator />*/}
 
                 <Contact />
             </main>

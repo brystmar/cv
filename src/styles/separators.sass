@@ -6,14 +6,11 @@
 footer
   background: $color-background-alt
 
-.content-container
-  section:nth-of-type(odd)
-    background: rgba(240,240,240,1) //$color-background-alt @35%
-  section:nth-of-type(even),
-  section:last-of-type
-    background: rgba(225,225,225,1) //$color-background-alt @35%
-    //background: rgba(230,230,230,0.95) //$color-background-alt @35%
-
+.faded-line
+  height: 1px
+  width: 50%
+  margin: 1.25em auto
+  background: linear-gradient(90deg, $color-background, $color-dark, $color-background)
 
 .light-grey
  background-color: #ecf0f1
@@ -34,8 +31,8 @@ footer
   width: 100%
   padding: 0
   margin: 0
-  display: none
-  position: relative
+  //display: block
+  //position: relative
   .page-separator
     display: block
     //background: 0 0
@@ -55,5 +52,5 @@ footer
       fill: #2a3f54
     .wave-part-3
       fill: rgb(34, 49, 63)
-      fill: $color-background-alt
+      //fill: $color-background-alt
       //background: transparent

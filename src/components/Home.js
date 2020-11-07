@@ -1,4 +1,5 @@
 import React from "react";
+import Separator from "./Separator";
 
 function Home() {
     return (
@@ -14,16 +15,30 @@ function Home() {
                 <p className="followup">I'm interested in <a href="#Projects">things</a>.</p>
             </div>
 
-            <img src="https://storage.googleapis.com/tb-public-misc/faces.jpg"
-                 alt="Thomas sitting at a table in a restaurant, making a goofy face"
-                 className="headshot"/>
-
-            <div className="highlights">
-                <p>Customer-obsessed Product Manager with a passion for <strong>user experience</strong></p>
-                <p>Naturally <strong>curious</strong>, data-driven, and technical</p>
-                <p>Avid <strong>home cook</strong>, exploring the intersection of food & tech</p>
+            <div className="headshot-container">
+                <img src="https://storage.googleapis.com/tb-public-misc/faces.jpg"
+                     alt="Thomas sitting in a restaurant, making a goofy face"
+                     className="headshot"/>
             </div>
 
+            <div className="highlights">
+                <p className="highlight">
+                    Customer-obsessed Product Manager with a passion for <strong>user
+                    experience</strong>
+                </p>
+
+                <Separator/>
+
+                <p className="highlight">
+                    Naturally <strong>curious</strong>, data-driven, and technical
+                </p>
+
+                <Separator/>
+
+                <p className="highlight">
+                    Avid <strong>home cook</strong>, exploring the intersection of food & tech
+                </p>
+            </div>
         </section>
     )
 }

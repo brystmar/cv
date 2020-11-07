@@ -41,7 +41,7 @@ h4 {
 h1 {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0.6em 0;
+  margin: 0 0 0.6em;
 }
 
 h2 {
@@ -60,12 +60,8 @@ p {
   font-weight: 400;
 }
 
-section {
-  margin: 0;
-  display: block;
-}
-
 strong {
+  display: inline;
   font-weight: inherit;
   color: #cb5700;
 }
@@ -73,6 +69,7 @@ strong {
 img {
   display: inline-block;
   max-width: 100%;
+  max-height: 100%;
 }
 
 a {
@@ -98,18 +95,6 @@ li {
   line-height: 1.5;
 }
 
-.btn {
-  height: 2.5em;
-  width: 7em;
-  text-align: center;
-  margin: 0;
-  border-radius: 0.2em;
-  cursor: pointer;
-  outline: none;
-  box-shadow: none;
-  transition: all 0.2s;
-}
-
 /*** Page Layout ***/
 .app-container {
   background: #e1e1e1;
@@ -117,9 +102,30 @@ li {
   max-width: 1000px;
 }
 .app-container header,
-.app-container footer,
-.app-container section {
+.app-container footer {
   padding: 0.25em;
+}
+.app-container section {
+  padding: 3em 0.25em;
+}
+.app-container section article {
+  margin: 2em 0;
+}
+.app-container section article:last-of-type {
+  margin-bottom: 0;
+}
+.app-container section:nth-of-type(odd) {
+  background: #f0f0f0;
+}
+.app-container section:nth-of-type(even) {
+  background: #e1e1e1;
+}
+.app-container section:first-of-type {
+  padding-top: 0;
+}
+.app-container section:last-of-type {
+  padding-bottom: 0;
+  background: #e1e1e1;
 }
 
 .sr-only {

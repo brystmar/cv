@@ -15,12 +15,11 @@ footer {
   background: #e1e1e1;
 }
 
-.content-container section:nth-of-type(odd) {
-  background: #f0f0f0;
-}
-.content-container section:nth-of-type(even),
-.content-container section:last-of-type {
-  background: #e1e1e1;
+.faded-line {
+  height: 1px;
+  width: 50%;
+  margin: 1.25em auto;
+  background: linear-gradient(90deg, #f0f0f0, #171717, #f0f0f0);
 }
 
 .light-grey {
@@ -44,8 +43,6 @@ footer {
   width: 100%;
   padding: 0;
   margin: 0;
-  display: none;
-  position: relative;
 }
 .page-separator-container .page-separator {
   display: block;
@@ -66,7 +63,6 @@ footer {
 }
 .page-separator-container .page-separator .wave-part-3 {
   fill: #22313f;
-  fill: #e1e1e1;
 }
 
 /*# sourceMappingURL=separators.css.map */

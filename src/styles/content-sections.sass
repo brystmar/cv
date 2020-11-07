@@ -9,9 +9,7 @@
     .intro
       font-size: 2rem
       font-weight: 400
-      margin-top: 0
-      //margin: 0
-      //padding: 0
+      margin: 0
       text-align: center
     .name
       font-size: 4rem
@@ -29,50 +27,30 @@
       font-size: 1.9rem
       font-weight: 400
       margin: 0.2em
-  .headshot
-    height: 200px
-    margin: 1em 0
+  .headshot-container
+    height: 12em
+    margin: 1.25em 0
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      height: 95%
   .highlights
-    p
+    .highlight
       font-size: 1.4rem
-      display: block
-      margin: 1.1em 0
-    p::after
-      content: ""
-      display: block
-      background: $color-dark
-      width: 25%
-      height: 2px
-      margin: 1.1em auto
-    p:first-of-type
-      margin-top: 0
-    p:last-of-type
-      margin-bottom: 2em
-    p:last-of-type::after
-      display: none
+      margin: 0
+      //margin: 1.1em 0
 
 
 /*** Experience ***/
 
 .experience-container
-  //article::after
-  //  display: block
-  //  content: ""
-  //  background-color: $color-dark
-  //  width: 25%
-  //  height: 3px
-  //  text-align: center
-  //  margin: 2em auto
-  article:last-of-type
-    margin-bottom: 3em
-  article:last-of-type::after
-    display: none
   .job
     .job-title
       font-size: 1.6rem
       font-weight: 500
       color: $color-primary-darker
-      margin: 1.25em 0 0.5em
+      margin: 1.25em 0 0.25em
       display: block
       white-space: pre-wrap
     .col-logo-content
@@ -106,6 +84,7 @@
     
     .job-content
       .job-accomplishments
+        margin: 1em 0
         li
           list-style: square
           margin: 1em 0
@@ -156,17 +135,16 @@
 
 .projects-container
   .project
-    margin: 1.5em 0
     .proj-title-section
       display: flex
       align-items: center
       justify-content: space-between
+      margin: 0.5em 0
       .proj-name
         font-size: 1.8rem
         font-weight: 500
         color: $color-primary-darker
         white-space: pre-wrap
-        margin: 0.5em 0
       .proj-links
         margin: 0 0.2em
         display: flex
@@ -179,7 +157,6 @@
           transition: background 150ms linear
         .icon
           display: block
-          //border: 1px solid green
           height: 1.25em
           width: 1.25em
           max-height: unset
@@ -253,7 +230,6 @@
       display: grid
       grid-template: 1fr / 20% 79%
       grid-gap: 1em
-      margin-bottom: 1.5em
       //border: 1px solid black
       .logo-container
         //border: 1px dashed green
@@ -267,15 +243,12 @@
         display: flex
         flex-direction: column
         justify-content: center
-  .cert:last-child
-    margin-bottom: 3em
 
 
 /*** Education ***/
 
 .education-container
   .degree
-    margin-bottom: 3em
     .degree-title
       font-size: 1.25rem
       font-weight: 500
