@@ -4,13 +4,16 @@ import PropTypes from "prop-types";
 function ContactGroup(props) {
     return (
         <span className="contact-group">
-            <img className="contact-group-img icon"
-                 src={props.imgSource}
-                 alt={props.imgDescription}/>
-
             <a href={props.url}
+               className="contact-link"
                target="_blank"
-               rel="noopener noreferrer">{props.text}</a>
+               rel="noopener noreferrer">
+                <img className="icon"
+                     src={props.imgSource}
+                     alt={props.imgDescription}/>
+
+                <span className="label">{props.text}</span>
+            </a>
         </span>
     )
 }

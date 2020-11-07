@@ -4,7 +4,7 @@ import ContactGroup from "./ContactGroup";
 function Contact() {
     return (
         <section id="Contact"
-                 aria-label="How to contact Thomas"
+                 aria-label="Ways to contact Thomas"
                  className="contact-container">
 
             <h1>Contact</h1>

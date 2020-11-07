@@ -110,6 +110,11 @@
   justify-content: center;
   transition: background-color;
 }
+.logo-container .cr-logo {
+  background-color: #13223a;
+  padding: 0.5em;
+  border-radius: 10px;
+}
 
 .logo-container:hover {
   background: lightgray;
@@ -304,24 +309,47 @@
   max-height: 1.15em;
 }
 
-.cr-logo {
-  background-color: #13223a;
-  padding: 0.5em;
-  border-radius: 10px;
-}
-
 /*** Contact ***/
 .contact-container .contact-list-items {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 2em;
+  align-content: space-between;
 }
 .contact-container .contact-list-items .contact-group {
-  margin: 0.15em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.contact-container .contact-list-items .contact-group img {
-  width: 30px;
-  display: inline;
+.contact-container .contact-list-items .contact-group .contact-link {
+  color: inherit;
+  border: 1px solid #979aa0;
+  border-radius: 10px;
+  padding: 1em;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container .contact-list-items .contact-group .contact-link .icon {
+  width: 80px;
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0.35em 0;
+}
+.contact-container .contact-list-items .contact-group .contact-link .label {
+  margin: 0 0 0.2em;
+}
+.contact-container .contact-list-items .contact-group .contact-link:hover {
+  background: #f0f0f0;
+  border: 1px solid #0647b6;
+}
+.contact-container .contact-list-items .contact-group .contact-link:focus,
+.contact-container .contact-list-items .contact-group .contact-link:active {
+  outline: 1px dotted #696c72;
+  background: #f0f0f0;
 }
 
 /*# sourceMappingURL=content-sections.css.map */

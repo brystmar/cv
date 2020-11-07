@@ -95,6 +95,10 @@
   align-items: center
   justify-content: center
   transition: background-color
+  .cr-logo
+    background-color: rgb(19,34,58)
+    padding: 0.5em
+    border-radius: 10px
 .logo-container:hover
   background: lightgray
 
@@ -269,24 +273,53 @@
 .icon
   max-width: 1.15em
   max-height: 1.15em
-  //max-width: 15px
-  //max-height: 15px
-
-.cr-logo
-  background-color: rgb(19,34,58)
-  padding: 0.5em
-  border-radius: 10px
 
 
 /*** Contact ***/
 
 .contact-container
   .contact-list-items
+    //display: grid
+    //grid-template: repeat(auto-fit, 80px) / repeat(auto-fit, 80px)
     display: flex
-    flex-direction: column
-    margin-bottom: 2em
+    align-content: space-between
+    //border: 1px solid red
     .contact-group
-      margin: 0.15em
-      img
-        width: 30px
-        display: inline
+      margin: 0 auto
+      //border: 1px dashed blue
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      .contact-link
+        color: inherit
+        border: 1px solid $color-border
+        border-radius: 10px
+        padding: 1em
+        height: 100%
+        text-decoration: none
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .icon
+          width: 80px
+          //height: 50%
+          max-width: 50%
+          max-height: 50%
+          //display: block
+          //border: 1px dashed blue
+          margin: 0.35em 0
+        .label
+          //border: 1px dashed cadetblue
+          margin: 0 0 0.2em
+      .contact-link:hover
+        background: $color-background
+        border: 1px solid $color-primary-darker
+      .contact-link:focus,
+      .contact-link:active
+        outline: 1px dotted $color-border-darker
+        background: $color-background
+        //-webkit-border-radius: 10px
+        //-moz-border-radius: 10px
+        //border-radius: 10px
