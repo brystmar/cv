@@ -9,24 +9,27 @@
     .intro
       font-size: 2rem
       font-weight: 400
-      margin: 0
       text-align: center
+      margin: 0 0 0.8em
     .name
       font-size: 4rem
       font-weight: 600
-      margin: 0.4em
       color: $color-light
-    .name::after
-      content: ""
-      display: block
       background: $color-primary-darker
-      height: 1.2em
-      width: 100%
-      margin-top: -1.25em
+      display: inline
+      padding: 0 0.5em
+    //border: 1px dashed red
+    //margin-block-start: 1em
+    //margin-block-end: 1em
+    //margin-inline-start: 0
+    //margin-inline-end: 0
+    //.followup,
     .followup
-      font-size: 1.9rem
-      font-weight: 400
-      margin: 0.2em
+      margin: 1.25em 0.25em 0.25em
+      p
+        font-size: 1.9rem
+        font-weight: 400
+        margin: 0.2em 0
   .headshot-container
     height: 12em
     margin: 1.25em 0
@@ -40,6 +43,11 @@
       font-size: 1.4rem
       margin: 0
       //margin: 1.1em 0
+
+@media (min-width: 660px)
+  .home-container
+    .greeting
+      cursor: inherit
 
 
 /*** Experience ***/

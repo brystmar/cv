@@ -9,10 +9,12 @@ function Home() {
             className="home-container">
 
             <div className="greeting">
-                <p className="intro">Hello! I'm</p>
-                <p className="name">Thomas</p>
-                <p className="followup">I manage <a href="#Experience">products</a>.</p>
-                <p className="followup">I'm interested in <a href="#Projects">things</a>.</p>
+                <div className="intro">Hello! I'm</div>
+                <div className="name">Thomas</div>
+                <div className="followup">
+                    <p>I manage <a href="#Experience">products</a>.</p>
+                    <p>I'm interested in <a href="#Projects">things</a>.</p>
+                </div>
             </div>
 
             <div className="headshot-container">
@@ -22,22 +24,18 @@ function Home() {
             </div>
 
             <div className="highlights">
-                <p className="highlight">
-                    Customer-obsessed Product Manager with a passion for <strong>user
-                    experience</strong>
-                </p>
+                <p className="highlight">Customer-obsessed Product Manager with a passion
+                    for <strong>user experience</strong></p>
 
                 <Separator/>
 
-                <p className="highlight">
-                    Naturally <strong>curious</strong>, data-driven, and technical
-                </p>
+                <p className="highlight"> Naturally <strong>curious</strong>, data-driven, and
+                    technical</p>
 
                 <Separator/>
 
-                <p className="highlight">
-                    Avid <strong>home cook</strong>, exploring the intersection of food and tech
-                </p>
+                <p className="highlight"> Avid <strong>home cook</strong>, exploring the
+                    intersection of food and tech</p>
             </div>
         </section>
     )

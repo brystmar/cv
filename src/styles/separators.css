@@ -15,54 +15,11 @@ footer {
   background: #e1e1e1;
 }
 
-.faded-line {
+.separator-horiz {
   height: 1px;
   width: 50%;
   margin: 1.25em auto;
   background: linear-gradient(90deg, #f0f0f0, #171717, #f0f0f0);
-}
-
-.light-grey {
-  background-color: #ecf0f1;
-}
-
-.light-grey2 {
-  background-color: #ecf0f1;
-}
-
-.dark-blue {
-  background-color: #22313f;
-}
-
-.grey-blue {
-  background-color: #6c7a89;
-}
-
-/* -- SVG CSS -- */
-.page-separator-container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-.page-separator-container .page-separator {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 9;
-  width: 100%;
-}
-.page-separator-container .page-separator .wave-part-1 {
-  opacity: 1;
-  fill: #273a4c;
-}
-.page-separator-container .page-separator .wave-part-2 {
-  opacity: 1;
-  fill: #2a3f54;
-}
-.page-separator-container .page-separator .wave-part-3 {
-  fill: #22313f;
 }
 
 /*# sourceMappingURL=separators.css.map */

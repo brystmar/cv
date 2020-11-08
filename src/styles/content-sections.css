@@ -14,27 +14,24 @@
 .home-container .greeting .intro {
   font-size: 2rem;
   font-weight: 400;
-  margin: 0;
   text-align: center;
+  margin: 0 0 0.8em;
 }
 .home-container .greeting .name {
   font-size: 4rem;
   font-weight: 600;
-  margin: 0.4em;
   color: #f8f8f8;
-}
-.home-container .greeting .name::after {
-  content: "";
-  display: block;
   background: #0647b6;
-  height: 1.2em;
-  width: 100%;
-  margin-top: -1.25em;
+  display: inline;
+  padding: 0 0.5em;
 }
 .home-container .greeting .followup {
+  margin: 1.25em 0.25em 0.25em;
+}
+.home-container .greeting .followup p {
   font-size: 1.9rem;
   font-weight: 400;
-  margin: 0.2em;
+  margin: 0.2em 0;
 }
 .home-container .headshot-container {
   height: 12em;
@@ -51,6 +48,11 @@
   margin: 0;
 }
 
+@media (min-width: 660px) {
+  .home-container .greeting {
+    cursor: inherit;
+  }
+}
 /*** Experience ***/
 .experience-container .job .job-title {
   font-size: 1.6rem;

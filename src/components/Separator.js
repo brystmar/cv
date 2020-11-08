@@ -2,7 +2,7 @@ import React from "react";
 
 function Separator() {
     return (
-        <div className="faded-line"></div>
+        <div className="separator-horiz"/>
     )
 }
 
