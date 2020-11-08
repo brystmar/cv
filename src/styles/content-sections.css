@@ -216,10 +216,10 @@
   line-height: 1.4;
 }
 .projects-container .project .proj-learn-more {
-  display: block;
+  display: inline;
   color: #0647b6;
   border: 1px dotted transparent;
-  margin: 0 0.25em 2em;
+  margin: 0 0.25em;
 }
 .projects-container .project .proj-learn-more:hover {
   text-decoration: underline;
@@ -229,16 +229,19 @@
 .projects-container .project .proj-learn-more:focus {
   border: 1px dotted #979aa0;
 }
-.projects-container .project .proj-tech-type-container {
+.projects-container .project .proj-tech {
+  margin-top: 2em;
+}
+.projects-container .project .proj-tech .proj-tech-type-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1.5em 0;
+  margin: 1.5em 0.25em;
   border: 1px dashed #673a90;
   border-radius: 2em;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-type-label {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-type-label {
   font-size: 1.2rem;
   font-weight: 500;
   color: #f8f8f8;
@@ -251,7 +254,7 @@
   border: 1px solid #673a90;
   border-radius: 10px;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-list {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-list {
   margin: 0 0.25em 1em;
   width: 100%;
   display: grid;
@@ -259,21 +262,21 @@
   grid-gap: 1em 0.5em;
   cursor: default;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-list .proj-tech-list-item {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-list .proj-tech-list-item .logo-container {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .logo-container {
   max-width: 3.5em;
   max-height: 3em;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-list .proj-tech-list-item .logo-container:hover {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .logo-container:hover {
   background: none;
 }
-.projects-container .project .proj-tech-type-container .proj-tech-list .proj-tech-list-item .list-item-label {
+.projects-container .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .list-item-label {
   margin: 0.25em 0;
   padding: 0.25em 0;
 }

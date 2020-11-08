@@ -11,14 +11,14 @@ const breadsheet = {
     notes: [
         "Breadsheet is a handy scheduling tool that helps you fit long recipes into your day.",
         "Many bread recipes are all-day affairs with hours of downtime between steps.  And some, like sourdough, require multi-day planning.",
-        "Once added to breadsheet, home cooks specify when they plan to start a recipe and receive a clear picture of the finish line -- and each step along the way.",
+        "Once added to breadsheet, home cooks specify when they plan to start a recipe.  The tool delivers a clear picture of the finish line -- and each step along the way.",
         "The reverse is also true: enter the date & time you want the finished product ready, and breadsheet works backwards to deliver a schedule meeting this deadline."
     ],
     tech: [
         {
-            type: "Back End",
+            type: "Front End",
             items: [
-                "Python", "Flask"
+                "React", "SASS", "JavaScript"
             ]
         },
         {
@@ -28,9 +28,9 @@ const breadsheet = {
             ]
         },
         {
-            type: "Front End",
+            type: "Back End",
             items: [
-                "React", "SASS", "JavaScript"
+                "Python", "Flask"
             ]
         }
     ]
@@ -45,13 +45,14 @@ const cellarSync = {
                      alt="Screenshot of the Cellar Sync webapp"
                      className="screenshot"/>,
     notes: [
-        ""
+        "Currently undergoing a significant refactor to simplify the data structure.",
+        "Placeholder for more info about this project."
     ],
     tech: [
         {
-            type: "Back End",
+            type: "Front End",
             items: [
-                "Python", "Flask"
+                "React", "SASS"
             ]
         },
         {
@@ -61,9 +62,9 @@ const cellarSync = {
             ]
         },
         {
-            type: "Front End",
+            type: "Back End",
             items: [
-                "React", "SASS"
+                "Python", "Flask"
             ]
         }
     ]
@@ -83,15 +84,15 @@ const cv = {
     ],
     tech: [
         {
-            type: "Infrastructure",
-            items: [
-                "Google Cloud Storage"
-            ]
-        },
-        {
             type: "Front End",
             items: [
                 "React", "SASS"
+            ]
+        },
+        {
+            type: "Infrastructure",
+            items: [
+                "Google Cloud Storage"
             ]
         }
     ]

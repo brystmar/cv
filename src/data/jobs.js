@@ -11,8 +11,9 @@ const expediaPM = {
     startDate: "Feb 2020",
     endDate: "Present",
     accomplishments: [
-        "Replaced a patchwork of legacy systems with Salesforce Service Cloud case management for >3000 travel agents.",
-        "Especially live chat things."
+        "Focused on tool and process efficiency for Egencia.com, the B2B product from Expedia Group.",
+        "Implemented case management for >3000 travel agents, improving [metric] by x%.",
+        "Launched live agent chat for 25,000 clients in 17 countries.  Access to this new channel reduced client email case volume by 11% (on average) and overall handle time by 8 minutes."
     ]
 };
 
@@ -30,7 +31,7 @@ const dynataSeniorPdM = {
     accomplishments: [
         "Led platform integration through two M&A events, more than doubling the company’s annual revenue.",
         "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices.",
-        "Spearheaded adoption of a unified design system to standardize UI elements across platforms."
+        "Spearheaded adoption of a unified design system to standardize UI components across platforms."
     ]
 };
 

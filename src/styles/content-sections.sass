@@ -183,10 +183,10 @@
       line-height: 1.4
 
     .proj-learn-more
-      display: block
+      display: inline
       color: $color-primary-darker
       border: 1px dotted transparent
-      margin: 0 0.25em 2em
+      margin: 0 0.25em
     .proj-learn-more:hover
       text-decoration: underline
       cursor: pointer
@@ -194,49 +194,51 @@
     .proj-learn-more:focus
       border: 1px dotted $color-border
 
-    .proj-tech-type-container
-      display: flex
-      flex-direction: column
-      //align-items: center
-      align-items: center
-      justify-content: center
-      margin: 1.5em 0
-      border: 1px dashed $color-primary-triadic
-      border-radius: 2em
-      .proj-tech-type-label
-        font-size: 1.2rem
-        font-weight: 500
-        color: $color-light
-        position: relative
-        top: -0.75em
-        display: inline
-        margin: 0
-        padding: 0 0.5em
-        background: $color-primary-triadic
-        border: 1px solid $color-primary-triadic
-        border-radius: 10px
-      .proj-tech-list
-        margin: 0 0.25em 1em
-        width: 100%
-        display: grid
-        grid-template: repeat(auto-fit, minmax(20%, 1fr)) / repeat(auto-fit, minmax(20%, 1fr))
-        grid-gap: 1em 0.5em
-        cursor: default
-        .proj-tech-list-item
-          display: flex
-          flex-direction: column
-          align-items: center
-          justify-content: center
-          text-align: center
-          .logo-container
-            //border: 1px solid green
-            max-width: 3.5em
-            max-height: 3em
-          .logo-container:hover
-            background: none
-          .list-item-label
-            margin: 0.25em 0
-            padding: 0.25em 0
+    .proj-tech
+      margin-top: 2em
+      .proj-tech-type-container
+        display: flex
+        flex-direction: column
+        //align-items: center
+        align-items: center
+        justify-content: center
+        margin: 1.5em 0.25em
+        border: 1px dashed $color-primary-triadic
+        border-radius: 2em
+        .proj-tech-type-label
+          font-size: 1.2rem
+          font-weight: 500
+          color: $color-light
+          position: relative
+          top: -0.75em
+          display: inline
+          margin: 0
+          padding: 0 0.5em
+          background: $color-primary-triadic
+          border: 1px solid $color-primary-triadic
+          border-radius: 10px
+        .proj-tech-list
+          margin: 0 0.25em 1em
+          width: 100%
+          display: grid
+          grid-template: repeat(auto-fit, minmax(20%, 1fr)) / repeat(auto-fit, minmax(20%, 1fr))
+          grid-gap: 1em 0.5em
+          cursor: default
+          .proj-tech-list-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            .logo-container
+              //border: 1px solid green
+              max-width: 3.5em
+              max-height: 3em
+            .logo-container:hover
+              background: none
+            .list-item-label
+              margin: 0.25em 0
+              padding: 0.25em 0
 
 //.icon-link:hover
   //filter: invert(71%) sepia(78%) saturate(7495%) hue-rotate(17deg) brightness(93%) contrast(103%)

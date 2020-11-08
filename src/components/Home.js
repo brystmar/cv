@@ -36,7 +36,7 @@ function Home() {
                 <Separator/>
 
                 <p className="highlight">
-                    Avid <strong>home cook</strong>, exploring the intersection of food & tech
+                    Avid <strong>home cook</strong>, exploring the intersection of food and tech
                 </p>
             </div>
         </section>

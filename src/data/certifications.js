@@ -3,11 +3,11 @@ import React from "react";
 const react_bootcamp = {
     name: "The React Bootcamp",
     issuer: "Scrimba",
-    logo: <img src="./logos/react.svg"
+    logo: <img src="./logos/scrimba.png"
                alt="React logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/greact",
-    date: "Oct 2020"
+    date: "Dec 2019 to Oct 2020"
 };
 
 const UI_design = {
@@ -17,7 +17,7 @@ const UI_design = {
                alt="Scrimba logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/gdesignbootcamp",
-    date: "Sep 2020"
+    date: "Aug 2020 to Sep 2020"
 };
 
 const responsive_web_design = {
@@ -27,7 +27,7 @@ const responsive_web_design = {
                alt="Scrimba logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/gresponsive",
-    date: "Sep 2020"
+    date: "Jun 2020 to Sep 2020"
 };
 
 const SF_admin = {
