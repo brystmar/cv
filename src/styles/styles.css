@@ -97,12 +97,9 @@ li {
 
 /*** Page Layout ***/
 .app-container {
-  background: #e1e1e1;
+  background: #f0f0f0;
   margin: 0 auto;
   max-width: 1000px;
-}
-.app-container header {
-  padding: 0.25em;
 }
 .app-container section {
   padding: 3em 0.25em;

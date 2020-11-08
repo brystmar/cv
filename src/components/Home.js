@@ -29,12 +29,12 @@ function Home() {
 
                 <Separator/>
 
-                <p className="highlight"> Naturally <strong>curious</strong>, data-driven, and
+                <p className="highlight">Naturally <strong>curious</strong>, data-driven, and
                     technical</p>
 
                 <Separator/>
 
-                <p className="highlight"> Avid <strong>home cook</strong>, exploring the
+                <p className="highlight">Avid <strong>home cook</strong>, exploring the
                     intersection of food and tech</p>
             </div>
         </section>

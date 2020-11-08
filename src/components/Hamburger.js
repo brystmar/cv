@@ -7,9 +7,9 @@ function Hamburger(props) {
         <button type="button"
                 name="nav-hamburger"
                 onClick={() => props.toggleIsNavExpanded(!props.isNavExpanded)}
-                title={props.isNavExpanded ? "Close" : "Menu"}
+                title={props.isNavExpanded ? "Close navigation" : "Expand navigation"}
                 className={props.isNavExpanded ? "nav-hamburger open" : "nav-hamburger"}
-                aria-label={props.isNavExpanded ? "Close navigation" : "Open navigation"}>
+                aria-label={props.isNavExpanded ? "Close navigation" : "Expand navigation"}>
             <span aria-hidden="true"> </span>
             <span aria-hidden="true"> </span>
             <span aria-hidden="true"> </span>

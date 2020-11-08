@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: 520px) {
   .home-container .greeting {
     cursor: inherit;
   }
@@ -110,10 +110,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color;
+  transition: background;
 }
 .logo-container .cr-logo {
-  background-color: #13223a;
+  background: #13223a;
   padding: 0.5em;
   border-radius: 10px;
 }

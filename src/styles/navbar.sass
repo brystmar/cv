@@ -4,20 +4,54 @@
 /*** Navigation ***/
 
 .navbar
+  //height: 100vh
+  .links-container.mobile-hide
+    display: none
   .links-container
-    height: 80vh
     display: flex
     flex-direction: column
-    ul
-      margin: 0
-      padding: 0
-      list-style: none
-      display: flex
-      flex-direction: column
-      justify-content: flex-end
-      text-align: center
+    align-items: center
+    justify-content: flex-start
+    a
+      margin: 0.4em
+      padding: 0.1em
       font-size: 2.75rem
-      li
-        margin: 0.4em
-        a
-          padding: 0.1em
+
+.header-container.mobile
+  height: 100vh
+  margin: 0
+  padding: 0
+
+.mobile-hide
+  display: none
+
+
+@media (min-width: 520px)
+  .header-container.mobile
+    height: unset
+  .mobile-hide
+    display: unset
+  .navbar
+    display: block
+    margin: 0 0 1em
+    .nav-hamburger
+      display: none
+    .links-container.mobile-hide
+      display: flex
+    .links-container
+      border: 1px solid forestgreen
+      height: unset
+      flex-direction: row
+      justify-content: center
+      background: $color-primary-triadic
+      a
+        font-size: 1rem
+        background: $color-primary-triadic
+        margin: 0
+        border: 1px dashed yellow
+        padding: 0.5em
+        //background: $color-primary-triadic
+        color: $color-light
+        text-decoration: none
+      a:hover
+        background: $color-primary-triadic-lighter

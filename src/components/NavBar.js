@@ -7,24 +7,22 @@ function NavBar(props) {
 
     return (
         <nav role="navigation"
-             aria-label="Links to various sections"
-             className="navbar">
+             aria-label="Navigation links"
+             className={props.isNavExpanded ? "navbar" : "navbar mobile"}>
 
             <Hamburger isNavExpanded={props.isNavExpanded}
                        toggleIsNavExpanded={props.toggleIsNavExpanded}/>
 
-            {props.isNavExpanded ?
-                <span className="links-container">
-                    <ul>
-                        <li><a href="/#Top" onClick={toggle}>Home</a></li>
-                        <li><a href="/#Experience" onClick={toggle}>Experience</a></li>
-                        <li><a href="/#Projects" onClick={toggle}>Projects</a></li>
-                        <li><a href="/#Certifications" onClick={toggle}>Certifications</a></li>
-                        <li><a href="/#Education" onClick={toggle}>Education</a></li>
-                        <li><a href="/#Contact" onClick={toggle}>Contact</a></li>
-                    </ul>
-                </span> : ""
-            }
+            <div className={props.isNavExpanded ?
+                "links-container" :
+                "links-container mobile-hide"}>
+                <a href="/#Top" onClick={toggle}>Home</a>
+                <a href="/#Experience" onClick={toggle}>Experience</a>
+                <a href="/#Projects" onClick={toggle}>Projects</a>
+                <a href="/#Certifications" onClick={toggle}>Certifications</a>
+                <a href="/#Education" onClick={toggle}>Education</a>
+                <a href="/#Contact" onClick={toggle}>Contact</a>
+            </div>
         </nav>
     )
 }

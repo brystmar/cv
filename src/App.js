@@ -16,12 +16,12 @@ function App() {
 
     return (
         <div className="app-container" id="Top">
-            <header className="header-container">
+            <header className={isNavExpanded ? "header-container mobile" : "header-container"}>
                 <NavBar isNavExpanded={isNavExpanded}
                         toggleIsNavExpanded={toggleIsNavExpanded}/>
             </header>
 
-            <main className={isNavExpanded ? "content-container hidden" : "content-container"}>
+            <main className={isNavExpanded ? "content-container mobile-hide" : "content-container"}>
                 <Home />
                 <Experience />
                 <Projects />
@@ -30,7 +30,10 @@ function App() {
                 <Contact />
             </main>
 
-            {isNavExpanded ? "" : <Footer />}
+            <footer className={isNavExpanded ? "footer-container mobile-hide" : "footer-container"}>
+                <Footer />
+            </footer>
+
         </div>
     );
 }
