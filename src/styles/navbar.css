@@ -8,6 +8,9 @@
 /*** Page Layout ***/
 /*** Nav ***/
 /*** Navigation ***/
+.navbar {
+  position: inherit;
+}
 .navbar .links-container.mobile-hide {
   display: none;
 }
@@ -33,7 +36,7 @@
   display: none;
 }
 
-@media (min-width: 520px) {
+@media (min-width: 500px) {
   .header-container.mobile {
     height: unset;
   }
@@ -42,9 +45,17 @@
     display: unset;
   }
 
+  .content-container {
+    padding-top: 50px;
+    background: #f0f0f0;
+  }
+
   .navbar {
-    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
     margin: 0 0 1em;
+    border: 2px solid #673a90;
   }
   .navbar .nav-hamburger {
     display: none;
@@ -53,23 +64,36 @@
     display: flex;
   }
   .navbar .links-container {
-    border: 1px solid forestgreen;
     height: unset;
+    position: sticky;
+    top: 0;
     flex-direction: row;
     justify-content: center;
     background: #673a90;
   }
   .navbar .links-container a {
     font-size: 1rem;
+    color: #f8f8f8;
     background: #673a90;
     margin: 0;
-    border: 1px dashed yellow;
-    padding: 0.5em;
-    color: #f8f8f8;
+    padding: 0.5em 0.6em;
+    border-bottom: 3px solid #673a90;
     text-decoration: none;
   }
   .navbar .links-container a:hover {
-    background: #654e85;
+    border-bottom-color: #f8f8f8;
+  }
+  .navbar .links-container .active {
+    border-bottom-color: #f8f8f8;
+  }
+
+  .nav-education {
+    display: none;
+  }
+}
+@media (min-width: 620px) {
+  .nav-education {
+    display: unset;
   }
 }
 

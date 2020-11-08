@@ -127,17 +127,21 @@ li {
   position: absolute;
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
+  padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
+.footer-container.mobile-hide {
+  display: none;
+}
+
 .footer-container {
+  display: block;
   font-size: 0.8rem;
-  padding: 1.25em 0;
-  margin: 0 0.25em;
+  padding: 1.25em 0.25em;
   background: #e1e1e1;
 }
 

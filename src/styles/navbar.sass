@@ -4,7 +4,7 @@
 /*** Navigation ***/
 
 .navbar
-  //height: 100vh
+  position: inherit
   .links-container.mobile-hide
     display: none
   .links-container
@@ -26,32 +26,46 @@
   display: none
 
 
-@media (min-width: 520px)
+@media (min-width: 500px)
   .header-container.mobile
     height: unset
   .mobile-hide
     display: unset
+  .content-container
+    padding-top: 50px
+    background: $color-background
   .navbar
-    display: block
+    position: fixed
+    width: 100%
+    top: 0
     margin: 0 0 1em
+    border: 2px solid $color-primary-triadic
     .nav-hamburger
       display: none
     .links-container.mobile-hide
       display: flex
     .links-container
-      border: 1px solid forestgreen
       height: unset
+      position: sticky
+      top: 0
       flex-direction: row
       justify-content: center
       background: $color-primary-triadic
       a
         font-size: 1rem
+        color: $color-light
         background: $color-primary-triadic
         margin: 0
-        border: 1px dashed yellow
-        padding: 0.5em
-        //background: $color-primary-triadic
-        color: $color-light
+        padding: 0.5em 0.6em
+        border-bottom: 3px solid $color-primary-triadic
         text-decoration: none
       a:hover
-        background: $color-primary-triadic-lighter
+        border-bottom-color: $color-light
+      .active
+        border-bottom-color: $color-light
+  .nav-education
+    display: none
+    
+@media (min-width: 620px)
+  .nav-education
+    display: unset

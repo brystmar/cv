@@ -16,12 +16,35 @@ function NavBar(props) {
             <div className={props.isNavExpanded ?
                 "links-container" :
                 "links-container mobile-hide"}>
-                <a href="/#Top" onClick={toggle}>Home</a>
-                <a href="/#Experience" onClick={toggle}>Experience</a>
-                <a href="/#Projects" onClick={toggle}>Projects</a>
-                <a href="/#Certifications" onClick={toggle}>Certifications</a>
-                <a href="/#Education" onClick={toggle}>Education</a>
-                <a href="/#Contact" onClick={toggle}>Contact</a>
+                <a onClick={toggle}
+                   href="/#Top"
+                   className="nav-home"
+                   title="Home">Home</a>
+
+                <a onClick={toggle}
+                   href="/#Experience"
+                   className="nav-experience"
+                   title="Experience">Experience</a>
+
+                <a onClick={toggle}
+                   href="/#Projects"
+                   className="nav-proj"
+                   title="Projects">Projects</a>
+
+                <a onClick={toggle}
+                   href="/#Certifications"
+                   className="nav-certs"
+                   title="Certifications">Certifications</a>
+
+                <a onClick={toggle}
+                   href="/#Education"
+                   className="nav-education lg-only"
+                   title="Education">Education</a>
+
+                <a onClick={toggle}
+                   href="/#Contact"
+                   className="nav-contact"
+                   title="Contact">Contact</a>
             </div>
         </nav>
     )

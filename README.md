@@ -19,7 +19,11 @@ Tech Stack:
 * Back End: Python, Flask
 
 ### [Thomas Berg's CV](http://thomasberg.me)
-Website 
+This project's home on the web.  A simple React app without a backend, hosted in a Google Cloud Storage bucket.
+
+Tech Stack:
+* Front End: React, SASS (CSS)
+* Infrastructure: Google Cloud Storage
 
 ## Attribution
 Content sourced from:
