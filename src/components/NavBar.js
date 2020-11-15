@@ -38,7 +38,7 @@ function NavBar(props) {
 
                 <a onClick={toggle}
                    href="/#Education"
-                   className="nav-education lg-only"
+                   className="nav-education"
                    title="Education">Education</a>
 
                 <a onClick={toggle}

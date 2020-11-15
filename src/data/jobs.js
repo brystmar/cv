@@ -82,7 +82,7 @@ const pokerPlayer = {
     endDate: "Dec 2012",
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
-        "Typically played 6 to 8 tables concurrently; played 2+ million total hands lifetime.",
+        "Typically played 6 to 8 tables concurrently; >2 million total hands lifetime.",
         "Specialized in online short-handed cash games of No-Limit Hold'em (NLHE) and Pot-Limit Omaha (PLO).",
         "Won the $200 Full Tilt Sunday Tournament for $132k in Nov 2018, besting 3600 other players.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
@@ -96,7 +96,7 @@ const pokerInstructor = {
                alt="CardRunners logo"
                className="logo job-logo cr-logo"/>,
     location: "Chicago, Vegas, Austin, NYC",
-    title: "Small-Stakes Poker Instructor",
+    title: "Small-Stakes Online Poker Instructor",
     startDate: "Jan 2007",
     endDate: "Dec 2011",
     accomplishments: [

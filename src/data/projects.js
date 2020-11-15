@@ -2,7 +2,7 @@ import React from "react";
 
 const breadsheet = {
     name: "Breadsheet",
-    description: "Scheduling tool for homemade bread and pizza",
+    description: "Scheduling tool for homemade bread and pizza.",
     url: "http://www.breadsheet.com",
     repo: "https://github.com/brystmar/breadsheet-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"

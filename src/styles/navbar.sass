@@ -5,6 +5,7 @@
 
 .navbar
   position: inherit
+  z-index: 100
   .links-container.mobile-hide
     display: none
   .links-container
@@ -49,16 +50,17 @@
       position: sticky
       top: 0
       flex-direction: row
-      justify-content: center
+      justify-content: space-evenly
       background: $color-primary-triadic
       a
         font-size: 1rem
         color: $color-light
         background: $color-primary-triadic
-        margin: 0
+        margin: 0 0.1em
         padding: 0.5em 0.6em
         border-bottom: 3px solid $color-primary-triadic
         text-decoration: none
+        transition: border-bottom-color 250ms ease-in-out
       a:hover
         border-bottom-color: $color-light
       .active
@@ -67,5 +69,12 @@
     display: none
     
 @media (min-width: 620px)
-  .nav-education
+  .nav-education  //hide 'Education' from static nav until there's enough vp width
     display: unset
+
+@media (min-width: 700px)
+  .navbar
+    .links-container
+      justify-content: center
+      a
+        margin: 0 0.5em

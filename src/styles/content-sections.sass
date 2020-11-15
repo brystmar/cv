@@ -90,18 +90,35 @@
           list-style: square
           margin: 1em 0
 
+@media (min-width: 600px)
+  .experience-container
+    .job
+      .job-title
+        white-space: initial
+
 .logo-container
   padding: 0.2em
   display: flex
   align-items: center
   justify-content: center
   transition: background
+  img
+    display: block
   .cr-logo
     background: rgb(19,34,58)
     padding: 0.5em
     border-radius: 10px
 .logo-container:hover
   background: lightgray
+
+@media (min-width: 500px)
+  .logo-container
+    a
+      padding: 0.5em
+    a:hover
+      background: lightgray
+  .logo-container:hover
+    background: unset
 
 .icon-plus-text
   display: flex
@@ -173,13 +190,21 @@
       display: inline
     .proj-screenshot-container
       display: block
-      max-width: 90%
+      max-width: 400px
+      max-height: 330px
+      overflow: hidden
       margin: 1em auto
+      background: inherit
+      //border: 1px solid red
+      box-shadow: 3px 3px 10px $color-border-lighter
       .screenshot
-        box-shadow: 3px 3px 10px $color-border-lightest
-      .screenshot:hover
-        box-shadow: 3px 3px 10px $color-border-lighter
-        transition: box-shadow 200ms linear
+        width: 100%
+        //border: 1px dashed green
+        display: block
+        margin: auto
+    .proj-screenshot-container:hover
+      box-shadow: 3px 3px 10px $color-border
+      transition: box-shadow 200ms linear
     .proj-note
       line-height: 1.4
 
@@ -277,6 +302,11 @@
 
 .education-container
   .degree
+    display: flex
+    flex-direction: column
+    .degree-title,
+    .degree-content
+      max-width: 500px
     .degree-title
       font-size: 1.25rem
       font-weight: 500
@@ -287,12 +317,21 @@
       display: grid
       grid-template: 1fr / 20% 79%
       grid-gap: 1em
-      .degree-logo
-        width: 100%
+      .logo-container
+        .degree-logo
+          display: inline
+          width: 100%
       .degree-details
         display: flex
         flex-direction: column
         justify-content: center
+
+@media (min-width: 500px)
+  .degree
+    .logo-container
+      max-width: 200px
+      max-height: 200px
+  
 
 .icon
   max-width: 1.15em
@@ -307,7 +346,8 @@
     //grid-template: repeat(auto-fit, 80px) / repeat(auto-fit, 80px)
     display: flex
     align-content: space-between
-    //border: 1px solid red
+    max-width: 500px
+    margin: 0 auto
     .contact-group
       margin: 0 auto
       //border: 1px dashed blue
@@ -340,6 +380,3 @@
       .contact-link:active
         outline: 1px dotted $color-border-darker
         background: $color-background
-        //-webkit-border-radius: 10px
-        //-moz-border-radius: 10px
-        //border-radius: 10px

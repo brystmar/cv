@@ -10,6 +10,7 @@
 /*** Navigation ***/
 .navbar {
   position: inherit;
+  z-index: 100;
 }
 .navbar .links-container.mobile-hide {
   display: none;
@@ -47,7 +48,7 @@
 
   .content-container {
     padding-top: 50px;
-    background: #f0f0f0;
+    background: #f8f8f8;
   }
 
   .navbar {
@@ -68,17 +69,18 @@
     position: sticky;
     top: 0;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     background: #673a90;
   }
   .navbar .links-container a {
     font-size: 1rem;
     color: #f8f8f8;
     background: #673a90;
-    margin: 0;
+    margin: 0 0.1em;
     padding: 0.5em 0.6em;
     border-bottom: 3px solid #673a90;
     text-decoration: none;
+    transition: border-bottom-color 250ms ease-in-out;
   }
   .navbar .links-container a:hover {
     border-bottom-color: #f8f8f8;
@@ -94,6 +96,14 @@
 @media (min-width: 620px) {
   .nav-education {
     display: unset;
+  }
+}
+@media (min-width: 700px) {
+  .navbar .links-container {
+    justify-content: center;
+  }
+  .navbar .links-container a {
+    margin: 0 0.5em;
   }
 }
 

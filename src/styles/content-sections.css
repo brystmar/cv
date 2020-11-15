@@ -105,12 +105,20 @@
   margin: 1em 0;
 }
 
+@media (min-width: 600px) {
+  .experience-container .job .job-title {
+    white-space: initial;
+  }
+}
 .logo-container {
   padding: 0.2em;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background;
+}
+.logo-container img {
+  display: block;
 }
 .logo-container .cr-logo {
   background: #13223a;
@@ -122,6 +130,18 @@
   background: lightgray;
 }
 
+@media (min-width: 500px) {
+  .logo-container a {
+    padding: 0.5em;
+  }
+  .logo-container a:hover {
+    background: lightgray;
+  }
+
+  .logo-container:hover {
+    background: unset;
+  }
+}
 .icon-plus-text {
   display: flex;
   align-items: center;
@@ -204,14 +224,20 @@
 }
 .projects-container .project .proj-screenshot-container {
   display: block;
-  max-width: 90%;
+  max-width: 400px;
+  max-height: 330px;
+  overflow: hidden;
   margin: 1em auto;
+  background: inherit;
+  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
 }
 .projects-container .project .proj-screenshot-container .screenshot {
-  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.15);
+  width: 100%;
+  display: block;
+  margin: auto;
 }
-.projects-container .project .proj-screenshot-container .screenshot:hover {
-  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
+.projects-container .project .proj-screenshot-container:hover {
+  box-shadow: 3px 3px 10px #979aa0;
   transition: box-shadow 200ms linear;
 }
 .projects-container .project .proj-note {
@@ -314,6 +340,14 @@
 }
 
 /*** Education ***/
+.education-container .degree {
+  display: flex;
+  flex-direction: column;
+}
+.education-container .degree .degree-title,
+.education-container .degree .degree-content {
+  max-width: 500px;
+}
 .education-container .degree .degree-title {
   font-size: 1.25rem;
   font-weight: 500;
@@ -326,7 +360,8 @@
   grid-template: 1fr/20% 79%;
   grid-gap: 1em;
 }
-.education-container .degree .degree-content .degree-logo {
+.education-container .degree .degree-content .logo-container .degree-logo {
+  display: inline;
   width: 100%;
 }
 .education-container .degree .degree-content .degree-details {
@@ -335,6 +370,12 @@
   justify-content: center;
 }
 
+@media (min-width: 500px) {
+  .degree .logo-container {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
 .icon {
   max-width: 1.15em;
   max-height: 1.15em;
@@ -344,6 +385,8 @@
 .contact-container .contact-list-items {
   display: flex;
   align-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .contact-container .contact-list-items .contact-group {
   margin: 0 auto;
@@ -371,7 +414,7 @@
   margin: 0.5em 0;
 }
 .contact-container .contact-list-items .contact-group .contact-link:hover {
-  background: #f0f0f0;
+  background: #f8f8f8;
   border: 1px solid #0647b6;
 }
 .contact-container .contact-list-items .contact-group .contact-link:hover .icon {
@@ -380,7 +423,7 @@
 .contact-container .contact-list-items .contact-group .contact-link:focus,
 .contact-container .contact-list-items .contact-group .contact-link:active {
   outline: 1px dotted #696c72;
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 
 /*# sourceMappingURL=content-sections.css.map */

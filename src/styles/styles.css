@@ -97,7 +97,7 @@ li {
 
 /*** Page Layout ***/
 .app-container {
-  background: #f0f0f0;
+  background: #f8f8f8;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -105,22 +105,22 @@ li {
   padding: 3em 0.25em;
 }
 .app-container section article {
-  margin: 2em 0;
+  margin: 2.5em 0;
 }
 .app-container section article:last-of-type {
   margin-bottom: 0;
 }
 .app-container section:nth-of-type(odd) {
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 .app-container section:nth-of-type(even) {
-  background: #e1e1e1;
+  background: #f0f0f0;
 }
 .app-container section:first-of-type {
   padding-top: 0;
 }
 .app-container section:last-of-type {
-  background: #e1e1e1;
+  background: #f0f0f0;
 }
 
 .sr-only {
@@ -142,7 +142,7 @@ li {
   display: block;
   font-size: 0.8rem;
   padding: 1.25em 0.25em;
-  background: #e1e1e1;
+  background: #f0f0f0;
 }
 
 .hidden {

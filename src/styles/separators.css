@@ -8,18 +8,18 @@
 /*** Page Layout ***/
 /*** Nav ***/
 .header-container {
-  background: #f0f0f0;
+  background: #f8f8f8;
 }
 
 footer {
-  background: #e1e1e1;
+  background: #f0f0f0;
 }
 
 .separator-horiz {
   height: 1px;
   width: 50%;
   margin: 1.25em auto;
-  background: linear-gradient(90deg, #f0f0f0, #171717, #f0f0f0);
+  background: linear-gradient(90deg, #f8f8f8, #171717, #f8f8f8);
 }
 
 /*# sourceMappingURL=separators.css.map */
