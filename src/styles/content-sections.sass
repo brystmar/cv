@@ -3,11 +3,11 @@
 
 /*** Home ***/
 
-.home-container
+.home-section
   text-align: center
   .greeting
     .intro
-      font-size: 2rem
+      font-size: 1.95rem
       font-weight: 400
       text-align: center
       margin: 0 0 0.8em
@@ -19,9 +19,9 @@
       display: inline
       padding: 0 0.5em
     .followup
-      margin: 1.25em 0.25em 0.25em
+      margin: 1.25em 0 0.25em
       p
-        font-size: 1.9rem
+        font-size: 1.95rem
         font-weight: 400
         margin: 0.2em 0
   .headshot-container
@@ -38,63 +38,65 @@
       margin: 0
 
 @media (min-width: 520px)
-  .home-container
+  .home-section
     .greeting
       cursor: inherit
 
 
 /*** Experience ***/
 
-.experience-container
-  .job
-    .job-title
-      font-size: 1.6rem
-      font-weight: 500
-      color: $color-primary-darker
-      margin: 1.25em 0 0.25em
-      display: block
-      white-space: pre-wrap
-    .col-logo-content
-      display: grid
-      grid-template: 1fr / 59% 40%
-      grid-gap: 0.35em
-      .logo-container
-        order: 2
-        display: flex
-        align-items: center
-        justify-content: center
-        .job-logo
-          max-width: 95%
-          max-height: 5em
-          margin: 0 auto
-          display: block
-        .poker-logos
-          animation: 20s poker-logo-slideshow 0s linear infinite forwards
-          opacity: 1
-          content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg")
-      .job-details
-        order: 1
-        display: flex
-        flex-direction: column
-        margin: 0 0.1em
-        span
-          margin: 0.15em 0
-        .job-company-name
-          font-size: 1.25rem
-          margin: 0.15em 0
-    
-    .job-content
-      .job-accomplishments
-        margin: 1em 0
-        li
-          list-style: square
-          margin: 1em 0
-
-@media (min-width: 600px)
-  .experience-container
+.experience-section
+  .jobs-container
     .job
       .job-title
-        white-space: initial
+        font-size: 1.6rem
+        font-weight: 500
+        color: $color-primary-darker
+        margin: 1.25em 0 0.25em
+        display: block
+        white-space: pre-wrap
+      .col-logo-content
+        display: grid
+        grid-template: 1fr / 59% 40%
+        grid-gap: 0.35em
+        .logo-container
+          order: 2
+          display: flex
+          align-items: center
+          justify-content: center
+          .job-logo
+            max-width: 95%
+            max-height: 5em
+            margin: 0 auto
+            display: block
+          .poker-logos
+            animation: 20s poker-logo-slideshow 0s linear infinite forwards
+            opacity: 1
+            content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg")
+        .job-details
+          order: 1
+          display: flex
+          flex-direction: column
+          margin: 0 0.1em
+          span
+            margin: 0.15em 0
+          .job-company-name
+            font-size: 1.25rem
+            margin: 0.15em 0
+      
+      .job-content
+        .job-accomplishments
+          margin: 1em 0
+          li
+            list-style: square
+            margin: 1em 0
+
+@media (min-width: 600px)
+  .experience-section
+    .jobs-container
+      .job
+        .job-title
+          white-space: initial
 
 .logo-container
   padding: 0.2em
@@ -155,7 +157,7 @@
 
 /*** Projects ***/
 
-.projects-container
+.project-section
   .project
     .proj-title-section
       display: flex
@@ -269,38 +271,65 @@
 
 /*** Certifications ***/
 
-.cert-container
-  .cert
-    //border: 1px solid red
-    margin-left: 0.1em
-    .cert-title
-      font-size: 1.25rem
-      font-weight: 500
-      line-height: 1.3
-      color: $color-primary-darker
-      margin: 0.5em 0
-    .cert-content
+.certification-section
+  .certs-container
+    //border: 1px dashed darkgreen
+    .cert
+      max-width: 600px
+      background: $color-background
+      padding: 0.5em
+      border: 1px solid $color-border
+      border-radius: 10px
+      .cert-title
+        font-size: 1.25rem
+        font-weight: 500
+        line-height: 1.3
+        color: $color-primary-darker
+        margin: 0 0 0.5em
+      .cert-content
+        display: grid
+        grid-template: 1fr / 20% 79%
+        //grid-gap: 1em
+        //border: 1px solid black
+        .logo-container
+          padding: 0.2em
+          margin: 0
+          .cert-logo
+            display: block
+            max-height: 3em
+        .cert-details
+          //border: 1px dashed green
+          //width: 95%
+          margin: 0 1em
+          display: flex
+          flex-direction: column
+          justify-content: center
+
+@media (min-width: 620px)
+  .certification-section
+    .certs-container
       display: grid
-      grid-template: 1fr / 20% 79%
+      grid-template-rows: repeat(auto-fill, minmax(150px, 1fr))
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr))
       grid-gap: 1em
-      //border: 1px solid black
-      .logo-container
-        //border: 1px dashed green
-        padding: 0.2em
+      .cert
         margin: 0
-        .cert-logo
-          display: block
-          max-height: 3em
-      .cert-details
-        //border: 1px dashed green
         display: flex
         flex-direction: column
-        justify-content: center
-
+        align-items: flex-start
+        justify-content: space-between
+        .cert-title
+          text-align: center
+          margin: 0.5em auto
+        .cert-content
+          height: 5em
+          width: 100%
+          .cert-details
+            margin: 0 0.5em
 
 /*** Education ***/
 
-.education-container
+.education-section
   .degree
     display: flex
     flex-direction: column
@@ -340,8 +369,8 @@
 
 /*** Contact ***/
 
-.contact-container
-  .contact-list-items
+.contact-section
+  .contacts
     //display: grid
     //grid-template: repeat(auto-fit, 80px) / repeat(auto-fit, 80px)
     display: flex

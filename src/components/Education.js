@@ -18,7 +18,7 @@ function Education() {
         <section
             id="Education"
             aria-label="Educational degrees attained"
-            className="education-container">
+            className="education-section">
 
             <h1>Education</h1>
             {degreesList}

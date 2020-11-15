@@ -17,7 +17,7 @@ function Projects() {
         <section
             id="Projects"
             aria-label="Thomas' personal projects"
-            className="projects-container">
+            className="project-section">
 
             <h1>Projects</h1>
             {projectList}

@@ -19,11 +19,13 @@ function Experience() {
         <section
             id="Experience"
             aria-label="Thomas' professional experience"
-            className="experience-container">
+            className="experience-section">
 
             <h1>Experience</h1>
-            {jobs}
 
+            <div className="jobs-container">
+                {jobs}
+            </div>
         </section>
     )
 }

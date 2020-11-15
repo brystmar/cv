@@ -12,11 +12,11 @@ function Contact() {
     return (
         <section id="Contact"
                  aria-label="Ways to contact Thomas"
-                 className="contact-container">
+                 className="contact-section">
 
             <h1>Contact</h1>
 
-            <article className="contact-list-items">
+            <article className="contacts">
                 {contactList}
             </article>
         </section>

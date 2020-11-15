@@ -6,7 +6,7 @@ function Home() {
         <section
             id="Home"
             aria-label="Home"
-            className="home-container">
+            className="home-section">
 
             <div className="greeting">
                 <div className="intro">Hello! I'm</div>

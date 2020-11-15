@@ -15,10 +15,13 @@ function Certifications() {
         <section
             id="Certifications"
             aria-label="Certifications attained"
-            className="cert-container">
+            className="certification-section">
 
             <h1>Certifications</h1>
-            {certsList}
+
+            <div className="certs-container">
+                {certsList}
+            </div>
         </section>
     )
 }
