@@ -80,7 +80,7 @@
     padding: 0.5em 0.6em;
     border-bottom: 3px solid #673a90;
     text-decoration: none;
-    transition: border-bottom-color 250ms ease-in-out;
+    transition: border-bottom-color 200ms ease-in-out;
   }
   .navbar .links-container a:hover {
     border-bottom-color: #f8f8f8;

@@ -132,7 +132,7 @@
 
 @media (min-width: 500px) {
   .logo-container a {
-    padding: 0.5em;
+    padding: 0.25em;
   }
   .logo-container a:hover {
     background: lightgray;
@@ -310,63 +310,79 @@
 }
 
 /*** Certifications ***/
-.certification-section .certs-container .cert {
+.certs-container .cert {
   max-width: 600px;
   background: #f8f8f8;
-  padding: 0.5em;
+  padding: 0.75em;
   border: 1px solid #979aa0;
   border-radius: 10px;
 }
-.certification-section .certs-container .cert .cert-title {
+.certs-container .cert .cert-title {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.3;
   color: #0647b6;
   margin: 0 0 0.5em;
 }
-.certification-section .certs-container .cert .cert-content {
+.certs-container .cert .cert-content {
   display: grid;
-  grid-template: 1fr/20% 79%;
+  grid-template: 1fr/25% 75%;
 }
-.certification-section .certs-container .cert .cert-content .logo-container {
+.certs-container .cert .cert-content .logo-container {
+  margin: 0 1em 0 0;
   padding: 0.2em;
-  margin: 0;
 }
-.certification-section .certs-container .cert .cert-content .logo-container .cert-logo {
+.certs-container .cert .cert-content .logo-container .cert-logo {
   display: block;
   max-height: 3em;
 }
-.certification-section .certs-container .cert .cert-content .cert-details {
-  margin: 0 1em;
+.certs-container .cert .cert-content .cert-details {
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+@media (min-width: 480px) {
+  .icon-plus-text {
+    font-size: 1rem;
+  }
+
+  .certification-section .certs-container .cert .cert-title {
+    font-size: 1.55rem;
+  }
+  .certification-section .certs-container .cert .cert-content .logo-container {
+    margin: 0 0.5em 0 0;
+  }
+}
 @media (min-width: 620px) {
   .certification-section .certs-container {
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 0.5em;
   }
   .certification-section .certs-container .cert {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-gap: 0;
   }
   .certification-section .certs-container .cert .cert-title {
     text-align: center;
-    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .certification-section .certs-container .cert .cert-content {
     height: 5em;
     width: 100%;
   }
-  .certification-section .certs-container .cert .cert-content .cert-details {
-    margin: 0 0.5em;
+}
+@media (min-width: 720px) {
+  .certification-section .certs-container {
+    grid-gap: 1em;
   }
 }
 /*** Education ***/

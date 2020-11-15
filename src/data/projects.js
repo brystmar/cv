@@ -6,7 +6,8 @@ const breadsheet = {
     url: "http://www.breadsheet.com",
     repo: "https://github.com/brystmar/breadsheet-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"
-                     alt="Example of using the breadsheet.com scheduling tool for a sourdough recipe"
+                     alt="Example of using the breadsheet scheduling tool for a sourdough recipe"
+                     title="Click to visit breadsheet.com"
                      className="screenshot"/>,
     notes: [
         "Breadsheet is a handy scheduling tool that helps you fit long recipes into your day.",
@@ -43,6 +44,7 @@ const cellarSync = {
     repo: "https://github.com/brystmar/cellar-sync-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cellarsync.png"
                      alt="Screenshot of the Cellar Sync webapp"
+                     title="Click to visit cellarsync.com"
                      className="screenshot"/>,
     notes: [
         "Currently undergoing a significant refactor to simplify the data structure.",
@@ -76,7 +78,8 @@ const cv = {
     url: "http://thomasberg.me",
     repo: "https://github.com/brystmar/cv",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cv.png"
-                     alt="Screenshot of the website you're reading right now"
+                     alt="Screenshot of the top section of the website you're reading right now"
+                     title="The website you're currently reading"
                      className="screenshot"/>,
     notes: [
         "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
