@@ -196,12 +196,9 @@
       max-height: 330px
       overflow: hidden
       margin: 1em auto
-      background: inherit
-      //border: 1px solid red
       box-shadow: 3px 3px 10px $color-border-lighter
       .screenshot
         width: 100%
-        //border: 1px dashed green
         display: block
         margin: auto
     .proj-screenshot-container:hover
@@ -276,9 +273,10 @@
   .cert
     max-width: 600px
     background: $color-background
-    padding: 0.75em
+    margin: 0 0 1.5em 0
     border: 1px solid $color-border
     border-radius: 10px
+    padding: 0.75em
     .cert-title
       font-size: 1.25rem
       font-weight: 500
@@ -304,14 +302,14 @@
         flex-direction: column
         justify-content: center
 
-@media (min-width: 480px)
+@media (min-width: 500px)
   .icon-plus-text
     font-size: 1rem
   .certification-section
     .certs-container
       .cert
         .cert-title
-          font-size: 1.55rem
+          font-size: 1.5rem
         .cert-content
           .logo-container
             margin: 0 0.5em 0 0
@@ -349,38 +347,48 @@
 
 /*** Education ***/
 
-.education-section
-  .degree
-    display: flex
-    flex-direction: column
-    .degree-title,
-    .degree-content
-      max-width: 500px
-    .degree-title
-      font-size: 1.25rem
-      font-weight: 500
-      line-height: 1.3
-      color: $color-primary-darker
-      margin: 0.5em 0
-    .degree-content
-      display: grid
-      grid-template: 1fr / 20% 79%
-      grid-gap: 1em
-      .logo-container
-        .degree-logo
-          display: inline
-          width: 100%
-      .degree-details
-        display: flex
-        flex-direction: column
-        justify-content: center
+.degree
+  display: flex
+  flex-direction: column
+  align-items: center
+  .degree-title,
+  .degree-content
+    width: 100%
+    max-width: 550px
+  .degree-title
+    font-size: 1.25rem
+    font-weight: 500
+    line-height: 1.3
+    color: $color-primary-darker
+    margin: 0 0 0.5em
+  .degree-content
+    display: grid
+    grid-template: 1fr / 25% 75%
+    //grid-gap: 1em
+    .logo-container
+      margin: 0 1em 0 0
+      padding: 0.2em
+      //border: 1px solid blue
+      .degree-logo
+        display: block
+        width: 100%
+    .degree-details
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin: 0
 
 @media (min-width: 500px)
-  .degree
-    .logo-container
-      max-width: 200px
-      max-height: 200px
-  
+  .education-section
+    .degree
+      .degree-title
+        font-size: 1.5rem
+      .logo-container
+        max-width: 200px
+        max-height: 200px
+        margin: 0 0.5em 0 0
+
+
 
 .icon
   max-width: 1.15em

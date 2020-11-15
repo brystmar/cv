@@ -228,7 +228,6 @@
   max-height: 330px;
   overflow: hidden;
   margin: 1em auto;
-  background: inherit;
   box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
 }
 .project-section .project .proj-screenshot-container .screenshot {
@@ -313,9 +312,10 @@
 .certs-container .cert {
   max-width: 600px;
   background: #f8f8f8;
-  padding: 0.75em;
+  margin: 0 0 1.5em 0;
   border: 1px solid #979aa0;
   border-radius: 10px;
+  padding: 0.75em;
 }
 .certs-container .cert .cert-title {
   font-size: 1.25rem;
@@ -344,13 +344,13 @@
   justify-content: center;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 500px) {
   .icon-plus-text {
     font-size: 1rem;
   }
 
   .certification-section .certs-container .cert .cert-title {
-    font-size: 1.55rem;
+    font-size: 1.5rem;
   }
   .certification-section .certs-container .cert .cert-content .logo-container {
     margin: 0 0.5em 0 0;
@@ -386,40 +386,50 @@
   }
 }
 /*** Education ***/
-.education-section .degree {
+.degree {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.education-section .degree .degree-title,
-.education-section .degree .degree-content {
-  max-width: 500px;
+.degree .degree-title,
+.degree .degree-content {
+  width: 100%;
+  max-width: 550px;
 }
-.education-section .degree .degree-title {
+.degree .degree-title {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.3;
   color: #0647b6;
-  margin: 0.5em 0;
+  margin: 0 0 0.5em;
 }
-.education-section .degree .degree-content {
+.degree .degree-content {
   display: grid;
-  grid-template: 1fr/20% 79%;
-  grid-gap: 1em;
+  grid-template: 1fr/25% 75%;
 }
-.education-section .degree .degree-content .logo-container .degree-logo {
-  display: inline;
+.degree .degree-content .logo-container {
+  margin: 0 1em 0 0;
+  padding: 0.2em;
+}
+.degree .degree-content .logo-container .degree-logo {
+  display: block;
   width: 100%;
 }
-.education-section .degree .degree-content .degree-details {
+.degree .degree-content .degree-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
 }
 
 @media (min-width: 500px) {
-  .degree .logo-container {
+  .education-section .degree .degree-title {
+    font-size: 1.5rem;
+  }
+  .education-section .degree .logo-container {
     max-width: 200px;
     max-height: 200px;
+    margin: 0 0.5em 0 0;
   }
 }
 .icon {
