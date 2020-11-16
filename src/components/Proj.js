@@ -15,7 +15,9 @@ function Proj(props) {
     });
 
     const techList = props.tech.map((thing, index) =>
-        <div className="proj-tech-type-container" key={index}>
+        <div
+            className={thing.type === "Infrastructure" && thing.items.length > 2 ? "proj-tech-type-container wide" : "proj-tech-type-container"}
+            key={index}>
             <span className="proj-tech-type-label">{thing.type}</span>
             <span className="proj-tech-list">
                 {thing.items.map((value, index) =>
@@ -67,7 +69,7 @@ function Proj(props) {
             <div className="proj-notes">{notesList}</div>
 
             <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
-               onClick={() => updateIsExpanded(!isExpanded)}>
+                 onClick={() => updateIsExpanded(!isExpanded)}>
                 {isExpanded ? "Collapse" : "Learn More"}
             </div>
 

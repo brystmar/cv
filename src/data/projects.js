@@ -23,15 +23,15 @@ const breadsheet = {
             ]
         },
         {
-            type: "Infrastructure",
-            items: [
-                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
-            ]
-        },
-        {
             type: "Back End",
             items: [
                 "Python", "Flask"
+            ]
+        },
+        {
+            type: "Infrastructure",
+            items: [
+                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
             ]
         }
     ]
@@ -58,15 +58,15 @@ const cellarSync = {
             ]
         },
         {
-            type: "Infrastructure",
-            items: [
-                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
-            ]
-        },
-        {
             type: "Back End",
             items: [
                 "Python", "Flask"
+            ]
+        },
+        {
+            type: "Infrastructure",
+            items: [
+                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
             ]
         }
     ]

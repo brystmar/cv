@@ -157,114 +157,137 @@
 
 /*** Projects ***/
 
-.project-section
-  .project
-    .proj-title-section
-      display: flex
-      align-items: center
-      justify-content: space-between
-      margin: 0.5em 0
-      .proj-name
-        font-size: 1.8rem
-        font-weight: 500
-        color: $color-primary-darker
-        white-space: pre-wrap
-      .proj-links
-        margin: 0 0.2em
-        display: flex
-        align-items: flex-end
-        justify-content: flex-end
-        .proj-link-icon-container
-          padding: 0.15em
-        .proj-link-icon-container:hover
-          background: lightgray
-          transition: background 150ms linear
-        .icon
-          display: block
-          height: 1.25em
-          width: 1.25em
-          max-height: unset
-          max-width: unset
-          margin: 0 0.25em
-    .proj-desc
-      font-size: 1.2rem
-      margin: 1em 0
-      display: inline
-    .proj-screenshot-container
-      display: block
-      max-width: 400px
-      max-height: 330px
-      overflow: hidden
-      margin: 1em auto
-      box-shadow: 3px 3px 10px $color-border-lighter
-      .screenshot
-        width: 100%
-        display: block
-        margin: auto
-    .proj-screenshot-container:hover
-      box-shadow: 3px 3px 10px $color-border
-      transition: box-shadow 200ms linear
-    .proj-note
-      line-height: 1.4
-
-    .proj-learn-more
-      display: inline
+.project
+  .proj-title-section
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0.5em 0
+    .proj-name
+      font-size: 1.8rem
+      font-weight: 500
       color: $color-primary-darker
-      border: 1px dotted transparent
-      margin: 0 0.25em
-    .proj-learn-more:hover
-      text-decoration: underline
-      cursor: pointer
-    .proj-learn-more:active,
-    .proj-learn-more:focus
-      border: 1px dotted $color-border
+      white-space: pre-wrap
+    .proj-links
+      margin: 0 0.2em
+      display: flex
+      align-items: flex-end
+      justify-content: flex-end
+      .proj-link-icon-container
+        padding: 0.15em
+      .proj-link-icon-container:hover
+        background: lightgray
+        transition: background 150ms linear
+      .icon
+        display: block
+        height: 1.25em
+        width: 1.25em
+        max-height: unset
+        max-width: unset
+        margin: 0 0.25em
+  .proj-desc
+    font-size: 1.2rem
+    margin: 1em 0
+    display: inline
+  .proj-screenshot-container
+    display: block
+    max-width: 400px
+    max-height: 330px
+    overflow: hidden
+    margin: 1em auto
+    box-shadow: 3px 3px 10px $color-border-lighter
+    .screenshot
+      width: 100%
+      display: block
+      margin: auto
+  .proj-screenshot-container:hover
+    box-shadow: 3px 3px 10px $color-border
+    transition: box-shadow 200ms linear
+  .proj-note
+    line-height: 1.4
 
+  .proj-learn-more
+    display: inline
+    color: $color-primary-darker
+    border: 1px dotted transparent
+    margin: 0 0.25em
+  .proj-learn-more:hover
+    text-decoration: underline
+    cursor: pointer
+  .proj-learn-more:active,
+  .proj-learn-more:focus
+    border: 1px dotted $color-border
+
+  .proj-tech
+    margin-top: 2em
+    .proj-tech-type-container
+      display: flex
+      flex-direction: column
+      //align-items: center
+      align-items: center
+      justify-content: center
+      margin: 1.5em 0.25em
+      border: 1px dashed $color-primary-triadic
+      border-radius: 2em
+      .proj-tech-type-label
+        font-size: 1.2rem
+        font-weight: 500
+        color: $color-light
+        position: relative
+        top: -0.75em
+        display: inline
+        margin: 0
+        padding: 0 0.5em
+        background: $color-primary-triadic
+        border: 1px solid $color-primary-triadic
+        border-radius: 10px
+      .proj-tech-list
+        width: 100%
+        margin: 0 0.25em 1em
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr))
+        grid-gap: 1em 0.5em
+        cursor: default
+        //border: 1px solid red
+        .proj-tech-list-item
+          //border: 1px solid lightblue
+          display: flex
+          flex-direction: column
+          align-items: center
+          justify-content: space-around
+          text-align: center
+          .logo-container
+            //border: 1px solid green
+            max-width: 3.5em
+            max-height: 3em
+            padding: 0
+          .logo-container:hover
+            background: none
+          .list-item-label
+            font-size: 0.9rem
+            margin: 0.25em 0.5em
+            padding: 0.25em 0
+
+@media (min-width: 500px)
+  .project
     .proj-tech
-      margin-top: 2em
       .proj-tech-type-container
-        display: flex
-        flex-direction: column
-        //align-items: center
-        align-items: center
-        justify-content: center
-        margin: 1.5em 0.25em
-        border: 1px dashed $color-primary-triadic
-        border-radius: 2em
-        .proj-tech-type-label
-          font-size: 1.2rem
-          font-weight: 500
-          color: $color-light
-          position: relative
-          top: -0.75em
-          display: inline
-          margin: 0
-          padding: 0 0.5em
-          background: $color-primary-triadic
-          border: 1px solid $color-primary-triadic
-          border-radius: 10px
         .proj-tech-list
-          margin: 0 0.25em 1em
-          width: 100%
-          display: grid
-          grid-template: repeat(auto-fit, minmax(20%, 1fr)) / repeat(auto-fit, minmax(20%, 1fr))
-          grid-gap: 1em 0.5em
-          cursor: default
           .proj-tech-list-item
-            display: flex
-            flex-direction: column
-            align-items: center
-            justify-content: center
-            text-align: center
-            .logo-container
-              //border: 1px solid green
-              max-width: 3.5em
-              max-height: 3em
-            .logo-container:hover
-              background: none
             .list-item-label
-              margin: 0.25em 0
-              padding: 0.25em 0
+              font-size: 1rem
 
+@media (min-width: 650px)
+  .project-section
+    .project
+      .proj-tech
+        display: grid
+        grid-template-rows: 1fr
+        grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr)
+        .proj-tech-type-container.wide
+          grid-column: span 2
+        
 
 /*** Certifications ***/
 
