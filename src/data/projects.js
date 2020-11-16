@@ -2,7 +2,7 @@ import React from "react";
 
 const breadsheet = {
     name: "Breadsheet",
-    description: "Scheduling tool for homemade bread and pizza.",
+    description: "Scheduling tool that helps you fit long recipes into your day.",
     url: "http://www.breadsheet.com",
     repo: "https://github.com/brystmar/breadsheet-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"
@@ -10,7 +10,6 @@ const breadsheet = {
                      title="Click to visit breadsheet.com"
                      className="screenshot"/>,
     notes: [
-        "Breadsheet is a handy scheduling tool that helps you fit long recipes into your day.",
         "Many bread recipes are all-day affairs with hours of downtime between steps.  And some, like sourdough, require multi-day planning.",
         "Once added to breadsheet, home cooks specify when they plan to start a recipe.  The tool delivers a clear picture of the finish line -- and each step along the way.",
         "The reverse is also true: enter the date & time you want the finished product ready, and breadsheet works backwards to deliver a schedule meeting this deadline."
@@ -47,8 +46,10 @@ const cellarSync = {
                      title="Click to visit cellarsync.com"
                      className="screenshot"/>,
     notes: [
-        "Currently undergoing a significant refactor to simplify the data structure.",
-        "Placeholder for more info about this project."
+        "Many delicious beverages improve with age, and it's hard to keep track of everything yourself.",
+        "Cellar Sync tracks your inventory, identifies which bottles are at their peak, displays a bottle menu for dinner parties, and (ideally) leverages the Untappd API to automatically remove bottles when you drink them.",
+        "Awaiting approval to access the Untappd API ;)",
+        "Refactor underway to simplify the data structure.",
     ],
     tech: [
         {

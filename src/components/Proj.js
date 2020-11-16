@@ -59,21 +59,25 @@ function Proj(props) {
 
             <div className="proj-desc">{props.description}</div>
 
-            <div className="col-proj proj-screenshot-container">
-                <a className="proj-link"
-                   href={props.url}
-                   target="_blank"
-                   rel="noopener noreferrer">{props.screenshot}</a>
-            </div>
+            <span className="proj-screenshot-notes">
+                <div className="proj-screenshot-container">
+                    <a className="proj-link"
+                       href={props.url}
+                       target="_blank"
+                       rel="noopener noreferrer">{props.screenshot}</a>
+                </div>
 
-            <div className="proj-notes">{notesList}</div>
+                <span className="proj-notes-group">
+                    <div className="proj-notes">{notesList}</div>
 
-            <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
-                 onClick={() => updateIsExpanded(!isExpanded)}>
-                {isExpanded ? "Collapse" : "Learn More"}
-            </div>
+                    <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+                         onClick={() => updateIsExpanded(!isExpanded)}>
+                        {isExpanded ? "Collapse" : "Learn More"}
+                    </div>
+                </span>
+            </span>
 
-            <div className="col-proj proj-tech">
+            <div className="proj-tech">
                 {techList}
             </div>
         </article>

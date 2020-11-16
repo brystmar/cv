@@ -227,7 +227,7 @@
   max-width: 400px;
   max-height: 330px;
   overflow: hidden;
-  margin: 1em auto;
+  margin: 2em auto;
   box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
 }
 .project .proj-screenshot-container .screenshot {
@@ -240,7 +240,7 @@
   transition: box-shadow 200ms linear;
 }
 .project .proj-note {
-  line-height: 1.4;
+  line-height: 1.6;
 }
 .project .proj-learn-more {
   display: inline;
@@ -324,6 +324,33 @@
   }
   .project-section .project .proj-tech .proj-tech-type-container.wide {
     grid-column: span 2;
+  }
+}
+@media (min-width: 720px) {
+  .project-section .project .proj-screenshot-notes {
+    margin: 2em 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 0.75em;
+  }
+  .project-section .project .proj-screenshot-notes .proj-screenshot-container {
+    margin: 0;
+  }
+  .project-section .project .proj-screenshot-notes .proj-notes-group {
+    padding: 0 0.25em;
+  }
+  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-notes {
+    margin: 0;
+  }
+  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-notes p {
+    margin: 0.75em 0;
+  }
+  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-notes p:first-of-type {
+    margin-top: 0;
+  }
+  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-learn-more {
+    margin: 0.75em 0;
   }
 }
 /*** Certifications ***/

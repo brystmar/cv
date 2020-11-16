@@ -7,6 +7,7 @@ const TCU = {
     issuer: "TCU",
     logo: <img src="./logos/tcu.svg"
                alt="Logo of Texas Christian University (TCU)"
+               title="TCU logo"
                className="logo degree-logo"/>,
     url: "https://www.tcu.edu",
     location: "Fort Worth, TX",
