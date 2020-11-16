@@ -54,7 +54,7 @@
   }
 }
 /*** Experience ***/
-.experience-section .jobs-container .job .job-title {
+.job .job-title {
   font-size: 1.6rem;
   font-weight: 500;
   color: #0647b6;
@@ -62,51 +62,52 @@
   display: block;
   white-space: pre-wrap;
 }
-.experience-section .jobs-container .job .col-logo-content {
+.job .col-logo-content {
   display: grid;
   grid-template: 1fr/59% 40%;
   grid-gap: 0.35em;
 }
-.experience-section .jobs-container .job .col-logo-content .logo-container {
+.job .col-logo-content .logo-container {
   order: 2;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.experience-section .jobs-container .job .col-logo-content .logo-container .job-logo {
+.job .col-logo-content .logo-container .job-logo {
   max-width: 95%;
   max-height: 5em;
   margin: 0 auto;
   display: block;
 }
-.experience-section .jobs-container .job .col-logo-content .logo-container .poker-logos {
+.job .col-logo-content .logo-container .poker-logos {
   animation: 20s poker-logo-slideshow 0s linear infinite forwards;
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
 }
-.experience-section .jobs-container .job .col-logo-content .job-details {
+.job .col-logo-content .job-details {
   order: 1;
   display: flex;
   flex-direction: column;
   margin: 0 0.1em;
 }
-.experience-section .jobs-container .job .col-logo-content .job-details span {
+.job .col-logo-content .job-details span {
   margin: 0.15em 0;
 }
-.experience-section .jobs-container .job .col-logo-content .job-details .job-company-name {
+.job .col-logo-content .job-details .job-company-name {
   font-size: 1.25rem;
   margin: 0.15em 0;
 }
-.experience-section .jobs-container .job .job-content .job-accomplishments {
+.job .job-content .job-accomplishments {
   margin: 1em 0;
 }
-.experience-section .jobs-container .job .job-content .job-accomplishments li {
+.job .job-content .job-accomplishments li {
   list-style: square;
   margin: 1em 0;
 }
 
 @media (min-width: 600px) {
   .experience-section .jobs-container .job .job-title {
+    font-size: 1.8rem;
     white-space: initial;
   }
 }

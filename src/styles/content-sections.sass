@@ -45,57 +45,56 @@
 
 /*** Experience ***/
 
-.experience-section
-  .jobs-container
-    .job
-      .job-title
-        font-size: 1.6rem
-        font-weight: 500
-        color: $color-primary-darker
-        margin: 1.25em 0 0.25em
+.job
+  .job-title
+    font-size: 1.6rem
+    font-weight: 500
+    color: $color-primary-darker
+    margin: 1.25em 0 0.25em
+    display: block
+    white-space: pre-wrap
+  .col-logo-content
+    display: grid
+    grid-template: 1fr / 59% 40%
+    grid-gap: 0.35em
+    .logo-container
+      order: 2
+      display: flex
+      align-items: center
+      justify-content: center
+      .job-logo
+        max-width: 95%
+        max-height: 5em
+        margin: 0 auto
         display: block
-        white-space: pre-wrap
-      .col-logo-content
-        display: grid
-        grid-template: 1fr / 59% 40%
-        grid-gap: 0.35em
-        .logo-container
-          order: 2
-          display: flex
-          align-items: center
-          justify-content: center
-          .job-logo
-            max-width: 95%
-            max-height: 5em
-            margin: 0 auto
-            display: block
-          .poker-logos
-            animation: 20s poker-logo-slideshow 0s linear infinite forwards
-            opacity: 1
-            content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg")
-        .job-details
-          order: 1
-          display: flex
-          flex-direction: column
-          margin: 0 0.1em
-          span
-            margin: 0.15em 0
-          .job-company-name
-            font-size: 1.25rem
-            margin: 0.15em 0
-      
-      .job-content
-        .job-accomplishments
-          margin: 1em 0
-          li
-            list-style: square
-            margin: 1em 0
+      .poker-logos
+        animation: 20s poker-logo-slideshow 0s linear infinite forwards
+        opacity: 1
+        content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg")
+    .job-details
+      order: 1
+      display: flex
+      flex-direction: column
+      margin: 0 0.1em
+      span
+        margin: 0.15em 0
+      .job-company-name
+        font-size: 1.25rem
+        margin: 0.15em 0
+  
+  .job-content
+    .job-accomplishments
+      margin: 1em 0
+      li
+        list-style: square
+        margin: 1em 0
 
 @media (min-width: 600px)
   .experience-section
     .jobs-container
       .job
         .job-title
+          font-size: 1.8rem
           white-space: initial
 
 .logo-container
@@ -312,7 +311,7 @@
               margin-top: 0
           .proj-learn-more
             margin: 0.75em 0
-        
+
 
 /*** Certifications ***/
 
