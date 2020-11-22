@@ -9,8 +9,13 @@ const breadsheet = {
                      alt="Example of using the breadsheet scheduling tool for a sourdough recipe"
                      title="Click to visit breadsheet.com"
                      className="screenshot"/>,
+    // status: "Ready to use!",
+    futurePlans: [
+        "Turn breadsheet into an actual website instead of a single-purpose tool.",
+        "Save recipe customizations (and/or entire recipes) by user."
+    ],
     notes: [
-        "Many bread recipes are all-day affairs with hours of downtime between steps.  And some, like sourdough, require multi-day planning.",
+        "Bread recipes are often all-day affairs with hours of downtime between steps.  And some, like sourdough, require multi-day planning.",
         "Once added to breadsheet, home cooks specify when they plan to start a recipe.  The tool delivers a clear picture of the finish line -- and each step along the way.",
         "The reverse is also true: enter the date & time you want the finished product ready, and breadsheet works backwards to deliver a schedule meeting this deadline."
     ],
@@ -45,11 +50,16 @@ const cellarSync = {
                      alt="Screenshot of the Cellar Sync webapp"
                      title="Click to visit cellarsync.com"
                      className="screenshot"/>,
+    status: "Major refactor in progress",
+    futurePlans: [
+        "Require fewer attributes to save a new beverage.",
+        "New data structure to (optionally) stripe each beverage by location and vintage.",
+        "Complete UI overhaul using newly-learned best practices."
+    ],
     notes: [
         "Many delicious beverages improve with age, and it's hard to keep track of everything yourself.",
-        "Cellar Sync tracks your inventory, identifies which bottles are at their peak, displays a bottle menu for dinner parties, and (ideally) leverages the Untappd API to automatically remove bottles when you drink them.",
-        "Awaiting approval to access the Untappd API ;)",
-        "Refactor underway to simplify the data structure.",
+        "Cellar Sync tracks your inventory, helps identify when bottles are at their peak, and displays an elegant bottle menu for your dinner parties.",
+        "App will (eventually) leverage the Untappd API to automatically remove bottles from your cellar after you drink them."
     ],
     tech: [
         {
@@ -82,9 +92,16 @@ const cv = {
                      alt="Screenshot of the top section of the website you're reading right now"
                      title="The website you're currently reading"
                      className="screenshot"/>,
+    // status: "Nearly complete!",
+    futurePlans: [
+        "Design a better layout for the Home section at wide viewports.",
+        "Revisit the idea of light/dark color palettes by section.",
+        "Decide about including a direct link to download my resume."
+    ],
     notes: [
         "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
-        "Content from static .js files."
+        "Modular design parses content from static .js files.",
+        "Great way to practice my front-end skills."
     ],
     tech: [
         {

@@ -190,6 +190,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0.5em 0;
+  cursor: default;
 }
 .project .proj-title-section .proj-name {
   font-size: 1.8rem;
@@ -218,10 +219,26 @@
   max-width: unset;
   margin: 0 0.25em;
 }
-.project .proj-desc {
-  font-size: 1.2rem;
-  margin: 1em 0;
-  display: inline;
+.project .proj-description-group {
+  font-size: 1.25rem;
+  margin: 1em 0 0;
+}
+.project .proj-description-group .proj-desc,
+.project .proj-description-group .proj-status-group {
+  display: block;
+  margin: 0.5em 0;
+}
+.project .proj-description-group .proj-status-group {
+  display: flex;
+}
+.project .proj-description-group .proj-status-group img {
+  filter: invert(25%) sepia(18%) saturate(4453%) hue-rotate(244deg) brightness(90%) contrast(87%);
+  margin-right: 0.35em;
+}
+.project .proj-description-group .proj-status-group .proj-status {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: #673a90;
 }
 .project .proj-screenshot-container {
   display: block;
@@ -240,14 +257,34 @@
   box-shadow: 3px 3px 10px #979aa0;
   transition: box-shadow 200ms linear;
 }
-.project .proj-note {
-  line-height: 1.6;
+.project .proj-notes-group {
+  margin: 0 0.25em;
+  line-height: 1.5;
+}
+.project .proj-notes-group h3 {
+  font-size: 1.25rem;
+  margin: 1em 0 0.5em;
+}
+.project .proj-notes-group h3:first-of-type {
+  margin-top: 0;
+}
+.project .proj-notes-group .proj-note,
+.project .proj-notes-group .proj-future-plan {
+  margin-left: 0;
+  margin-right: 0;
+}
+.project .proj-notes-group .proj-future-plans h3 {
+  margin-top: 1em;
+}
+.project .proj-notes-group .proj-future-plans .proj-future-plan {
+  margin: 0.5em 0;
+  list-style: square;
 }
 .project .proj-learn-more {
   display: inline;
   color: #0647b6;
   border: 1px dotted transparent;
-  margin: 0 0.25em;
+  margin: 1em 0;
 }
 .project .proj-learn-more:hover {
   text-decoration: underline;
@@ -342,10 +379,8 @@
     margin: 0;
   }
   .project-section .project .proj-screenshot-notes .proj-notes-group {
-    padding: 0 0.25em;
-  }
-  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-notes {
     margin: 0;
+    padding: 0 0.25em;
   }
   .project-section .project .proj-screenshot-notes .proj-notes-group .proj-notes p {
     margin: 0.75em 0;

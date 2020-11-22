@@ -14,6 +14,18 @@ function Proj(props) {
         }
     });
 
+    const currentStatus = !!props.status ?
+        <div className="proj-status-group icon-plus-text">
+            <img src="./icons/info-circle-solid.svg"
+                 alt={`Status of the ${props.name} project`}
+                 title={`Status of the ${props.name} project`}
+                 className="icon"/>
+            <span className="proj-status">{props.status}</span>
+        </div> : "";
+
+    const futurePlans = props.futurePlans.map((plan, index) =>
+        <li className={"proj-future-plan"} key={index}>{plan}</li>);
+
     const techList = props.tech.map((thing, index) =>
         <div
             className={thing.type === "Infrastructure" && thing.items.length > 2 ? "proj-tech-type-container wide" : "proj-tech-type-container"}
@@ -59,9 +71,12 @@ function Proj(props) {
                 </span>
             </div>
 
-            <div className="proj-desc">{props.description}</div>
+            <div className="proj-description-group">
+                <div className="proj-desc">{props.description}</div>
+                {currentStatus}
+            </div>
 
-            <span className="proj-screenshot-notes">
+            <div className="proj-screenshot-notes">
                 <div className="proj-screenshot-container">
                     <a className="proj-link"
                        href={props.url}
@@ -69,7 +84,8 @@ function Proj(props) {
                        rel="noopener noreferrer">{props.screenshot}</a>
                 </div>
 
-                <span className="proj-notes-group">
+                <div className="proj-notes-group">
+                    <h3>Overview</h3>
                     <div className="proj-notes">{notesList}</div>
 
                     <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
@@ -79,8 +95,13 @@ function Proj(props) {
                          onClick={() => updateIsExpanded(!isExpanded)}>
                         {isExpanded ? "Collapse" : "Learn More"}
                     </div>
-                </span>
-            </span>
+
+                    <div className="proj-future-plans">
+                        <h3>Future Plans</h3>
+                        {futurePlans}
+                    </div>
+                </div>
+            </div>
 
             <div className="proj-tech">
                 {techList}
@@ -92,6 +113,7 @@ function Proj(props) {
 Proj.defaultProps = {
     name: "",
     description: "",
+    futurePlans: [""],
     notes: [""],
     url: "",
     repo: "",
@@ -105,6 +127,8 @@ Proj.defaultProps = {
 Proj.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    status: PropTypes.string,
+    futurePlans: PropTypes.arrayOf(PropTypes.string).isRequired,
     notes: PropTypes.arrayOf(PropTypes.string).isRequired,
     url: PropTypes.string.isRequired,
     repo: PropTypes.string.isRequired,

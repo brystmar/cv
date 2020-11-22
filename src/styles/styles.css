@@ -43,6 +43,7 @@ h1 {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 0 0.6em;
+  cursor: default;
 }
 
 h2 {

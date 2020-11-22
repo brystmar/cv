@@ -162,6 +162,7 @@
     align-items: center
     justify-content: space-between
     margin: 0.5em 0
+    cursor: default
     .proj-name
       font-size: 1.8rem
       font-weight: 500
@@ -184,10 +185,24 @@
         max-height: unset
         max-width: unset
         margin: 0 0.25em
-  .proj-desc
-    font-size: 1.2rem
-    margin: 1em 0
-    display: inline
+  .proj-description-group
+    font-size: 1.25rem
+    margin: 1em 0 0
+    .proj-desc,
+    .proj-status-group
+      display: block
+      margin: 0.5em 0
+    .proj-status-group
+      //border: 1px solid red
+      display: flex
+      img
+        filter: invert(25%) sepia(18%) saturate(4453%) hue-rotate(244deg) brightness(90%) contrast(87%)
+        margin-right: 0.35em
+      .proj-status
+        font-size: 1rem
+        //font-weight: 500
+        margin-bottom: 0
+        color: $color-primary-triadic
   .proj-screenshot-container
     display: block
     max-width: 400px
@@ -202,14 +217,30 @@
   .proj-screenshot-container:hover
     box-shadow: 3px 3px 10px $color-border
     transition: box-shadow 200ms linear
-  .proj-note
-    line-height: 1.6
+  .proj-notes-group
+    margin: 0 0.25em
+    line-height: 1.5
+    h3
+      font-size: 1.25rem
+      margin: 1em 0 0.5em
+    h3:first-of-type
+      margin-top: 0
+    .proj-note,
+    .proj-future-plan
+      margin-left: 0
+      margin-right: 0
+    .proj-future-plans
+      h3
+        margin-top: 1em
+      .proj-future-plan
+        margin: 0.5em 0
+        list-style: square
 
   .proj-learn-more
     display: inline
     color: $color-primary-darker
     border: 1px dotted transparent
-    margin: 0 0.25em
+    margin: 1em 0
   .proj-learn-more:hover
     text-decoration: underline
     cursor: pointer
@@ -304,9 +335,9 @@
           margin: 0
         .proj-notes-group
           //border: 1px dashed red
+          margin: 0
           padding: 0 0.25em
           .proj-notes
-            margin: 0
             p
               margin: 0.75em 0
             p:first-of-type

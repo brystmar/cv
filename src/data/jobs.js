@@ -100,10 +100,9 @@ const pokerInstructor = {
     startDate: "Jan 2007",
     endDate: "Dec 2011",
     accomplishments: [
-        "Scripted, produced, and recorded 62 instructional videos, each with 45 to 60 minutes of commentary and insights.",
+        "Scripted, produced, and recorded 62 instructional videos of myself teaching and/or playing, each 45 to 60 minutes long.",
         "Pioneered the classroom-style video format with a focus on fundamentals and applied theory.",
-        "Developed a five-part Small Stakes No-Limit (SSNL) series to help casual players become consistent winners.  Series was highly regarded within the poker community.",
-        "Focused on NLHE and PLO cash games with <$200 buyins."
+        "Developed a five-part Small Stakes No-Limit (SSNL) series to help casual players become consistent winners.  Series was highly regarded within the poker community."
     ]
 }
 

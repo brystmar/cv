@@ -7,6 +7,8 @@ function Projects() {
         <Proj key={index}
               name={proj.name}
               description={proj.description}
+              status={proj.status}
+              futurePlans={proj.futurePlans}
               notes={proj.notes}
               url={proj.url}
               repo={proj.repo}
