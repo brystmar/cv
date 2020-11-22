@@ -5,15 +5,25 @@ import map_tech_to_icon from "../scripts/map_tech_to_icon";
 function Proj(props) {
     const [isExpanded, updateIsExpanded] = useState(false);
 
+    // Only display the first item from notesList by default; user can expand if desired
     const notesList = props.notes.map((note, index) => {
         if (index === 0) {
-            return <p className={"proj-note"} key={index}>{note}</p>
+            return <p key={index} className={"proj-note"}>{note}</p>
         } else {
-            return <p className={isExpanded ? "proj-note" : "proj-note hidden"}
-                      key={index}>{note}</p>
+            return <p key={index}
+                      className={isExpanded ? "proj-note" : "proj-note hidden"}>{note}</p>
         }
     });
 
+    // Lift the tall/wide class to the screenshot container for proper scaling
+    let screenshotContainerClass = "proj-screenshot-container";
+    if (props.screenshot.props.className.indexOf("tall") !== -1) {
+        screenshotContainerClass += " tall"
+    } else if (props.screenshot.props.className.indexOf("wide") !== -1) {
+        screenshotContainerClass += " wide"
+    }
+
+    // Only display status when it's provided
     const currentStatus = !!props.status ?
         <div className="proj-status-group icon-plus-text">
             <img src="./icons/info-circle-solid.svg"
@@ -21,15 +31,17 @@ function Proj(props) {
                  title={`Status of the ${props.name} project`}
                  className="icon"/>
             <span className="proj-status">{props.status}</span>
-        </div> : "";
+        </div> : <></>;
 
     const futurePlans = props.futurePlans.map((plan, index) =>
-        <li className={"proj-future-plan"} key={index}>{plan}</li>);
+        <li key={index} className={"proj-future-plan"}>{plan}</li>);
 
+    // techList requires two layers of mapping
     const techList = props.tech.map((thing, index) =>
-        <div
-            className={thing.type === "Infrastructure" && thing.items.length > 2 ? "proj-tech-type-container wide" : "proj-tech-type-container"}
-            key={index}>
+        <div key={index}
+             className={thing.type === "Infrastructure" && thing.items.length > 2 ?
+                 "proj-tech-type-container wide" :
+                 "proj-tech-type-container"}>
             <span className="proj-tech-type-label">{thing.type}</span>
             <span className="proj-tech-list">
                 {thing.items.map((value, index) =>
@@ -77,7 +89,7 @@ function Proj(props) {
             </div>
 
             <div className="proj-screenshot-notes">
-                <div className="proj-screenshot-container">
+                <div className={screenshotContainerClass}>
                     <a className="proj-link"
                        href={props.url}
                        target="_blank"

@@ -162,7 +162,6 @@
     align-items: center
     justify-content: space-between
     margin: 0.5em 0
-    cursor: default
     .proj-name
       font-size: 1.8rem
       font-weight: 500
@@ -205,18 +204,16 @@
         color: $color-primary-triadic
   .proj-screenshot-container
     display: block
+    overflow: hidden
     max-width: 400px
     max-height: 330px
-    overflow: hidden
     margin: 2em auto
-    box-shadow: 3px 3px 10px $color-border-lighter
-    .screenshot
-      width: 100%
-      display: block
-      margin: auto
+    background-color: inherit
+    outline: 0.5em transparent solid
+    box-shadow: 3px 3px 0.35em $color-border-lighter
   .proj-screenshot-container:hover
-    box-shadow: 3px 3px 10px $color-border
-    transition: box-shadow 200ms linear
+    box-shadow: 3px 3px 0.5em $color-border
+    transition: box-shadow 250ms linear
   .proj-notes-group
     margin: 0 0.25em
     line-height: 1.5
@@ -328,11 +325,12 @@
         display: grid
         grid-template-rows: 1fr
         grid-template-columns: 3fr 4fr
-        grid-gap: 0.75em
+        grid-gap: 1em
         //border: 1px solid black
         .proj-screenshot-container
           //border: 1px dashed red
           margin: 0
+          //max-height: unset
         .proj-notes-group
           //border: 1px dashed red
           margin: 0
@@ -376,7 +374,7 @@
       grid-template: 1fr / 25% 75%
       //border: 1px solid black
       .logo-container
-        margin: 0 1em 0 0
+        //margin: 0 1em 0 0
         padding: 0.2em
         //border: 1px solid saddlebrown
         .cert-logo
@@ -385,6 +383,7 @@
       .cert-details
         //border: 1px dashed green
         width: 100%
+        height: auto
         margin: 0
         display: flex
         flex-direction: column
@@ -398,9 +397,6 @@
       .cert
         .cert-title
           font-size: 1.5rem
-        .cert-content
-          .logo-container
-            margin: 0 0.5em 0 0
 
 @media (min-width: 620px)
   .certification-section
@@ -411,17 +407,19 @@
       grid-gap: 0.5em
       .cert
         margin: 0
+        //padding: 1em
         display: grid
         grid-template: 1fr / 1fr
         grid-gap: 0
         .cert-title
+          margin: 0
           text-align: center
           display: flex
           flex-direction: column
           justify-content: center
           //border: 1px solid black
         .cert-content
-          height: 5em
+          height: auto
           width: 100%
           //border: 1px solid red
 

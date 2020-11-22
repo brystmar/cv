@@ -63,7 +63,7 @@ const CSPO = {
 };
 
 const GCP_core_infrastructure = {
-    name: "Google Cloud Platform Fundamentals: Core Infrastructure",
+    name: "GCP Fundamentals: Core Infrastructure",
     issuer: "Coursera",
     logo: <img src="./logos/GCP.png"
                alt="Google Cloud Platform logo"
@@ -74,7 +74,7 @@ const GCP_core_infrastructure = {
 };
 
 const GCP_app_dev = {
-    name: "Getting Started with Application Development in GCP",
+    name: "Getting Started with App Development in GCP",
     issuer: "Coursera",
     logo: <img src="./logos/GCP.png"
                alt="Google Cloud Platform logo"

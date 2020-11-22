@@ -190,7 +190,6 @@
   align-items: center;
   justify-content: space-between;
   margin: 0.5em 0;
-  cursor: default;
 }
 .project .proj-title-section .proj-name {
   font-size: 1.8rem;
@@ -242,20 +241,17 @@
 }
 .project .proj-screenshot-container {
   display: block;
+  overflow: hidden;
   max-width: 400px;
   max-height: 330px;
-  overflow: hidden;
   margin: 2em auto;
-  box-shadow: 3px 3px 10px rgba(151, 154, 160, 0.6);
-}
-.project .proj-screenshot-container .screenshot {
-  width: 100%;
-  display: block;
-  margin: auto;
+  background-color: inherit;
+  outline: 0.5em transparent solid;
+  box-shadow: 3px 3px 0.35em rgba(151, 154, 160, 0.6);
 }
 .project .proj-screenshot-container:hover {
-  box-shadow: 3px 3px 10px #979aa0;
-  transition: box-shadow 200ms linear;
+  box-shadow: 3px 3px 0.5em #979aa0;
+  transition: box-shadow 250ms linear;
 }
 .project .proj-notes-group {
   margin: 0 0.25em;
@@ -373,7 +369,7 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 3fr 4fr;
-    grid-gap: 0.75em;
+    grid-gap: 1em;
   }
   .project-section .project .proj-screenshot-notes .proj-screenshot-container {
     margin: 0;
@@ -420,7 +416,6 @@
   grid-template: 1fr/25% 75%;
 }
 .certs-container .cert .cert-content .logo-container {
-  margin: 0 1em 0 0;
   padding: 0.2em;
 }
 .certs-container .cert .cert-content .logo-container .cert-logo {
@@ -429,6 +424,7 @@
 }
 .certs-container .cert .cert-content .cert-details {
   width: 100%;
+  height: auto;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -442,9 +438,6 @@
 
   .certification-section .certs-container .cert .cert-title {
     font-size: 1.5rem;
-  }
-  .certification-section .certs-container .cert .cert-content .logo-container {
-    margin: 0 0.5em 0 0;
   }
 }
 @media (min-width: 620px) {
@@ -461,13 +454,14 @@
     grid-gap: 0;
   }
   .certification-section .certs-container .cert .cert-title {
+    margin: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .certification-section .certs-container .cert .cert-content {
-    height: 5em;
+    height: auto;
     width: 100%;
   }
 }

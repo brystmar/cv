@@ -8,10 +8,10 @@ const breadsheet = {
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"
                      alt="Example of using the breadsheet scheduling tool for a sourdough recipe"
                      title="Click to visit breadsheet.com"
-                     className="screenshot"/>,
+                     className="screenshot wide"/>,
     // status: "Ready to use!",
     futurePlans: [
-        "Turn breadsheet into an actual website instead of a single-purpose tool.",
+        "Transform into an actual website instead of a single-purpose tool.",
         "Save recipe customizations (and/or entire recipes) by user."
     ],
     notes: [
@@ -49,7 +49,7 @@ const cellarSync = {
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cellarsync.png"
                      alt="Screenshot of the Cellar Sync webapp"
                      title="Click to visit cellarsync.com"
-                     className="screenshot"/>,
+                     className="screenshot tall"/>,
     status: "Major refactor in progress",
     futurePlans: [
         "Require fewer attributes to save a new beverage.",
@@ -90,8 +90,8 @@ const cv = {
     repo: "https://github.com/brystmar/cv",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cv.png"
                      alt="Screenshot of the top section of the website you're reading right now"
-                     title="The website you're currently reading"
-                     className="screenshot"/>,
+                     title="The website you're currently reading. So meta."
+                     className="screenshot tall"/>,
     // status: "Nearly complete!",
     futurePlans: [
         "Design a better layout for the Home section at wide viewports.",
