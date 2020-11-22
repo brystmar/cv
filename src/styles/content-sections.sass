@@ -211,27 +211,32 @@
     background-color: inherit
     outline: 0.5em transparent solid
     box-shadow: 3px 3px 0.35em $color-border-lighter
+    transition: max-width 500ms ease-in-out, max-height 500ms ease-in-out
   .proj-screenshot-container:hover
     box-shadow: 3px 3px 0.5em $color-border
     transition: box-shadow 250ms linear
   .proj-notes-group
-    margin: 0 0.25em
+    margin: 1em 0.25em
     line-height: 1.5
     h3
       font-size: 1.25rem
       margin: 1em 0 0.5em
     h3:first-of-type
       margin-top: 0
+    .proj-overview
+      margin: 0 0 0.75em
     .proj-note,
     .proj-future-plan
       margin-left: 0
       margin-right: 0
-    .proj-future-plans
-      h3
-        margin-top: 1em
-      .proj-future-plan
-        margin: 0.5em 0
-        list-style: square
+    .proj-future-plan
+      list-style: square
+      margin: 0.5em 0
+    .proj-notes
+      p
+        margin: 0.75em 0
+      p:first-of-type
+        margin: 0 0 0.25em
 
   .proj-learn-more
     display: inline
@@ -323,25 +328,33 @@
       .proj-screenshot-notes
         margin: 2em 0
         display: grid
-        grid-template-rows: 1fr
-        grid-template-columns: 3fr 4fr
-        grid-gap: 1em
-        //border: 1px solid black
+        grid-row-gap: 1em
         .proj-screenshot-container
-          //border: 1px dashed red
           margin: 0
-          //max-height: unset
+          grid-area: screenshot
         .proj-notes-group
-          //border: 1px dashed red
           margin: 0
           padding: 0 0.25em
-          .proj-notes
-            p
-              margin: 0.75em 0
-            p:first-of-type
-              margin-top: 0
-          .proj-learn-more
-            margin: 0.75em 0
+          grid-area: notes
+          .proj-overview
+            margin-top: 0
+          .proj-future-plans
+            margin-bottom: 0
+      .proj-screenshot-notes.tall
+        grid-template-rows: repeat(auto-fit, 1fr)
+        grid-template-columns: 35% 65%
+        grid-template-areas: "screenshot notes"
+        .proj-notes-group
+          padding-left: 1em
+      .proj-screenshot-notes.wide
+        grid-template-rows: repeat(auto-fit, 1fr)
+        grid-template-columns: repeat(auto-fit, 1fr)
+        grid-template-areas: "screenshot" "notes"
+        .proj-screenshot-container.wide
+          margin: 0 auto
+          max-width: 65%
+          .screenshot
+            margin: 0 auto
 
 @media (min-width: 800px)
   .project-section

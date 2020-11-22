@@ -7,9 +7,8 @@ const breadsheet = {
     repo: "https://github.com/brystmar/breadsheet-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"
                      alt="Example of using the breadsheet scheduling tool for a sourdough recipe"
-                     title="Click to visit breadsheet.com"
+                     title="Visit breadsheet.com"
                      className="screenshot wide"/>,
-    // status: "Ready to use!",
     futurePlans: [
         "Transform into an actual website instead of a single-purpose tool.",
         "Save recipe customizations (and/or entire recipes) by user."
@@ -48,7 +47,7 @@ const cellarSync = {
     repo: "https://github.com/brystmar/cellar-sync-ui",
     screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cellarsync.png"
                      alt="Screenshot of the Cellar Sync webapp"
-                     title="Click to visit cellarsync.com"
+                     title="Visit cellarsync.com"
                      className="screenshot tall"/>,
     status: "Major refactor in progress",
     futurePlans: [
@@ -92,11 +91,9 @@ const cv = {
                      alt="Screenshot of the top section of the website you're reading right now"
                      title="The website you're currently reading. So meta."
                      className="screenshot tall"/>,
-    // status: "Nearly complete!",
     futurePlans: [
         "Design a better layout for the Home section at wide viewports.",
-        "Revisit the idea of light/dark color palettes by section.",
-        "Decide about including a direct link to download my resume."
+        "Revisit the idea of light/dark color palettes by section."
     ],
     notes: [
         "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",

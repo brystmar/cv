@@ -16,10 +16,13 @@ function Proj(props) {
     });
 
     // Lift the tall/wide class to the screenshot container for proper scaling
+    let screenshotNotesClass = "proj-screenshot-notes";
     let screenshotContainerClass = "proj-screenshot-container";
     if (props.screenshot.props.className.indexOf("tall") !== -1) {
+        screenshotNotesClass += " tall"
         screenshotContainerClass += " tall"
     } else if (props.screenshot.props.className.indexOf("wide") !== -1) {
+        screenshotNotesClass += " wide"
         screenshotContainerClass += " wide"
     }
 
@@ -88,7 +91,7 @@ function Proj(props) {
                 {currentStatus}
             </div>
 
-            <div className="proj-screenshot-notes">
+            <div className={screenshotNotesClass}>
                 <div className={screenshotContainerClass}>
                     <a className="proj-link"
                        href={props.url}
@@ -97,15 +100,17 @@ function Proj(props) {
                 </div>
 
                 <div className="proj-notes-group">
-                    <h3>Overview</h3>
-                    <div className="proj-notes">{notesList}</div>
+                    <div className="proj-overview">
+                        <h3>Overview</h3>
+                        <div className="proj-notes">{notesList}</div>
 
-                    <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
-                         aria-label={isExpanded ?
-                             "Hide the longer description of this project" :
-                             "Show the longer description of this project"}
-                         onClick={() => updateIsExpanded(!isExpanded)}>
-                        {isExpanded ? "Collapse" : "Learn More"}
+                        <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+                             aria-label={isExpanded ?
+                                 "Hide the longer description of this project" :
+                                 "Show the longer description of this project"}
+                             onClick={() => updateIsExpanded(!isExpanded)}>
+                            {isExpanded ? "Collapse" : "Learn More"}
+                        </div>
                     </div>
 
                     <div className="proj-future-plans">
