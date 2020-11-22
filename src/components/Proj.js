@@ -36,6 +36,7 @@ function Proj(props) {
                     <span className="proj-link-icon-container">
                         <a className="proj-link"
                            href={props.url}
+                           aria-label="Link to this project's homepage"
                            target="_blank"
                            rel="noopener noreferrer">
                             <img src="./icons/website.svg"
@@ -47,6 +48,7 @@ function Proj(props) {
                     <span className="proj-link-icon-container">
                         <a className="proj-link"
                            href={props.repo}
+                           aria-label="Link to this project's GitHub repository"
                            target="_blank"
                            rel="noopener noreferrer">
                             <img src="./logos/github.svg"
@@ -71,6 +73,9 @@ function Proj(props) {
                     <div className="proj-notes">{notesList}</div>
 
                     <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+                         aria-label={isExpanded ?
+                             "Hide the longer description of this project" :
+                             "Show the longer description of this project"}
                          onClick={() => updateIsExpanded(!isExpanded)}>
                         {isExpanded ? "Collapse" : "Learn More"}
                     </div>

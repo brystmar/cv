@@ -326,6 +326,9 @@
   .project-section .project .proj-tech .proj-tech-type-container.wide {
     grid-column: span 2;
   }
+  .project-section .project .proj-tech .proj-tech-type-container.wide .proj-tech-list {
+    padding: 0 1.5em;
+  }
 }
 @media (min-width: 720px) {
   .project-section .project .proj-screenshot-notes {
@@ -352,6 +355,13 @@
   }
   .project-section .project .proj-screenshot-notes .proj-notes-group .proj-learn-more {
     margin: 0.75em 0;
+  }
+}
+@media (min-width: 800px) {
+  .project-section .project .proj-tech {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*** Certifications ***/

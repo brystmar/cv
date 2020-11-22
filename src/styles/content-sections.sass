@@ -286,6 +286,8 @@
         grid-template-columns: minmax(290px, 1fr) minmax(290px, 1fr)
         .proj-tech-type-container.wide
           grid-column: span 2
+          .proj-tech-list
+            padding: 0 1.5em
 
 @media (min-width: 720px)
   .project-section
@@ -311,6 +313,14 @@
               margin-top: 0
           .proj-learn-more
             margin: 0.75em 0
+
+@media (min-width: 800px)
+  .project-section
+    .project
+      .proj-tech
+        max-width: 800px
+        margin-left: auto
+        margin-right: auto
 
 
 /*** Certifications ***/
@@ -360,8 +370,6 @@
         .cert-content
           .logo-container
             margin: 0 0.5em 0 0
-
-
 
 @media (min-width: 620px)
   .certification-section
