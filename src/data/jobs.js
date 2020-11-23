@@ -84,7 +84,7 @@ const pokerPlayer = {
         "Learned to remain objective and make data-driven decisions under pressure.",
         "Typically played 6 to 8 tables concurrently, with >2 million total hands played lifetime.",
         "Specialized in online short-handed cash games of No-Limit Hold'em (NLHE) and Pot-Limit Omaha (PLO).",
-        "Won the $200 Full Tilt Sunday Tournament for $132k in Nov 2008, besting 3600 other players.",
+        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };
