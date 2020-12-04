@@ -268,14 +268,9 @@
 .project .proj-notes-group .proj-overview {
   margin: 0 0 0.75em;
 }
-.project .proj-notes-group .proj-note,
-.project .proj-notes-group .proj-future-plan {
+.project .proj-notes-group .proj-note {
   margin-left: 0;
   margin-right: 0;
-}
-.project .proj-notes-group .proj-future-plan {
-  list-style: square;
-  margin: 0.5em 0;
 }
 .project .proj-notes-group .proj-notes p {
   margin: 0.75em 0;
@@ -387,9 +382,6 @@
   }
   .project-section .project .proj-screenshot-notes .proj-notes-group .proj-overview {
     margin-top: 0;
-  }
-  .project-section .project .proj-screenshot-notes .proj-notes-group .proj-future-plans {
-    margin-bottom: 0;
   }
   .project-section .project .proj-screenshot-notes.tall {
     grid-template-rows: repeat(auto-fit, 1fr);

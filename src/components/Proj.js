@@ -36,9 +36,6 @@ function Proj(props) {
             <span className="proj-status">{props.status}</span>
         </div> : <></>;
 
-    const futurePlans = props.futurePlans.map((plan, index) =>
-        <li key={index} className={"proj-future-plan"}>{plan}</li>);
-
     // techList requires two layers of mapping
     const techList = props.tech.map((thing, index) =>
         <div key={index}
@@ -112,11 +109,6 @@ function Proj(props) {
                             {isExpanded ? "Collapse" : "Learn More"}
                         </div>
                     </div>
-
-                    <div className="proj-future-plans">
-                        <h3>Future Plans</h3>
-                        {futurePlans}
-                    </div>
                 </div>
             </div>
 
@@ -130,7 +122,6 @@ function Proj(props) {
 Proj.defaultProps = {
     name: "",
     description: "",
-    futurePlans: [""],
     notes: [""],
     url: "",
     repo: "",
@@ -145,7 +136,6 @@ Proj.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     status: PropTypes.string,
-    futurePlans: PropTypes.arrayOf(PropTypes.string).isRequired,
     notes: PropTypes.arrayOf(PropTypes.string).isRequired,
     url: PropTypes.string.isRequired,
     repo: PropTypes.string.isRequired,
