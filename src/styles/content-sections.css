@@ -555,6 +555,8 @@
 }
 .contact-section .contacts .contact-group {
   margin: 0 auto;
+  border-radius: 0.625em;
+  background: #f8f8f8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -563,7 +565,7 @@
 .contact-section .contacts .contact-group .contact-link {
   color: inherit;
   border: 1px solid #979aa0;
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 1em;
   height: 100%;
   text-decoration: none;
@@ -579,7 +581,7 @@
   margin: 0.5em 0;
 }
 .contact-section .contacts .contact-group .contact-link:hover {
-  background: #f8f8f8;
+  background: white;
   border: 1px solid #0647b6;
 }
 .contact-section .contacts .contact-group .contact-link:hover .icon {

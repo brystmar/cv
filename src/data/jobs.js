@@ -7,13 +7,12 @@ const expediaPM = {
                alt="Expedia Group corporate logo"
                className="logo job-logo"/>,
     location: "Seattle, WA",
-    title: "Technical Product Manager",
+    title: "Salesforce Product Manager III",
     startDate: "Feb 2020",
     endDate: "Present",
     accomplishments: [
-        "Focused on tool and process efficiency for Egencia.com, the B2B product from Expedia Group.",
-        "Implemented case management for >3000 travel agents, improving [metric] by x%.",
-        "Launched live agent chat for 25,000 clients in 17 countries.  Access to this new channel reduced client email case volume by 11% (on average) and overall handle time by 8 minutes."
+        "Decreased average case handle time by 26% for >3000 travel agents by migrating from legacy systems to Salesforce Service Cloud.",
+        "Deployed live agent chat w/integrated chatbot for >7000 clients across 5 countries.  Access to this new channel reduced client email case volume by 9%, on average."
     ]
 };
 
@@ -29,9 +28,9 @@ const dynataSeniorPdM = {
     startDate: "Apr 2019",
     endDate: "Feb 2020",
     accomplishments: [
-        "Led platform integration through two M&A events, more than doubling the company’s annual revenue.",
-        "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices.",
-        "Spearheaded adoption of a unified design system to standardize UI components across platforms."
+        "Led platform integration through two M&A events, which more than doubled the company’s annual revenue.",
+        "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and internal microservices.",
+        "Spearheaded the adoption of a unified design system to standardize UI components across platforms."
     ]
 };
 
@@ -49,8 +48,7 @@ const dynataPdM = {
     accomplishments: [
         "Slashed median quote-prep time from 44 to 14 minutes (68%) in the first year by optimizing workflow and applying UX fundamentals.",
         "Efficiency gains enabled the Sales org to reassign support personnel to more value-focused roles.",
-        "Developed a web-based quoting + pricing tool based on microservices.  Managed from storyboard concept through release and adoption.  Further reduced median quote-prep time to 3½ minutes – down 92% overall.",
-        "Published a quarterly UX analysis of common tasks, demonstrating KPI improvements to our users."
+        "Developed a web-based quoting + pricing tool based on microservices.  Managed from storyboard concept through release and adoption.  Further reduced median quote-prep time to 3½ minutes – down 92% overall."
     ]
 };
 
@@ -66,9 +64,8 @@ const dynataPjM = {
     endDate: "Jun 2015",
     accomplishments: [
         "Coordinated customers and stakeholders to deliver insightful market research.",
-        "Recognized as global SME in Oct 2013; commissioned as a cross-regional consultant to drive efficiency metrics.",
-        "Championed process re-engineering and user training on-site in London and EMEA satellite offices, boosting regional conversion by 43% in 13 weeks.",
-        "Developed tools to measure and sustain these improvements."
+        "Recognized as global SME in Oct 2013, then commissioned as a cross-regional consultant to drive efficiency metrics.",
+        "Championed process re-engineering and user training on-site in London and EMEA satellite offices, boosting regional conversion by 43% in 13 weeks.  Developed tools to measure and sustain these improvements."
     ]
 };
 

@@ -7,7 +7,7 @@ const react_bootcamp = {
                alt="React logo"
                className="logo cert-logo"/>,
     url: "https://scrimba.com/certificate/uGeLxkCg/greact",
-    date: "Dec 2019 to Oct 2020"
+    date: "Nov 2019 to Oct 2020"
 };
 
 const UI_design = {
@@ -37,7 +37,7 @@ const SF_admin = {
                alt="Salesforce logo"
                className="logo cert-logo"/>,
     url: "https://trailblazer.me/id/tpberg",
-    date: "Sep 2020",
+    date: "Jun 2020",
     number: "21303901"
 }
 
@@ -74,7 +74,7 @@ const GCP_core_infrastructure = {
 };
 
 const GCP_app_dev = {
-    name: "Getting Started with App Development in GCP",
+    name: "Getting Started with GCP App Development",
     issuer: "Coursera",
     logo: <img src="./logos/GCP.png"
                alt="Google Cloud Platform logo"

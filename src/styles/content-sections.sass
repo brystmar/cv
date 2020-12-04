@@ -504,7 +504,8 @@
     margin: 0 auto
     .contact-group
       margin: 0 auto
-      //border: 1px dashed blue
+      border-radius: 0.625em
+      background: $color-background
       display: flex
       flex-direction: column
       justify-content: center
@@ -512,7 +513,7 @@
       .contact-link
         color: inherit
         border: 1px solid $color-border
-        border-radius: 10px
+        border-radius: 0.625em
         padding: 1em
         height: 100%
         text-decoration: none
@@ -526,7 +527,7 @@
           max-height: 50%
           margin: 0.5em 0
       .contact-link:hover
-        background: $color-background
+        background: white
         border: 1px solid $color-primary-darker
         .icon
           background: white
@@ -534,3 +535,10 @@
       .contact-link:active
         outline: 1px dotted $color-border-darker
         background: $color-background
+
+@media (min-width: 720px)
+  .contact-section
+    .contacts
+      .contact-group
+        .contact-link
+          //padding: 1.25em 4em
