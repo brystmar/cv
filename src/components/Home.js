@@ -18,7 +18,7 @@ function Home() {
             </div>
 
             <div className="headshot-container">
-                <img src="https://storage.googleapis.com/tb-public-misc/faces.jpg"
+                <img src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
                      alt="Thomas sitting in a restaurant, making a goofy face"
                      className="headshot"/>
             </div>

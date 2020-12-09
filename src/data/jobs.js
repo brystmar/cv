@@ -12,7 +12,7 @@ const expediaPM = {
     endDate: "Present",
     accomplishments: [
         "Decreased average case handle time by 26% for >3000 travel agents by migrating from legacy systems to Salesforce Service Cloud.",
-        "Deployed live agent chat w/integrated chatbot for >7000 clients across 5 countries.  Access to this new channel reduced client email case volume by 9%, on average."
+        "Deployed live agent chat w/integrated chatbot for >7000 clients across 5 countries."
     ]
 };
 

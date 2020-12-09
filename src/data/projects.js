@@ -5,7 +5,7 @@ const breadsheet = {
     description: "Scheduling tool that helps you fit long recipes into your day.",
     url: "http://www.breadsheet.com",
     repo: "https://github.com/brystmar/breadsheet-ui",
-    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/breadsheet.png"
+    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/breadsheet.png"
                      alt="Example of using the breadsheet scheduling tool for a sourdough recipe"
                      title="Visit breadsheet.com"
                      className="screenshot wide"/>,
@@ -41,7 +41,7 @@ const cellarSync = {
     description: "Inventory management app for cellars of beer, wine, and mead.",
     url: "http://cellarsync.com",
     repo: "https://github.com/brystmar/cellar-sync-ui",
-    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cellarsync.png"
+    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/cellarsync.png"
                      alt="Screenshot of the Cellar Sync webapp"
                      title="Visit cellarsync.com"
                      className="screenshot tall"/>,
@@ -78,14 +78,14 @@ const cv = {
     description: "The website you're reading right now.  So meta.",
     url: "http://thomasberg.me",
     repo: "https://github.com/brystmar/cv",
-    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/screenshots/cv.png"
+    screenshot: <img src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/cv.png"
                      alt="Screenshot of the top section of the website you're reading right now"
                      title="The website you're currently reading. So meta."
                      className="screenshot tall"/>,
     notes: [
         "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
         "Modular design parses content from static .js files.",
-        "Great way to practice my front-end skills."
+        "Establishes an online presence for my professional CV, and allows me to demonstrate my progression into the world of front-end development."
     ],
     tech: [
         {
