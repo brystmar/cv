@@ -35,7 +35,7 @@
   margin: 0.2em 0;
 }
 .home-section .headshot-container {
-  height: 12em;
+  height: 20em;
   margin: 1.25em 0;
   display: flex;
   align-items: center;
@@ -43,6 +43,7 @@
 }
 .home-section .headshot-container img {
   height: 95%;
+  border-radius: 1.5em;
 }
 .home-section .highlights .highlight {
   font-size: 1.4rem;

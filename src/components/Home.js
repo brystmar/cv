@@ -18,21 +18,22 @@ function Home() {
             </div>
 
             <div className="headshot-container">
-                <img src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
-                     alt="Thomas sitting in a restaurant, making a goofy face"
-                     className="headshot"/>
+                <img
+                    src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
+                    alt="Thomas' headshot"
+                    className="headshot"/>
             </div>
 
             <div className="highlights">
                 <p className="highlight">Customer-obsessed Product Manager with a passion
                     for <strong>user experience</strong></p>
 
-                <Separator/>
+                <Separator />
 
                 <p className="highlight">Naturally <strong>curious</strong>, data-driven, and
                     technical</p>
 
-                <Separator/>
+                <Separator />
 
                 <p className="highlight">Avid <strong>home cook</strong>, exploring the
                     intersection of food and tech</p>

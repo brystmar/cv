@@ -27,6 +27,7 @@ Tech Stack:
 
 ## Attribution
 Content sourced from:
+* Thomas' headshot by [Max Photography](https://www.maxphotography.com/)
 * [FavIcon.io](https://favicon.io/)
 * [Real FavIcon Generator](https://realfavicongenerator.net/)
 * Adapted a hamburger animation originally created by [Jesse Couch](https://codepen.io/designcouch/pen/Atyop?editors=1000)
@@ -40,4 +41,3 @@ Content sourced from:
 * Website icon by Rahmat Hidayat from [The Noun Project](https://thenounproject.com/search/?q=website&i=3237546)
 * [Flask logo](http://flask.pocoo.org/static/logo/flask.svg) by Armin Ronacher, from [wikimedia](https://commons.wikimedia.org/w/index.php?curid=19501815)
 * SVG color conversion tool by [Barrett Sonntag](https://codepen.io/sosuke/pen/Pjoqqp)
-
