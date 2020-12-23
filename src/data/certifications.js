@@ -1,5 +1,16 @@
 import React from "react";
 
+const SF_service_cloud = {
+    name: "Salesforce Service Cloud",
+    issuer: "Salesforce",
+    logo: <img src="./logos/salesforce.png"
+               alt="Salesforce logo"
+               className="logo cert-logo"/>,
+    url: "https://trailblazer.me/id/tpberg",
+    date: "Dec 2020",
+    number: "21729528"
+};
+
 const react_bootcamp = {
     name: "The React Bootcamp",
     issuer: "Scrimba",
@@ -95,7 +106,7 @@ const PY4E = {
     number: "T68Z59NVH5FM"
 };
 
-const myCerts = [react_bootcamp, UI_design, responsive_web_design, SF_admin,
+const myCerts = [SF_service_cloud, react_bootcamp, UI_design, responsive_web_design, SF_admin,
     PSPO, CSPO, GCP_core_infrastructure, GCP_app_dev, PY4E];
 
 export default myCerts;
