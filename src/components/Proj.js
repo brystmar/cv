@@ -11,7 +11,9 @@ function Proj(props) {
             return <p key={index} className={"proj-note"}>{note}</p>
         } else {
             return <p key={index}
-                      className={isExpanded ? "proj-note" : "proj-note hidden"}>{note}</p>
+                      className={isExpanded ?
+                          "proj-note more-notes expanded" :
+                          "proj-note more-notes"}>{note}</p>
         }
     });
 
@@ -102,10 +104,11 @@ function Proj(props) {
                         <div className="proj-notes">{notesList}</div>
 
                         <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+                             onClick={() => updateIsExpanded(!isExpanded)}
                              aria-label={isExpanded ?
                                  "Hide the longer description of this project" :
                                  "Show the longer description of this project"}
-                             onClick={() => updateIsExpanded(!isExpanded)}>
+                        >
                             {isExpanded ? "Collapse" : "Learn More"}
                         </div>
                     </div>

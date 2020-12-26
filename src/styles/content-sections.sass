@@ -227,9 +227,22 @@
       margin-top: 0
     .proj-overview
       margin: 0 0 0.75em
-    .proj-note
-      margin-left: 0
-      margin-right: 0
+    .proj-note.more-notes
+      margin: 0
+    .more-notes
+      visibility: hidden
+      height: 0
+      margin: 0
+      padding: 0
+      opacity: 0
+      transition: height 300ms ease-in-out, opacity 200ms ease-in-out //, margin 100ms ease-in-out 400ms, padding 100ms ease-in-out 400ms
+    .more-notes.expanded
+      visibility: visible
+      height: auto
+      padding: revert
+      margin: revert
+      opacity: 1
+      transition: height 300ms ease-in-out, opacity 200ms ease-in-out //, margin 100ms linear, padding 100ms linear
     .proj-notes
       p
         margin: 0.75em 0
@@ -367,6 +380,7 @@
   //border: 1px dashed darkgreen
   .cert
     max-width: 600px
+    min-height: 150px
     background: $color-background
     margin: 0 0 1.5em 0
     border: 1px solid $color-border
@@ -443,7 +457,7 @@
 .degree
   display: flex
   flex-direction: column
-  align-items: center
+  align-items: flex-start
   .degree-title,
   .degree-content
     width: 100%

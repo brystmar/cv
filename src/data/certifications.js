@@ -1,7 +1,7 @@
 import React from "react";
 
 const SF_service_cloud = {
-    name: "Salesforce Service Cloud",
+    name: "Salesforce Certified Service Cloud Consultant",
     issuer: "Salesforce",
     logo: <img src="./logos/salesforce.png"
                alt="Salesforce logo"
