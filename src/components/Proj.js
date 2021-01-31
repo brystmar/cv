@@ -1,19 +1,21 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import map_tech_to_icon from "../scripts/map_tech_to_icon";
 
 function Proj(props) {
-    const [isExpanded, updateIsExpanded] = useState(false);
+    const [ isExpanded, updateIsExpanded ] = useState(false);
 
     // Only display the first item from notesList by default; user can expand if desired
     const notesList = props.notes.map((note, index) => {
         if (index === 0) {
             return <p key={index} className={"proj-note"}>{note}</p>
         } else {
-            return <p key={index}
-                      className={isExpanded ?
-                          "proj-note more-notes expanded" :
-                          "proj-note more-notes"}>{note}</p>
+            return <p
+                key={index}
+                className={isExpanded ?
+                    "proj-note more-notes expanded" :
+                    "proj-note more-notes"}
+            >{note}</p>
         }
     });
 
@@ -29,21 +31,25 @@ function Proj(props) {
     }
 
     // Only display status when it's provided
-    const currentStatus = !!props.status ?
+    const currentStatus = !!props.status ? (
         <div className="proj-status-group icon-plus-text">
-            <img src="./icons/info-circle-solid.svg"
-                 alt={`Status of the ${props.name} project`}
-                 title={`Status of the ${props.name} project`}
-                 className="icon"/>
+            <img
+                src="./icons/info-circle-solid.svg"
+                alt={`Status of the ${props.name} project`}
+                title={`Status of the ${props.name} project`}
+                className="icon"
+            />
             <span className="proj-status">{props.status}</span>
-        </div> : <></>;
+        </div>
+    ) : <></>;
 
     // techList requires two layers of mapping
     const techList = props.tech.map((thing, index) =>
-        <div key={index}
-             className={thing.type === "Infrastructure" && thing.items.length > 2 ?
-                 "proj-tech-type-container wide" :
-                 "proj-tech-type-container"}>
+        <div
+            key={index}
+            className={thing.type === "Infrastructure" && thing.items.length > 2 ?
+                "proj-tech-type-container wide" : "proj-tech-type-container"}
+        >
             <span className="proj-tech-type-label">{thing.type}</span>
             <span className="proj-tech-list">
                 {thing.items.map((value, index) =>
@@ -60,26 +66,34 @@ function Proj(props) {
                 <span className="proj-name">{props.name}</span>
                 <span className="proj-links">
                     <span className="proj-link-icon-container">
-                        <a className="proj-link"
-                           href={props.url}
-                           aria-label="Link to this project's homepage"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="./icons/website.svg"
-                                 alt="Website icon"
-                                 className="icon icon-link"/>
+                        <a
+                            className="proj-link"
+                            href={props.url}
+                            aria-label="Link to this project's homepage"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="./icons/website.svg"
+                                alt="Website icon"
+                                className="icon icon-link"
+                            />
                         </a>
                     </span>
 
                     <span className="proj-link-icon-container">
-                        <a className="proj-link"
-                           href={props.repo}
-                           aria-label="Link to this project's GitHub repository"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            <img src="./logos/github.svg"
-                                 alt="GitHub icon"
-                                 className="icon icon-link"/>
+                        <a
+                            className="proj-link"
+                            href={props.repo}
+                            aria-label="Link to this project's GitHub repository"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="./logos/github.svg"
+                                alt="GitHub icon"
+                                className="icon icon-link"
+                            />
                         </a>
                     </span>
                 </span>
@@ -92,10 +106,12 @@ function Proj(props) {
 
             <div className={screenshotNotesClass}>
                 <div className={screenshotContainerClass}>
-                    <a className="proj-link"
-                       href={props.url}
-                       target="_blank"
-                       rel="noopener noreferrer">{props.screenshot}</a>
+                    <a
+                        className="proj-link"
+                        href={props.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >{props.screenshot}</a>
                 </div>
 
                 <div className="proj-notes-group">
@@ -103,11 +119,12 @@ function Proj(props) {
                         <h3>Overview</h3>
                         <div className="proj-notes">{notesList}</div>
 
-                        <div className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
-                             onClick={() => updateIsExpanded(!isExpanded)}
-                             aria-label={isExpanded ?
-                                 "Hide the longer description of this project" :
-                                 "Show the longer description of this project"}
+                        <div
+                            className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
+                            onClick={() => updateIsExpanded(!isExpanded)}
+                            aria-label={isExpanded ?
+                                "Hide the longer description of this project" :
+                                "Show the longer description of this project"}
                         >
                             {isExpanded ? "Collapse" : "Learn More"}
                         </div>
@@ -123,27 +140,27 @@ function Proj(props) {
 }
 
 Proj.defaultProps = {
-    name: "",
+    name:        "",
     description: "",
-    notes: [""],
-    url: "",
-    repo: "",
-    screenshot: <img src="" alt=""/>,
-    tech: [{
-        type: "",
-        items: [""]
-    }]
+    notes:       [ "" ],
+    url:         "",
+    repo:        "",
+    screenshot:  <img src="" alt="" />,
+    tech:        [ {
+        type:  "",
+        items: [ "" ]
+    } ]
 }
 
 Proj.propTypes = {
-    name: PropTypes.string.isRequired,
+    name:        PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    status: PropTypes.string,
-    notes: PropTypes.arrayOf(PropTypes.string).isRequired,
-    url: PropTypes.string.isRequired,
-    repo: PropTypes.string.isRequired,
-    screenshot: PropTypes.element.isRequired,
-    tech: PropTypes.arrayOf(PropTypes.object).isRequired
+    status:      PropTypes.string,
+    notes:       PropTypes.arrayOf(PropTypes.string).isRequired,
+    url:         PropTypes.string.isRequired,
+    repo:        PropTypes.string.isRequired,
+    screenshot:  PropTypes.element.isRequired,
+    tech:        PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
 export default Proj;

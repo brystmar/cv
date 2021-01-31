@@ -32,24 +32,19 @@ code {
   font-family: "Roboto Mono", "Source Code Pro", "Courier New", monospace;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  cursor: default;
-}
-
 h2,
 h3,
 h4 {
   margin: 0;
   text-align: left;
+  cursor: default;
 }
 
 h1 {
   font-size: 3.2rem;
-  text-align: center;
   margin: 0 0 0.6em;
+  text-align: center;
+  cursor: default;
 }
 
 h2 {
