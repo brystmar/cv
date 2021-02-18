@@ -8,11 +8,17 @@
 /*** Page Layout ***/
 /*** Nav ***/
 /*** Navigation ***/
+#Home {
+  z-index: -1;
+  position: relative;
+  top: -50px;
+}
+
 .navbar {
   position: inherit;
   z-index: 100;
 }
-.navbar .links-container.mobile-hide {
+.navbar .links-container.mobile-hidden {
   display: none;
 }
 .navbar .links-container {
@@ -27,22 +33,22 @@
   font-size: 2.75rem;
 }
 
-.header-container.mobile {
+.nav-expanded {
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-.mobile-hide {
+.mobile-hidden {
   display: none;
 }
 
 @media (min-width: 500px) {
-  .header-container.mobile {
+  .nav-expanded {
     height: unset;
   }
 
-  .mobile-hide {
+  .mobile-hidden {
     display: unset;
   }
 
@@ -61,7 +67,7 @@
   .navbar .nav-hamburger {
     display: none;
   }
-  .navbar .links-container.mobile-hide {
+  .navbar .links-container.mobile-hidden {
     display: flex;
   }
   .navbar .links-container {

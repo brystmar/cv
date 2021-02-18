@@ -3,10 +3,15 @@
 
 /*** Navigation ***/
 
+#Home
+  z-index: -1
+  position: relative
+  top: -50px
+
 .navbar
   position: inherit
   z-index: 100
-  .links-container.mobile-hide
+  .links-container.mobile-hidden
     display: none
   .links-container
     display: flex
@@ -18,18 +23,18 @@
       padding: 0.1em
       font-size: 2.75rem
 
-.header-container.mobile
+.nav-expanded
   height: 100vh
   margin: 0
   padding: 0
 
-.mobile-hide
+.mobile-hidden
   display: none
 
 @media (min-width: 500px)
-  .header-container.mobile
+  .nav-expanded
     height: unset
-  .mobile-hide
+  .mobile-hidden
     display: unset
   .content-container
     padding-top: 50px
@@ -42,7 +47,7 @@
     border: 2px solid $color-nav
     .nav-hamburger
       display: none
-    .links-container.mobile-hide
+    .links-container.mobile-hidden
       display: flex
     .links-container
       height: unset
@@ -64,11 +69,14 @@
         border-bottom-color: $color-light
       .active
         border-bottom-color: $color-light
+
+  // Hide 'Education' from static nav until there's enough vp width
   .nav-education
     display: none
-    
+
 @media (min-width: 620px)
-  .nav-education  //hide 'Education' from static nav until there's enough vp width
+  // Show 'Education' in the static navbar
+  .nav-education
     display: unset
 
 @media (min-width: 700px)

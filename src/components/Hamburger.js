@@ -12,10 +12,10 @@ export default function Hamburger(props) {
             className={props.isNavExpanded ? "nav-hamburger open" : "nav-hamburger"}
             aria-label={props.isNavExpanded ? "Close navigation" : "Expand navigation"}
         >
-            <span aria-hidden="true"> </span>
-            <span aria-hidden="true"> </span>
-            <span aria-hidden="true"> </span>
-            <span aria-hidden="true"> </span>
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
+            <span aria-hidden="true" />
         </button>
     )
 }

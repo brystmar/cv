@@ -4,10 +4,13 @@ import Separator from "./Separator";
 export default function Home() {
     return (
         <section
-            id="Home"
+            id="Top"
             aria-label="Home"
             className="home-section"
         >
+            {/* Set the Home anchor @`top: -50px` to absorb navbar vertical spacing on desktop */}
+            <span id="Home" aria-hidden="true" />
+
             <div className="greeting">
                 <div className="intro">Hello! I'm</div>
                 <div className="name">Thomas</div>
@@ -26,18 +29,22 @@ export default function Home() {
             </div>
 
             <div className="highlights">
-                <p className="highlight">Customer-obsessed Product Manager with a passion
-                    for <strong>user experience</strong></p>
+                <p className="highlight">
+                    Customer-obsessed Product Manager with a passion for <strong>user
+                    experience</strong>
+                </p>
 
                 <Separator />
 
-                <p className="highlight">Naturally <strong>curious</strong>, data-driven, and
-                    technical</p>
+                <p className="highlight">
+                    Naturally <strong>curious</strong>, data-driven, and technical
+                </p>
 
                 <Separator />
 
-                <p className="highlight">Avid <strong>home cook</strong>, exploring the
-                    intersection of food and tech</p>
+                <p className="highlight">
+                    Avid <strong>home cook</strong>, exploring the intersection of food and tech
+                </p>
             </div>
         </section>
     )

@@ -3,61 +3,61 @@ import Hamburger from "./Hamburger";
 import "../styles/navbar.sass";
 
 export default function NavBar(props) {
-    const toggle = () => props.toggleIsNavExpanded(!props.isNavExpanded)
+    function closeNavIfExpanded() {
+        if (props.isNavExpanded) {
+            props.toggleIsNavExpanded(false)
+        }
+    }
 
     return (
         <nav
             role="navigation"
             aria-label="Navigation links"
-            className={props.isNavExpanded ? "navbar" : "navbar mobile"}
+            className={"navbar".concat(props.isNavExpanded ? " nav-expanded" : "")}
         >
             <Hamburger
                 isNavExpanded={props.isNavExpanded}
                 toggleIsNavExpanded={props.toggleIsNavExpanded}
             />
 
-            <div
-                className={props.isNavExpanded ?
-                    "links-container" :
-                    "links-container mobile-hide"}
-            >
+            <div className={"links-container".concat(props.isNavExpanded ? "" : " mobile-hidden")}>
                 <a
-                    onClick={toggle}
-                    href="/#Top"
+                    onClick={closeNavIfExpanded}
+                    href="/#Home"
                     className="nav-home"
                     title="Home"
                 >Home</a>
 
                 <a
-                    onClick={toggle}
+                    onClick={closeNavIfExpanded}
                     href="/#Experience"
                     className="nav-experience"
                     title="Experience"
                 >Experience</a>
 
                 <a
-                    onClick={toggle}
+                    onClick={closeNavIfExpanded}
                     href="/#Projects"
                     className="nav-proj"
                     title="Projects"
                 >Projects</a>
 
                 <a
-                    onClick={toggle}
+                    onClick={closeNavIfExpanded}
                     href="/#Certifications"
                     className="nav-certs"
                     title="Certifications"
                 >Certifications</a>
 
                 <a
-                    onClick={toggle}
+                    onClick={closeNavIfExpanded}
                     href="/#Education"
                     className="nav-education"
                     title="Education"
                 >Education</a>
 
                 <a
-                    onClick={toggle}
+                    onClick={closeNavIfExpanded}
                     href="/#Contact"
                     className="nav-contact"
                     title="Contact"
