@@ -1,9 +1,7 @@
 import React from "react";
 
-function Separator() {
+export default function Separator() {
     return (
-        <div className="separator-horiz"/>
+        <div className="separator-horiz" />
     )
 }
-
-export default Separator;

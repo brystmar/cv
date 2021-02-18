@@ -2,17 +2,21 @@ import React from "react";
 import ContactItem from "./ContactItem";
 import myContactMethods from "../data/contact";
 
-function Contact() {
+export default function Contact() {
     const contactList = myContactMethods.map((item, index) =>
-        <ContactItem key={index}
-                     text={item.text}
-                     url={item.url}
-                     image={item.image}/>)
+        <ContactItem
+            key={index}
+            text={item.text}
+            url={item.url}
+            image={item.image}
+        />)
 
     return (
-        <section id="Contact"
-                 aria-label="Ways to contact Thomas"
-                 className="contact-section">
+        <section
+            id="Contact"
+            aria-label="Ways to contact Thomas"
+            className="contact-section"
+        >
 
             <h1>Contact</h1>
 
@@ -22,5 +26,3 @@ function Contact() {
         </section>
     )
 }
-
-export default Contact;

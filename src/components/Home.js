@@ -1,13 +1,13 @@
 import React from "react";
 import Separator from "./Separator";
 
-function Home() {
+export default function Home() {
     return (
         <section
             id="Home"
             aria-label="Home"
-            className="home-section">
-
+            className="home-section"
+        >
             <div className="greeting">
                 <div className="intro">Hello! I'm</div>
                 <div className="name">Thomas</div>
@@ -21,7 +21,8 @@ function Home() {
                 <img
                     src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
                     alt="Thomas' headshot"
-                    className="headshot"/>
+                    className="headshot"
+                />
             </div>
 
             <div className="highlights">
@@ -41,5 +42,3 @@ function Home() {
         </section>
     )
 }
-
-export default Home;

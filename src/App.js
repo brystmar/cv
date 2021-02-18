@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
@@ -11,14 +11,16 @@ import "./styles/styles.sass";
 import "./styles/separators.sass";
 import "./styles/content-sections.sass";
 
-function App() {
-    const [isNavExpanded, toggleIsNavExpanded] = useState(false)
+export default function App() {
+    const [ isNavExpanded, toggleIsNavExpanded ] = useState(false)
 
     return (
         <div className="app-container" id="Top">
             <header className={isNavExpanded ? "header-container mobile" : "header-container"}>
-                <NavBar isNavExpanded={isNavExpanded}
-                        toggleIsNavExpanded={toggleIsNavExpanded}/>
+                <NavBar
+                    isNavExpanded={isNavExpanded}
+                    toggleIsNavExpanded={toggleIsNavExpanded}
+                />
             </header>
 
             <main className={isNavExpanded ? "content-container mobile-hide" : "content-container"}>
@@ -37,5 +39,3 @@ function App() {
         </div>
     );
 }
-
-export default App;

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Cert(props) {
+export default function Cert(props) {
     return (
         <article className="cert">
             <div className="cert-title">
@@ -10,29 +10,37 @@ function Cert(props) {
 
             <div className="cert-content">
                 <span className="col-logo-content logo-container">
-                    <a href={props.url}
-                       target="_blank"
-                       rel="noopener noreferrer">{props.logo}</a>
+                    <a
+                        href={props.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >{props.logo}</a>
                 </span>
 
                 <span className="col-logo-content cert-details">
                     <span className="icon-plus-text">
-                        <img src="./icons/user-graduate-solid.svg"
-                             alt={`Certification issued by ${props.issuer}`}
-                             title={`Certification issued by ${props.issuer}`}
-                             className="icon"/>
+                        <img
+                            src="./icons/user-graduate-solid.svg"
+                            alt={`Certification issued by ${props.issuer}`}
+                            title={`Certification issued by ${props.issuer}`}
+                            className="icon"
+                        />
                         <span>
-                            <a href={props.url}
-                               target="_blank"
-                               rel="noopener noreferrer">{props.issuer}</a>
+                            <a
+                                href={props.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{props.issuer}</a>
                         </span>
                     </span>
 
                     <span className="icon-plus-text">
-                        <img src="./icons/calendar-alt-regular.svg"
-                             alt="Dates employed"
-                             title="Dates employed"
-                             className="icon"/>
+                        <img
+                            src="./icons/calendar-alt-regular.svg"
+                            alt="Dates employed"
+                            title="Dates employed"
+                            className="icon"
+                        />
                         <span>{props.date}</span>
                     </span>
                 </span>
@@ -42,19 +50,17 @@ function Cert(props) {
 }
 
 Cert.defaultProps = {
-    name: "",
+    name:   "",
     issuer: "",
-    logo: <img src="" alt=""/>,
-    url: "",
-    date: ""
+    logo:   <img src="" alt="" />,
+    url:    "",
+    date:   ""
 }
 
 Cert.propTypes = {
-    name: PropTypes.string.isRequired,
+    name:   PropTypes.string.isRequired,
     issuer: PropTypes.string.isRequired,
-    logo: PropTypes.element.isRequired,
-    url: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired
+    logo:   PropTypes.element.isRequired,
+    url:    PropTypes.string.isRequired,
+    date:   PropTypes.string.isRequired
 }
-
-export default Cert;

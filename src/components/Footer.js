@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export default function Footer() {
     return (
         <>
             Another mediocre webapp by <a href="https://github.com/brystmar/cv/"
@@ -9,5 +9,3 @@ function Footer() {
         </>
     )
 }
-
-export default Footer;

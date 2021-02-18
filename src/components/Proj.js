@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import map_tech_to_icon from "../scripts/map_tech_to_icon";
+import map_tech_to_icon from "../helpers/map_tech_to_icon";
 
-function Proj(props) {
+export default function Proj(props) {
     const [ isExpanded, updateIsExpanded ] = useState(false);
 
     // Only display the first item from notesList by default; user can expand if desired
@@ -22,6 +22,7 @@ function Proj(props) {
     // Lift the tall/wide class to the screenshot container for proper scaling
     let screenshotNotesClass = "proj-screenshot-notes";
     let screenshotContainerClass = "proj-screenshot-container";
+
     if (props.screenshot.props.className.indexOf("tall") !== -1) {
         screenshotNotesClass += " tall"
         screenshotContainerClass += " tall"
@@ -162,5 +163,3 @@ Proj.propTypes = {
     screenshot:  PropTypes.element.isRequired,
     tech:        PropTypes.arrayOf(PropTypes.object).isRequired
 }
-
-export default Proj;
