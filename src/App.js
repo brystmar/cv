@@ -16,14 +16,15 @@ export default function App() {
 
     return (
         <div className="app-container" id="Top">
-            <header className={isNavExpanded ? "header-container mobile" : "header-container"}>
+            <header className="header-container">
                 <NavBar
                     isNavExpanded={isNavExpanded}
                     toggleIsNavExpanded={toggleIsNavExpanded}
                 />
             </header>
 
-            <main className={isNavExpanded ? "content-container mobile-hide" : "content-container"}>
+            {/* When nav is expanded, hide this section on small screens */}
+            <main className={"content-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
                 <Home />
                 <Experience />
                 <Projects />
@@ -32,10 +33,10 @@ export default function App() {
                 <Contact />
             </main>
 
-            <footer className={isNavExpanded ? "footer-container mobile-hide" : "footer-container"}>
+            {/* When nav is expanded, hide this section on small screens */}
+            <footer className={"footer-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
                 <Footer />
             </footer>
-
         </div>
-    );
+    )
 }

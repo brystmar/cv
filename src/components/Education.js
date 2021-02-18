@@ -3,19 +3,6 @@ import Degree from "./Degree";
 import myDegrees from "../data/degrees";
 
 export default function Education() {
-    const degreesList = myDegrees.map((degree, index) =>
-        <Degree
-            key={index}
-            degreeType={degree.degreeType}
-            degreeTypeAbbrev={degree.degreeTypeAbbrev}
-            degreeName={degree.degreeName}
-            issuer={degree.issuer}
-            logo={degree.logo}
-            url={degree.url}
-            location={degree.location}
-            date={degree.date}
-        />)
-
     return (
         <section
             id="Education"
@@ -23,7 +10,19 @@ export default function Education() {
             className="education-section"
         >
             <h1>Education</h1>
-            {degreesList}
+            {myDegrees.map((degree, index) =>
+                <Degree
+                    key={index}
+                    degreeType={degree.degreeType}
+                    degreeTypeAbbrev={degree.degreeTypeAbbrev}
+                    degreeName={degree.degreeName}
+                    issuer={degree.issuer}
+                    logo={degree.logo}
+                    url={degree.url}
+                    location={degree.location}
+                    date={degree.date}
+                />
+            )}
         </section>
     )
 }

@@ -4,7 +4,7 @@ import Separator from "./Separator";
 export default function Home() {
     return (
         <section
-            id="Top"
+            id="HomeSection"
             aria-label="Home"
             className="home-section"
         >

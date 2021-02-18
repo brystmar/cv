@@ -1,13 +1,30 @@
 import React from "react";
 
+const logoScrimba = <img
+    src="./logos/scrimba.png"
+    alt="Scrimba logo"
+    title="Scrimba"
+    className="logo cert-logo"
+/>
+
+const logoSalesforce = <img
+    src="./logos/salesforce.png"
+    alt="Salesforce logo"
+    title="Salesforce"
+    className="logo cert-logo"
+/>
+
+const logoGCP = <img
+    src="./logos/GCP.png"
+    alt="Google Cloud Platform logo"
+    title="Google Cloud Platform"
+    className="logo cert-logo"
+/>
+
 const SF_service_cloud = {
     name:   "Salesforce Certified Service Cloud Consultant",
     issuer: "Salesforce",
-    logo:   <img
-                src="./logos/salesforce.png"
-                alt="Salesforce logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoSalesforce,
     url:    "https://trailblazer.me/id/tpberg",
     date:   "Dec 2020",
     number: "21729528"
@@ -17,8 +34,9 @@ const react_bootcamp = {
     name:   "The React Bootcamp",
     issuer: "Scrimba",
     logo:   <img
-                src="./logos/scrimba.png"
+                src="./logos/react.svg"
                 alt="React logo"
+                title="React"
                 className="logo cert-logo"
             />,
     url:    "https://scrimba.com/certificate/uGeLxkCg/greact",
@@ -28,11 +46,7 @@ const react_bootcamp = {
 const UI_design = {
     name:   "The UI Design Bootcamp",
     issuer: "Scrimba",
-    logo:   <img
-                src="./logos/scrimba.png"
-                alt="Scrimba logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoScrimba,
     url:    "https://scrimba.com/certificate/uGeLxkCg/gdesignbootcamp",
     date:   "Aug 2020 to Sep 2020"
 };
@@ -40,11 +54,7 @@ const UI_design = {
 const responsive_web_design = {
     name:   "The Responsive Web Design Bootcamp",
     issuer: "Scrimba",
-    logo:   <img
-                src="./logos/scrimba.png"
-                alt="Scrimba logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoScrimba,
     url:    "https://scrimba.com/certificate/uGeLxkCg/gresponsive",
     date:   "Jun 2020 to Sep 2020"
 };
@@ -52,11 +62,7 @@ const responsive_web_design = {
 const SF_admin = {
     name:   "Salesforce Certified Administrator",
     issuer: "Salesforce",
-    logo:   <img
-                src="./logos/salesforce.png"
-                alt="Salesforce logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoSalesforce,
     url:    "https://trailblazer.me/id/tpberg",
     date:   "Jun 2020",
     number: "21303901"
@@ -68,6 +74,7 @@ const PSPO = {
     logo:   <img
                 src="./logos/PSPO.png"
                 alt="Scrum.org logo"
+                title="Scrum.org"
                 className="logo cert-logo"
             />,
     url:    "https://www.scrum.org/professional-scrum-product-owner-i-certification",
@@ -80,6 +87,7 @@ const CSPO = {
     logo:   <img
                 src="./logos/CSPO.png"
                 alt="Scrum Alliance logo"
+                title="Scrum Alliance"
                 className="logo cert-logo"
             />,
     url:    "https://www.scrumalliance.org/certifications/practitioners/cspo-certification",
@@ -90,11 +98,7 @@ const CSPO = {
 const GCP_core_infrastructure = {
     name:   "GCP Fundamentals: Core Infrastructure",
     issuer: "Coursera",
-    logo:   <img
-                src="./logos/GCP.png"
-                alt="Google Cloud Platform logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoGCP,
     url:    "https://www.coursera.org/account/accomplishments/verify/CZMR3HVMCE39",
     date:   "Mar 2019",
     number: "CZMR3HVMCE39"
@@ -103,11 +107,7 @@ const GCP_core_infrastructure = {
 const GCP_app_dev = {
     name:   "Getting Started with GCP App Development",
     issuer: "Coursera",
-    logo:   <img
-                src="./logos/GCP.png"
-                alt="Google Cloud Platform logo"
-                className="logo cert-logo"
-            />,
+    logo:   logoGCP,
     url:    "https://www.coursera.org/account/accomplishments/verify/L7BGAT576A2H",
     date:   "Mar 2019",
     number: "L7BGAT576A2H"
@@ -119,6 +119,7 @@ const PY4E = {
     logo:   <img
                 src="./logos/python.svg"
                 alt="Python logo"
+                title="Python"
                 className="logo cert-logo"
             />,
     url:    "https://www.coursera.org/account/accomplishments/specialization/T68Z59NVH5FM",

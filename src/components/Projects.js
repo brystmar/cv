@@ -3,20 +3,6 @@ import myProjects from "../data/projects";
 import Proj from "./Proj";
 
 export default function Projects() {
-    const projectList = myProjects.map((proj, index) =>
-        <Proj
-            key={index}
-            name={proj.name}
-            description={proj.description}
-            status={proj.status}
-            futurePlans={proj.futurePlans}
-            notes={proj.notes}
-            url={proj.url}
-            repo={proj.repo}
-            screenshot={proj.screenshot}
-            tech={proj.tech}
-        />)
-
     return (
         <section
             id="Projects"
@@ -24,7 +10,19 @@ export default function Projects() {
             className="project-section"
         >
             <h1>Projects</h1>
-            {projectList}
+            {myProjects.map((proj, index) =>
+                <Proj
+                    key={index}
+                    name={proj.name}
+                    description={proj.description}
+                    status={proj.status}
+                    notes={proj.notes}
+                    url={proj.url}
+                    repo={proj.repo}
+                    screenshot={proj.screenshot}
+                    tech={proj.tech}
+                />
+            )}
         </section>
     )
 }

@@ -37,8 +37,8 @@ export default function Cert(props) {
                     <span className="icon-plus-text">
                         <img
                             src="./icons/calendar-alt-regular.svg"
-                            alt="Dates employed"
-                            title="Dates employed"
+                            alt="Date issued"
+                            title="Date issued"
                             className="icon"
                         />
                         <span>{props.date}</span>

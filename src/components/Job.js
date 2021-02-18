@@ -2,9 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Job(props) {
-    const accomplishmentsList = props.accomplishments.map((item, index) =>
-        <li key={index} className="job-accomplishments-list-item">{item}</li>);
-
     const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
 
     return (
@@ -55,7 +52,9 @@ export default function Job(props) {
 
             <div className="job-content">
                 <ul className="job-accomplishments">
-                    {accomplishmentsList}
+                    {props.accomplishments.map((item, index) =>
+                        <li key={index} className="job-accomplishments-list-item">{item}</li>
+                    )}
                 </ul>
             </div>
         </article>

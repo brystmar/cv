@@ -157,7 +157,7 @@ li {
   border: 0;
 }
 
-.footer-container.mobile-hide {
+.footer-container.mobile-hidden {
   display: none;
 }
 
