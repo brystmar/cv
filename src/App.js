@@ -25,7 +25,7 @@ export default function App() {
 
             {/* When nav is expanded, hide this section on small screens */}
             <main className={"content-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
-                <Home />
+                <Home isNavExpanded={isNavExpanded} />
                 <Experience />
                 <Projects />
                 <Certifications />

@@ -1,7 +1,7 @@
 import React from "react";
 import Separator from "./Separator";
 
-export default function Home() {
+export default function Home(props) {
     return (
         <section
             id="HomeSection"
@@ -9,7 +9,10 @@ export default function Home() {
             className="home-section"
         >
             {/* Set the Home anchor @`top: -50px` to absorb navbar vertical spacing on desktop */}
-            <span id="Home" aria-hidden="true" />
+            <span id="Home"
+                  aria-hidden="true"
+                  className={"nav-buffer".concat(props.isNavExpanded ? "" : " mobile-hidden")}
+            />
 
             <div className="greeting">
                 <div className="intro">Hello! I'm</div>
@@ -48,4 +51,8 @@ export default function Home() {
             </div>
         </section>
     )
+}
+
+Home.defaultProps = {
+    isNavExpanded: false
 }
