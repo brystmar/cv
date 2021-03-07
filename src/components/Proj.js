@@ -12,9 +12,7 @@ export default function Proj(props) {
         } else {
             return <p
                 key={index}
-                className={isExpanded ?
-                    "proj-note more-notes expanded" :
-                    "proj-note more-notes"}
+                className={"proj-note more-notes".concat(isExpanded ? " expanded" : "")}
             >{note}</p>
         }
     });
@@ -42,24 +40,25 @@ export default function Proj(props) {
             />
             <span className="proj-status">{props.status}</span>
         </div>
-    ) : <></>;
+    ) : null;
 
     // techList requires two layers of mapping
-    const techList = props.tech.map((thing, index) =>
+    const techList = props.tech.map((tech, index) =>
         <div
             key={index}
-            className={thing.type === "Infrastructure" && thing.items.length > 2 ?
+            className={tech.type === "Infrastructure" && tech.items.length > 2 ?
                 "proj-tech-type-container wide" : "proj-tech-type-container"}
         >
-            <span className="proj-tech-type-label">{thing.type}</span>
+            <span className="proj-tech-type-label">{tech.type}</span>
             <span className="proj-tech-list">
-                {thing.items.map((value, index) =>
+                {tech.items.map((value, index) =>
                     <span className="proj-tech-list-item" key={index}>
                         <span className="logo-container">{map_tech_to_icon(value)}</span>
                         <span className="list-item-label">{value}</span>
                     </span>)}
             </span>
-        </div>);
+        </div>
+    );
 
     return (
         <article className="project">

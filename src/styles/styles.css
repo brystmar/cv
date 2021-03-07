@@ -105,7 +105,8 @@ li {
   max-width: 1080px;
 }
 .app-container section {
-  padding: 3em 0.25em;
+  padding: 3em 0.75em;
+  transition: padding 650ms ease-in-out;
 }
 .app-container section article {
   margin: 2.5em 0;
@@ -128,12 +129,12 @@ li {
 
 @media (min-width: 500px) {
   .app-container section {
-    padding: 3em 0.5em;
+    padding: 3em 0.9em;
   }
 }
 @media (min-width: 600px) {
   .app-container section {
-    padding: 3em 0.75em;
+    padding: 3em 1em;
   }
 }
 @media (min-width: 800px) {

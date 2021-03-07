@@ -21,6 +21,14 @@ const logoGCP = <img
     className="logo cert-logo"
 />
 
+const frontend_bootcamp = {
+    name:   "The Frontend Developer Bootcamp",
+    issuer: "Scrimba",
+    logo:   logoScrimba,
+    url:    "https://scrimba.com/certificate/uGeLxkCg/gfrontend",
+    date:   "Aug 2020 to Mar 2021"
+};
+
 const SF_service_cloud = {
     name:   "Salesforce Certified Service Cloud Consultant",
     issuer: "Salesforce",
@@ -127,7 +135,7 @@ const PY4E = {
     number: "T68Z59NVH5FM"
 };
 
-const myCerts = [ SF_service_cloud, react_bootcamp, UI_design, responsive_web_design, SF_admin,
-    PSPO, CSPO, GCP_core_infrastructure, GCP_app_dev, PY4E ];
+const myCerts = [ frontend_bootcamp, SF_service_cloud, react_bootcamp, UI_design,
+    responsive_web_design, SF_admin, PSPO, CSPO, GCP_core_infrastructure, GCP_app_dev, PY4E ];
 
 export default myCerts;

@@ -246,11 +246,15 @@
   overflow: hidden;
   max-width: 400px;
   max-height: 330px;
+  width: 100%;
   margin: 2em auto;
   background-color: inherit;
   outline: 0.5em transparent solid;
   box-shadow: 3px 3px 0.35em rgba(151, 154, 160, 0.6);
-  transition: max-width 500ms ease-in-out, max-height 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+.project .proj-screenshot-container img {
+  object-fit: cover;
 }
 .project .proj-screenshot-container:hover {
   box-shadow: 3px 3px 0.5em #979aa0;
@@ -391,6 +395,8 @@
   .project-section .project .proj-screenshot-notes .proj-screenshot-container {
     margin: 0;
     grid-area: screenshot;
+    max-width: unset;
+    max-height: unset;
   }
   .project-section .project .proj-screenshot-notes .proj-notes-group {
     margin: 0;
