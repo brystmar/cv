@@ -64,13 +64,14 @@ a
   color: $color-link
   text-decoration: underline
   text-decoration-width: 1px
+  outline: 1px dotted transparent
 a:visited
   color: $color-link-visited
 a:hover
   text-decoration: none
 a:focus,
 a:active
-  outline: 1px dotted $color-border
+  outline-color: $color-border
 
 li
   line-height: 1.5
@@ -149,6 +150,8 @@ li
 @media (prefers-reduced-motion: no-preference)
   .app-logo
     animation: spinning-bread infinite 20s linear
+  html
+    scroll-behavior: smooth
 
 @keyframes spinning-bread
   from
@@ -164,3 +167,10 @@ li
   max-width: 1.1em
   max-height: 1.1em
   margin-right: 0.35em
+  outline: 1px dotted transparent
+
+//.proj-link:active,
+//.proj-link:focus
+//  background-color: lightcoral
+//  img
+//    display: block

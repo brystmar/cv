@@ -119,6 +119,7 @@
   align-items: center
   justify-content: center
   transition: background
+  outline: 1px dotted transparent
   img
     display: block
   .cr-logo
@@ -173,6 +174,12 @@
 /*** Projects ***/
 
 .project
+  .proj-link
+    outline: 1px dotted transparent
+  .proj-link:active,
+  .proj-link:focus
+    display: block
+    outline: 1px dotted $color-border
   .proj-title-section
     display: flex
     align-items: center
@@ -190,6 +197,7 @@
       justify-content: flex-end
       .proj-link-icon-container
         padding: 0.15em
+        outline: 1px dotted transparent
       .proj-link-icon-container:hover
         background: lightgray
         transition: background 150ms linear
@@ -208,7 +216,6 @@
       display: block
       margin: 0.5em 0
     .proj-status-group
-      //border: 1px solid red
       display: flex
       img
         filter: invert(25%) sepia(18%) saturate(4453%) hue-rotate(244deg) brightness(90%) contrast(87%)
@@ -226,7 +233,7 @@
     width: 100%
     margin: 2em auto
     background-color: inherit
-    outline: 0.5em transparent solid
+    outline: 1px dotted transparent
     box-shadow: 3px 3px 0.35em $color-border-lighter
     transition: width 500ms ease-in-out
     img
@@ -301,6 +308,7 @@
         background: $color-primary-triadic
         border: 1px solid $color-primary-triadic
         border-radius: 10px
+        cursor: default
       .proj-tech-list
         width: 100%
         margin: 0 0.25em 1em
@@ -309,25 +317,21 @@
         grid-template-columns: repeat(auto-fit, minmax(25%, 1fr))
         grid-gap: 1em 0.5em
         cursor: default
-        //border: 1px solid red
         .proj-tech-list-item
-          //border: 1px solid lightblue
           display: flex
           flex-direction: column
           align-items: center
           justify-content: space-around
           text-align: center
           .logo-container
-            //border: 1px solid green
             max-width: 3.5em
             max-height: 3em
             padding: 0
-          .logo-container:hover
-            background: none
           .list-item-label
             font-size: 0.9rem
             margin: 0.25em 0.5em
             padding: 0.25em 0
+            cursor: text
 
 @media (min-width: 500px)
   .project
@@ -514,8 +518,6 @@
         max-height: 200px
         margin: 0 0.5em 0 0
 
-
-
 .icon
   max-width: 1.15em
   max-height: 1.15em
@@ -564,10 +566,3 @@
       .contact-link:active
         outline: 1px dotted $color-border-darker
         background: $color-background
-
-@media (min-width: 720px)
-  .contact-section
-    .contacts
-      .contact-group
-        .contact-link
-          //padding: 1.25em 4em

@@ -13,10 +13,10 @@ const expediaPM = {
     startDate:       "Feb 2020",
     endDate:         "Present",
     accomplishments: [
-        "Enabled operations leadership to fully audit productivity of their workforce by designing and implementing a custom Service Cloud solution for 3000 travel agents.",
         "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >23,000 clients across 19 countries.",
         "Availability of live chat deflected support requests from higher-cost service channels: email (-X%), phone (-X%).",
-        "Enabled a location-agnostic staffing model for live chat by adding real-time translation, reducing global support costs by X%."
+        "Facilitated a location-agnostic staffing model for live chat by adding real-time translation, reducing global support costs by X%.",
+        "Enabled operations leadership to measure productivity of support teams by designing and implementing a custom Service Cloud solution for 3000 travel agents."
     ]
 };
 

@@ -107,7 +107,7 @@ export default function Proj(props) {
             <div className={screenshotNotesClass}>
                 <div className={screenshotContainerClass}>
                     <a
-                        className="proj-link"
+                        className="proj-link target"
                         href={props.url}
                         target="_blank"
                         rel="noopener noreferrer"
