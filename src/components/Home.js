@@ -9,9 +9,10 @@ export default function Home(props) {
             className="home-section"
         >
             {/* Set the Home anchor @`top: -50px` to absorb navbar vertical spacing on desktop */}
-            <span id="Home"
-                  aria-hidden="true"
-                  className={"nav-buffer".concat(props.isNavExpanded ? "" : " mobile-hidden")}
+            <span
+                id="Home"
+                aria-hidden="true"
+                className={"nav-buffer".concat(props.isNavExpanded ? "" : " mobile-hidden")}
             />
 
             <div className="greeting">
@@ -46,7 +47,8 @@ export default function Home(props) {
                 <Separator />
 
                 <p className="highlight">
-                    Avid <strong>home cook</strong>, exploring the intersection of food and tech
+                    Avid home cook, exploring the intersection
+                    of <strong>food</strong> and <strong>tech</strong>
                 </p>
             </div>
         </section>

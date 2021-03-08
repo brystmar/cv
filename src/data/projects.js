@@ -89,9 +89,9 @@ const cv = {
                      className="screenshot tall"
                  />,
     notes:       [
-        "A simple React app without a backend, hosted in a Google Cloud Storage bucket.",
+        "My online CV is a simple React app without a backend, hosted in a Google Cloud Storage bucket.",
         "Modular design parses content from static .js files.",
-        "Canvas for applying the front-end skills I've learned."
+        "Canvas for showcasing my progress as I explore my interest in front-end development."
     ],
     tech:        [
         {
@@ -109,6 +109,6 @@ const cv = {
     ]
 }
 
-const myProjects = [ breadsheet, cellarSync, cv ];
+const myProjects = [ breadsheet, cv, cellarSync ];
 
 export default myProjects;

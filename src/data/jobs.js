@@ -13,10 +13,10 @@ const expediaPM = {
     startDate:       "Feb 2020",
     endDate:         "Present",
     accomplishments: [
-        "Reduced average case handle time by 26% for 3000 travel agents by building (and migrating to) a custom Service Cloud solution.",
-        "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >25,000 clients in 13 languages across 19 countries.",
-        "Availability of live chat deflected support requests from higher-cost service channels: email (-37%), phone (-14%).",
-        "Enabled a location-agnostic staffing model for live chat by adding real-time translation, decreasing global support costs by 19%."
+        "Enabled operations leadership to fully audit productivity of their workforce by designing and implementing a custom Service Cloud solution for 3000 travel agents.",
+        "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >23,000 clients across 19 countries.",
+        "Availability of live chat deflected support requests from higher-cost service channels: email (-X%), phone (-X%).",
+        "Enabled a location-agnostic staffing model for live chat by adding real-time translation, reducing global support costs by X%."
     ]
 };
 
@@ -90,9 +90,9 @@ const pokerPlayer = {
     endDate:         "Dec 2012",
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
-        "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha.",
-        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
         "Typically played 6 to 8 tables concurrently, with >2 million total hands played lifetime.",
+        "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha.",
+        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure payout.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };

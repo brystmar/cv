@@ -134,8 +134,27 @@ li
 .footer-container
   display: block
   font-size: 0.8rem
+  text-align: center
   padding: 1.25em 0.25em
   background: $color-background-alt
+  white-space: pre-wrap
+  .app-logo
+    margin-left: 0.25em
+    height: 1.2em
+
+@media (min-width: 420px)
+  .footer-container
+    white-space: initial
+
+@media (prefers-reduced-motion: no-preference)
+  .app-logo
+    animation: spinning-bread infinite 20s linear
+
+@keyframes spinning-bread
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
 
 .hidden
   display: none
