@@ -9,14 +9,14 @@ const expediaPM = {
                          className="logo job-logo"
                      />,
     location:        "Seattle, WA",
-    title:           "Salesforce Product Manager III",
+    title:           "Product Manager III",
     startDate:       "Feb 2020",
     endDate:         "Present",
     accomplishments: [
         "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >23,000 clients across 19 countries.",
-        "Availability of live chat deflected support requests from higher-cost service channels: email (-X%), phone (-X%).",
-        "Facilitated a location-agnostic staffing model for live chat by adding real-time translation, reducing global support costs by X%.",
-        "Enabled operations leadership to measure productivity of support teams by designing and implementing a custom Service Cloud solution for 3000 travel agents."
+        "Availability of live chat deflected support requests from higher-cost service channels.  Rollout in progress; metrics to come.",
+        "Facilitated a location-agnostic staffing model for live chat by adding real-time translation.",
+        "Enabled operations leadership to measure productivity of support teams by designing, implementing, and migrating 3000 travel agents to a custom Salesforce Service Cloud solution."
     ]
 };
 
@@ -55,9 +55,8 @@ const dynataPdM = {
     endDate:         "Mar 2019",
     accomplishments: [
         "Slashed median quote-prep time from 44 to 14 minutes (68%) in the first year by optimizing workflow and applying UX fundamentals.",
-        "Developed a web-based CPQ (configure, price, & quote) and inventory forecasting tool based on microservices.  Managed from concept through storyboarding, alpha/beta, release, and adoption.",
-        "New tool further reduced median quote-prep time to 3½ minutes – down 92% overall.",
-        "Efficiency gains enabled the Sales org to re-allocate sales support personnel to more value-focused roles."
+        "Developed a web-based CPQ (configure/price/quote) UI to integrate with our inventory forecasting service.  Managed from concept through prototypes, release, and adoption.",
+        "This new UI further reduced median quote-prep time to 3½ minutes – down 92% overall."
     ]
 };
 
@@ -92,7 +91,7 @@ const pokerPlayer = {
         "Learned to remain objective and make data-driven decisions under pressure.",
         "Typically played 6 to 8 tables concurrently, with >2 million total hands played lifetime.",
         "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha.",
-        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure payout.",
+        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };
