@@ -23,7 +23,6 @@ export default function App() {
                 />
             </header>
 
-            {/* When nav is expanded, hide this section on small screens */}
             <main className={"content-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
                 <Home isNavExpanded={isNavExpanded} />
                 <Experience />
@@ -33,7 +32,6 @@ export default function App() {
                 <Contact />
             </main>
 
-            {/* When nav is expanded, hide this section on small screens */}
             <footer className={"footer-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
                 <Footer />
             </footer>

@@ -8,6 +8,16 @@
 /*** Page Layout ***/
 /*** Nav ***/
 /*** Home ***/
+.nav-buffer {
+  display: inline;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  border: none;
+  padding: 0;
+  z-index: -1;
+}
+
 .home-section {
   text-align: center;
 }
@@ -16,6 +26,7 @@
   font-weight: 400;
   text-align: center;
   margin: 0 0 0.8em;
+  transition: margin 500ms linear;
 }
 .home-section .greeting .name {
   font-size: 4rem;
@@ -43,13 +54,23 @@
 }
 .home-section .headshot-container img {
   height: 95%;
-  border-radius: 1.5em;
+  border-radius: 1em;
 }
 .home-section .highlights .highlight {
   font-size: 1.4rem;
   margin: 0;
 }
 
+@media (min-width: 500px) {
+  .home-section .nav-buffer {
+    display: block;
+    visibility: visible;
+    height: 43px;
+  }
+  .home-section .greeting .intro {
+    margin-top: 0.8em;
+  }
+}
 /*** Experience ***/
 .job .job-title {
   font-size: 1.6rem;

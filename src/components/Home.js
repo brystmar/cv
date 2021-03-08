@@ -8,8 +8,8 @@ export default function Home(props) {
             aria-label="Home"
             className="home-section"
         >
-            {/* Set the Home anchor @`top: -50px` to absorb navbar vertical spacing on desktop */}
             <span
+                // Invisible spacer that sits behind the `position: fixed` navbar
                 id="Home"
                 aria-hidden="true"
                 className={"nav-buffer".concat(props.isNavExpanded ? "" : " mobile-hidden")}
