@@ -14,9 +14,9 @@ const expediaPM = {
     endDate:         "Present",
     accomplishments: [
         "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >23,000 clients across 19 countries.",
-        "Availability of live chat deflected support requests from higher-cost service channels.  Rollout in progress; metrics to come.",
-        "Facilitated a location-agnostic staffing model for live chat by adding real-time translation.",
-        "Enabled operations leadership to measure productivity of support teams by designing, implementing, and migrating 3000 travel agents to a custom Salesforce Service Cloud solution."
+        "Availability of live chat deflects 11% of support requests from higher-cost service channels.  More in-depth metrics coming soon.",
+        "Facilitated a location-agnostic staffing model by adding real-time translation, reducing the operational cost per transaction by 18%.",
+        "Enabled operations leadership to measure productivity of support teams by designing and implementing a custom Salesforce Service Cloud solution for 3000 travel agents."
     ]
 };
 
@@ -34,9 +34,9 @@ const dynataSeniorPdM = {
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led platform integration through two M&A events, which more than doubled the company’s annual revenue.",
+        "Led platform integration through two large M&A events, which more than doubled the company’s annual revenue.",
         "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and internal microservices.",
-        "Spearheaded the adoption of a unified design platform to standardize UI and UX across systems."
+        "Spearheaded the adoption of a unified design platform to standardize UI/UX across systems."
     ]
 };
 
@@ -91,7 +91,7 @@ const pokerPlayer = {
         "Learned to remain objective and make data-driven decisions under pressure.",
         "Typically played 6 to 8 tables concurrently, with >2 million total hands played lifetime.",
         "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha.",
-        "Won the $200 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
+        "Won the $216 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };
@@ -111,7 +111,7 @@ const pokerInstructor = {
     accomplishments: [
         "Scripted, produced, and recorded 62 instructional videos of myself teaching and/or playing, each 45 to 60 minutes long.",
         "Pioneered the classroom-style video format with a focus on fundamentals grounded in game theory.",
-        "Developed a five-part Small Stakes No-Limit series to help casual players become consistent winners.  Series was highly regarded within the poker community."
+        "Developed a five-part Small Stakes No-Limit Hold'em series to help casual players become consistent winners.  Series was highly regarded within the poker community."
     ]
 }
 
