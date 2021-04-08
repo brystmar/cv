@@ -89,9 +89,9 @@ const cv = {
                      className="screenshot tall"
                  />,
     notes:       [
-        "My online CV is a simple React app without a backend, hosted in a Google Cloud Storage bucket.",
+        "This online CV is a simple React app without a backend, hosted in a Google Cloud Storage bucket.",
         "Modular design parses content from static .js files.",
-        "Canvas for showcasing my progress as I explore my interest in front-end development."
+        "Canvas for showcasing my progress as I explore the world of front-end development."
     ],
     tech:        [
         {

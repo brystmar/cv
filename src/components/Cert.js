@@ -25,7 +25,7 @@ export default function Cert(props) {
                             title={`Certification issued by ${props.issuer}`}
                             className="icon"
                         />
-                        <span>
+                        <span className="text">
                             <a
                                 href={props.url}
                                 target="_blank"
@@ -41,7 +41,7 @@ export default function Cert(props) {
                             title="Date issued"
                             className="icon"
                         />
-                        <span>{props.date}</span>
+                        <span className="text">{props.date}</span>
                     </span>
                 </span>
             </div>

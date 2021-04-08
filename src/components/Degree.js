@@ -30,11 +30,13 @@ export default function Degree(props) {
                             title={`Certification issued by ${props.issuer}`}
                             className="icon"
                         />
-                        <a
-                            href={props.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >{props.issuer}</a>
+                        <span className="text">
+                            <a
+                                href={props.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{props.issuer}</a>
+                        </span>
                     </span>
 
                     <span className="icon-plus-text degree-date">
@@ -44,7 +46,7 @@ export default function Degree(props) {
                             title="Graduation date"
                             className="icon"
                         />
-                        <span>{props.date}</span>
+                        <span className="text">{props.date}</span>
                     </span>
 
                     <span className="icon-plus-text degree-location">
@@ -54,7 +56,7 @@ export default function Degree(props) {
                             title="School location"
                             className="icon"
                         />
-                        <span>{props.location}</span>
+                        <span className="text">{props.location}</span>
                     </span>
                 </div>
             </div>

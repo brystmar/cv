@@ -38,7 +38,7 @@ export default function Proj(props) {
                 title={`Status of the ${props.name} project`}
                 className="icon"
             />
-            <span className="proj-status">{props.status}</span>
+            <span className="proj-status text">{props.status}</span>
         </div>
     ) : null;
 

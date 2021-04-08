@@ -35,7 +35,7 @@ export default function Job(props) {
                             title="Job location"
                             className="icon"
                         />
-                        <span>{props.location}</span>
+                        <span className="text">{props.location}</span>
                     </span>
 
                     <span className="icon-plus-text">
@@ -45,7 +45,7 @@ export default function Job(props) {
                             title="Dates employed"
                             className="icon"
                         />
-                        <span>{`${props.startDate} to ${props.endDate}`}</span>
+                        <span className="text">{`${props.startDate} to ${props.endDate}`}</span>
                     </span>
                 </span>
             </div>
