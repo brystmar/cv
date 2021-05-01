@@ -13,9 +13,8 @@ const expediaPM = {
     startDate:       "Feb 2020",
     endDate:         "Present",
     accomplishments: [
-        "Deployed live agent chat w/integrated chatbot as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.",
-        "Availability of live chat deflects 11% of support requests from higher-cost service channels.  More in-depth metrics coming soon.",
-        "Enabled a location-agnostic staffing model by adding real-time translation and skills-based routing.",
+        "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.",
+        "Availability of live chat deflects 11% of support requests from higher-cost service channels.",
         "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to measure productivity of support teams."
     ]
 };
@@ -89,7 +88,6 @@ const pokerPlayer = {
     endDate:         "Dec 2012",
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
-        "Specialized in online short-handed cash games of No-Limit Hold'em and Pot-Limit Omaha.",
         "Typically played 6 to 8 concurrent tables, with >2 million total hands played lifetime.",
         "Won the $216 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
@@ -109,9 +107,9 @@ const pokerInstructor = {
     startDate:       "Jan 2007",
     endDate:         "Dec 2011",
     accomplishments: [
-        "Authored and produced 60+ instructional videos of myself teaching and playing poker, typically 45 to 60 minutes in length.",
+        "Authored and produced 62 instructional videos of myself teaching and playing poker, typically 45 to 60 minutes in length.",
         "Pioneered the classroom-style video format with a focus on fundamentals grounded in game theory.",
-        "Developed a five-part Small Stakes No-Limit Hold'em series to help recreational players become consistent winners.  Series was highly regarded within the poker community."
+        "Developed and released a five-part Small Stakes No-Limit Hold'em series to help recreational players become consistent winners.  Series was highly regarded within the poker community."
     ]
 }
 
