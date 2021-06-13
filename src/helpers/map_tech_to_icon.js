@@ -1,6 +1,6 @@
 import React from "react";
 
-function map_tech_to_icon(tech) {
+export default function map_tech_to_icon(tech) {
     if (typeof tech !== "string") {
         return `Function only accepts strings, not ${typeof tech}.`
     }
@@ -65,5 +65,3 @@ function map_tech_to_icon(tech) {
             return "Logo not found"
     }
 }
-
-export default map_tech_to_icon;
