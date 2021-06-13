@@ -14,7 +14,7 @@ const expediaPM = {
     endDate:         "Present",
     accomplishments: [
         "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.",
-        "Availability of live chat deflects 11% of support requests from higher-cost service channels.",
+        "First-contact resolution of chat support requests is higher (exact % coming soon) than other channels.",
         "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to measure productivity of support teams."
     ]
 };
@@ -34,8 +34,8 @@ const dynataSeniorPdM = {
     endDate:         "Feb 2020",
     accomplishments: [
         "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800MM (USD) annually.",
-        "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and internal microservices.",
-        "Spearheaded the adoption of a unified design platform to standardize UI/UX across systems."
+        "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices.",
+        "Spearheaded the adoption of a unified design system to standardize UI/UX across the platform."
     ]
 };
 
@@ -72,7 +72,6 @@ const dynataPjM = {
     startDate:       "May 2013",
     endDate:         "Jun 2015",
     accomplishments: [
-        "Coordinated customers and stakeholders to deliver insightful market research.",
         "Recognized as global SME in Oct 2013, then commissioned as a cross-regional consultant to drive efficiency metrics.",
         "Championed process re-engineering and user training on-site in London and EMEA satellite offices, boosting regional conversion by 43% in 13 weeks.  Developed tools to measure and sustain these improvements."
     ]
@@ -89,7 +88,6 @@ const pokerPlayer = {
     accomplishments: [
         "Learned to remain objective and make data-driven decisions under pressure.",
         "Typically played 6 to 8 concurrent tables, with >2 million total hands played lifetime.",
-        "Won the $216 Full Tilt Sunday Tournament in Nov 2008, besting 3600 other players for a six-figure prize.",
         "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
     ]
 };
@@ -107,11 +105,11 @@ const pokerInstructor = {
     startDate:       "Jan 2007",
     endDate:         "Dec 2011",
     accomplishments: [
-        "Authored and produced 62 instructional videos of myself teaching and playing poker, typically 45 to 60 minutes in length.",
+        "Authored and produced 62 instructional videos teaching and playing poker, typically 45 to 60 minutes in length.",
         "Pioneered the classroom-style video format with a focus on fundamentals grounded in game theory.",
-        "Developed and released a five-part Small Stakes No-Limit Hold'em series to help recreational players become consistent winners.  Series was highly regarded within the poker community."
+        "Developed and released a five-part Small Stakes No-Limit Hold'em series to help recreational players become consistent winners."
     ]
-}
+};
 
 const myJobs = [ expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
 
