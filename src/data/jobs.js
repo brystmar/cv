@@ -1,5 +1,23 @@
 import React from "react";
 
+const expediaSeniorPM = {
+    companyName:     "Expedia Group",
+    url:             "https://www.expediagroup.com/",
+    logo:            <img
+                         src="./logos/expedia-group.svg"
+                         alt="Expedia Group corporate logo"
+                         className="logo job-logo"
+                     />,
+    location:        "Seattle, WA",
+    title:           "Senior Product Manager",
+    startDate:       "Sep 2021",
+    endDate:         "Present",
+    accomplishments: [
+        "Expanded live chat to global pre-sales teams in 26 countries, leveraging an auto-translation service to expand our previous reach.",
+        "Led the Salesforce-focused component of deprecating a legacy fee service platform, delivering expected annual savings of $3M."
+    ]
+};
+
 const expediaPM = {
     companyName:     "Expedia Group",
     url:             "https://www.expediagroup.com/",
@@ -11,11 +29,10 @@ const expediaPM = {
     location:        "Seattle, WA",
     title:           "Product Manager III",
     startDate:       "Feb 2020",
-    endDate:         "Present",
+    endDate:         "Sep 2021",
     accomplishments: [
-        "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.",
-        "First-contact resolution of chat support requests is higher (exact % coming soon) than other channels.",
-        "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to measure productivity of support teams."
+        "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.  First-contact resolution of chat inquiries is 28% higher than legacy support channels.",
+        "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
     ]
 };
 
@@ -100,8 +117,8 @@ const pokerInstructor = {
                          alt="CardRunners logo"
                          className="logo job-logo cr-logo"
                      />,
-    location:        "Chicago, Vegas, Austin, NYC",
-    title:           "Small-Stakes Online Poker Instructor",
+    location:        "Chicago, Las Vegas, Austin, NYC",
+    title:           "Online Poker Instructor",
     startDate:       "Jan 2007",
     endDate:         "Dec 2011",
     accomplishments: [
@@ -111,6 +128,6 @@ const pokerInstructor = {
     ]
 };
 
-const myJobs = [ expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
+const myJobs = [ expediaSeniorPM, expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
 
 export default myJobs;
