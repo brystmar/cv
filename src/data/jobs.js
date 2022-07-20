@@ -13,8 +13,8 @@ const expediaSeniorPM = {
     startDate:       "Sep 2021",
     endDate:         "Present",
     accomplishments: [
-        "Expanded live chat to global pre-sales teams in 26 countries, leveraging an auto-translation service to expand our previous reach.",
-        "Led the Salesforce-focused component of deprecating a legacy fee service platform, delivering expected annual savings of $3M."
+        "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach.",
+        "Led the Salesforce-specific portion for deprecating a legacy fee service platform, delivering expected annual savings of $3M."
     ]
 };
 
