@@ -38,44 +38,44 @@ const breadsheet = {
     ]
 }
 
-const cellarSync = {
-    name:        "Cellar Sync",
-    description: "Inventory management app for cellars of beer, wine, and mead.",
-    url:         "http://cellarsync.com",
-    repo:        "https://github.com/brystmar/cellar-sync-ui",
-    screenshot:  <img
-                     src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/cellarsync.png"
-                     alt="Cellar Sync webapp"
-                     title="Visit cellarsync.com"
-                     className="screenshot tall"
-                 />,
-    status:      "Major refactor in progress",
-    notes:       [
-        "Many delicious beverages improve with age, and it's hard to keep track of everything yourself.",
-        "Cellar Sync tracks your inventory, helps identify when bottles are at their peak, and displays an elegant bottle menu for your dinner parties.",
-        "App will (eventually) leverage the Untappd API to automatically remove bottles from your cellar after you drink them."
-    ],
-    tech:        [
-        {
-            type:  "Front End",
-            items: [
-                "React", "SASS"
-            ]
-        },
-        {
-            type:  "Back End",
-            items: [
-                "Python", "Flask"
-            ]
-        },
-        {
-            type:  "Infrastructure",
-            items: [
-                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
-            ]
-        }
-    ]
-}
+// const cellarSync = {
+//     name:        "Cellar Sync",
+//     description: "Inventory management app for cellars of beer, wine, and mead.",
+//     url:         "http://cellarsync.com",
+//     repo:        "https://github.com/brystmar/cellar-sync-ui",
+//     screenshot:  <img
+//                      src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/cellarsync.png"
+//                      alt="Cellar Sync webapp"
+//                      title="Visit cellarsync.com"
+//                      className="screenshot tall"
+//                  />,
+//     status:      "Major refactor in progress",
+//     notes:       [
+//         "Many delicious beverages improve with age, and it's hard to keep track of everything yourself.",
+//         "Cellar Sync tracks your inventory, helps identify when bottles are at their peak, and displays an elegant bottle menu for your dinner parties.",
+//         "App will (eventually) leverage the Untappd API to automatically remove bottles from your cellar after you drink them."
+//     ],
+//     tech:        [
+//         {
+//             type:  "Front End",
+//             items: [
+//                 "React", "SASS"
+//             ]
+//         },
+//         {
+//             type:  "Back End",
+//             items: [
+//                 "Python", "Flask"
+//             ]
+//         },
+//         {
+//             type:  "Infrastructure",
+//             items: [
+//                 "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
+//             ]
+//         }
+//     ]
+// }
 
 const cv = {
     name:        "Thomas Berg's CV",
@@ -109,6 +109,6 @@ const cv = {
     ]
 }
 
-const myProjects = [ breadsheet, cv, cellarSync ];
+const myProjects = [ breadsheet, cv ];
 
 export default myProjects;

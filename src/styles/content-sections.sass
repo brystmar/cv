@@ -79,7 +79,7 @@
       align-items: center
       justify-content: center
       .job-logo
-        max-width: 95%
+        max-width: 85%
         max-height: 5em
         margin: 0 auto
         display: block
@@ -87,6 +87,25 @@
         animation: 20s poker-logo-slideshow 0s linear infinite forwards
         opacity: 1
         content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg")
+      .wide-logo
+        max-width: 250px
+        transition: max-width 300ms linear
+      .egencia-eg-logos
+        width: 100%
+        animation: 8s egencia-eg-slideshow 0s linear infinite forwards
+        opacity: 1
+        content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+      .egencia-gbt-logos
+        animation: 20s egencia-gbt-slideshow 0s linear infinite forwards
+        opacity: 1
+        content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+    .multi-logo
+      display: flex
+      justify-content: space-between
+      //align-items: space-between
+      margin: 0 0.2em
+      max-width: 35%
+
     .job-details
       order: 1
       display: flex
@@ -105,6 +124,24 @@
         list-style: square
         margin: 1em 0
 
+@media (min-width: 300px)
+  .experience-section
+    .jobs-container
+      .job
+        .logo-container
+          .wide-logo
+            max-width: 150px
+            border: 1px dashed red
+
+@media (min-width: 490px)
+  .experience-section
+    .jobs-container
+      .job
+        .logo-container
+          .wide-logo
+            max-width: 190px
+            border: 1px solid red
+
 @media (min-width: 600px)
   .experience-section
     .jobs-container
@@ -112,6 +149,15 @@
         .job-title
           font-size: 1.8rem
           white-space: initial
+
+@media (min-width: 660px)
+  .experience-section
+    .jobs-container
+      .job
+        .logo-container
+          .wide-logo
+            max-width: 220px
+            border-color: transparent
 
 .logo-container
   padding: 0.2em
@@ -180,6 +226,58 @@
   100%
     opacity: 0
     content: url("https://storage.googleapis.com/tb-public-misc/logos/fulltilt.png")
+
+@keyframes egencia-eg-slideshow
+  0%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  5%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  45%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  50%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  51%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/expedia-group.svg")
+  56%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/expedia-group.svg")
+  95%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/expedia-group.svg")
+  100%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/expedia-group.svg")
+
+@keyframes egencia-gbt-slideshow
+  0%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  5%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  45%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  50%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg")
+  51%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/amex-gbt-stacked.svg")
+  56%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/amex-gbt-stacked.svg")
+  95%
+    opacity: 1
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/amex-gbt-stacked.svg")
+  100%
+    opacity: 0
+    content: url("https://storage.googleapis.com/tb-public-misc/logos/amex-gbt-stacked.svg")
 
 
 /*** Projects ***/

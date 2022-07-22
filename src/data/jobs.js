@@ -1,11 +1,11 @@
 import React from "react";
 
 const expediaSeniorPM = {
-    companyName:     "Expedia Group",
-    url:             "https://www.expediagroup.com/",
+    companyName:     "Egencia | AMEX Global Business Travel",
+    url:             "https://www.amexglobalbusinesstravel.com/",
     logo:            <img
-                         src="./logos/expedia-group.svg"
-                         alt="Expedia Group corporate logo"
+                         src="./logos/amex-gbt-stacked.svg"
+                         alt="AMEX Global Business Travel corporate logo"
                          className="logo job-logo"
                      />,
     location:        "Seattle, WA",
@@ -13,18 +13,18 @@ const expediaSeniorPM = {
     startDate:       "Sep 2021",
     endDate:         "Present",
     accomplishments: [
-        "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach.",
-        "Led the Salesforce-specific portion for deprecating a legacy fee service platform, delivering expected annual savings of $3M."
+        "Led the backend portion of deprecating a legacy fee service platform, delivering expected annual savings of $3M.",
+        "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
     ]
 };
 
 const expediaPM = {
-    companyName:     "Expedia Group",
-    url:             "https://www.expediagroup.com/",
+    companyName: "Egencia | Expedia Group",
+    url:         "https://www.expediagroup.com/",
     logo:            <img
-                         src="./logos/expedia-group.svg"
-                         alt="Expedia Group corporate logo"
-                         className="logo job-logo"
+                         src="./logos/egencia.svg"
+                         alt="Egencia corporate logo"
+                         className="logo job-logo wide-logo"
                      />,
     location:        "Seattle, WA",
     title:           "Product Manager III",
@@ -98,7 +98,7 @@ const pokerPlayer = {
     companyName:     "Self Employed",
     url:             "https://www.wikihow.com/Become-a-Professional-Poker-Player",
     logo:            <span className="logo job-logo poker-logos" />,
-    location:        "Chicago, Vegas, Austin, NYC",
+    location:        "Chicago, Las Vegas, Austin, NYC",
     title:           "Professional Poker Player \nand Coach",
     startDate:       "May 2007",
     endDate:         "Dec 2012",
