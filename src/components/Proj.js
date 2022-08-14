@@ -43,7 +43,7 @@ export default function Proj(props) {
     ) : null;
 
     const expandText = <div className="expand-collapse-with-icon">
-        <div>Learn More</div>
+        <div className="text">Learn More</div>
         <img
             src="./icons/chevron-right-solid.svg"
             alt="Right arrow to show additional text"
@@ -52,7 +52,7 @@ export default function Proj(props) {
     </div>;
 
     const collapseText = <div className="expand-collapse-with-icon">
-        <div>Collapse</div>
+        <div className="text">Collapse</div>
         <img
             src="./icons/chevron-up-solid.svg"
             alt="Up arrow to collapse additional text"
@@ -141,10 +141,10 @@ export default function Proj(props) {
                             className={notesList.length > 1 ? "proj-learn-more" : "hidden"}
                             onClick={() => updateIsExpanded(!isExpanded)}
                             aria-label={isExpanded ?
-                                "Hide the longer description of this project" :
-                                "Show the longer description of this project"}
+                                "Hide the full description of this project" :
+                                "Show the full description of this project"}
                         >
-                            {isExpanded ? expandText : collapseText}
+                            {isExpanded ? collapseText : expandText}
                         </div>
                     </div>
                 </div>

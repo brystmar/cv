@@ -147,13 +147,11 @@
 @media (min-width: 300px) {
   .experience-section .jobs-container .job .logo-container .wide-logo {
     max-width: 150px;
-    border: 1px dashed red;
   }
 }
 @media (min-width: 490px) {
   .experience-section .jobs-container .job .logo-container .wide-logo {
     max-width: 190px;
-    border: 1px solid red;
   }
 }
 @media (min-width: 600px) {
@@ -511,13 +509,17 @@
 .expand-collapse-with-icon {
   display: inline-flex;
   align-items: center;
-  min-width: 125px;
+}
+.expand-collapse-with-icon .text {
+  white-space: nowrap;
+}
+.expand-collapse-with-icon .svg-as-text {
+  margin: 0 0 0 0.45em;
+  filter: brightness(0) saturate(100%) invert(13%) sepia(82%) saturate(4645%) hue-rotate(215deg) brightness(92%) contrast(95%);
 }
 
 .svg-as-text {
-  font-size: 0.8em;
-  margin: 0 0.25em;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(27%) saturate(33%) hue-rotate(357deg) brightness(96%) contrast(82%);
+  font-size: 0.67em;
 }
 
 @media (min-width: 500px) {
