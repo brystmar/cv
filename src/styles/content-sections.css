@@ -508,6 +508,18 @@
   cursor: text;
 }
 
+.expand-collapse-with-icon {
+  display: inline-flex;
+  align-items: center;
+  min-width: 125px;
+}
+
+.svg-as-text {
+  font-size: 0.8em;
+  margin: 0 0.25em;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(27%) saturate(33%) hue-rotate(357deg) brightness(96%) contrast(82%);
+}
+
 @media (min-width: 500px) {
   .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .list-item-label {
     font-size: 1rem;

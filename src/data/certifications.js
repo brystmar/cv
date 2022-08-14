@@ -30,7 +30,7 @@ const frontend_bootcamp = {
 };
 
 const SF_service_cloud = {
-    name:   "Salesforce Certified Service Cloud Consultant",
+    name:   "Salesforce Service Cloud Consultant",
     issuer: "Salesforce",
     logo:   logoSalesforce,
     url:    "https://trailblazer.me/id/tpberg",

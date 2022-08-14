@@ -42,6 +42,24 @@ export default function Proj(props) {
         </div>
     ) : null;
 
+    const expandText = <div className="expand-collapse-with-icon">
+        <div>Learn More</div>
+        <img
+            src="./icons/chevron-right-solid.svg"
+            alt="Right arrow to show additional text"
+            className="icon svg-as-text"
+        />
+    </div>;
+
+    const collapseText = <div className="expand-collapse-with-icon">
+        <div>Collapse</div>
+        <img
+            src="./icons/chevron-up-solid.svg"
+            alt="Up arrow to collapse additional text"
+            className="icon svg-as-text"
+        />
+    </div>;
+
     // techList requires two layers of mapping
     const techList = props.tech.map((tech, index) =>
         <div
@@ -126,7 +144,7 @@ export default function Proj(props) {
                                 "Hide the longer description of this project" :
                                 "Show the longer description of this project"}
                         >
-                            {isExpanded ? "Collapse" : "Learn More"}
+                            {isExpanded ? expandText : collapseText}
                         </div>
                     </div>
                 </div>

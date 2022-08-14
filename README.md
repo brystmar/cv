@@ -36,6 +36,7 @@ Content sourced from:
 * Info icon by [Font Awesome](https://fontawesome.com/icons/info-circle?style=solid)
 * Location icon by [Font Awesome](https://fontawesome.com/icons/map-marked-alt?style=solid)
 * Calendar icon by [Font Awesome](https://fontawesome.com/icons/calendar-alt?style=regular)
+* Chevron icons by [Font Awesome](https://fontawesome.com/icons/chevron-up?s=solid)
 * Graduate icon by [Font Awesome](https://fontawesome.com/icons/user-graduate?style=solid)
 * Email icon by [Numero Uno](https://thenounproject.com/numerouno) from [The Noun Project](https://thenounproject.com/)
 * Website icon by Rahmat Hidayat from [The Noun Project](https://thenounproject.com/search/?q=website&i=3237546)

@@ -122,7 +122,7 @@ const pokerInstructor = {
     startDate:       "Jan 2007",
     endDate:         "Dec 2011",
     accomplishments: [
-        "Authored and produced 62 instructional videos teaching and playing poker, typically 45 to 60 minutes in length.",
+        "Authored and produced 62 instructional videos teaching and playing poker, each 45 to 60 minutes in length.",
         "Pioneered the classroom-style video format with a focus on fundamentals grounded in game theory.",
         "Developed and released a five-part Small Stakes No-Limit Hold'em series to help recreational players become consistent winners."
     ]

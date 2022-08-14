@@ -442,6 +442,19 @@
             padding: 0.25em 0
             cursor: text
 
+.expand-collapse-with-icon
+  display: inline-flex
+  align-items: center
+  min-width: 125px
+
+.svg-as-text  // For icons which appear as text elements
+  font-size: 0.80em
+  margin: 0 0.25em
+  // Set svg color to match text color, which is #171717 here
+  // SVG color conversion tool: https://codepen.io/sosuke/pen/Pjoqqp
+  //  -> Prefix with _brightness(0) saturate(100%)_ to ensure all SVGs start completely black.
+  filter: brightness(0) saturate(100%) invert(0%) sepia(27%) saturate(33%) hue-rotate(357deg) brightness(96%) contrast(82%)
+
 @media (min-width: 500px)
   .project
     .proj-tech
