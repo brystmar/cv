@@ -6,33 +6,22 @@ export default function Job(props) {
     //  formatting to break properly at different screen sizes
     const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
 
-    // If there's a corporate group provided, include this in the company name string
-    //  and apply URLs for each
-    const companyAndCorpGroupString = !!props.corporateGroupName ?
-        <span className="job-company-name company-with-corp-group">
+    // If there's a corporate group provided, include this in the company
+    //  name string and apply URLs for each
+    const corpGroupAddendum =
+        <>, an <a
+            href={props.corporateGroupUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+        >{props.corporateGroupName}</a> brand</>
+
+    const companyAndCorpGroupString =
+        <span className="job-company-name">
             <a
                 href={props.companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-            >{props.companyName}</a>
-            <img
-                src="./icons/diamond-solid.svg"
-                alt="Diamond-shaped separator"
-                className="icon svg-as-text corp-group-separator"
-            />
-            <a
-                href={props.corporateGroupUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                // className="corp-group"
-            >{props.corporateGroupName}</a>
-        </span>
-        : <span className="job-company-name">
-            <a
-                href={props.companyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-            >{props.companyName}</a>
+            >{props.companyName}</a>{!!props.corporateGroupName ? corpGroupAddendum : ""}
         </span>
 
     return (
@@ -42,37 +31,37 @@ export default function Job(props) {
             </div>
 
             <div className="col-logo-content">
-                <span className="logo-container">
-                    <a
-                        href={props.companyUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >{props.logo}</a>
-                </span>
+            <span className="logo-container">
+            <a
+                href={props.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+            >{props.logo}</a>
+            </span>
 
                 <span className="job-details">
-                    {companyAndCorpGroupString}
+        {companyAndCorpGroupString}
 
                     <span className="icon-plus-text">
-                        <img
-                            src="./icons/map-location.svg"
-                            alt="Job location"
-                            title="Job location"
-                            className="icon"
-                        />
-                        <span className="text">{props.location}</span>
-                    </span>
+            <img
+                src="./icons/map-location.svg"
+                alt="Job location"
+                title="Job location"
+                className="icon"
+            />
+            <span className="text">{props.location}</span>
+            </span>
 
-                    <span className="icon-plus-text">
-                        <img
-                            src="./icons/calendar-alt-regular.svg"
-                            alt="Dates employed"
-                            title="Dates employed"
-                            className="icon"
-                        />
-                        <span className="text">{`${props.startDate} to ${props.endDate}`}</span>
-                    </span>
-                </span>
+            <span className="icon-plus-text">
+            <img
+                src="./icons/calendar-alt-regular.svg"
+                alt="Dates employed"
+                title="Dates employed"
+                className="icon"
+            />
+            <span className="text">{`${props.startDate} to ${props.endDate}`}</span>
+            </span>
+            </span>
             </div>
 
             <div className="job-content">

@@ -144,18 +144,6 @@
   margin: 1em 0;
 }
 
-.company-with-corp-group {
-  display: flex;
-  align-items: center;
-}
-.company-with-corp-group .svg-as-text {
-  font-size: 0.36em;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(3715%) hue-rotate(340deg) brightness(85%) contrast(82%);
-}
-.company-with-corp-group .corp-group-separator {
-  margin: 0 1.3em;
-}
-
 @media (min-width: 300px) {
   .experience-section .jobs-container .job .logo-container .wide-logo {
     max-width: 150px;

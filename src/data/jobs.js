@@ -3,7 +3,7 @@ import React from "react";
 const expediaSeniorPM = {
     companyName:        "Egencia",
     companyUrl:         "https://www.egencia.com/",
-    corporateGroupName: "AMEX Global Business Travel",
+    corporateGroupName: "AMEX GBT",
     corporateGroupUrl:  "https://www.amexglobalbusinesstravel.com/",
     logo:               <img
                             src="./logos/amex-gbt-stacked.svg"
@@ -26,8 +26,8 @@ const expediaPM = {
     corporateGroupName: "Expedia Group",
     corporateGroupUrl:  "https://www.expediagroup.com/",
     logo:               <img
-                            src="./logos/egencia.svg"
-                            alt="Egencia corporate logo"
+                            src="./logos/expedia-group.svg"
+                            alt="Expedia Group corporate logo"
                             className="logo job-logo wide-logo"
                         />,
     location:           "Seattle, WA",
