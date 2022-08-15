@@ -15,7 +15,9 @@ export default function Experience() {
                     <Job
                         key={index}
                         companyName={job.companyName}
-                        url={job.url}
+                        companyUrl={job.companyUrl}
+                        corporateGroupName={job.corporateGroupName}
+                        corporateGroupUrl={job.corporateGroupUrl}
                         logo={job.logo}
                         location={job.location}
                         title={job.title}

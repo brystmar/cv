@@ -2,7 +2,38 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function Job(props) {
+    // Some titles have a subtitle, which requires specific
+    //  formatting to break properly at different screen sizes
     const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
+
+    // If there's a corporate group provided, include this in the company name string
+    //  and apply URLs for each
+    const companyAndCorpGroupString = !!props.corporateGroupName ?
+        <span className="job-company-name company-with-corp-group">
+            <a
+                href={props.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+            >{props.companyName}</a>
+            <img
+                src="./icons/diamond-solid.svg"
+                alt="Diamond-shaped separator"
+                className="icon svg-as-text corp-group-separator"
+            />
+            <a
+                href={props.corporateGroupUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                // className="corp-group"
+            >{props.corporateGroupName}</a>
+        </span>
+        : <span className="job-company-name">
+            <a
+                href={props.companyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+            >{props.companyName}</a>
+        </span>
 
     return (
         <article className="job">
@@ -13,20 +44,14 @@ export default function Job(props) {
             <div className="col-logo-content">
                 <span className="logo-container">
                     <a
-                        href={props.url}
+                        href={props.companyUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                     >{props.logo}</a>
                 </span>
 
                 <span className="job-details">
-                    <span className="job-company-name">
-                        <a
-                            href={props.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >{props.companyName}</a>
-                    </span>
+                    {companyAndCorpGroupString}
 
                     <span className="icon-plus-text">
                         <img
@@ -62,25 +87,29 @@ export default function Job(props) {
 }
 
 Job.defaultProps = {
-    companyName:     "",
-    url:             "",
-    logo:            <img src="" alt="" />,
-    location:        "",
-    title:           "",
-    subtitle:        "",
-    startDate:       "",
-    endDate:         "",
-    accomplishments: [ "" ]
+    companyName:        "",
+    companyUrl:         "",
+    corporateGroupName: "",
+    corporateGroupUrl:  "",
+    logo:               <img src="" alt="" />,
+    location:           "",
+    title:              "",
+    subtitle:           "",
+    startDate:          "",
+    endDate:            "",
+    accomplishments:    [ "" ]
 }
 
 Job.propTypes = {
-    companyName:     PropTypes.string.isRequired,
-    url:             PropTypes.string.isRequired,
-    logo:            PropTypes.element.isRequired,
-    location:        PropTypes.string.isRequired,
-    title:           PropTypes.string.isRequired,
-    subtitle:        PropTypes.string,
-    startDate:       PropTypes.string.isRequired,
-    endDate:         PropTypes.string.isRequired,
-    accomplishments: PropTypes.arrayOf(PropTypes.string)
+    companyName:        PropTypes.string.isRequired,
+    companyUrl:         PropTypes.string.isRequired,
+    corporateGroupName: PropTypes.string,
+    corporateGroupUrl:  PropTypes.string,
+    logo:               PropTypes.element.isRequired,
+    location:           PropTypes.string.isRequired,
+    title:              PropTypes.string.isRequired,
+    subtitle:           PropTypes.string,
+    startDate:          PropTypes.string.isRequired,
+    endDate:            PropTypes.string.isRequired,
+    accomplishments:    PropTypes.arrayOf(PropTypes.string)
 }

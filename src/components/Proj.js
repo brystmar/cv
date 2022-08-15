@@ -42,6 +42,7 @@ export default function Proj(props) {
         </div>
     ) : null;
 
+    // Define elements for the expand/collapse text toggles
     const expandText = <div className="expand-collapse-with-icon">
         <div className="text">Learn More</div>
         <img

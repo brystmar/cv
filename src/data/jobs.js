@@ -1,36 +1,40 @@
 import React from "react";
 
 const expediaSeniorPM = {
-    companyName:     "Egencia | AMEX Global Business Travel",
-    url:             "https://www.amexglobalbusinesstravel.com/",
-    logo:            <img
-                         src="./logos/amex-gbt-stacked.svg"
-                         alt="AMEX Global Business Travel corporate logo"
-                         className="logo job-logo"
-                     />,
-    location:        "Seattle, WA",
-    title:           "Senior Product Manager",
-    startDate:       "Sep 2021",
-    endDate:         "Present",
-    accomplishments: [
+    companyName:        "Egencia",
+    companyUrl:         "https://www.egencia.com/",
+    corporateGroupName: "AMEX Global Business Travel",
+    corporateGroupUrl:  "https://www.amexglobalbusinesstravel.com/",
+    logo:               <img
+                            src="./logos/amex-gbt-stacked.svg"
+                            alt="AMEX Global Business Travel corporate logo"
+                            className="logo job-logo"
+                        />,
+    location:           "Seattle, WA",
+    title:              "Senior Product Manager",
+    startDate:          "Sep 2021",
+    endDate:            "Present",
+    accomplishments:    [
         "Led the backend portion of deprecating a legacy fee service platform, delivering expected annual savings of $3M.",
         "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
     ]
 };
 
 const expediaPM = {
-    companyName: "Egencia | Expedia Group",
-    url:         "https://www.expediagroup.com/",
-    logo:            <img
-                         src="./logos/egencia.svg"
-                         alt="Egencia corporate logo"
-                         className="logo job-logo wide-logo"
-                     />,
-    location:        "Seattle, WA",
-    title:           "Product Manager III",
-    startDate:       "Feb 2020",
-    endDate:         "Sep 2021",
-    accomplishments: [
+    companyName:        "Egencia",
+    companyUrl:         "https://www.egencia.com/",
+    corporateGroupName: "Expedia Group",
+    corporateGroupUrl:  "https://www.expediagroup.com/",
+    logo:               <img
+                            src="./logos/egencia.svg"
+                            alt="Egencia corporate logo"
+                            className="logo job-logo wide-logo"
+                        />,
+    location:           "Seattle, WA",
+    title:              "Product Manager III",
+    startDate:          "Feb 2020",
+    endDate:            "Sep 2021",
+    accomplishments:    [
         "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.  First-contact resolution of chat inquiries is 28% higher than legacy support channels.",
         "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
     ]
