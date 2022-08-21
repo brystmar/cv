@@ -1,6 +1,6 @@
 import React from "react";
 
-const expediaSeniorPM = {
+const egenciaSeniorPM = {
     companyName:        "Egencia",
     companyUrl:         "https://www.egencia.com/",
     corporateGroupName: "AMEX GBT",
@@ -15,7 +15,7 @@ const expediaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Present",
     accomplishments:    [
-        "Led the backend portion of deprecating a legacy fee service platform, delivering expected annual savings of $3M.",
+        "Led the backend team in deprecating a legacy fee service platform, delivering annual savings of $3M.",
         "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
     ]
 };
@@ -54,9 +54,9 @@ const dynataSeniorPdM = {
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800MM (USD) annually.",
+        "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800M (USD) annually.",
         "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices.",
-        "Spearheaded the adoption of a unified design system to standardize UI/UX across the platform."
+        "Spearheaded the rollout of a unified design system to standardize UI/UX across the platform."
     ]
 };
 
@@ -75,7 +75,7 @@ const dynataPdM = {
     endDate:         "Mar 2019",
     accomplishments: [
         "Slashed median quote-prep time from 44 to 14 minutes (68%) in the first year by optimizing workflow and applying UX fundamentals.",
-        "Developed a web-based CPQ (configure/price/quote) UI to integrate with our inventory forecasting service.  Managed from concept through storyboards, release, and adoption.",
+        "Developed a web-based CPQ (configure/price/quote) UI to integrate with inventory forecasting service.  Managed from concept through storyboards, release, and rollout.",
         "This new UI further reduced median quote-prep time to 3½ minutes – down 92% overall."
     ]
 };
@@ -122,7 +122,7 @@ const pokerInstructor = {
                          className="logo job-logo cr-logo"
                      />,
     location:        "Chicago, Las Vegas, Austin, NYC",
-    title:           "Online Poker Instructor",
+    title:           "Online Poker Video Instructor",
     startDate:       "Jan 2007",
     endDate:         "Dec 2011",
     accomplishments: [
@@ -132,6 +132,6 @@ const pokerInstructor = {
     ]
 };
 
-const myJobs = [ expediaSeniorPM, expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
+const myJobs = [ egenciaSeniorPM, expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
 
 export default myJobs;

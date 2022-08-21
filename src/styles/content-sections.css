@@ -136,6 +136,9 @@
   font-size: 1.25rem;
   margin: 0.15em 0;
 }
+.job .col-logo-content .job-details .job-company-name .job-company-addendum {
+  font-size: 1.1rem;
+}
 .job .job-content .job-accomplishments {
   margin: 1em 0;
 }

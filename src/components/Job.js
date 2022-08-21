@@ -9,11 +9,11 @@ export default function Job(props) {
     // If there's a corporate group provided, include this in the company
     //  name string and apply URLs for each
     const corpGroupAddendum =
-        <>, an <a
+        <span className="job-company-addendum">, an <a
             href={props.corporateGroupUrl}
             target="_blank"
             rel="noopener noreferrer"
-        >{props.corporateGroupName}</a> brand</>
+        >{props.corporateGroupName}</a> brand</span>
 
     const companyAndCorpGroupString =
         <span className="job-company-name">
