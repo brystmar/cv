@@ -97,7 +97,7 @@ const cv = {
         {
             type:  "Front End",
             items: [
-                "React", "SASS"
+                "React", "SASS", "JavaScript"
             ]
         },
         {

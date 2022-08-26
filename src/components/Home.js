@@ -47,7 +47,7 @@ export default function Home(props) {
                 <Separator />
 
                 <p className="highlight">
-                    Avid home cook, exploring the intersection
+                    Avid home cook, fascinated by the intersection
                     of <strong>food</strong> and <strong>tech</strong>
                 </p>
             </div>

@@ -1,10 +1,10 @@
 import React from "react";
 
 const egenciaSeniorPM = {
-    companyName:        "Egencia",
-    companyUrl:         "https://www.egencia.com/",
-    corporateGroupName: "AMEX GBT",
-    corporateGroupUrl:  "https://www.amexglobalbusinesstravel.com/",
+    companyName:        "AMEX Global Business Travel",
+    companyUrl:         "https://www.amexglobalbusinesstravel.com/",
+    // corporateGroupName: "AMEX GBT",
+    // corporateGroupUrl:  "https://www.amexglobalbusinesstravel.com/",
     logo:               <img
                             src="./logos/amex-gbt-stacked.svg"
                             alt="AMEX Global Business Travel corporate logo"
@@ -15,16 +15,18 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Present",
     accomplishments:    [
-        "Led the backend team in deprecating a legacy fee service platform, delivering annual savings of $3M.",
-        "Implemented live chat for global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
+        "Currently building a just-in-time provisioning service to automate creation of (and lifecycle updates for) Egencia Salesforce user accounts, based on Workday events."
+        , "Led Egencia's backend team in deprecating a legacy fee service platform, delivering annual savings of $3M."
+        , "Automated critical Egencia billing processes which were prone to human error.  These manual oversights resulted in $4M lost revenue in 2019."
+        // , "Implemented live agent chat for Egencia's global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
     ]
 };
 
-const expediaPM = {
-    companyName:        "Egencia",
-    companyUrl:         "https://www.egencia.com/",
-    corporateGroupName: "Expedia Group",
-    corporateGroupUrl:  "https://www.expediagroup.com/",
+const egenciaPM = {
+    companyName:        "Expedia Group",
+    companyUrl:         "https://www.expediagroup.com/",
+    // corporateGroupName: "Expedia Group",
+    // corporateGroupUrl:  "https://www.expediagroup.com/",
     logo:               <img
                             src="./logos/expedia-group.svg"
                             alt="Expedia Group corporate logo"
@@ -35,8 +37,8 @@ const expediaPM = {
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
     accomplishments:    [
-        "Deployed live agent chat as a new, lower-cost service channel for >23,000 B2B clients across 19 countries.  First-contact resolution of chat inquiries is 28% higher than legacy support channels.",
-        "Designed, implemented, and migrated 3000 travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
+        "Deployed live agent chat as a new, lower-cost service channel for Egencia's 23,000+ B2B clients across 19 countries.",
+        "Designed, implemented, and migrated 3000 Egencia travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
     ]
 };
 
@@ -54,7 +56,7 @@ const dynataSeniorPdM = {
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800M (USD) annually.",
+        "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800M annually.",
         "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices.",
         "Spearheaded the rollout of a unified design system to standardize UI/UX across the platform."
     ]
@@ -93,7 +95,7 @@ const dynataPjM = {
     startDate:       "May 2013",
     endDate:         "Jun 2015",
     accomplishments: [
-        "Recognized as global SME in Oct 2013, then commissioned as a cross-regional consultant to drive efficiency metrics.",
+        "Recognized as global SME in Oct 2013, then commissioned as a cross-regional consultant to drive efficiency initiatives.",
         "Championed process re-engineering and user training on-site in London and EMEA satellite offices, boosting regional conversion by 43% in 13 weeks.  Developed tools to measure and sustain these improvements."
     ]
 };
@@ -132,6 +134,6 @@ const pokerInstructor = {
     ]
 };
 
-const myJobs = [ egenciaSeniorPM, expediaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
+const myJobs = [ egenciaSeniorPM, egenciaPM, dynataSeniorPdM, dynataPdM, dynataPjM, pokerPlayer, pokerInstructor ];
 
 export default myJobs;

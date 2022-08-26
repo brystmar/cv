@@ -136,6 +136,6 @@ const PY4E = {
 };
 
 const myCerts = [ frontend_bootcamp, SF_service_cloud, react_bootcamp, UI_design,
-    responsive_web_design, SF_admin, PSPO, CSPO, GCP_core_infrastructure, GCP_app_dev, PY4E ];
+    responsive_web_design, SF_admin, PSPO, GCP_core_infrastructure, GCP_app_dev, PY4E, CSPO ];
 
 export default myCerts;
