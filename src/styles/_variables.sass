@@ -1,3 +1,5 @@
+@use "sass:math"
+
 /*** Fonts ***/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap')
@@ -85,4 +87,4 @@ $app-max-width: 1080px
 
 $navbar-height: 43px
 $icon-hamburger-height: 36px
-$icon-hamburger-width: ($icon-hamburger-height / 3) * 4
+$icon-hamburger-width: math.div($icon-hamburger-height, 3) * 4
