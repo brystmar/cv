@@ -1,18 +1,106 @@
-/* Error: Undefined function.
- *    ,
- * 90 | $icon-hamburger-width: math.div($icon-hamburger-height, 3) * 4
- *    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   _variables.sass 90:24  @import
- *   navbar.sass 1:9        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined function.\a    \2577 \a 90 \2502  $icon-hamburger-width: math.div($icon-hamburger-height, 3) * 4\a    \2502                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _variables.sass 90:24  @import\a   navbar.sass 1:9        root stylesheet";
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+/*** Color Palette ***/
+/*** Favicon ***/
+/*** Page Layout ***/
+/*** Nav ***/
+/*** Navigation ***/
+.navbar {
+  position: inherit;
+  z-index: 100;
 }
+.navbar .links-container.mobile-hidden {
+  display: none;
+}
+.navbar .links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar .links-container a {
+  margin: 0.4em;
+  padding: 0.1em;
+  font-size: 2.75rem;
+}
+
+.nav-expanded {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .nav-expanded {
+    height: unset;
+  }
+  .mobile-hidden {
+    display: unset;
+  }
+  .content-container {
+    background: #f8f8f8;
+  }
+  .navbar {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0;
+    border: 2px solid #0647b6;
+  }
+  .navbar .nav-hamburger {
+    display: none;
+  }
+  .navbar .links-container.mobile-hidden {
+    display: flex;
+  }
+  .navbar .links-container {
+    height: unset;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #0647b6;
+  }
+  .navbar .links-container a {
+    font-size: 1rem;
+    color: #f8f8f8;
+    background: #0647b6;
+    margin: 0 0.1em;
+    padding: 0.5em 0.6em;
+    border-bottom: 3px solid #0647b6;
+    text-decoration: none;
+    transition: border-bottom-color 200ms ease-in-out;
+  }
+  .navbar .links-container a:hover {
+    border-bottom-color: #f8f8f8;
+  }
+  .navbar .links-container .active {
+    border-bottom-color: #f8f8f8;
+  }
+  .nav-education {
+    display: none;
+  }
+}
+@media (min-width: 620px) {
+  .nav-education {
+    display: unset;
+  }
+}
+@media (min-width: 700px) {
+  .navbar .links-container {
+    justify-content: center;
+  }
+  .navbar .links-container a {
+    margin: 0 0.5em;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

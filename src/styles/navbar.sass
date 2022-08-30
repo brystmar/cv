@@ -1,4 +1,4 @@
-@import variables
+@import "variables"
 
 
 /*** Navigation ***/
@@ -66,12 +66,12 @@
       .active
         border-bottom-color: $color-light
 
-  // Hide 'Education' from static nav until there's enough vp width
+  // Hide 'Education' from static nav until there's enough viewport width
   .nav-education
     display: none
 
 @media (min-width: 620px)
-  // Show 'Education' in the static navbar
+  // Viewport is now wide enough to show 'Education' in the static navbar
   .nav-education
     display: unset
 

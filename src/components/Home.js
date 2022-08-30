@@ -27,7 +27,8 @@ export default function Home(props) {
             <div className="headshot-container">
                 <img
                     src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
-                    alt="Thomas' headshot"
+                    alt="Thomas wondering why his hair is retreating"
+                    aria-label="Headshot"
                     className="headshot"
                 />
             </div>
