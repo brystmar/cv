@@ -591,6 +591,9 @@
   }
 }
 /*** Certifications ***/
+.certs-container {
+  margin: 0 15%;
+}
 .certs-container .cert {
   max-width: 600px;
   min-height: 150px;
@@ -633,6 +636,9 @@
   .icon-plus-text {
     font-size: 1rem;
   }
+  .certification-section .certs-container {
+    margin: 0 5em;
+  }
   .certification-section .certs-container .cert .cert-title {
     font-size: 1.5rem;
   }
@@ -640,6 +646,8 @@
 @media (min-width: 620px) {
   .certification-section .certs-container {
     display: grid;
+    padding: 0;
+    margin: 0;
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-gap: 0.5em;
