@@ -48,8 +48,8 @@ export default function Home(props) {
                 <Separator />
 
                 <p className="highlight">
-                    Avid home cook, fascinated by the intersection
-                    of <strong>food</strong> and <strong>tech</strong>
+                    Smarthome <strong>enthusiast</strong>;
+                    contributor to <a href="https://www.home-assistant.io" target="_blank" rel="noopener noreferrer">Home Assistant</a>
                 </p>
             </div>
         </section>
