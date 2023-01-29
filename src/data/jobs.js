@@ -15,10 +15,11 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Present",
     accomplishments:    [
-        "Currently building a just-in-time provisioning service to automate creation of (and lifecycle updates for) Egencia Salesforce user accounts, based on Workday events."
-        , "Led Egencia's backend team in deprecating a legacy fee service platform, delivering annual savings of $3M."
-        , "Automated critical Egencia billing processes which were prone to human error.  These manual oversights resulted in $4M lost revenue in 2019."
-        // , "Implemented live agent chat for Egencia's global pre-sales teams in 26 countries, leveraging auto-translation to expand previous sales reach."
+        // "Currently building a just-in-time provisioning service to automate creation of (and lifecycle updates for) Egencia Salesforce user accounts, based on Workday events."
+        "Inherited technical ownership of Egencia's customer community portal. Currently overhauling the support intake process, expecting a meaningful improvement to SLA adherence by Q2 2023."
+        , "Identified and delivered UX enhancements based on customer feedback and usage metrics, increasing engagement by 48%."
+        , "Led Egencia's backend team in deprecating a legacy fee service platform and automating critical billing processes which were prone to human error, delivering annual savings of $7M."
+        , "Expanded live agent chat to Egencia's global pre-sales teams in 26 countries, leveraging auto-translation to grow previous sales reach."
     ]
 };
 
@@ -37,7 +38,7 @@ const egenciaPM = {
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
     accomplishments:    [
-        "Deployed live agent chat as a new, lower-cost service channel for Egencia's 23,000+ B2B clients across 19 countries.",
+        "Designed, implemented, and deployed live agent chat as a new, lower-cost service channel for Egencia's 23,000+ B2B clients across 19 countries.",
         "Designed, implemented, and migrated 3000 Egencia travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
     ]
 };
