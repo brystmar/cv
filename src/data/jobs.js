@@ -15,11 +15,10 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Present",
     accomplishments:    [
-        // "Currently building a just-in-time provisioning service to automate creation of (and lifecycle updates for) Egencia Salesforce user accounts, based on Workday events."
-        "Inherited technical ownership of Egencia's customer community portal. Currently overhauling the support intake process, expecting a meaningful improvement to SLA adherence by Q2 2023."
-        , "Identified and delivered UX enhancements based on customer feedback and usage metrics, increasing engagement by 48%."
+        "Currently overhauling the support intake process for Egencia's customer community portal, expecting a meaningful improvement to SLA adherence by the end of Q2 2023."
+        , "Identified and delivered UX enhancements to the Egencia community portal based on customer interviews, feedback, and usage metrics, increasing 30-day engagement by 21%."
         , "Led Egencia's backend team in deprecating a legacy fee service platform and automating critical billing processes which were prone to human error, delivering annual savings of $7M."
-        , "Expanded live agent chat to Egencia's global pre-sales teams in 26 countries, leveraging auto-translation to grow previous sales reach."
+        , "Expanded live agent chat to Egencia's global pre-sales teams in 26 countries, leveraging auto-translation to extend sales reach, delivering nearly $2M additional sales in new markets (2021)."
     ]
 };
 
@@ -38,8 +37,8 @@ const egenciaPM = {
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
     accomplishments:    [
-        "Designed, implemented, and deployed live agent chat as a new, lower-cost service channel for Egencia's 23,000+ B2B clients across 19 countries.",
-        "Designed, implemented, and migrated 3000 Egencia travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
+        "Designed, implemented, and deployed live agent chat as a new, lower-cost service channel for Egencia's 23,000+ B2B clients across 19 countries."
+        , "Designed, implemented, and migrated 3000 Egencia travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
     ]
 };
 

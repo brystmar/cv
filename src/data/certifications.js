@@ -29,7 +29,7 @@ const SF_ux_designer = {
 };
 
 const frontend_bootcamp = {
-    name: "The Frontend Developer Bootcamp",
+    name: "The Frontend Developer Career Path",
     issuer: "Scrimba",
     logo: logoScrimba,
     url: "https://scrimba.com/certificate/uGeLxkCg/gfrontend",
