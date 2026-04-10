@@ -44,7 +44,7 @@ const egenciaPM = {
 
 const dynataSeniorPdM = {
     companyName:     "Dynata",
-    url:             "https://www.dynata.com/",
+    companyUrl:      "https://www.dynata.com/",
     logo:            <img
                          src="./logos/dynata.png"
                          alt="Dynata corporate logo"
@@ -64,7 +64,7 @@ const dynataSeniorPdM = {
 
 const dynataPdM = {
     companyName:     "Dynata",
-    url:             "https://www.dynata.com/",
+    companyUrl:      "https://www.dynata.com/",
     logo:            <img
                          src="./logos/dynata.png"
                          alt="Dynata corporate logo"
@@ -84,7 +84,7 @@ const dynataPdM = {
 
 const dynataPjM = {
     companyName:     "Dynata",
-    url:             "https://www.dynata.com/",
+    companyUrl:      "https://www.dynata.com/",
     logo:            <img
                          src="./logos/dynata.png"
                          alt="Dynata corporate logo"
@@ -102,7 +102,7 @@ const dynataPjM = {
 
 const pokerPlayer = {
     companyName:     "Self Employed",
-    url:             "https://www.wikihow.com/Become-a-Professional-Poker-Player",
+    companyUrl:      "https://www.wikihow.com/Become-a-Professional-Poker-Player",
     logo:            <span className="logo job-logo poker-logos" />,
     location:        "Chicago, Las Vegas, Austin, NYC",
     title:           "Professional Poker Player \nand Coach",
@@ -117,7 +117,7 @@ const pokerPlayer = {
 
 const pokerInstructor = {
     companyName:     "CardRunners.com",
-    url:             "https://en.wikipedia.org/wiki/CardRunners",
+    companyUrl:      "https://en.wikipedia.org/wiki/CardRunners",
     logo:            <img
                          src="./logos/cardrunners.png"
                          alt="CardRunners logo"

@@ -18,13 +18,13 @@ const breadsheet = {
     ],
     tech:        [
         {
-            type:  "Front End",
+            type:  "Frontend",
             items: [
                 "React", "SASS", "JavaScript"
             ]
         },
         {
-            type:  "Back End",
+            type:  "Backend",
             items: [
                 "Python", "Flask"
             ]
@@ -57,13 +57,13 @@ const breadsheet = {
 //     ],
 //     tech:        [
 //         {
-//             type:  "Front End",
+//             type:  "Frontend",
 //             items: [
 //                 "React", "SASS"
 //             ]
 //         },
 //         {
-//             type:  "Back End",
+//             type:  "Backend",
 //             items: [
 //                 "Python", "Flask"
 //             ]
@@ -95,7 +95,7 @@ const cv = {
     ],
     tech:        [
         {
-            type:  "Front End",
+            type:  "Frontend",
             items: [
                 "React", "SASS", "JavaScript"
             ]
