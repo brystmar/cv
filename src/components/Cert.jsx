@@ -1,36 +1,42 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Cert(props) {
+export default function Cert({
+     name = "",
+     issuer = "",
+     logo = <img src="" alt="" />,
+     url = "",
+     date = "" })
+{
     return (
         <article className="cert">
             <div className="cert-title">
-                {props.name}
+                {name}
             </div>
 
             <div className="cert-content">
                 <span className="col-logo-content logo-container">
                     <a
-                        href={props.url}
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                    >{props.logo}</a>
+                    >{logo}</a>
                 </span>
 
                 <span className="col-logo-content cert-details">
                     <span className="icon-plus-text">
                         <img
                             src="./icons/user-graduate-solid.svg"
-                            alt={`Certification issued by ${props.issuer}`}
-                            title={`Certification issued by ${props.issuer}`}
+                            alt={`Certification issued by ${issuer}`}
+                            title={`Certification issued by ${issuer}`}
                             className="icon"
                         />
                         <span className="text">
                             <a
-                                href={props.url}
+                                href={url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                            >{props.issuer}</a>
+                            >{issuer}</a>
                         </span>
                     </span>
 
@@ -41,20 +47,12 @@ export default function Cert(props) {
                             title="Date issued"
                             className="icon"
                         />
-                        <span className="text">{props.date}</span>
+                        <span className="text">{date}</span>
                     </span>
                 </span>
             </div>
         </article>
     )
-}
-
-Cert.defaultProps = {
-    name:   "",
-    issuer: "",
-    logo:   <img src="" alt="" />,
-    url:    "",
-    date:   ""
 }
 
 Cert.propTypes = {

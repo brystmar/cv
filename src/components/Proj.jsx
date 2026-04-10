@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import map_tech_to_icon from "../helpers/map_tech_to_icon";
 
-export default function Proj(props) {
+export default function Proj({
+    name = "",
+    description = "",
+    status,
+    notes = [""],
+    url = "",
+    repo = "",
+    screenshot = <img src="" alt="" />,
+    tech = [{ type: "", items: [""] }] })
+{
     const [ isExpanded, updateIsExpanded ] = useState(false);
 
     // Only display the first item from notesList by default; user can expand if desired
-    const notesList = props.notes.map((note, index) => {
+    const notesList = notes.map((note, index) => {
         if (index === 0) {
             return <p key={index} className={"proj-note"}>{note}</p>
         } else {
@@ -21,24 +30,24 @@ export default function Proj(props) {
     let screenshotNotesClass = "proj-screenshot-notes";
     let screenshotContainerClass = "proj-screenshot-container";
 
-    if (props.screenshot.props.className.indexOf("tall") !== -1) {
+    if (screenshot.props.className.indexOf("tall") !== -1) {
         screenshotNotesClass += " tall"
         screenshotContainerClass += " tall"
-    } else if (props.screenshot.props.className.indexOf("wide") !== -1) {
+    } else if (screenshot.props.className.indexOf("wide") !== -1) {
         screenshotNotesClass += " wide"
         screenshotContainerClass += " wide"
     }
 
     // Only display status when it's provided
-    const currentStatus = !!props.status ? (
+    const currentStatus = !!status ? (
         <div className="proj-status-group icon-plus-text">
             <img
                 src="./icons/info-circle-solid.svg"
-                alt={`Status of the ${props.name} project`}
-                title={`Status of the ${props.name} project`}
+                alt={`Status of the ${name} project`}
+                title={`Status of the ${name} project`}
                 className="icon"
             />
-            <span className="proj-status text">{props.status}</span>
+            <span className="proj-status text">{status}</span>
         </div>
     ) : null;
 
@@ -62,7 +71,7 @@ export default function Proj(props) {
     </div>;
 
     // techList requires two layers of mapping
-    const techList = props.tech.map((tech, index) =>
+    const techList = tech.map((tech, index) =>
         <div
             key={index}
             className={tech.type === "Infrastructure" && tech.items.length > 2 ?
@@ -82,12 +91,12 @@ export default function Proj(props) {
     return (
         <article className="project">
             <div className="proj-title-section">
-                <span className="proj-name">{props.name}</span>
+                <span className="proj-name">{name}</span>
                 <span className="proj-links">
                     <span className="proj-link-icon-container">
                         <a
                             className="proj-link"
-                            href={props.url}
+                            href={url}
                             aria-label="Link to this project's homepage"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -103,7 +112,7 @@ export default function Proj(props) {
                     <span className="proj-link-icon-container">
                         <a
                             className="proj-link"
-                            href={props.repo}
+                            href={repo}
                             aria-label="Link to this project's GitHub repository"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -119,7 +128,7 @@ export default function Proj(props) {
             </div>
 
             <div className="proj-description-group">
-                <div className="proj-desc">{props.description}</div>
+                <div className="proj-desc">{description}</div>
                 {currentStatus}
             </div>
 
@@ -127,10 +136,10 @@ export default function Proj(props) {
                 <div className={screenshotContainerClass}>
                     <a
                         className="proj-link target"
-                        href={props.url}
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
-                    >{props.screenshot}</a>
+                    >{screenshot}</a>
                 </div>
 
                 <div className="proj-notes-group">
@@ -156,19 +165,6 @@ export default function Proj(props) {
             </div>
         </article>
     )
-}
-
-Proj.defaultProps = {
-    name:        "",
-    description: "",
-    notes:       [ "" ],
-    url:         "",
-    repo:        "",
-    screenshot:  <img src="" alt="" />,
-    tech:        [ {
-        type:  "",
-        items: [ "" ]
-    } ]
 }
 
 Proj.propTypes = {

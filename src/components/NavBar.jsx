@@ -2,10 +2,10 @@ import React from "react";
 import Hamburger from "./Hamburger";
 import "../styles/navbar.sass";
 
-export default function NavBar(props) {
+export default function NavBar({ isNavExpanded = false, toggleIsNavExpanded }) {
     function closeNavIfExpanded() {
-        if (props.isNavExpanded) {
-            props.toggleIsNavExpanded(false)
+        if (isNavExpanded) {
+            toggleIsNavExpanded(false)
         }
     }
 
@@ -13,14 +13,14 @@ export default function NavBar(props) {
         <nav
             role="navigation"
             aria-label="Navigation links"
-            className={"navbar".concat(props.isNavExpanded ? " nav-expanded" : "")}
+            className={"navbar".concat(isNavExpanded ? " nav-expanded" : "")}
         >
             <Hamburger
-                isNavExpanded={props.isNavExpanded}
-                toggleIsNavExpanded={props.toggleIsNavExpanded}
+                isNavExpanded={isNavExpanded}
+                toggleIsNavExpanded={toggleIsNavExpanded}
             />
 
-            <div className={"links-container".concat(props.isNavExpanded ? "" : " mobile-hidden")}>
+            <div className={"links-container".concat(isNavExpanded ? "" : " mobile-hidden")}>
                 <a
                     onClick={closeNavIfExpanded}
                     href="/#Home"
@@ -65,8 +65,4 @@ export default function NavBar(props) {
             </div>
         </nav>
     )
-}
-
-NavBar.defaultProps = {
-    isNavExpanded: false
 }

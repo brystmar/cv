@@ -1,7 +1,7 @@
 import React from "react";
 import Separator from "./Separator";
 
-export default function Home(props) {
+export default function Home({ isNavExpanded = false }) {
     return (
         <section
             id="HomeSection"
@@ -12,7 +12,7 @@ export default function Home(props) {
                 // Invisible spacer that sits behind the `position: fixed` navbar
                 id="Home"
                 aria-hidden="true"
-                className={"nav-buffer".concat(props.isNavExpanded ? "" : " mobile-hidden")}
+                className={"nav-buffer".concat(isNavExpanded ? "" : " mobile-hidden")}
             />
 
             <div className="greeting">
@@ -54,8 +54,4 @@ export default function Home(props) {
             </div>
         </section>
     )
-}
-
-Home.defaultProps = {
-    isNavExpanded: false
 }

@@ -1,26 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function ContactItem(props) {
+export default function ContactItem({
+    text = "",
+    url = "",
+    image = <img src="" alt="" /> })
+{
     return (
         <span className="contact-group">
             <a
-                href={props.url}
+                href={url}
                 className="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                {props.image}
-                <span className="label">{props.text}</span>
+                {image}
+                <span className="label">{text}</span>
             </a>
         </span>
     )
-}
-
-ContactItem.defaultProps = {
-    text:  "",
-    url:   "",
-    image: <img src="" alt="" />
 }
 
 ContactItem.propTypes = {

@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../styles/hamburger.sass";
 
-export default function Hamburger(props) {
+export default function Hamburger({ isNavExpanded = false, toggleIsNavExpanded }) {
     return (
         <button
             type="button"
             name="nav-hamburger"
-            onClick={() => props.toggleIsNavExpanded(!props.isNavExpanded)}
-            title={props.isNavExpanded ? "Close navigation" : "Expand navigation"}
-            className={props.isNavExpanded ? "nav-hamburger open" : "nav-hamburger"}
-            aria-label={props.isNavExpanded ? "Close navigation" : "Expand navigation"}
+            onClick={() => toggleIsNavExpanded(!isNavExpanded)}
+            title={isNavExpanded ? "Close navigation" : "Expand navigation"}
+            className={isNavExpanded ? "nav-hamburger open" : "nav-hamburger"}
+            aria-label={isNavExpanded ? "Close navigation" : "Expand navigation"}
         >
             <span aria-hidden="true" />
             <span aria-hidden="true" />
@@ -18,10 +18,6 @@ export default function Hamburger(props) {
             <span aria-hidden="true" />
         </button>
     )
-}
-
-Hamburger.defaultProps = {
-    isNavExpanded: false
 }
 
 Hamburger.propTypes = {

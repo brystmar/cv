@@ -1,27 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Job(props) {
+export default function Job({
+    companyName = "",
+    companyUrl = "",
+    corporateGroupName = "",
+    corporateGroupUrl = "",
+    logo = <img src="" alt="" />,
+    location = "",
+    title = "",
+    subtitle = "",
+    startDate = "",
+    endDate = "",
+    accomplishments = [""] })
+{
     // Some titles have a subtitle, which requires specific
     //  formatting to break properly at different screen sizes
-    const titleString = !!props.subtitle ? `${props.title}, \n${props.subtitle}` : props.title;
+    const titleString = !!subtitle ? `${title}, \n${subtitle}` : title;
 
     // If there's a corporate group provided, include this in the company
     //  name string and apply URLs for each
     const corpGroupAddendum =
         <span className="job-company-addendum">, an <a
-            href={props.corporateGroupUrl}
+            href={corporateGroupUrl}
             target="_blank"
             rel="noopener noreferrer"
-        >{props.corporateGroupName}</a> brand</span>
+        >{corporateGroupName}</a> brand</span>
 
     const companyAndCorpGroupString =
         <span className="job-company-name">
             <a
-                href={props.companyUrl}
+                href={companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-            >{props.companyName}</a>{!!props.corporateGroupName ? corpGroupAddendum : ""}
+            >{companyName}</a>{!!corporateGroupName ? corpGroupAddendum : ""}
         </span>
 
     return (
@@ -33,10 +45,10 @@ export default function Job(props) {
             <div className="col-logo-content">
             <span className="logo-container">
             <a
-                href={props.companyUrl}
+                href={companyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-            >{props.logo}</a>
+            >{logo}</a>
             </span>
 
                 <span className="job-details">
@@ -49,7 +61,7 @@ export default function Job(props) {
                 title="Job location"
                 className="icon"
             />
-            <span className="text">{props.location}</span>
+            <span className="text">{location}</span>
             </span>
 
             <span className="icon-plus-text">
@@ -59,34 +71,20 @@ export default function Job(props) {
                 title="Dates employed"
                 className="icon"
             />
-            <span className="text">{`${props.startDate} to ${props.endDate}`}</span>
+            <span className="text">{`${startDate} to ${endDate}`}</span>
             </span>
             </span>
             </div>
 
             <div className="job-content">
                 <ul className="job-accomplishments">
-                    {props.accomplishments.map((item, index) =>
+                    {accomplishments.map((item, index) =>
                         <li key={index} className="job-accomplishments-list-item">{item}</li>
                     )}
                 </ul>
             </div>
         </article>
     )
-}
-
-Job.defaultProps = {
-    companyName:        "",
-    companyUrl:         "",
-    corporateGroupName: "",
-    corporateGroupUrl:  "",
-    logo:               <img src="" alt="" />,
-    location:           "",
-    title:              "",
-    subtitle:           "",
-    startDate:          "",
-    endDate:            "",
-    accomplishments:    [ "" ]
 }
 
 Job.propTypes = {
