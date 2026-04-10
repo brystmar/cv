@@ -4,26 +4,26 @@
 
 Thomas Berg's personal CV / portfolio site. A static React app with no backend, served from a Google Cloud Storage bucket. Also hosted locally on the NUC for development and testing.
 
-- **Live site:** http://thomasberg.me
+- **Live site:** https://thomasberg.me
 - **Repo description:** "My personal CV. Always open to opportunities as a TPM."
 
 ## Tech Stack
 
-- **Framework:** React 16 (JavaScript, ES6+)
-- **Styling:** SASS (indented syntax) + autoprefixer
-- **Routing:** react-router-dom v5
-- **Testing:** jest, @testing-library/react, @testing-library/jest-dom
-- **Build:** react-scripts (Create React App) 3.x
+- **Framework:** React 18 (JavaScript, ES6+)
+- **Styling:** SASS (indented syntax)
+- **Testing:** vitest, @testing-library/react, @testing-library/jest-dom
+- **Build:** Vite 5 + @vitejs/plugin-react
 - **Package manager:** npm
-- **Infrastructure:** Google Cloud Storage (static hosting, no backend)
+- **Infrastructure:** Google Cloud Storage (static hosting, no backend) + Cloudflare proxy (SSL/CDN)
 
 ## Local Development
 
 ```bash
 npm install       # Install dependencies
-npm start         # Dev server at http://localhost:3000
-npm run build     # Production build → /build
-npm test          # Run jest test suite
+npm start         # Dev server at http://localhost:5173
+npm run build     # Production build → /dist
+npm test          # Run vitest test suite
+npm run preview   # Preview production build locally
 ```
 
 ## Project Structure
@@ -93,7 +93,7 @@ This is a **pure static app** — no server, no backend, no API calls.
 npm run build     # Generates /build with all static assets
 ```
 
-Upload the contents of `/build` to the Google Cloud Storage bucket configured for `thomasberg.me`. Ensure the bucket is set to public, with `index.html` as the default document and a 404 page configured.
+Upload the contents of `/dist` to the Google Cloud Storage bucket configured for `thomasberg.me`. Ensure the bucket is set to public, with `index.html` as the default document and a 404 page configured. Cloudflare proxy handles SSL — no HTTPS config needed on the bucket itself.
 
 For local testing, `npm start` is sufficient.
 
@@ -103,4 +103,4 @@ For local testing, `npm start` is sufficient.
 - Keep the bundle lean; avoid adding heavy dependencies for a static CV site
 - SASS indented syntax only — no SCSS, no CSS modules, no styled-components
 - Content accuracy matters; always flag uncertain content rather than guessing
-- React 16 is in use — avoid React 18+ APIs (e.g., `createRoot`)
+- React 18 is in use — use `createRoot` from `react-dom/client` (already in `src/index.jsx`)

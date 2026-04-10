@@ -140,6 +140,7 @@ sketch
 
 # production
 /build
+/dist
 
 # misc
 /ignore
