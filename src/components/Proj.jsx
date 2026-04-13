@@ -53,21 +53,21 @@ export default function Proj({
 
     // Define elements for the expand/collapse text toggles
     const expandText = <div className="expand-collapse-with-icon">
-        <div className="text">Learn More</div>
         <img
             src="./icons/chevron-right-solid.svg"
             alt="Right arrow to show additional text"
             className="icon svg-as-text"
         />
+        <div className="text">Learn More</div>
     </div>;
 
     const collapseText = <div className="expand-collapse-with-icon">
-        <div className="text">Collapse</div>
         <img
             src="./icons/chevron-up-solid.svg"
             alt="Up arrow to collapse additional text"
             className="icon svg-as-text"
         />
+        <div className="text">Collapse</div>
     </div>;
 
     // techList requires two layers of mapping

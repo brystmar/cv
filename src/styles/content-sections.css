@@ -516,7 +516,7 @@
   white-space: nowrap;
 }
 .expand-collapse-with-icon .svg-as-text {
-  margin: 0 0 0 0.45em;
+  margin: 0 0.5em 0 0;
   filter: brightness(0) saturate(100%) invert(13%) sepia(82%) saturate(4645%) hue-rotate(215deg) brightness(92%) contrast(95%);
 }
 

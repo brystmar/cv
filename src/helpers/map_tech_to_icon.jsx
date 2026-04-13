@@ -61,6 +61,14 @@ export default function map_tech_to_icon(tech) {
                 alt="Logo for the JavaScript programming language"
                 className="logo"
             />
+
+        case "Portainer":
+            return <img
+                src="./logos/portainer.svg"
+                alt="Portainer logo"
+                className="logo"
+            />
+
         default:
             return "Logo not found"
     }
