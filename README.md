@@ -1,29 +1,38 @@
-# [Thomas Berg](http://www.thomasberg.me)
+# [Thomas Berg](https://www.thomasberg.me)
 A customer-obsessed Technical Product Manager with a passion for user experience.  Naturally curious, data-driven, and technical.  Avid home cook, exploring the intersection of food and tech.
 
 ## Personal Projects
-### [breadsheet](http://www.breadsheet.com)
+### [breadsheet](https://www.breadsheet.com)
 Web-based time management tool for home cooks, specifically designed for recipes with long breaks between steps (i.e.: sourdough).
 
-Tech Stack:
-* Front End: React, SASS (CSS), JavaScript
-* Infrastructure: Google App Engine, Google Cloud Storage, AWS DynamoDB
-* Back End: Python, Flask
+#### Tech Stack
+* **Frontend:** React, SASS, JavaScript
+* **Infrastructure:** Google App Engine, Google Cloud Storage, AWS DynamoDB
+* **Backend:** Python, Flask
 
-### [Cellar Sync](http://www.cellarsync.com)
-A cellar management app for [lambic](http://lambic.info)-obsessed tech geeks.
-
-Tech Stack:
-* Front End: React, SASS (CSS)
-* Infrastructure: Google App Engine, Google Cloud Storage, AWS DynamoDB
-* Back End: Python, Flask
-
-### [Thomas Berg's CV](http://thomasberg.me)
 This project's home on the web.  A simple React app without a backend, hosted in a Google Cloud Storage bucket.
 
-Tech Stack:
-* Front End: React, SASS (CSS)
-* Infrastructure: Google Cloud Storage
+### [Greeting Cards](https://en.wikipedia.org/wiki/Self-hosting_(network))
+Local-only app to simplify household & address management for your annual holiday card.
+
+#### Tech Stack
+* **Frontend:** React, SASS, JavaScript
+* **Infrastructure:** Portainer
+* **Backend:** Python, Flask
+
+### [Thomas Berg's CV](https://thomasberg.me)
+
+#### Tech Stack
+* **Frontend:** React, SASS, JavaScript
+* **Infrastructure:** Google Cloud Storage
+
+### [Cellar Sync](http://www.cellarsync.com)
+A cellar management app for [lambic](https://lambic.info)-obsessed tech geeks.  _On hold indefinitely._
+
+#### Tech Stack
+* **Frontend:** React, SASS, JavaScript
+* **Infrastructure:** Google App Engine, Google Cloud Storage, AWS DynamoDB
+* **Backend:** Python, Flask
 
 ## Attribution
 Content sourced from:
