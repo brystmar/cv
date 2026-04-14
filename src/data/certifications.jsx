@@ -1,5 +1,3 @@
-import React from "react";
-
 const logoScrimba = <img
     src="./logos/scrimba.png"
     alt="Scrimba logo"

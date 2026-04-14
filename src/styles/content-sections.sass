@@ -481,6 +481,10 @@
           grid-column: span 2
           .proj-tech-list
             padding: 0 1.5em
+        .proj-tech-type-container:not(.wide):last-child:nth-child(odd)
+          grid-column: 1 / -1
+          justify-self: center
+          width: 50%
 
 @media (min-width: 720px)
   .project-section

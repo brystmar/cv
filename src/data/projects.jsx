@@ -1,5 +1,3 @@
-import React from "react";
-
 const breadsheet = {
     name:        "Breadsheet",
     description: "Scheduling tool that helps you fit long recipes into your day.",
@@ -69,12 +67,11 @@ const greetingCards = {
         {
             type:  "Infrastructure",
             items: [
-                "Portainer"
+                "Postgres", "Portainer"
             ]
         }
     ]
 }
-
 
 const cv = {
     name:        "Thomas Berg's CV",

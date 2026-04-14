@@ -1,5 +1,3 @@
-import React from "react";
-
 const egenciaSeniorPM = {
     companyName:        "AMEX Global Business Travel",
     companyUrl:         "https://www.amexglobalbusinesstravel.com/",

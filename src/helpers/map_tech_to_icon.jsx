@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function map_tech_to_icon(tech) {
     if (typeof tech !== "string") {
         return `Function only accepts strings, not ${typeof tech}.`
@@ -9,7 +7,7 @@ export default function map_tech_to_icon(tech) {
         case "Python":
             return <img
                 src="./logos/python.svg"
-                alt="Logo for the Python programming language"
+                alt="Python logo"
                 className="logo"
             />
 
@@ -51,14 +49,14 @@ export default function map_tech_to_icon(tech) {
         case "SASS":
             return <img
                 src="./logos/sass.svg"
-                alt="Logo for SASS, a CSS pre-compiler"
+                alt="SASS logo"
                 className="logo"
             />
 
         case "JavaScript":
             return <img
                 src="./logos/javascript.svg"
-                alt="Logo for the JavaScript programming language"
+                alt="JavaScript logo"
                 className="logo"
             />
 
@@ -66,6 +64,13 @@ export default function map_tech_to_icon(tech) {
             return <img
                 src="./logos/portainer.svg"
                 alt="Portainer logo"
+                className="logo"
+            />
+
+        case "Postgres":
+            return <img
+                src="./logos/postgres.svg"
+                alt="PostgreSQL logo"
                 className="logo"
             />
 
