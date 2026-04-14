@@ -8,7 +8,7 @@ const breadsheet = {
     screenshot:  <img
                      src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/breadsheet.png"
                      alt="Using the breadsheet scheduling tool for a sourdough recipe"
-                     title="Visit breadsheet.com"
+                     // title="Visit breadsheet.com"
                      className="screenshot wide"
                  />,
     notes:       [
@@ -84,7 +84,7 @@ const cv = {
     screenshot:  <img
                      src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/cv.png"
                      alt="Top section of the website you're reading right now"
-                     title="The website you're currently reading. So meta."
+                     // title="The website you're currently reading. So meta."
                      className="screenshot wide"
                  />,
     notes:       [
