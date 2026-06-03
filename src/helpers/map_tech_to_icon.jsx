@@ -74,6 +74,69 @@ export default function map_tech_to_icon(tech) {
                 className="logo"
             />
 
+        case "Proxmox":
+            return <img
+                src="./logos/proxmox.svg"
+                alt="Proxmox logo"
+                className="logo"
+            />
+
+        case "TrueNAS":
+            return <img
+                src="./logos/truenas.svg"
+                alt="TrueNAS logo"
+                className="logo"
+            />
+
+        case "Nginx":
+            return <img
+                src="./logos/nginx.svg"
+                alt="Nginx logo"
+                className="logo"
+            />
+
+        case "UniFi":
+            return <img
+                src="./logos/unifi.svg"
+                alt="UniFi logo"
+                className="logo"
+            />
+
+        case "ZFS":
+            return <img
+                src="./logos/zfs.svg"
+                alt="ZFS logo"
+                className="logo"
+            />
+
+        case "Home Assistant":
+            return <img
+                src="./logos/home-assistant.svg"
+                alt="Home Assistant logo"
+                className="logo"
+            />
+
+        case "Z-Wave":
+            return <img
+                src="./logos/zwave.png"
+                alt="Z-Wave logo"
+                className="logo"
+            />
+
+        case "Zigbee":
+            return <img
+                src="./logos/zigbee.svg"
+                alt="Zigbee logo"
+                className="logo"
+            />
+
+        case "Matter":
+            return <img
+                src="./logos/matter.svg"
+                alt="Matter logo"
+                className="logo"
+            />
+
         default:
             return "Logo not found"
     }

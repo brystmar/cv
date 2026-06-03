@@ -117,7 +117,7 @@ const homelab = {
                      className="screenshot wide"
                  />,
     notes:       [
-        "What to do when you own a 1910 house but want to install a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
+        "What to do when you own a 1910 house and want to install a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
         "DIY TrueNAS build follows best practices, implementing a least-privilege ACL model to replace an enshittified Synology DS-1019+ in May 2026.",
         "Includes a mature Home Assistant deployment running bare metal on a dedicated NUC. HA configuration is optimized to scale gracefully with new IoT hardware.",
         "Automated weekly backups for all hardware configurations and services, with documentation for disaster recovery procedures."
@@ -126,13 +126,13 @@ const homelab = {
         {
             type:  "Infrastructure",
             items: [
-                "Proxmox", "TrueNAS SCALE", "Portainer", "Nginx", "UniFi", "ZFS"
+                "Proxmox", "TrueNAS", "Portainer", "Nginx", "UniFi", "ZFS"
             ]
         },
         {
-            type:  "Home Automation",
+            type:  "Automation & IoT",
             items: [
-                "Home Assistant", "Z-Wave", "Zigbee", "Matter"
+                "Home Assistant", "Matter", "Z-Wave", "Zigbee"
             ]
         }
     ]

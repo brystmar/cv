@@ -51,3 +51,4 @@ Content sourced from:
 * Website icon by Rahmat Hidayat from [The Noun Project](https://thenounproject.com/search/?q=website&i=3237546)
 * [Flask logo](http://flask.pocoo.org/static/logo/flask.svg) by Armin Ronacher, from [wikimedia](https://commons.wikimedia.org/w/index.php?curid=19501815)
 * SVG color conversion tool by [Barrett Sonntag](https://codepen.io/sosuke/pen/Pjoqqp)
+* Nginx icon by [Icons8](https://icons8.com)
