@@ -1,5 +1,5 @@
 # [Thomas Berg](https://www.thomasberg.me)
-A customer-obsessed Technical Product Manager with a passion for user experience.  Naturally curious, data-driven, and technical.  Avid home cook, exploring the intersection of food and tech.
+A customer-obsessed Product Manager with a passion for user experience.  Naturally curious, data-driven, and technical.  Avid home cook, exploring the intersection of food and tech.
 
 ## Personal Projects
 ### [breadsheet](https://www.breadsheet.com)

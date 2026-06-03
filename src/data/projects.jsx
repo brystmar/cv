@@ -38,7 +38,7 @@ const breadsheet = {
 
 const greetingCards = {
     name:        "Greeting Cards",
-    description: "Local-only app to simplify household & address management for your annual holiday card.",
+    description: "Locally hosted app to simplify household & address management for your annual holiday card.",
     url:         "https://en.wikipedia.org/wiki/Self-hosting_(network)",
     repo:        "https://github.com/brystmar/greeting-cards-ui",
     screenshot:  <img
@@ -105,6 +105,39 @@ const cv = {
     ]
 }
 
-const myProjects = [ breadsheet, greetingCards, cv ];
+
+const homelab = {
+    name:        "HomeLab",
+    description: "Production-grade infrastructure, network, and home automation platform built on open-source software.",
+    url:         "https://en.wikipedia.org/wiki/Self-hosting_(network)",
+    repo:        null,
+    screenshot:  <img
+                     src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/homelab.jpg"
+                     alt="A 12U server rack mounted to the wall of a utility closet showing networking & server hardware with neatly-organized wiring."
+                     className="screenshot wide"
+                 />,
+    notes:       [
+        "What to do when you own a 1910 house but want to install a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
+        "DIY TrueNAS build follows best practices, implementing a least-privilege ACL model to replace an enshittified Synology DS-1019+ in May 2026.",
+        "Includes a mature Home Assistant deployment running bare metal on a dedicated NUC. HA configuration is optimized to scale gracefully with new IoT hardware.",
+        "Automated weekly backups for all hardware configurations and services, with documentation for disaster recovery procedures."
+    ],
+    tech:        [
+        {
+            type:  "Infrastructure",
+            items: [
+                "Proxmox", "TrueNAS SCALE", "Portainer", "Nginx", "UniFi", "ZFS"
+            ]
+        },
+        {
+            type:  "Home Automation",
+            items: [
+                "Home Assistant", "Z-Wave", "Zigbee", "Matter"
+            ]
+        }
+    ]
+}
+
+const myProjects = [ homelab, greetingCards, breadsheet ];
 
 export default myProjects;

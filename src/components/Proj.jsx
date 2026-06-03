@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import map_tech_to_icon from "../helpers/map_tech_to_icon";
 
 export default function Proj({
-    name = "",
-    description = "",
-    status,
-    notes = [""],
-    url = "",
-    repo = "",
-    screenshot = <img src="" alt="" />,
-    tech = [{ type: "", items: [""] }] })
+                                 name = "",
+                                 description = "",
+                                 status,
+                                 notes = [""],
+                                 url = "",
+                                 repo = "",
+                                 screenshot = <img src="" alt="" />,
+                                 tech = [{ type: "", items: [""] }] })
 {
     const [ isExpanded, updateIsExpanded ] = useState(false);
 
@@ -109,7 +109,7 @@ export default function Proj({
                         </a>
                     </span>
 
-                    <span className="proj-link-icon-container">
+                    {!repo ? <></> : <span className="proj-link-icon-container">
                         <a
                             className="proj-link"
                             href={repo}
@@ -124,6 +124,7 @@ export default function Proj({
                             />
                         </a>
                     </span>
+                    }
                 </span>
             </div>
 
@@ -173,7 +174,7 @@ Proj.propTypes = {
     status:      PropTypes.string,
     notes:       PropTypes.arrayOf(PropTypes.string).isRequired,
     url:         PropTypes.string.isRequired,
-    repo:        PropTypes.string.isRequired,
+    repo:        PropTypes.string,
     screenshot:  PropTypes.element.isRequired,
     tech:        PropTypes.arrayOf(PropTypes.object).isRequired
 }
