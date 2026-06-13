@@ -48,8 +48,7 @@ export default function Home({ isNavExpanded = false }) {
                 <Separator />
 
                 <p className="highlight">
-                    Adventurous home cook
-                    and smarthome <strong>enthusiast</strong>
+                    Homelab <strong>enthusiast</strong> and adventurous home cook
                 </p>
             </div>
         </section>
