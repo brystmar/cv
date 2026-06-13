@@ -1,13 +1,9 @@
 const egenciaSeniorPM = {
-    companyName:        "AMEX Global Business Travel",
-    companyUrl:         "https://www.amexglobalbusinesstravel.com/",
+    companyName:        "Egencia",
+    companyUrl:         "https://www.egencia.com/",
     // corporateGroupName: "AMEX GBT",
     // corporateGroupUrl:  "https://www.amexglobalbusinesstravel.com/",
-    logo:               <img
-                            src="./logos/amex-gbt-stacked.svg"
-                            alt="AMEX Global Business Travel corporate logo"
-                            className="logo job-logo"
-                        />,
+    logo:               <span className="logo job-logo egencia-gbt-logos" />,
     location:           "Seattle, WA",
     title:              "Senior Product Manager",
     startDate:          "Sep 2021",
@@ -21,15 +17,11 @@ const egenciaSeniorPM = {
 };
 
 const egenciaPM = {
-    companyName:        "Expedia Group",
-    companyUrl:         "https://www.expediagroup.com/",
+    companyName:        "Egencia",
+    companyUrl:         "https://www.egencia.com/",
     // corporateGroupName: "Expedia Group",
     // corporateGroupUrl:  "https://www.expediagroup.com/",
-    logo:               <img
-                            src="./logos/expedia-group.svg"
-                            alt="Expedia Group corporate logo"
-                            className="logo job-logo wide-logo"
-                        />,
+    logo:               <span className="logo job-logo egencia-eg-logos" />,
     location:           "Seattle, WA",
     title:              "Product Manager III",
     startDate:          "Feb 2020",

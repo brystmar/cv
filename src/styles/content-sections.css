@@ -98,7 +98,7 @@
   display: block;
 }
 .job .col-logo-content .logo-container .poker-logos {
-  animation: 20s poker-logo-slideshow 0s linear infinite forwards;
+  animation: 15s poker-logo-slideshow 0s linear infinite forwards;
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/pokerstars.jpg");
 }
@@ -108,12 +108,12 @@
 }
 .job .col-logo-content .logo-container .egencia-eg-logos {
   width: 100%;
-  animation: 8s egencia-eg-slideshow 0s linear infinite forwards;
+  animation: 15s egencia-eg-slideshow 0s linear infinite forwards;
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg");
 }
 .job .col-logo-content .logo-container .egencia-gbt-logos {
-  animation: 20s egencia-gbt-slideshow 0s linear infinite forwards;
+  animation: 15s egencia-gbt-slideshow 0s linear infinite forwards;
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg");
 }

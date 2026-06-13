@@ -58,7 +58,7 @@ export default function Proj({
             alt="Right arrow to show additional text"
             className="icon svg-as-text"
         />
-        <div className="text">Learn More</div>
+        <div className="text">More</div>
     </div>;
 
     const collapseText = <div className="expand-collapse-with-icon">
