@@ -107,32 +107,32 @@ const cv = {
 
 
 const homelab = {
-    name:        "HomeLab",
-    description: "Production-grade infrastructure, network, and home automation platform built on open-source software.",
+    name:        "Homelab",
+    description: "Production-grade infrastructure, network, and home automation platform built with a local-first approach on open-source software.",
     url:         "https://en.wikipedia.org/wiki/Self-hosting_(network)",
     repo:        null,
     screenshot:  <img
                      src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/homelab.jpg"
-                     alt="A 12U server rack mounted to the wall of a utility closet showing networking & server hardware with neatly-organized wiring."
+                     alt="A 12U server rack mounted to the wall of a utility closet showing networking & server hardware with neatly organized wiring."
                      className="screenshot wide"
                  />,
     notes:       [
-        "What to do when you own a 1910 house and want to install a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
+        "What to do when you own a 1910 house and want to run a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
+        "Includes a mature Home Assistant deployment running bare metal on a dedicated NUC. Strict style guidelines facilitate scalability, organizing ~4000 entities from ~400 devices across dozens of integrations, controlled by >100 automations and a few dozen scripts.",
         "DIY TrueNAS build follows best practices, implementing a least-privilege ACL model to replace an enshittified Synology DS-1019+ in May 2026.",
-        "Includes a mature Home Assistant deployment running bare metal on a dedicated NUC. HA configuration is optimized to scale gracefully with new IoT hardware.",
-        "Automated weekly backups for all hardware configurations and services, with documentation for disaster recovery procedures."
+        "Automated weekly backups for all services and hardware configs. Full documentation for all hardware, services, and integrations, including disaster recovery."
     ],
     tech:        [
         {
             type:  "Infrastructure",
             items: [
-                "Proxmox", "TrueNAS", "Portainer", "Nginx", "UniFi", "ZFS"
+                "Proxmox", "Portainer", "Nginx", "TrueNAS", "UniFi", "ZFS"
             ]
         },
         {
             type:  "Automation & IoT",
             items: [
-                "Home Assistant", "Matter", "Z-Wave", "Zigbee"
+                "Home Assistant", "ESPHome", "HomeKit", "Matter", "Z-Wave", "Zigbee"
             ]
         }
     ]

@@ -74,7 +74,7 @@ export default function Proj({
     const techList = tech.map((tech, index) =>
         <div
             key={index}
-            className={tech.type === "Infrastructure" && tech.items.length > 2 ?
+            className={(tech.type === "Infrastructure" || tech.type === "Automation & IoT") && tech.items.length > 2 ?
                 "proj-tech-type-container wide" : "proj-tech-type-container"}
         >
             <span className="proj-tech-type-label">{tech.type}</span>

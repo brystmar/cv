@@ -116,6 +116,20 @@ export default function map_tech_to_icon(tech) {
                 className="logo"
             />
 
+        case "ESPHome":
+            return <img
+                src="./logos/esphome.svg"
+                alt="ESPHome logo"
+                className="logo"
+            />
+
+        case "HomeKit":
+            return <img
+                src="./logos/homekit.svg"
+                alt="Apple HomeKit logo"
+                className="logo"
+            />
+
         case "Z-Wave":
             return <img
                 src="./logos/zwave.png"
