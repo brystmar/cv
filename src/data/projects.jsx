@@ -118,7 +118,7 @@ const homelab = {
                  />,
     notes:       [
         "What to do when you own a 1910 house and want to run a full UniFi stack? You buy three 500' rolls of CAT-6 and start running cable.",
-        "Includes a mature Home Assistant deployment, running bare metal on a dedicated NUC. Strict style guidelines ensure scalability, organizing ~4000 entities from ~400 devices across dozens of integrations, controlled by >100 automations and a few dozen scripts.",
+        "Includes a mature Home Assistant deployment, running bare metal on a dedicated NUC. Strict style guidelines ensure scalability, organizing thousands of entities from ~400 devices across dozens of integrations, controlled by >100 automations and a few dozen scripts.",
         "DIY TrueNAS build follows best practices, implementing a least-privilege ACL model to replace an enshittified Synology DS-1019+ in May 2026.",
         "Automated weekly backups for all services, virtualized environments, and hardware configs. UPS integration ensures high(ish) availability, with multiple levels of prioritized load shedding during outages. Full documentation for all hardware, services, and integrations, including disaster recovery."
     ],

@@ -26,9 +26,10 @@ const egenciaPM = {
     title:              "Product Manager III",
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
-    accomplishments:    [
-        "Designed, implemented, and deployed live agent chat as a new, lower-cost service channel for Egencia's ~25k B2B clients across 19 countries."
-        , "Designed, implemented, and migrated 3000 Egencia travel agents to a custom Salesforce Service Cloud solution, enabling ops leadership to define and measure productivity KPIs for support teams."
+    accomplishments: [
+        "Incepted Egencia's live agent chat offering from the ground up, from zero to global rollout across 19 countries in under a year. Scoped platform architecture, made foundational technical trade-offs on routing and features, and piloted with a single customer in Norway before expanding to all primary markets by end of 2020."
+        , "Designed and delivered a custom Salesforce Service Cloud implementation, migrating ~3000 Egencia travel agents to a unified support platform and giving ops leadership their first structured view of team productivity and KPIs."
+        , "Expanded live agent chat to Egencia's global pre-sales teams across 26 countries, leveraging auto-translation to extend sales reach into new markets — delivering nearly $2M in incremental sales in 2021."
     ]
 };
 
@@ -46,9 +47,8 @@ const dynataSeniorPdM = {
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led integration efforts through 2019, supporting two M&A events which doubled the company’s size.  Combined platform handles >$800M annually."
-        , "Architected a new, cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices."
-        , "Spearheaded the rollout of a unified design system to standardize UI/UX across the platform."
+        "Led platform integration efforts through 2019, supporting two M&A events that doubled the company's size. Combined platform handled >$800M annually."
+        , "Contributed early architecture for a cloud-native lead-to-cash platform based on MS Dynamics 365 CRM and proprietary microservices."
     ]
 };
 
@@ -67,7 +67,8 @@ const dynataPdM = {
     endDate:         "Mar 2019",
     accomplishments: [
         "Slashed median quote-prep time from 44 to 14 minutes (68%) in the first year by optimizing workflow and applying UX fundamentals."
-        , "Led development of a web-based CPQ (configure/price/quote) UI to integrate with inventory forecasting service.  Managed from concept through storyboards, testing, and rollout.  This product further reduced median quote-prep time to 3½ minutes – down 92% overall."
+        , "Partnered with a dedicated designer to build a web-based CPQ tool from concept through rollout, reducing median quote-prep time to 3½ minutes — down 92% overall."
+        , "Built the business case to externalize this CPQ tool as a self-service product for strategic B2B customers, enabling real-time feasibility checks and direct purchasing without sales intermediaries."
     ]
 };
 
@@ -98,9 +99,9 @@ const pokerPlayer = {
     startDate:       "May 2007",
     endDate:         "Dec 2012",
     accomplishments: [
-        "Learned how to remain objective and make data-driven decisions under pressure."
-        , "Typically played 6 to 8 concurrent tables, with >2 million total hands played lifetime."
-        , "Private coach to more than a dozen students worldwide, from Modesto to Moscow."
+        "Made thousands of high-stakes decisions daily, strategically navigating uncertainty with incomplete information."
+        , "Played 6-8 concurrent tables simultaneously, managing cognitive load and pattern recognition at scale across >2 million lifetime hands."
+        , "Coached 12 students worldwide on decision frameworks, critical thinking, and emotional discipline, developing the ability to break down complex systems into teachable fundamentals."
     ]
 };
 
