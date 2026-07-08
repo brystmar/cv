@@ -9,10 +9,10 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Present",
     accomplishments: [
-        "Shepherded Egencia's live chat platform through two major vendor migrations while maintaining service continuity for ~240 agents across 19 countries, serving ~200k chats/year."
-        , "Expanded ownership to include GBT Select's chat platform in Q2 2026 (~5x Egencia's volume) and identified a foundational data quality gap affecting thousands of customer interactions monthly. Currently leading root-cause remediation to eventually allow dissolving an offshore triage team that's currently dedicated to this issue."
+        "Shepherded Egencia's live chat platform through two major vendor migrations while maintaining service continuity for hundreds of agents across 19 countries, serving ~200k B2B support chats annually."
+        , "Expanded ownership to include GBT Select's chat platform in Q2 2026 (~1M annual chats) and identified a foundational data quality gap affecting thousands of monthly customer interactions. Currently leading root-cause remediation to eventually allow dissolving an offshore triage team dedicated to this issue."
         , "Led inception, development, design, and delivery of the first joint Egencia + GBT Select technical collaboration. This cross-platform sales enablement solution unified the top-of-funnel pipeline across brands. Shipped December 2023."
-        , "Designed and shipped an automated user deprovisioning service integrating Workday → Active Directory → Okta → Salesforce, eliminating manual offboarding for 98% of these requests."
+        , "Designed and shipped an automated user deprovisioning service integrating Workday → Active Directory → Okta → Salesforce, eliminating manual offboarding for 98% of requests."
     ]
 };
 
@@ -27,9 +27,9 @@ const egenciaPM = {
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
     accomplishments: [
-        "Incepted Egencia's live agent chat offering from the ground up, from zero to global rollout across 19 countries in under a year. Scoped platform architecture, made foundational technical trade-offs on routing and features, and piloted with a single customer in Norway before expanding to all primary markets by end of 2020."
+        "Incepted Egencia's live agent chat offering from the ground up, from zero to global rollout across 19 countries in ~8 months. Scoped platform architecture, made foundational technical trade-offs on routing and features, and piloted with a single customer in Norway before expanding to all primary markets by end of 2020."
         , "Designed and delivered a custom Salesforce Service Cloud implementation, migrating ~3000 Egencia travel agents to a unified support platform and giving ops leadership their first structured view of team productivity and KPIs."
-        , "Expanded live agent chat to Egencia's global pre-sales teams across 26 countries, leveraging auto-translation to extend sales reach into new markets — delivering nearly $2M in incremental sales in 2021."
+        , "Expanded live agent chat to Egencia's global pre-sales teams across 26 countries, leveraging auto-translation to extend sales reach into new markets — delivering $2M in incremental sales in 2021."
     ]
 };
 
