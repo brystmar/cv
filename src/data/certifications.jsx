@@ -35,12 +35,12 @@ const frontend_bootcamp = {
 };
 
 const SF_service_cloud = {
-    name: "Salesforce Service Cloud Consultant",
+    name: "Salesforce Agentforce Service Consultant",
     issuer: "Salesforce",
     logo: <img
         src="./logos/badge-sf-service-cloud.png"
-        alt="Salesforce UX Designer Certification badge"
-        title="Salesforce UX Designer Certification"
+        alt="Salesforce Agentforce Service Consultant badge"
+        title="Salesforce Agentforce Service Consultant Certification"
         className="logo cert-logo"
     />,
     url: "https://trailblazer.me/id/tpberg",
