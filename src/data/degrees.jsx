@@ -3,7 +3,7 @@ import React from "react";
 const TCU = {
     degreeType:       "Bachelor of Business Administration",
     degreeTypeAbbrev: "B.B.A.",
-    degreeName:       "Management Information Systems",
+    degreeName:       "e-Business (Management Information Systems)",
     issuer:           "TCU",
     logo:             <img
                           src="./logos/tcu.svg"
