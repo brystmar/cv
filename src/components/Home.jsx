@@ -35,8 +35,7 @@ export default function Home({ isNavExpanded = false }) {
 
             <div className="highlights">
                 <p className="highlight">
-                    Customer-obsessed Product Manager with a passion for <strong>user
-                    experience</strong>
+                    Customer-focused Product Manager who sweats the <strong>UX</strong> details
                 </p>
 
                 <Separator />

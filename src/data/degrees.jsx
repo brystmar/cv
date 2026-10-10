@@ -11,7 +11,7 @@ const TCU = {
                           title="TCU logo"
                           className="logo degree-logo"
                       />,
-    url:              "https://www.tcu.edu",
+    url:              "https://www.tcu.edu/academics/programs/business-information-systems.php",
     location:         "Fort Worth, TX",
     date:             "May 2007"
 };
