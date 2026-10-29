@@ -7,10 +7,10 @@ const egenciaPMLead = {
     location:           "Seattle, WA",
     title:              "Product Manager Lead",
     subtitle:           "Service",
-    startDate:          "Sep 2026",
+    startDate:          "Oct 2026",
     endDate:            "Present",
     accomplishments: [
-        "Own strategy for a portfolio of servicing and operations products used by ~45k customer accounts across brands."
+        "Own strategy for a portfolio of servicing and operations products used by ~45k customers across brands."
         , "Lead a team of product managers, driving 2027 planning and prioritization."
     ]
 };
@@ -24,7 +24,7 @@ const egenciaSeniorPM = {
     location:           "Seattle, WA",
     title:              "Senior Product Manager",
     startDate:          "Sep 2021",
-    endDate:            "Sep 2026",
+    endDate:            "Oct 2026",
     accomplishments: [
         "Owned Egencia's live chat platform from its April 2020 launch, shepherding it through two major vendor migrations with zero downtime for hundreds of agents across 19 countries. Architected a scalable service-configuration framework for onboarding enterprise clients with specialized servicing needs."
         , "Grew chat from 0.2% to 9% of all customer contacts, shifting volume from higher-cost channels; integrated live agent handoff with a chatbot-first flow to achieve containment targets."

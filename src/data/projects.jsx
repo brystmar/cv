@@ -5,7 +5,7 @@ const breadsheet = {
     repo:        "https://github.com/brystmar/breadsheet-ui",
     screenshot:  <img
                      src="https://storage.googleapis.com/tb-public-misc/projects/cv/screenshots/breadsheet.png"
-                     alt="Using the breadsheet scheduling tool for a sourdough recipe"
+                     alt="A screenshot of the breadsheet scheduling app showing the timing of each step for a sourdough bread recipe"
                      // title="Visit breadsheet.com"
                      className="screenshot wide"
                  />,
@@ -87,7 +87,7 @@ const cv = {
     notes:       [
         "This online CV is a simple React app without a backend, hosted in a Google Cloud Storage bucket.",
         "Modular design parses content from static .js files.",
-        "Canvas for showcasing my progress as I explore the world of front-end development."
+        "Canvas for dipping my toes into the world of front-end development."
     ],
     tech:        [
         {

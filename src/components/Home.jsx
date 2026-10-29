@@ -27,7 +27,7 @@ export default function Home({ isNavExpanded = false }) {
             <div className="headshot-container">
                 <img
                     src="https://storage.googleapis.com/tb-public-misc/projects/cv/img/headshot.jpg"
-                    alt="Thomas wondering why his hair is retreating"
+                    alt="Thomas standing in a light sweater among the foliage in the Pacific Northwest"
                     aria-label="Headshot"
                     className="headshot"
                 />
