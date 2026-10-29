@@ -26,10 +26,10 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Oct 2026",
     accomplishments: [
-        "Owned Egencia's live chat platform from its April 2020 launch, shepherding it through two major vendor migrations with zero downtime for hundreds of agents across 19 countries. Architected a scalable service-configuration framework for onboarding enterprise clients with specialized servicing needs."
-        , "Grew chat from 0.2% to 9% of all customer contacts, shifting volume from higher-cost channels; integrated live agent handoff with a chatbot-first flow to achieve containment targets."
-        , "Expanded scope to GBT Select's chat platform in Q2 2026 (1.2M chats/year), leading root-cause remediation of a data quality gap affecting thousands of chats monthly."
-        , "Led the first joint Egencia + GBT Select technical collaboration, a cross-CRM sales enablement tool unifying top-of-funnel pipeline across brands and eliminating manual transfer of hundreds of leads per month."
+        "Shepherded Egencia's chat service channel through two major vendor migrations with zero downtime, eventually servicing millions of customers globally. Integrated live agent handoff with a chatbot-first flow to achieve containment targets."
+        , "Architected a scalable service-configuration framework for onboarding enterprise clients with specialized servicing needs."
+        , "Expanded scope to include GBT Select's chat platform in Q2 2026; currently leading root-cause remediation of a data quality gap affecting thousands of chats monthly."
+        , "Led the first joint Egencia + GBT Select technical collaboration: a cross-CRM sales enablement tool unifying top-of-funnel pipeline across brands, eliminating manual transfer of hundreds of leads per month."
         , "Designed and shipped an automated user deprovisioning service integrating Workday, Active Directory, Okta, and Salesforce, eliminating manual offboarding for 98% of requests."
     ]
 };
@@ -64,7 +64,7 @@ const dynataSeniorPdM = {
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led platform systems integration through two M&A events that nearly doubled the company's annual revenue."
+        "Led platform systems integration through two M&A events that nearly doubled the company's size."
         , "Contributed early architecture for a cloud-native lead-to-cash platform built on MS Dynamics 365 CRM and proprietary microservices."
     ]
 };
@@ -134,7 +134,7 @@ const pokerInstructor = {
     startDate:       "Jan 2007",
     endDate:         "Jul 2011",
     accomplishments: [
-        "Authored and produced 62 instructional videos, pioneering a classroom-style format grounded in game theory."
+        "Wrote, produced, and edited 62 instructional videos, pioneering a classroom-style format grounded in game theory."
     ]
 };
 

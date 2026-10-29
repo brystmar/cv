@@ -108,7 +108,7 @@ const cv = {
 
 const homelab = {
     name:        "Homelab",
-    description: "Production-grade home automation platform built on open-source software with a local-first approach.",
+    description: "Professional-grade networking and home automation platform that prioritizes privacy, resilience, UX, and local control.",
     url:         "https://en.wikipedia.org/wiki/Self-hosting_(network)",
     repo:        null,
     screenshot:  <img
