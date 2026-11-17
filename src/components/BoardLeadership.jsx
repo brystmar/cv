@@ -1,6 +1,6 @@
 import React from "react";
 import Job from "./Job";
-import myBoardRoles from "../data/boards";
+import myBoardRoles from "../data/volunteering";
 
 // Board and volunteer roles, rendered with the same layout as Experience
 export default function BoardLeadership() {

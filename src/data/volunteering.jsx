@@ -11,7 +11,8 @@ const fcsPresident = {
     accomplishments: [
         "Nonprofit preschool and childcare organization with ~35 employees and a ~$2.2M annual operating budget."
         , "Board member since Nov 2023; elected Vice President in Nov 2024, then President in Aug 2026."
-        , "Leading the board through a period of leadership transition, partnering with interim leadership and keeping families and staff informed."
+        , "Assumed the presidency mid-crisis after an abrupt resignation, instituting new escalation paths for unresolved staff concerns and leading the organization through significant turnover across campuses."
+        , "Directed a board-level organizational review spanning a dozen staff interviews; authored the resulting communications to families and fronted a community town hall to rebuild trust. Recruited a retired senior administrator back to the organization as interim leadership to ensure stability."
     ]
 };
 

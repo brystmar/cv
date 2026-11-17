@@ -10,8 +10,8 @@ const egenciaPMLead = {
     startDate:          "Oct 2026",
     endDate:            "Present",
     accomplishments: [
-        "Own strategy for a portfolio of servicing and operations products used by ~45k customer accounts across brands."
-        , "Driving 2027 planning and prioritization across the portfolio with a team of product managers."
+        "Driving AI-native practices and adoption across the functional area; secured the team’s selection as its first AI-enabled SDLC pilot (requirements, testing, code generation and review, QA) and defining where human review stays in the loop."
+        , "Own strategy for a portfolio of 15 servicing and operations products used by ~45k customer accounts across brands. Leading a team of 4 product managers, driving 2027 planning and prioritization."
     ]
 };
 
@@ -26,12 +26,12 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Oct 2026",
     accomplishments: [
-        "Owned Egencia's live chat platform from its April 2020 launch, shepherding it through two major vendor migrations for hundreds of agents across 19 countries."
-        , "Scaled chat from 0.2% to 9% of all customer contacts, shifting volume from higher-cost channels. Integrated live agent handoff with a chatbot-first flow to achieve containment targets."
-        , "Architected a scalable service-configuration framework for onboarding enterprise clients with specialized servicing needs."
-        , "Expanded scope to GBT Select's chat platform in 2026 (1.2M chats/year). Traced a data quality gap affecting thousands of monthly chats to upstream systems; driving the fix through cross-team influence and escalation."
-        , "Led the first joint Egencia + GBT Select technical collaboration: a cross-CRM sales enablement tool unifying top-of-funnel pipeline across brands, eliminating manual transfer of hundreds of leads per month."
-        , "Designed and shipped an automated user deprovisioning service integrating Workday, Active Directory, Okta, and Salesforce, eliminating manual offboarding for 98% of requests."
+        "Expanded scope to GBT Select’s chat platform in 2026, handling >1MM annual chats. Traced a data quality gap affecting thousands of monthly chats to upstream systems, driving the fix through cross-team influence. Fix will enable retirement of a manual offshore triage team (9 FTE + partial capacity from dozens more) by Q2 2027."
+        , "Owned Egencia’s live chat platform from its April 2020 launch, shepherding it through two major vendor migrations for ~240 agents across 19 countries. Architected a scalable service-configuration framework to onboard a Fortune 50 client, whose servicing requests run 85% through chat with specialized needs."
+        , "Scaled chat to 9% of all customer contacts, shifting volume from higher-cost channels; integrated live agent handoff with a chatbot-first flow achieving 23% containment."
+        , "Designed and shipped an automated user-deprovisioning service integrating Workday, Active Directory, Okta, and Salesforce, eliminating manual offboarding for 98% of requests."
+        , "Led servicing-side architecture for a real-time air disruption resolution service, structuring a two-tier experience and the prioritization between tiers. Launched a pilot with a 4,000-traveler client in Nov 2026."
+        , "Led the first joint Egencia + GBT Select technical collaboration, a cross-CRM sales enablement tool unifying top-of-funnel pipeline across brands, eliminating the need to manually transfer ~300 monthly leads. Shipped December 2023."
     ]
 };
 
@@ -46,8 +46,8 @@ const egenciaPM = {
     startDate:          "Feb 2020",
     endDate:            "Sep 2021",
     accomplishments: [
-        "Incepted Egencia's live agent chat offering from zero to global rollout across 19 countries in 8 months for ~20k customers: scoped platform architecture, made foundational trade-offs on routing and features."
-        , "Expanded live chat to global pre-sales teams across 26 countries, leveraging auto-translation to extend sales reach into new markets and generate additional warm leads."
+        "Incepted Egencia’s live agent chat offering from zero to global rollout across 19 countries in 8 months for ~20k customers: scoped platform architecture, made foundational trade-offs on routing and features."
+        , "Expanded live chat to global pre-sales teams across 26 countries, leveraging auto-translation to extend sales reach into new markets, yielding 10% more warm leads per month."
     ]
 };
 
@@ -135,7 +135,7 @@ const pokerInstructor = {
     startDate:       "Jan 2007",
     endDate:         "Jul 2011",
     accomplishments: [
-        "Wrote, produced, and edited 62 instructional videos, pioneering a classroom-style format grounded in game theory."
+        "Authored, produced, and edited 62 instructional videos, pioneering a classroom-style format grounded in game theory."
     ]
 };
 

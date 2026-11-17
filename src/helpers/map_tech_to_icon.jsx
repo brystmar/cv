@@ -151,6 +151,20 @@ export default function map_tech_to_icon(tech) {
                 className="logo"
             />
 
+        case "Cloudflare":
+            return <img
+                src="./logos/cloudflare.svg"
+                alt="Cloudflare logo"
+                className="logo"
+            />
+
+        case "SQLAlchemy":
+            return <img
+                src="./logos/sqlalchemy.svg"
+                alt="SQLAlchemy logo"
+                className="logo"
+            />
+
         // No logo yet: render nothing so the tech's text label stands alone
         default:
             return null

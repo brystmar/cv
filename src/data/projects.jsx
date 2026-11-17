@@ -1,7 +1,7 @@
 const breadsheet = {
     name:        "Breadsheet",
-    description: "Plans and tracks multi-day bakes, with step-by-step alerts on your phone through Home Assistant.",
-    status:      "Home Assistant integration launching on the Marketplace soon",
+    description: "Plans and tracks long recipes, with live step-by-step alerts on your phone through Home Assistant.",
+    status:      "Home Assistant integration launches on the HA Marketplace soon",
     url:         "https://www.breadsheet.com",
     repo:        "https://github.com/brystmar/breadsheet-ui",
     screenshot:  <img
@@ -12,16 +12,16 @@ const breadsheet = {
                  />,
     notes:       [
         "Bread recipes are often all-day affairs with hours of downtime between steps, and some, like sourdough, take several days.  Pick a start time or a finish time, and breadsheet builds the step-by-step timeline either way.",
-        "Second Rise rebuilt it from a standalone scheduler into a tool that tracks a live bake: no-password sign-in with a generated key, personal recipe collections, a community recipe library, and live bakes.  Check off or skip steps and the rest of the schedule re-plans itself, or export the steps to your calendar.",
-        "A Home Assistant integration (open source as brystmar/breadsheet-hass) pairs with a short code, then delivers phone notifications with a Done button, iOS Live Activities and Android Live Updates, a bake calendar, and a sidebar panel.  Webhook nudges get changes to your phone within seconds, while adaptive polling keeps everything on free hosting tiers.",
+        "Second Rise rebuilt it from a standalone scheduler into a tool that tracks an actively-scheduled recipe.  Check off (or skip) steps and the rest of the schedule re-plans itself.",
+        "A forthcoming Home Assistant integration (open source as brystmar/breadsheet-hass) pairs with a short code, then delivers phone notifications via iOS Live Activities and Android Live Updates, a bake calendar, and a sidebar panel.  Webhook nudges push changes to your phone within seconds, while adaptive polling keeps everything on free hosting tiers.",
         "Run like a product: a written spec with four independently shippable milestones, a frozen API enforced by contract tests, a DynamoDB-to-Postgres migration users never noticed, and versioned deploys with one-step rollback.",
-        "Next up: connect AI assistants through Home Assistant to plan a bake around your calendar and import new recipes."
+        "Next up: connect AI assistants through Home Assistant to plan a recipe around your existing calendar."
     ],
     tech:        [
         {
             type:  "Frontend",
             items: [
-                "React", "Vite", "SASS", "JavaScript"
+                "React", "SASS", "JavaScript"
             ]
         },
         {
@@ -102,7 +102,7 @@ const cv = {
         {
             type:  "Frontend",
             items: [
-                "React", "Vite", "SASS", "JavaScript"
+                "React", "SASS", "JavaScript"
             ]
         },
         {
@@ -117,7 +117,7 @@ const cv = {
 
 const homelab = {
     name:        "Homelab",
-    description: "Professional-grade networking and home automation platform that prioritizes privacy, resilience, UX, and local control.",
+    description: "Professional-grade networking and home management platform that prioritizes privacy, UX, resilience, and local control.",
     url:         "https://en.wikipedia.org/wiki/Self-hosting_(network)",
     repo:        null,
     screenshot:  <img
