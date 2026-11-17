@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
-import BoardLeadership from "./components/BoardLeadership";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Education from "./components/Education";
@@ -27,7 +26,6 @@ export default function App() {
             <main className={"content-container".concat(isNavExpanded ? " mobile-hidden" : "")}>
                 <Home isNavExpanded={isNavExpanded} />
                 <Experience />
-                <BoardLeadership />
                 <Projects />
                 <Certifications />
                 <Education />

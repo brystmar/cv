@@ -439,11 +439,14 @@
           display: flex
           flex-direction: column
           align-items: center
-          justify-content: space-around
+          // Top-align so logos and labels line up even when a label wraps
+          justify-content: flex-start
           text-align: center
+          // Max width only affects wide logos; others hit max-height first
+          // Fixed height centers short logos so labels align across a row
           .logo-container
-            max-width: 3.5em
-            max-height: 3em
+            max-width: 5em
+            height: 3em
             padding: 0
           .list-item-label
             font-size: 0.9rem

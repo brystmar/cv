@@ -13,7 +13,14 @@ const breadsheet = {
     notes:       [
         "Bread recipes are often all-day affairs with hours of downtime between steps, and some, like sourdough, take several days.  Pick a start time or a finish time, and breadsheet builds the step-by-step timeline either way.",
         "Second Rise rebuilt it from a standalone scheduler into a tool that tracks an actively-scheduled recipe.  Check off (or skip) steps and the rest of the schedule re-plans itself.",
-        "A forthcoming Home Assistant integration (open source as brystmar/breadsheet-hass) pairs with a short code, then delivers phone notifications via iOS Live Activities and Android Live Updates, a bake calendar, and a sidebar panel.  Webhook nudges push changes to your phone within seconds, while adaptive polling keeps everything on free hosting tiers.",
+        <>
+            A forthcoming <a href="https://github.com/brystmar/breadsheet-hass"
+                             target="_blank"
+                             rel="noopener noreferrer">Home Assistant integration</a> pairs
+            with a short code, then delivers phone notifications via iOS Live Activities and Android
+            Live Updates, a bake calendar, and a sidebar panel.  Webhook nudges push changes to your
+            phone within seconds, while adaptive polling keeps everything on free hosting tiers.
+        </>,
         "Run like a product: a written spec with four independently shippable milestones, a frozen API enforced by contract tests, a DynamoDB-to-Postgres migration users never noticed, and versioned deploys with one-step rollback.",
         "Next up: connect AI assistants through Home Assistant to plan a recipe around your existing calendar."
     ],
@@ -33,7 +40,7 @@ const breadsheet = {
         {
             type:  "Infrastructure",
             items: [
-                "Postgres", "Google App Engine", "Cloudflare"
+                "Postgres", "App Engine", "Cloudflare"
             ]
         },
         {

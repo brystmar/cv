@@ -172,7 +172,7 @@ Proj.propTypes = {
     name:        PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     status:      PropTypes.string,
-    notes:       PropTypes.arrayOf(PropTypes.string).isRequired,
+    notes:       PropTypes.arrayOf(PropTypes.node).isRequired,
     url:         PropTypes.string.isRequired,
     repo:        PropTypes.string,
     screenshot:  PropTypes.element.isRequired,

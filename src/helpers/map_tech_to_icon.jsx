@@ -25,7 +25,7 @@ export default function map_tech_to_icon(tech) {
                 className="logo"
             />
 
-        case "Google App Engine":
+        case "App Engine":
             return <img
                 src="./logos/gcp-app-engine.png"
                 alt="Google App Engine logo"

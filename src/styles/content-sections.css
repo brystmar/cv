@@ -112,6 +112,13 @@
   opacity: 1;
   content: url("https://storage.googleapis.com/tb-public-misc/logos/egencia.svg");
 }
+.job .col-logo-content .logo-container .text-logo {
+  font-family: "Roboto Slab", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0067d5;
+  text-align: center;
+}
 .job .col-logo-content .logo-container .egencia-gbt-logos {
   animation: 15s egencia-gbt-slideshow 0s linear infinite forwards;
   opacity: 1;
@@ -493,12 +500,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   text-align: center;
 }
 .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .logo-container {
-  max-width: 3.5em;
-  max-height: 3em;
+  max-width: 5em;
+  height: 3em;
   padding: 0;
 }
 .project .proj-tech .proj-tech-type-container .proj-tech-list .proj-tech-list-item .list-item-label {
