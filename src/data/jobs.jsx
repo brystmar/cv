@@ -10,8 +10,8 @@ const egenciaPMLead = {
     startDate:          "Oct 2026",
     endDate:            "Present",
     accomplishments: [
-        "Own strategy for a portfolio of servicing and operations products used by ~45k customers across brands."
-        , "Lead a team of product managers, driving 2027 planning and prioritization."
+        "Own strategy for a portfolio of servicing and operations products used by ~45k customer accounts across brands."
+        , "Driving 2027 planning and prioritization across the portfolio with a team of product managers."
     ]
 };
 
@@ -26,9 +26,10 @@ const egenciaSeniorPM = {
     startDate:          "Sep 2021",
     endDate:            "Oct 2026",
     accomplishments: [
-        "Shepherded Egencia's chat service channel through two major vendor migrations with zero downtime, eventually servicing millions of customers globally. Integrated live agent handoff with a chatbot-first flow to achieve containment targets."
+        "Owned Egencia's live chat platform from its April 2020 launch, shepherding it through two major vendor migrations for hundreds of agents across 19 countries."
+        , "Scaled chat from 0.2% to 9% of all customer contacts, shifting volume from higher-cost channels. Integrated live agent handoff with a chatbot-first flow to achieve containment targets."
         , "Architected a scalable service-configuration framework for onboarding enterprise clients with specialized servicing needs."
-        , "Expanded scope to include GBT Select's chat platform in Q2 2026; currently leading root-cause remediation of a data quality gap affecting thousands of chats monthly."
+        , "Expanded scope to GBT Select's chat platform in 2026 (1.2M chats/year). Traced a data quality gap affecting thousands of monthly chats to upstream systems; driving the fix through cross-team influence and escalation."
         , "Led the first joint Egencia + GBT Select technical collaboration: a cross-CRM sales enablement tool unifying top-of-funnel pipeline across brands, eliminating manual transfer of hundreds of leads per month."
         , "Designed and shipped an automated user deprovisioning service integrating Workday, Active Directory, Okta, and Salesforce, eliminating manual offboarding for 98% of requests."
     ]
@@ -58,13 +59,13 @@ const dynataSeniorPdM = {
                          alt="Dynata corporate logo"
                          className="logo job-logo"
                      />,
-    location:        "Seattle, WA",
+    location:        "Remote",
     title:           "Senior Product Manager",
     subtitle:        "Platform Systems",
     startDate:       "Apr 2019",
     endDate:         "Feb 2020",
     accomplishments: [
-        "Led platform systems integration through two M&A events that nearly doubled the company's size."
+        "Led platform systems integration through two M&A events that nearly doubled the company's annual revenue."
         , "Contributed early architecture for a cloud-native lead-to-cash platform built on MS Dynamics 365 CRM and proprietary microservices."
     ]
 };
@@ -77,7 +78,7 @@ const dynataPdM = {
                          alt="Dynata corporate logo"
                          className="logo job-logo"
                      />,
-    location:        "Plano, TX and Seattle, WA",
+    location:        "Plano, TX and Remote",
     title:           "Product Manager",
     subtitle:        "Platform Systems",
     startDate:       "Jul 2015",

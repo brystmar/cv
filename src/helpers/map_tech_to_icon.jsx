@@ -151,7 +151,8 @@ export default function map_tech_to_icon(tech) {
                 className="logo"
             />
 
+        // No logo yet: render nothing so the tech's text label stands alone
         default:
-            return "Logo not found"
+            return null
     }
 }

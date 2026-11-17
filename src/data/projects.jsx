@@ -1,6 +1,7 @@
 const breadsheet = {
     name:        "Breadsheet",
-    description: "Scheduling tool that helps you fit long recipes into your day.",
+    description: "Plans and tracks multi-day bakes, with step-by-step alerts on your phone through Home Assistant.",
+    status:      "Home Assistant integration launching on the Marketplace soon",
     url:         "https://www.breadsheet.com",
     repo:        "https://github.com/brystmar/breadsheet-ui",
     screenshot:  <img
@@ -10,27 +11,35 @@ const breadsheet = {
                      className="screenshot wide"
                  />,
     notes:       [
-        "Bread recipes are often all-day affairs with hours of downtime between steps.  And some, like sourdough, require multi-day planning.",
-        "Specify when you plan to start a recipe and breadsheet displays a step-by-step timeline.  Bakers can easily customize the amount of downtime between steps, making it easy to fit baking steps into your day.",
-        "The reverse is also true: Enter the date & time you want the finished product ready, and breadsheet works backwards to deliver a schedule that meets your deadline."
+        "Bread recipes are often all-day affairs with hours of downtime between steps, and some, like sourdough, take several days.  Pick a start time or a finish time, and breadsheet builds the step-by-step timeline either way.",
+        "Second Rise rebuilt it from a standalone scheduler into a tool that tracks a live bake: no-password sign-in with a generated key, personal recipe collections, a community recipe library, and live bakes.  Check off or skip steps and the rest of the schedule re-plans itself, or export the steps to your calendar.",
+        "A Home Assistant integration (open source as brystmar/breadsheet-hass) pairs with a short code, then delivers phone notifications with a Done button, iOS Live Activities and Android Live Updates, a bake calendar, and a sidebar panel.  Webhook nudges get changes to your phone within seconds, while adaptive polling keeps everything on free hosting tiers.",
+        "Run like a product: a written spec with four independently shippable milestones, a frozen API enforced by contract tests, a DynamoDB-to-Postgres migration users never noticed, and versioned deploys with one-step rollback.",
+        "Next up: connect AI assistants through Home Assistant to plan a bake around your calendar and import new recipes."
     ],
     tech:        [
         {
             type:  "Frontend",
             items: [
-                "React", "SASS", "JavaScript"
+                "React", "Vite", "SASS", "JavaScript"
             ]
         },
         {
             type:  "Backend",
             items: [
-                "Python", "Flask"
+                "Python", "Flask", "SQLAlchemy"
             ]
         },
         {
             type:  "Infrastructure",
             items: [
-                "AWS DynamoDB", "Google App Engine", "Google Cloud Storage"
+                "Postgres", "Google App Engine", "Cloudflare"
+            ]
+        },
+        {
+            type:  "Integrations",
+            items: [
+                "Home Assistant"
             ]
         }
     ]
@@ -85,7 +94,7 @@ const cv = {
                      className="screenshot wide"
                  />,
     notes:       [
-        "This online CV is a simple React app without a backend, hosted in a Google Cloud Storage bucket.",
+        "This online CV is a simple React app built with Vite, without a backend, hosted in a Google Cloud Storage bucket behind Cloudflare.",
         "Modular design parses content from static .js files.",
         "Canvas for dipping my toes into the world of front-end development."
     ],
@@ -93,13 +102,13 @@ const cv = {
         {
             type:  "Frontend",
             items: [
-                "React", "SASS", "JavaScript"
+                "React", "Vite", "SASS", "JavaScript"
             ]
         },
         {
             type:  "Infrastructure",
             items: [
-                "Google Cloud Storage"
+                "Google Cloud Storage", "Cloudflare"
             ]
         }
     ]
@@ -138,6 +147,6 @@ const homelab = {
     ]
 }
 
-const myProjects = [ homelab, greetingCards, breadsheet ];
+const myProjects = [ homelab, breadsheet, greetingCards ];
 
 export default myProjects;

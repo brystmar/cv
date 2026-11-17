@@ -37,6 +37,13 @@ export default function NavBar({ isNavExpanded = false, toggleIsNavExpanded }) {
 
                 <a
                     onClick={closeNavIfExpanded}
+                    href="/#BoardLeadership"
+                    className="nav-board"
+                    title="Board Leadership"
+                >Board</a>
+
+                <a
+                    onClick={closeNavIfExpanded}
                     href="/#Projects"
                     className="nav-proj"
                     title="Projects"

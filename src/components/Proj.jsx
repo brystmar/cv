@@ -81,7 +81,7 @@ export default function Proj({
             <span className="proj-tech-list">
                 {tech.items.map((value, index) =>
                     <span className="proj-tech-list-item" key={index}>
-                        <span className="logo-container">{map_tech_to_icon(value)}</span>
+                        {!!map_tech_to_icon(value) && <span className="logo-container">{map_tech_to_icon(value)}</span>}
                         <span className="list-item-label">{value}</span>
                     </span>)}
             </span>

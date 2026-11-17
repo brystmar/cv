@@ -27,13 +27,17 @@ export default function Job({
             rel="noopener noreferrer"
         >{corporateGroupName}</a> brand</span>
 
+    // Link the company name and logo only when a URL is provided
+    const linkIfUrl = (child) => !companyUrl ? child :
+        <a
+            href={companyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+        >{child}</a>
+
     const companyAndCorpGroupString =
         <span className="job-company-name">
-            <a
-                href={companyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-            >{companyName}</a>{!!corporateGroupName ? corpGroupAddendum : ""}
+            {linkIfUrl(companyName)}{!!corporateGroupName ? corpGroupAddendum : ""}
         </span>
 
     return (
@@ -44,11 +48,7 @@ export default function Job({
 
             <div className="col-logo-content">
             <span className="logo-container">
-            <a
-                href={companyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-            >{logo}</a>
+            {linkIfUrl(logo)}
             </span>
 
                 <span className="job-details">
@@ -89,7 +89,7 @@ export default function Job({
 
 Job.propTypes = {
     companyName:        PropTypes.string.isRequired,
-    companyUrl:         PropTypes.string.isRequired,
+    companyUrl:         PropTypes.string,
     corporateGroupName: PropTypes.string,
     corporateGroupUrl:  PropTypes.string,
     logo:               PropTypes.element.isRequired,
